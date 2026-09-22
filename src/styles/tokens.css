@@ -1,0 +1,55 @@
+/*
+ * Design tokens — values measured from the original (docs/reconnaissance/VISUAL.md).
+ * Breakpoints (layout): desktop >=1200, tablet 810–1199.98, phone <=809.98.
+ * Type tiers add >=1600 (see typography.css).
+ */
+:root {
+  /* colour */
+  --c-ink: #2e3231;          /* headings, dark text */
+  --c-body: #535956;         /* paragraphs */
+  --c-muted: #949e9b;        /* muted labels, placeholders */
+  --c-green: #7fa69b;        /* brand accent */
+  --c-white: #ffffff;
+  --c-white-65: #ffffffa6;   /* secondary text on dark */
+  --c-grey-bg: #fafafa;      /* light section background */
+  --c-black: #000000;
+  --c-track-off: rgba(0, 0, 0, 0.2);
+  --c-check-idle: rgba(127, 166, 155, 0.2);
+  --c-star: rgb(0, 182, 122);
+
+  /* fonts */
+  --f-serif: 'Crimson Text', 'Times New Roman', serif;
+  --f-sans: 'Inter Variable', 'Inter', system-ui, sans-serif;
+
+  /* horizontal rhythm: section gutter + inner text padding */
+  --gutter: 56px;
+  --inner: 8px;
+  --content-edge: calc(var(--gutter) + var(--inner)); /* 64 desktop */
+
+  /* radii */
+  --r-pill: 999px;
+  --r-card: 16px;
+  --r-check: 4px;
+
+  /* nav */
+  --nav-h: 79px;
+
+  /* easing (Framer presets) */
+  --ease-framer: cubic-bezier(0.44, 0, 0.56, 1);
+  --ease-entrance: cubic-bezier(0.2, 0, 0.2, 1);
+  --ease-hero: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-strong: cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  :root {
+    --gutter: 8px;
+    --nav-h: 69px;
+  }
+}

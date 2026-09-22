@@ -1,0 +1,142 @@
+{
+ "hero-backdrop": {
+  "file": "/standins/hero-backdrop.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "A6yz8YhmbQkg8ACTADACAMNk7s",
+  "note": "soft green/yellow haze, no subject"
+ },
+ "hero-portrait": {
+  "file": "/standins/hero-portrait.jpg",
+  "width": 3600,
+  "height": 3200,
+  "replacesOriginal": "vJzjZEQ7XEcIpUiaWAlM8HVcE",
+  "note": "light subject upper-centre-right; crop anchored top (50% 0%)"
+ },
+ "service-1": {
+  "file": "/standins/service-1.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "VW2dIv9jFcnOEMXK68HcTW0X9g",
+  "note": "deep teal water tone"
+ },
+ "service-2": {
+  "file": "/standins/service-2.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "X1KAS3BPHbN4rR5FN8CCVsSUhM",
+  "note": "dark blue with warm centre glow"
+ },
+ "service-3": {
+  "file": "/standins/service-3.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "lZn0EEipDdK6TqFQ685W86d6r9M",
+  "note": "blue-grey, bright centre"
+ },
+ "service-4": {
+  "file": "/standins/service-4.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "Ux4Is85LWxm9dXetoVhxJWLGhLI",
+  "note": "green foliage tone"
+ },
+ "story-a-1": {
+  "file": "/standins/story-a-1.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "Xgg8qSDKhoEnATJuF3xxVuO0bw",
+  "note": "pale blue, light subject centre"
+ },
+ "story-a-2": {
+  "file": "/standins/story-a-2.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "lLxmvlvWIZ4P7PBI7azU4zec",
+  "note": "blue with warm upper subject"
+ },
+ "story-b-1": {
+  "file": "/standins/story-b-1.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "PSjitKcEoMQOEmVvStpNCNRXmSk",
+  "note": "dark green, subject centre"
+ },
+ "story-b-2": {
+  "file": "/standins/story-b-2.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "yzTuL74LYLey46xO4X9rihvGRs4",
+  "note": "light green-grey, dark subject"
+ },
+ "big-quote": {
+  "file": "/standins/big-quote.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "i3wLiFEx85bL9zj8Y2GBkjDc5z4",
+  "note": "very dark teal, warm lower-centre highlight"
+ },
+ "journal-a": {
+  "file": "/standins/journal-a.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "D6H1lHKBDuxkhpUVf8PPyt7Jivg",
+  "note": "mint with warm centre"
+ },
+ "journal-b": {
+  "file": "/standins/journal-b.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "LksF7zMOHE97HJPqXDmb7LSvWE",
+  "note": "dark teal"
+ },
+ "journal-c": {
+  "file": "/standins/journal-c.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "ZMX4xonC6WvSRyRzHHgOkTDzw4",
+  "note": "pale blue-green, dark centre"
+ },
+ "footer": {
+  "file": "/standins/footer.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "TF67zgMSYINSD7dymhKX4rhrTM",
+  "note": "dark slate"
+ },
+ "avatar-1": {
+  "file": "/standins/avatar-1.jpg",
+  "width": 280,
+  "height": 280,
+  "replacesOriginal": "POpTLGuLzTuWYxuEYrRGJD678",
+  "note": "avatar"
+ },
+ "avatar-2": {
+  "file": "/standins/avatar-2.jpg",
+  "width": 512,
+  "height": 512,
+  "replacesOriginal": "aLd0GlWVHywVWuurCk8JtAWSPw",
+  "note": "avatar"
+ },
+ "avatar-3": {
+  "file": "/standins/avatar-3.jpg",
+  "width": 512,
+  "height": 512,
+  "replacesOriginal": "PH9MBoozXCDuSg7Zw0ksQExNo",
+  "note": "avatar"
+ },
+ "avatar-4": {
+  "file": "/standins/avatar-4.jpg",
+  "width": 512,
+  "height": 512,
+  "replacesOriginal": "duZSo1YDta06usFuc3EkJTiRdM",
+  "note": "avatar"
+ },
+ "avatar-5": {
+  "file": "/standins/avatar-5.jpg",
+  "width": 512,
+  "height": 512,
+  "replacesOriginal": "ES6IJ8JiS4iNVkDK38fQhwjZDr4",
+  "note": "avatar"
+ }
+}

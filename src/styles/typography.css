@@ -1,0 +1,85 @@
+/*
+ * Text presets — one class per Framer text style, with the original's four size tiers:
+ *   base = >=1600 · 1200–1599 · 810–1199 · <810
+ * Values from docs/reconnaissance/VISUAL.md §2 and reference/dom/text-presets.txt.
+ * Colour defaults can be overridden per use (e.g. white on photo, green tails).
+ */
+
+.t-display,      /* 1gy6fax — hero H1, "How It Works" */
+.t-serif-h2,     /* 1omst67 — story/step titles, quote, Book title, footer title */
+.t-card-title,   /* rrkxdq — service card titles, pricing plan names */
+.t-article-title /* 1jvkzq1 — journal titles */ {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  margin: 0;
+}
+
+.t-sans-h2,      /* 19py25s */
+.t-sans-h3,      /* 1qkymns */
+.t-lead,         /* c1ofpr */
+.t-body-lg,      /* 33sk3i */
+.t-body,         /* k1gzgo */
+.t-small,        /* 99grtk */
+.t-eyebrow       /* 9azdev */ {
+  font-family: var(--f-sans);
+  margin: 0;
+}
+
+.t-display    { font-size: 152px; line-height: 0.84; letter-spacing: -0.05em; color: var(--c-ink); }
+.t-serif-h2   { font-size: 80px;  line-height: 1;    letter-spacing: -0.04em; color: var(--c-ink); }
+.t-card-title,
+.t-article-title { font-size: 38px; line-height: 1;  letter-spacing: -0.03em; color: var(--c-white); }
+.t-article-title { color: var(--c-green); }
+.t-sans-h2    { font-size: 48px; font-weight: 500; line-height: 1.2; letter-spacing: -0.04em; color: var(--c-ink); }
+.t-sans-h3    { font-size: 34px; font-weight: 600; line-height: 1.4; letter-spacing: -0.03em; color: var(--c-ink); }
+.t-lead       { font-size: 28px; font-weight: 500; line-height: 1.4; letter-spacing: -0.03em; color: var(--c-ink); }
+.t-body-lg    { font-size: 20px; font-weight: 400; line-height: 1.7; color: var(--c-body); }
+.t-body       { font-size: 16px; font-weight: 400; line-height: 1.7; color: var(--c-body); }
+.t-small      { font-size: 14px; font-weight: 400; line-height: 1.8; color: var(--c-body); }
+.t-eyebrow    { font-size: 12px; font-weight: 600; line-height: 1.4; letter-spacing: 0.11em; text-transform: uppercase; color: var(--c-green); }
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+  .t-display    { font-size: 136px; letter-spacing: -0.04em; }
+  .t-serif-h2   { font-size: 72px;  letter-spacing: -0.03em; }
+  .t-card-title,
+  .t-article-title { font-size: 36px; }
+  .t-sans-h2    { font-size: 44px; }
+  .t-sans-h3    { font-size: 32px; }
+  .t-lead       { font-size: 26px; }
+  .t-body-lg    { font-size: 18px; }
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .t-display    { font-size: 88px;  letter-spacing: -0.04em; }
+  .t-card-title,
+  .t-article-title { font-size: 34px; }
+  .t-sans-h2    { font-size: 38px; }
+  .t-sans-h3    { font-size: 30px; }
+  .t-lead       { font-size: 24px; }
+  .t-body-lg    { font-size: 18px; }
+}
+
+/* serif H2 uses 809/808 as its tablet/phone boundary in the original */
+@media (min-width: 809px) and (max-width: 1199.98px) {
+  .t-serif-h2   { font-size: 64px; letter-spacing: -0.03em; }
+}
+@media (max-width: 808.98px) {
+  .t-serif-h2   { font-size: 48px; letter-spacing: -0.03em; }
+}
+
+@media (max-width: 809.98px) {
+  .t-display    { font-size: 64px; letter-spacing: -0.03em; }
+  .t-card-title,
+  .t-article-title { font-size: 32px; }
+  .t-sans-h2    { font-size: 34px; }
+  .t-sans-h3    { font-size: 26px; }
+  .t-lead       { font-size: 22px; }
+  .t-body-lg    { font-size: 18px; }
+}
+
+/* Non-preset styles measured on specific elements */
+.t-logo        { font-family: var(--f-serif); font-size: 26px; line-height: 1.4; letter-spacing: 0.07em; }
+.t-counter     { font-family: var(--f-sans); font-size: 72px; font-weight: 600; line-height: 1; letter-spacing: -0.04em; color: var(--c-green); }
+.t-price       { font-family: var(--f-sans); font-size: 48px; font-weight: 500; line-height: 1; letter-spacing: -0.04em; color: var(--c-green); }
+.t-statement   { font-family: var(--f-sans); font-size: 44px; font-weight: 500; line-height: 1.2; letter-spacing: -0.03em; color: var(--c-ink); }
+.t-accent      { color: var(--c-green); }

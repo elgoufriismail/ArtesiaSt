@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+# comparison runs (regenerated locally)
+tools/.runs/
+test-results/
