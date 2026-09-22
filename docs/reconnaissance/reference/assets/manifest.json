@@ -1,0 +1,832 @@
+{
+ "generatedFrom": "https://clearpath-template.framer.website/ (homepage), captured at 1440x900, 1024x768, 390x844",
+ "licenseNote": "All imagery, copy, fonts-as-hosted and custom code components belong to the template author / their licensors. Reuse in a clone requires a valid license (e.g. a purchased Framer template licence). Binaries are NOT committed; URLs below are the canonical sources.",
+ "images": [
+  {
+   "url": "https://framerusercontent.com/images/A6yz8YhmbQkg8ACTADACAMNk7s.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Page Intro / Green Background"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "49.5% 28.4%",
+   "renderedByViewport": {
+    "1440x900": [
+     1440,
+     900
+    ],
+    "1024x768": [
+     1024,
+     768
+    ],
+    "390x844": [
+     390,
+     844
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/A6yz8YhmbQkg8ACTADACAMNk7s.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/A6yz8YhmbQkg8ACTADACAMNk7s.jpg?scale-down-to=1024&width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/A6yz8YhmbQkg8ACTADACAMNk7s.jpg?scale-down-to=512&width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/vJzjZEQ7XEcIpUiaWAlM8HVcE.jpg",
+   "original": [
+    3600,
+    3200
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Page Intro / Hero Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 0%",
+   "renderedByViewport": {
+    "1440x900": [
+     1440,
+     900
+    ],
+    "1024x768": [
+     1024,
+     768
+    ],
+    "390x844": [
+     390,
+     844
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/vJzjZEQ7XEcIpUiaWAlM8HVcE.jpg?scale-down-to=2048&width=3600&height=3200",
+    "1024x768": "https://framerusercontent.com/images/vJzjZEQ7XEcIpUiaWAlM8HVcE.jpg?scale-down-to=1024&width=3600&height=3200",
+    "390x844": "https://framerusercontent.com/images/vJzjZEQ7XEcIpUiaWAlM8HVcE.jpg?scale-down-to=512&width=3600&height=3200"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/VW2dIv9jFcnOEMXK68HcTW0X9g.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Our Services / Desktop",
+    "Our Services / Touch"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     560,
+     760
+    ],
+    "1024x768": [
+     464,
+     600
+    ],
+    "390x844": [
+     358,
+     400
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/VW2dIv9jFcnOEMXK68HcTW0X9g.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/VW2dIv9jFcnOEMXK68HcTW0X9g.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/VW2dIv9jFcnOEMXK68HcTW0X9g.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Our Services / Desktop",
+    "Our Services / Touch"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     560,
+     760
+    ],
+    "1024x768": [
+     464,
+     600
+    ],
+    "390x844": [
+     358,
+     400
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/lZn0EEipDdK6TqFQ685W86d6r9M.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Our Services / Desktop",
+    "Our Services / Touch"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     560,
+     760
+    ],
+    "1024x768": [
+     464,
+     600
+    ],
+    "390x844": [
+     358,
+     400
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/lZn0EEipDdK6TqFQ685W86d6r9M.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/lZn0EEipDdK6TqFQ685W86d6r9M.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/lZn0EEipDdK6TqFQ685W86d6r9M.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Our Services / Desktop",
+    "Our Services / Touch"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     560,
+     760
+    ],
+    "1024x768": [
+     464,
+     600
+    ],
+    "390x844": [
+     358,
+     400
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Story A / Image 1"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     389,
+     897
+    ],
+    "1024x768": [
+     278,
+     727
+    ],
+    "390x844": [
+     358,
+     400
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/lLxmvlvWIZ4P7PBI7azU4zec.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Story A / Image 2"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     332,
+     597
+    ],
+    "1024x768": [
+     240,
+     459
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/lLxmvlvWIZ4P7PBI7azU4zec.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/lLxmvlvWIZ4P7PBI7azU4zec.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/POpTLGuLzTuWYxuEYrRGJD678.jpg",
+   "original": [
+    280,
+    280
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Book A Session / Image",
+    "Ready to find your\u00a0path? / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     44,
+     44
+    ],
+    "1024x768": [
+     44,
+     44
+    ],
+    "390x844": [
+     44,
+     44
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/POpTLGuLzTuWYxuEYrRGJD678.jpg",
+    "1024x768": "https://framerusercontent.com/images/POpTLGuLzTuWYxuEYrRGJD678.jpg",
+    "390x844": "https://framerusercontent.com/images/POpTLGuLzTuWYxuEYrRGJD678.jpg"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/aLd0GlWVHywVWuurCk8JtAWSPw.jpg",
+   "original": [
+    512,
+    512
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Book A Session / Image",
+    "Ready to find your\u00a0path? / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     44,
+     44
+    ],
+    "1024x768": [
+     44,
+     44
+    ],
+    "390x844": [
+     44,
+     44
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/aLd0GlWVHywVWuurCk8JtAWSPw.jpg?width=512&height=512",
+    "1024x768": "https://framerusercontent.com/images/aLd0GlWVHywVWuurCk8JtAWSPw.jpg?width=512&height=512",
+    "390x844": "https://framerusercontent.com/images/aLd0GlWVHywVWuurCk8JtAWSPw.jpg?width=512&height=512"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/PH9MBoozXCDuSg7Zw0ksQExNo.jpg",
+   "original": [
+    512,
+    512
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Book A Session / Image",
+    "Ready to find your\u00a0path? / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     44,
+     44
+    ],
+    "1024x768": [
+     44,
+     44
+    ],
+    "390x844": [
+     44,
+     44
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/PH9MBoozXCDuSg7Zw0ksQExNo.jpg?width=512&height=512",
+    "1024x768": "https://framerusercontent.com/images/PH9MBoozXCDuSg7Zw0ksQExNo.jpg?width=512&height=512",
+    "390x844": "https://framerusercontent.com/images/PH9MBoozXCDuSg7Zw0ksQExNo.jpg?width=512&height=512"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/duZSo1YDta06usFuc3EkJTiRdM.jpg",
+   "original": [
+    512,
+    512
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Book A Session / Image",
+    "Ready to find your\u00a0path? / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     44,
+     44
+    ],
+    "1024x768": [
+     44,
+     44
+    ],
+    "390x844": [
+     44,
+     44
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/duZSo1YDta06usFuc3EkJTiRdM.jpg?width=512&height=512",
+    "1024x768": "https://framerusercontent.com/images/duZSo1YDta06usFuc3EkJTiRdM.jpg?width=512&height=512",
+    "390x844": "https://framerusercontent.com/images/duZSo1YDta06usFuc3EkJTiRdM.jpg?width=512&height=512"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg",
+   "original": [
+    512,
+    512
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Book A Session / Image",
+    "Ready to find your\u00a0path? / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     44,
+     44
+    ],
+    "1024x768": [
+     44,
+     44
+    ],
+    "390x844": [
+     44,
+     44
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg?width=512&height=512",
+    "1024x768": "https://framerusercontent.com/images/ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg?width=512&height=512",
+    "390x844": "https://framerusercontent.com/images/ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg?width=512&height=512"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Big Quote / Big Quote"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     1440,
+     1580
+    ],
+    "1024x768": [
+     1024,
+     914
+    ],
+    "390x844": [
+     390,
+     675
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/PSjitKcEoMQOEmVvStpNCNRXmSk.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Story B / Image 1"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     389,
+     897
+    ],
+    "1024x768": [
+     278,
+     727
+    ],
+    "390x844": [
+     358,
+     400
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/PSjitKcEoMQOEmVvStpNCNRXmSk.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/PSjitKcEoMQOEmVvStpNCNRXmSk.jpg?width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/PSjitKcEoMQOEmVvStpNCNRXmSk.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/yzTuL74LYLey46xO4X9rihvGRs4.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Story B / Image 2"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     332,
+     597
+    ],
+    "1024x768": [
+     240,
+     459
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/yzTuL74LYLey46xO4X9rihvGRs4.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/yzTuL74LYLey46xO4X9rihvGRs4.jpg?width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Journal / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     357,
+     269
+    ],
+    "1024x768": [
+     432,
+     325
+    ],
+    "390x844": [
+     358,
+     269
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg?scale-down-to=512&width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg?scale-down-to=512&width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg?scale-down-to=512&width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/LksF7zMOHE97HJPqXDmb7LSvWE.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Journal / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     357,
+     267
+    ],
+    "1024x768": [
+     432,
+     323
+    ],
+    "390x844": [
+     358,
+     268
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/LksF7zMOHE97HJPqXDmb7LSvWE.jpg?scale-down-to=512&width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/LksF7zMOHE97HJPqXDmb7LSvWE.jpg?scale-down-to=512&width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/LksF7zMOHE97HJPqXDmb7LSvWE.jpg?scale-down-to=512&width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/ZMX4xonC6WvSRyRzHHgOkTDzw4.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Journal / Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     357,
+     240
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/ZMX4xonC6WvSRyRzHHgOkTDzw4.jpg?scale-down-to=512&width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/TF67zgMSYINSD7dymhKX4rhrTM.jpg",
+   "original": [
+    2048,
+    2048
+   ],
+   "alt": "ClearPath",
+   "usedIn": [
+    "Footer Container / Footer Background Image"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     1440,
+     1311
+    ],
+    "1024x768": [
+     1024,
+     1726
+    ],
+    "390x844": [
+     390,
+     1874
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/TF67zgMSYINSD7dymhKX4rhrTM.jpg?width=2048&height=2048",
+    "1024x768": "https://framerusercontent.com/images/TF67zgMSYINSD7dymhKX4rhrTM.jpg?scale-down-to=1024&width=2048&height=2048",
+    "390x844": "https://framerusercontent.com/images/TF67zgMSYINSD7dymhKX4rhrTM.jpg?scale-down-to=512&width=2048&height=2048"
+   }
+  },
+  {
+   "url": "https://framerusercontent.com/images/6HsC0d9bhLu4NT4YGuH3j68zl8.jpg",
+   "original": [
+    1333,
+    1000
+   ],
+   "alt": "",
+   "usedIn": [
+    "fixed/overlay / On"
+   ],
+   "objectFit": "cover",
+   "objectPosition": "50% 50%",
+   "renderedByViewport": {
+    "1440x900": [
+     138,
+     101
+    ]
+   },
+   "requestedVariant": {
+    "1440x900": "https://framerusercontent.com/images/6HsC0d9bhLu4NT4YGuH3j68zl8.jpg?scale-down-to=512&width=1333&height=1000"
+   }
+  }
+ ],
+ "tiledTextures": [
+  {
+   "url": "https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png",
+   "original": [
+    256,
+    256
+   ],
+   "css": "background-repeat:repeat; background-size:128px (Framer 'tile' fill, 256px asset @ backgroundSize 1 -> 128px CSS)",
+   "blend": "mix-blend-mode: overlay on wrapper 'Noize' sections",
+   "usedIn": [
+    "Page Intro hero image + green background",
+    "Journal article images",
+    "Footer background"
+   ]
+  },
+  {
+   "url": "https://framerusercontent.com/images/hfyi67pKwBIagdce3cECqq02Do.png",
+   "original": [
+    240,
+    240
+   ],
+   "css": "background-size:100px 100px; repeat; mix-blend-mode:overlay; opacity 0.15 (0.1 in Big Quote)",
+   "usedIn": [
+    "ImageParallaxVerticalNoize component: service cards, story images, Big Quote"
+   ]
+  }
+ ],
+ "masks": [
+  {
+   "url": "https://framerusercontent.com/images/YRuh4U5ThvXtO2fvm6HWgEZuE4.svg",
+   "intrinsic": "314x236",
+   "use": "mask-image for Journal article image A (blob)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/XzHb5S2N4RU9GakyQhgQX2XqY6w.svg",
+   "intrinsic": "297x222",
+   "use": "mask-image for Journal article image B (blob)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/4hAvhj6oDkzuyTUlP4waQ9M3jSw.svg",
+   "intrinsic": "314x211",
+   "use": "mask-image for Journal article image C (blob)"
+  },
+  {
+   "url": "https://framerusercontent.com/images/9O8sLldl6mV9miUVjkyrhGJsZ7c.svg",
+   "use": "mask-image for overlapping avatar circles (cut-out ring) in rating widgets (avatars 2..5)"
+  },
+  {
+   "url": "inline data:image/svg+xml (64x64)",
+   "use": "section icons (Our Philosophy meditation figure, Pricing waves, Journal lotus) rendered as mask-image over a background-color fill"
+  },
+  {
+   "url": "css linear-gradient",
+   "use": "Hero 'Image Container' mask: black 90% -> transparent 100%; 'Animated Lines' mask: black 85% -> transparent 100%; progressive blur bands (8 layers)"
+  }
+ ],
+ "fonts": [
+  {
+   "family": "Crimson Text",
+   "source": "Google Fonts (fonts.gstatic.com v19)",
+   "weights": [
+    400,
+    700
+   ],
+   "styles": [
+    "normal",
+    "italic"
+   ],
+   "loaded": [
+    "https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2 (400 normal, latin)"
+   ],
+   "use": "display serif: hero H1, section H2 serif titles, card titles, quote, logo wordmark"
+  },
+  {
+   "family": "Inter",
+   "source": "Framer-hosted (framerusercontent.com/assets/*.woff2, Inter variable subsets)",
+   "loaded": [
+    "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+    "https://framerusercontent.com/assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+    "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2"
+   ],
+   "weights_used": [
+    400,
+    500,
+    600,
+    700
+   ],
+   "use": "all sans text: body, labels, H2 sans headlines, buttons, form"
+  },
+  {
+   "family": "Aspekta Variable",
+   "source": "Framer-hosted custom upload",
+   "loaded": [
+    "https://framerusercontent.com/assets/MQthzhqtkV99jFAFdccXwW1PRf0.woff2"
+   ],
+   "use": "ONLY used by the Framer promo overlay label ('New Release', 14px, wght 1000). Not part of the page design -> not needed for the clone."
+  }
+ ],
+ "icons": [
+  {
+   "set": "Phosphor icons via Framer module (framer.com/m/phosphor-icons/*.js@0.0.57)",
+   "icons": [
+    "InstagramLogo",
+    "ThreadsLogo",
+    "FacebookLogo",
+    "YoutubeLogo (social row, 24px)",
+    "CheckCircle (pricing options, 24px)",
+    "PlusCircle (FAQ, rotates 135deg to form x when open)",
+    "X"
+   ],
+   "note": "inline SVG, viewBox 0 0 256 256, stroke/fill color via currentColor tokens"
+  },
+  {
+   "name": "Star (TrustPoint)",
+   "type": "inline data:image/svg+xml background-image, viewBox 0 0 20 19, fill rgb(0,182,122)",
+   "use": "rating widget, 20x19 inside 23x22 box"
+  }
+ ],
+ "inlineSvg": [
+  {
+   "name": "Hero 'Animated Lines' (2 paths)",
+   "viewBox": "0 0 780 1140",
+   "render": "780x1140 @desktop",
+   "stroke": "white token",
+   "animation": "GSAP ScrollTrigger stroke-dashoffset draw, scrubbed"
+  },
+  {
+   "name": "Waves Container 'Long Line' / 'Long Line 2'",
+   "viewBox": "0 0 6000 680",
+   "stroke": "#7fa69b at opacity .4 / .1",
+   "position": "fixed, desktop only"
+  },
+  {
+   "name": "How It Works long path (Big Quote wrapper area)",
+   "viewBox": "0 0 680 2000",
+   "stroke": "white token / white",
+   "animation": "GSAP scrubbed dash draw"
+  },
+  {
+   "name": "Pricing headline scribble",
+   "viewBox": "0 0 310 80",
+   "stroke": "#7fa69b",
+   "animation": "GSAP dash draw"
+  },
+  {
+   "name": "Big Quote 'Shape' (white arc)",
+   "viewBox": "0 0 1516 443",
+   "animation": "rotateX 0 -> -90deg scroll-linked"
+  },
+  {
+   "name": "Journal 'Stroke' outlines (3)",
+   "viewBox": "293x254 / 265x259 / 302x265",
+   "stroke": "#7FA69B thin outline behind blob images"
+  },
+  {
+   "name": "How It Works big numbers",
+   "note": "text '01..05' rendered in SVG foreignObject fit-text (Framer fit-text), 281x~4600 strips"
+  }
+ ],
+ "thirdPartyOverlays": [
+  {
+   "what": "Framer marketplace promo card 'Get this template' + thumbnail (fixed bottom-right, desktop 140x103 + 140x38; phone 140x38)",
+   "links": [
+    "https://loop-agency.framer.website/?utm_source=clearpath&utm_medium=promo_button",
+    "https://www.framer.com"
+   ],
+   "image": "https://framerusercontent.com/images/6HsC0d9bhLu4NT4YGuH3j68zl8.jpg",
+   "recommendation": "NOT part of the design; exclude from the clone"
+  },
+  {
+   "what": "Framer analytics script events.framer.com, editor bar (framer.com/edit/init.mjs)",
+   "recommendation": "exclude"
+  }
+ ]
+}

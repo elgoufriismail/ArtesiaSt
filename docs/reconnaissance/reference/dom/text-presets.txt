@@ -1,0 +1,58 @@
+# Framer text-style presets (class .framer-styles-preset-<id>) per media query
+
+== preset-1hi5j20
+  base (>=1600)  link-hover-text-decoration:underline; link-text-color:var(--token-15d296e7-c5d1-416d-add7-be3f4225afa3,#fff)
+
+== preset-1gy6fax
+  base (>=1600)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:152px; font-style:normal; font-weight:400; letter-spacing:-.05em; line-height:84%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:136px; font-style:normal; font-weight:400; letter-spacing:-.04em; line-height:84%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:810px)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:88px; font-style:normal; font-weight:400; letter-spacing:-.04em; line-height:84%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:809px) and (min-width:0)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:64px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:84%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+
+== preset-33sk3i
+  base (>=1600)  font-family:"Inter",sans-serif; font-size:20px; font-style:normal; font-weight:400; letter-spacing:0em; line-height:170%; text-color:var(--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c,#535956); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Inter",sans-serif; font-size:18px; font-style:normal; font-weight:400; letter-spacing:0em; line-height:170%; text-color:var(--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c,#535956); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:810px)  font-family:"Inter",sans-serif; font-size:18px; font-style:normal; font-weight:400; letter-spacing:0em; line-height:170%; text-color:var(--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c,#535956); text-decoration:none; text-transform:none
+  (max-width:809px) and (min-width:0)  font-family:"Inter",sans-serif; font-size:18px; font-style:normal; font-weight:400; letter-spacing:0em; line-height:170%; text-color:var(--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c,#535956); text-decoration:none; text-transform:none
+
+== preset-19py25s
+  base (>=1600)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:48px; font-style:normal; font-weight:500; letter-spacing:-.04em; line-height:120%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:44px; font-style:normal; font-weight:500; letter-spacing:-.04em; line-height:120%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:810px)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:38px; font-style:normal; font-weight:500; letter-spacing:-.04em; line-height:120%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:809px) and (min-width:0)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:34px; font-style:normal; font-weight:500; letter-spacing:-.04em; line-height:120%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+
+== preset-1qkymns
+  base (>=1600)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:34px; font-style:normal; font-weight:600; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:32px; font-style:normal; font-weight:600; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:810px)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:30px; font-style:normal; font-weight:600; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:809px) and (min-width:0)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:26px; font-style:normal; font-weight:600; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+
+== preset-c1ofpr
+  base (>=1600)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:28px; font-style:normal; font-weight:500; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:26px; font-style:normal; font-weight:500; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:810px)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:24px; font-style:normal; font-weight:500; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:809px) and (min-width:0)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:22px; font-style:normal; font-weight:500; letter-spacing:-.03em; line-height:140%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+
+== preset-1vjqxut
+  base (>=1600)  link-hover-text-decoration:underline; link-text-color:var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae,#7fa69b)
+
+== preset-rrkxdq
+  base (>=1600)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:38px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-15d296e7-c5d1-416d-add7-be3f4225afa3,#fff); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:36px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-15d296e7-c5d1-416d-add7-be3f4225afa3,#fff); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:810px)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:34px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-15d296e7-c5d1-416d-add7-be3f4225afa3,#fff); text-decoration:none; text-transform:none
+  (max-width:809px) and (min-width:0)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:32px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-15d296e7-c5d1-416d-add7-be3f4225afa3,#fff); text-decoration:none; text-transform:none
+
+== preset-99grtk
+  base (>=1600)  font-family:"Inter",sans-serif; font-size:14px; font-style:normal; font-weight:400; letter-spacing:0em; line-height:180%; text-color:var(--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c,#535956); text-decoration:none; text-transform:none
+
+== preset-9azdev
+  base (>=1600)  font-family:"Inter","Inter Placeholder",sans-serif; font-size:12px; font-style:normal; font-weight:600; letter-spacing:.11em; line-height:140%; text-color:var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae,#7fa69b); text-decoration:none; text-transform:uppercase
+
+== preset-1omst67
+  base (>=1600)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:80px; font-style:normal; font-weight:400; letter-spacing:-.04em; line-height:100%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1599px) and (min-width:1200px)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:72px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:1199px) and (min-width:809px)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:64px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+  (max-width:808px) and (min-width:0)  font-family:"Crimson Text","Crimson Text Placeholder",serif; font-size:48px; font-style:normal; font-weight:400; letter-spacing:-.03em; line-height:100%; text-color:var(--token-b72f3c38-19aa-4001-b465-e11babd5f784,#2e3231); text-decoration:none; text-transform:none
+
+== preset-k1gzgo
+  base (>=1600)  font-family:"Inter",sans-serif; font-size:16px; font-style:normal; font-weight:400; letter-spacing:0em; line-height:170%; text-color:var(--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c,#535956); text-decoration:none; text-transform:none

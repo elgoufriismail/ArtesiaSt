@@ -1,0 +1,114 @@
+{
+ "viewport": [
+  1280,
+  800
+ ],
+ "scrollHeight": 16601,
+ "shots": [
+  {
+   "requested": 0,
+   "actual": 0,
+   "file": "00000.png"
+  },
+  {
+   "requested": 800,
+   "actual": 800,
+   "file": "00800.png"
+  },
+  {
+   "requested": 1600,
+   "actual": 1600,
+   "file": "01600.png"
+  },
+  {
+   "requested": 2400,
+   "actual": 2400,
+   "file": "02400.png"
+  },
+  {
+   "requested": 3200,
+   "actual": 3200,
+   "file": "03200.png"
+  },
+  {
+   "requested": 4000,
+   "actual": 4000,
+   "file": "04000.png"
+  },
+  {
+   "requested": 4800,
+   "actual": 4800,
+   "file": "04800.png"
+  },
+  {
+   "requested": 5600,
+   "actual": 5600,
+   "file": "05600.png"
+  },
+  {
+   "requested": 6400,
+   "actual": 6400,
+   "file": "06400.png"
+  },
+  {
+   "requested": 7200,
+   "actual": 7200,
+   "file": "07200.png"
+  },
+  {
+   "requested": 8000,
+   "actual": 8000,
+   "file": "08000.png"
+  },
+  {
+   "requested": 8800,
+   "actual": 8800,
+   "file": "08800.png"
+  },
+  {
+   "requested": 9600,
+   "actual": 9600,
+   "file": "09600.png"
+  },
+  {
+   "requested": 10400,
+   "actual": 10400,
+   "file": "10400.png"
+  },
+  {
+   "requested": 11200,
+   "actual": 11200,
+   "file": "11200.png"
+  },
+  {
+   "requested": 12000,
+   "actual": 12000,
+   "file": "12000.png"
+  },
+  {
+   "requested": 12800,
+   "actual": 12800,
+   "file": "12800.png"
+  },
+  {
+   "requested": 13600,
+   "actual": 13600,
+   "file": "13600.png"
+  },
+  {
+   "requested": 14400,
+   "actual": 14400,
+   "file": "14400.png"
+  },
+  {
+   "requested": 15200,
+   "actual": 15200,
+   "file": "15200.png"
+  },
+  {
+   "requested": 15801,
+   "actual": 15801,
+   "file": "15801.png"
+  }
+ ]
+}

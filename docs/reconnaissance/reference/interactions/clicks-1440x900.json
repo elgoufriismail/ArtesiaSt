@@ -1,0 +1,772 @@
+{
+ "toggleSwitch": {
+  "from": 300,
+  "timeline": [
+   [
+    82,
+    380,
+    "Toggle Off:framer-v-10xhhiq,Start:framer-v-mldl2n,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    168,
+    917,
+    "Toggle Off:framer-v-10xhhiq,Toggle Off:framer-v-566tf9,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    261,
+    917,
+    "Toggle Off:framer-v-10xhhiq,Toggle Off:framer-v-566tf9,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    345,
+    1208,
+    "Toggle Off:framer-v-10xhhiq,Toggle Off:framer-v-566tf9,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    430,
+    1391,
+    "Toggle Off:framer-v-10xhhiq,Toggle Off:framer-v-566tf9,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    517,
+    1391,
+    "Toggle Off:framer-v-10xhhiq,Toggle Off:framer-v-566tf9,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    603,
+    1507,
+    "Toggle Off:framer-v-10xhhiq,Toggle Off:framer-v-566tf9,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    690,
+    1572,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    792,
+    1572,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    879,
+    1621,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    964,
+    1651,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1050,
+    1651,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1135,
+    1671,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1220,
+    1684,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1320,
+    1684,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1406,
+    1691,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1494,
+    1696,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1580,
+    1696,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1665,
+    1699,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1751,
+    1700,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1841,
+    1700,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    1926,
+    1701,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2012,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2107,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2191,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2277,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2361,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2447,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2534,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2619,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2704,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2788,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2875,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    2965,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    3049,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    3136,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    3222,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    3306,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    3392,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ],
+   [
+    3477,
+    1702,
+    "Toggle On:framer-v-8451ev,Toggle On:framer-v-1aat3pr,Toggle Off:framer-v-1uwbx76,On:framer-v-1bygqlm"
+   ]
+  ],
+  "url": "https://clearpath-template.framer.website/#toggle-on-anchor"
+ },
+ "pricing": {
+  "monthly": {
+   "prices": [
+    "$49",
+    "$89",
+    "$229"
+   ],
+   "state": "Toggle Off:framer-v-1uwbx76,Monthly,Monthly,Monthly,Monthly"
+  },
+  "yearlyTimeline": [
+   {
+    "t": 50,
+    "prices": [
+     "$49",
+     "$89",
+     "$229"
+    ]
+   },
+   {
+    "t": 100,
+    "prices": [
+     "$49",
+     "$89",
+     "$229"
+    ]
+   },
+   {
+    "t": 200,
+    "prices": [
+     "$39",
+     "$71",
+     "$183"
+    ]
+   },
+   {
+    "t": 362,
+    "prices": [
+     "$39",
+     "$71",
+     "$183"
+    ]
+   },
+   {
+    "t": 451,
+    "prices": [
+     "$39",
+     "$71",
+     "$183"
+    ]
+   },
+   {
+    "t": 711,
+    "prices": [
+     "$39",
+     "$71",
+     "$183"
+    ]
+   },
+   {
+    "t": 901,
+    "prices": [
+     "$39",
+     "$71",
+     "$183"
+    ]
+   },
+   {
+    "t": 1301,
+    "prices": [
+     "$39",
+     "$71",
+     "$183"
+    ]
+   }
+  ],
+  "yearly": {
+   "prices": [
+    "$39",
+    "$71",
+    "$183"
+   ],
+   "state": "Toggle On:framer-v-wx4344,Yearly,Yearly,Yearly,Yearly"
+  },
+  "backToMonthly": {
+   "prices": [
+    "$49",
+    "$89",
+    "$229"
+   ],
+   "state": "Toggle Off:framer-v-1uwbx76,Monthly,Monthly,Monthly,Monthly"
+  }
+ },
+ "faq": {
+  "initial": [
+   "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none"
+  ],
+  "afterClickSecond": [
+   {
+    "t": 51,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:82:rot=matrix(0.998548, -0.184858, 0.0538755, 3.42623, 0, 37.6838)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 102,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:82:rot=matrix(0.998548, -0.184858, 0.0538755, 3.42623, 0, 37.6838)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 152,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:82:rot=matrix(0.998548, -0.184858, 0.0538755, 3.42623, 0, 37.6838)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 201,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:128:rot=matrix(0.300078, -1.40591, 0.953915, 0.442263, 0, 7.34436)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 579,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:165:rot=matrix(-0.677955, -0.743887, 0.735103, -0.686056, 0, 0.185214)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 585,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:165:rot=matrix(-0.677955, -0.743887, 0.735103, -0.686056, 0, 0.185214)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 589,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:165:rot=matrix(-0.677955, -0.743887, 0.735103, -0.686056, 0, 0.185214)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 700,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:166:rot=matrix(-0.698035, -0.718735, 0.716063, -0.70064, 0, 0.0578336)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 1001,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:166:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   },
+   {
+    "t": 1401,
+    "items": [
+     "Open:141:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Open:166:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none",
+     "Closed:79:rot=none"
+    ]
+   }
+  ],
+  "afterClickingOpen": [
+   "Closed:79:rot=none",
+   "Open:166:rot=matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0)",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none",
+   "Closed:79:rot=none"
+  ]
+ },
+ "form": {
+  "idle": {
+   "input": {
+    "color": "rgb(83, 89, 86)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(83, 89, 86)",
+    "borderBottom": "0px none rgb(83, 89, 86)",
+    "radius": "0px",
+    "padding": "0px",
+    "font": "16px / 27.2px Inter",
+    "boxShadow": "none",
+    "outline": "rgb(83, 89, 86) none 0px",
+    "placeholderColor": "rgb(148, 158, 155)"
+   },
+   "wrapper": {
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "after": "none | "
+   }
+  },
+  "focus": {
+   "input": {
+    "color": "rgb(83, 89, 86)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(83, 89, 86)",
+    "borderBottom": "0px none rgb(83, 89, 86)",
+    "radius": "0px",
+    "padding": "0px",
+    "font": "16px / 27.2px Inter",
+    "boxShadow": "none",
+    "outline": "rgb(83, 89, 86) none 0px",
+    "placeholderColor": "rgb(148, 158, 155)"
+   },
+   "wrapper": {
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "after": "none | "
+   }
+  },
+  "filled": {
+   "input": {
+    "color": "rgb(83, 89, 86)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "0px none rgb(83, 89, 86)",
+    "borderBottom": "0px none rgb(83, 89, 86)",
+    "radius": "0px",
+    "padding": "0px",
+    "font": "16px / 27.2px Inter",
+    "boxShadow": "none",
+    "outline": "rgb(83, 89, 86) none 0px",
+    "placeholderColor": "rgb(148, 158, 155)"
+   },
+   "wrapper": {
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "bg": "rgba(0, 0, 0, 0)",
+    "after": "none | "
+   }
+  },
+  "checkboxIdle": {
+   "bg": "rgba(127, 166, 155, 0.2)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "4px",
+   "size": "20pxx20px",
+   "appearance": "none"
+  },
+  "checkboxChecked": {
+   "checked": true,
+   "bg": "rgb(127, 166, 155)",
+   "border": "0px none rgb(0, 0, 0)",
+   "backgroundImage": "none"
+  },
+  "selects": [
+   {
+    "name": "Pronouns",
+    "options": [
+     "Preferred Pronouns *",
+     "She/Her",
+     "He/Him",
+     "They/Them",
+     "Prefer not to say"
+    ]
+   },
+   {
+    "name": "Location",
+    "options": [
+     "Where did you hear about us? *",
+     "Google Search",
+     "A friend or colleague",
+     "Therapist referral",
+     "Other"
+    ]
+   }
+  ],
+  "fields": [
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "Name",
+    "placeholder": "Your Name *",
+    "required": true
+   },
+   {
+    "tag": "input",
+    "type": "email",
+    "name": "Email",
+    "placeholder": "Your Email *",
+    "required": true
+   },
+   {
+    "tag": "input",
+    "type": "tel",
+    "name": "Phone Number",
+    "placeholder": "Phone Number",
+    "required": false
+   },
+   {
+    "tag": "select",
+    "type": "select-one",
+    "name": "Pronouns",
+    "required": true
+   },
+   {
+    "tag": "textarea",
+    "type": "textarea",
+    "name": "Name",
+    "placeholder": "Feel free to share anything that helps us understand your needs",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "Individual Therapy",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "Life Coaching",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "Stress & Mindfulness Support",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "Clarity Session / One-Time Consult",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "Not sure yet — just exploring",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "select",
+    "type": "select-one",
+    "name": "Location",
+    "required": true
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "name": "Newsletter",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "website",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "company",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "message",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "subject",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "title",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "description",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "feedback",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "notes",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "details",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "remarks",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "comments",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "email",
+    "name": "Email",
+    "placeholder": "Your Email",
+    "required": true
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "website",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "company",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "message",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "subject",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "title",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "description",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "feedback",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "notes",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "details",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "remarks",
+    "placeholder": "",
+    "required": false
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "name": "comments",
+    "placeholder": "",
+    "required": false
+   }
+  ]
+ }
+}

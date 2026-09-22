@@ -1,0 +1,1729 @@
+body @0,0,1440,17048 block
+  div @0,0,1440,17048 block
+    div .framer-h8gYO.framer-WsRmc.framer-itdRI.framer-xmhfD.framer-Gd4Vr.framer-Tk0ms.framer-3KqKr.framer-lkcb1d @0,0,1440,17048 flex relative
+      div .framer-12czpgu-container.hidden-vtru7o.hidden-16glfzb @0,0,1440,220 block fixed
+        div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+          div @0,0,1440,220 block absolute
+      div .framer-djtar.framer-8YXLG.framer-itdRI.framer-Tk0ms.framer-yXK3M.framer-WsRmc.framer-u3CcN.framer-xmhfD.framer-485r1.framer-72rtr7 @0,0,0,0 contents relative
+        div [Waves Container] .framer-h9ylq1.hidden-1f5hb54.hidden-1ln1qcq @0,0,1440,900 block fixed
+          div [Long Line] .framer-zapszo @0,110,6000,680 block absolute
+            div @0,110,6000,680 block
+              svg @0,110,6000,680 block
+                use @0,140,6000,619 inline
+          div [Long Line 2] .framer-iffqt2 @0,110,6000,680 block absolute
+            div @0,110,6000,680 block
+              svg @0,110,6000,680 block
+                use @0,146,6000,608 inline
+        div [Main Container] .framer-i5titp @0,0,1440,16057 flex relative
+          div [Page Intro] .framer-i7h1mq @0,0,1440,900 flex relative
+            div [Image Container] .framer-1c8sjqe @0,0,1440,3600 flex absolute
+              div [Image] .framer-7m3i73 @0,0,1440,900 block sticky
+                div [Green Background] .framer-1ey9n3j @0,0,1440,900 block absolute
+                  div @0,0,1440,900 block absolute
+                    img @0,0,1440,900 block
+                  section [Noize] .framer-1io6mf3 @0,0,1440,900 block absolute
+                    div @0,0,1440,900 block absolute
+                div [Circles Container] .framer-1e5ac8r.hidden-1f5hb54.hidden-1ln1qcq @0,0,1440,900 block absolute
+                  section [Circle] .framer-1690n6 @677,416,1094,1094 block absolute
+                  section [Circle] .framer-17zb1qy @850,-108,864,864 block absolute
+                  section [Circle] .framer-1jywl9a @-518,167,979,979 block absolute
+                div [Hero Image] .framer-61oaly @0,0,1440,900 block absolute
+                  div @0,0,1440,900 block absolute
+                    img @0,0,1440,900 block
+                  section [Noize] .framer-g2zfme @0,0,1440,900 block absolute
+                    div @0,0,1440,900 block absolute
+            div [Hero] .framer-1g65f9a @0,0,1440,900 block relative
+              div [Animated Lines] .framer-1rblm5p.hidden-1ln1qcq @330,0,780,1140 block absolute
+                div .framer-ijtjgq-container.hidden-1f5hb54 @330,0,780,1140 block absolute
+                  div @330,0,780,1140 flex
+                    svg @330,0,780,1140 block
+                      path @418,0,655,1140 inline
+                div .framer-1f1re2w-container.hidden-1f5hb54 @330,0,780,1140 block absolute
+                  div @330,0,780,1140 flex
+                    svg @330,0,780,1140 block
+                      path @404,0,685,1140 inline
+              div [Text] .framer-144zj5e @0,0,1440,900 block absolute
+                div [Text] .framer-1b9to3f @0,493,1440,343 flex absolute
+                  section [Section] .framer-1uxybba @56,493,775,343 flex relative
+                    div [Container] .framer-rxbydp @56,493,775,343 flex relative
+                      div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                        div .framer-pahk21 @64,493,759,343 flex relative
+                          h1 .framer-text.framer-styles-preset-1gy6fax @64,493,759,343 block
+                            span @64,493,86,114 inline-block "A"
+                            span @174,493,218,114 inline-block "Path"
+                            span @417,493,235,114 inline-block "That"
+                            span @64,608,331,114 inline-block "Shapes"
+                            span @420,608,238,114 inline-block "Your"
+                            span @64,722,353,114 inline-block "Future."
+                  section [Section] .framer-i9e1ip.hidden-1ln1qcq @831,493,111,343 block relative
+                  section [Section] .framer-1mtryrm @941,629,443,207 flex relative
+                    div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                      div [Container] .framer-mzgosg @941,629,443,207 flex relative
+                        div .framer-1lgea7r @949,629,427,136 flex relative
+                          p .framer-text.framer-styles-preset-k1gzgo @949,629,427,136 block "We offer therapy and coa…"
+                        div .framer-1ltz739-container @949,797,235,39 block relative
+                          a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @949,797,235,39 flex relative
+                            div .framer-pom6s4 @969,809,167,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @969,809,167,17 block "Start your journey"
+                            section [Circle A] .framer-utjt32 @1164,815,4,4 block absolute
+                            section [Circle B] .framer-1f48lt7 @933,815,4,4 block absolute
+          div [Toggle] .framer-gmd6wo @0,900,1440,1400 flex relative
+            div @0,0,0,0 contents
+              div .framer-b5fexi-container @16,900,1408,500 block sticky
+                div [Toggle Off] .framer-uJVWt.framer-u3CcN.framer-itdRI.framer-10xhhiq.framer-v-10xhhiq @16,900,1408,500 flex relative
+                  a [Toggle Container] .framer-4qgz9t.framer-6dsnfu @650,1144,140,32 block relative
+                    div .framer-1l7ogy-container @651,1144,139,32 block absolute
+                      div [Start] .framer-VJ38U.framer-Tk0ms.framer-566tf9.framer-v-mldl2n @651,1144,139,32 block relative
+                        div .framer-1i2t0g @686,1152,67,17 flex absolute
+                          p .framer-text.framer-styles-preset-9azdev @686,1152,67,17 block "Balance"
+                        div [Base] .framer-1fami5h @719,1159,2,2 block absolute
+                          section [Toggle] .framer-cnvajp @708,1148,24,24 block absolute
+                  div [Text After] .framer-1c2i8xa @120,1208,1200,192 flex relative
+                    div .framer-1ukzm0p @320,1208,800,106 flex relative
+                      h2 .framer-text.framer-styles-preset-19py25s @320,1208,800,106 block "There may not be a singl…"
+                        span .framer-text @397,1260,645,54 inline "but there are clear step…"
+                    div .framer-4t1krh @500,1346,440,54 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @500,1346,440,54 block "Every path is different.…"
+                    div [Text Before] .framer-hcrb6q @120,1208,1200,192 flex absolute
+                      div .framer-1fo3rbg @320,1208,800,106 flex relative
+                        h2 .framer-text.framer-styles-preset-19py25s @320,1208,800,106 block "If only finding balance …"
+                      div .framer-ee8rgu @500,1346,440,54 flex relative
+                        p .framer-text.framer-styles-preset-k1gzgo @500,1346,440,54 block "You’re closer than you t…"
+                          br .framer-text @833,1349,0,20 inline
+            section [toggle-start-animation] .framer-1539cfc @0,1144,8,8 block absolute
+            div [Container 100vh] .framer-i7hvuf @16,1400,1408,900 block relative
+              section [toggle-on-animation] .framer-v3asp1 @16,1846,8,8 block absolute
+              section [toggle-on-anchor] .framer-g013rp @16,1702,8,8 block absolute
+              section [dark-nav-1] .framer-1s3dt9h @16,1384,8,8 block absolute
+          div [Our Services] .framer-14m79x1 @0,2300,1440,640 flex relative
+            div [Cards] .framer-1qbyt3p @0,2380,1440,560 flex relative
+              div [Container] .framer-2lvtrv @56,2380,1328,560 flex relative
+                div [Card A Container] .framer-1xgss8w @64,2380,316,560 block relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1lfrh1b-container @64,2380,316,560 block absolute
+                      a [Desktop] .framer-v3ZRv.framer-yOtxB.framer-xmhfD.framer-Tk0ms.framer-mi53us.framer-v-mi53us.framer-x2yilv @64,2380,316,560 block relative
+                        div .framer-pt47h1-container @-58,2380,560,560 block absolute
+                          div @-58,2380,560,560 block relative
+                            img @-58,2180,560,760 block
+                            div @-58,2180,560,760 block absolute
+                        div .framer-xq3ulf @88,2404,268,72 flex absolute
+                          h3 .framer-text.framer-styles-preset-rrkxdq @88,2404,268,72 block "Mindfulness & Stress Sup…"
+                        div [Container] .framer-16d9zrm @88,2540,268,240 block absolute
+                          div .framer-1hj17iu @88,2704,268,76 flex absolute
+                            p .framer-text.framer-styles-preset-99grtk @88,2704,268,76 block "Gentle practices to redu…"
+                        div [Read More] .framer-6gv7qe @88,2898,104,18 flex absolute
+                          section [Circle A] .framer-1ir9am5 @88,2906,4,4 block relative
+                          div .framer-7p26wl @108,2899,84,17 flex relative
+                            p .framer-text.framer-styles-preset-9azdev @108,2899,84,17 block "read more"
+                div [Card B Container] .framer-1khewj7 @396,2380,316,560 block relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1ps9zmi-container @396,2380,316,560 block absolute
+                      a [Desktop] .framer-v3ZRv.framer-yOtxB.framer-xmhfD.framer-Tk0ms.framer-mi53us.framer-v-mi53us.framer-x2yilv @396,2380,316,560 block relative
+                        div .framer-pt47h1-container @274,2380,560,560 block absolute
+                          div @274,2380,560,560 block relative
+                            img @274,2180,560,760 block
+                            div @274,2180,560,760 block absolute
+                        div .framer-xq3ulf @420,2404,268,72 flex absolute
+                          h3 .framer-text.framer-styles-preset-rrkxdq @420,2404,268,72 block "IndividualTherapy"
+                            br .framer-text @552,2398,0,47 inline
+                        div [Container] .framer-16d9zrm @420,2540,268,240 block absolute
+                          div .framer-1hj17iu @420,2704,268,76 flex absolute
+                            p .framer-text.framer-styles-preset-99grtk @420,2704,268,76 block "One-on-one sessions for …"
+                        div [Read More] .framer-6gv7qe @420,2898,104,18 flex absolute
+                          section [Circle A] .framer-1ir9am5 @420,2906,4,4 block relative
+                          div .framer-7p26wl @440,2899,84,17 flex relative
+                            p .framer-text.framer-styles-preset-9azdev @440,2899,84,17 block "read more"
+                div [Card D Container] .framer-1xo0645 @728,2380,316,560 block relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-l73ck1-container @728,2380,316,560 block absolute
+                      a [Desktop] .framer-v3ZRv.framer-yOtxB.framer-xmhfD.framer-Tk0ms.framer-mi53us.framer-v-mi53us.framer-x2yilv @728,2380,316,560 block relative
+                        div .framer-pt47h1-container @606,2380,560,560 block absolute
+                          div @606,2380,560,560 block relative
+                            img @606,2180,560,760 block
+                            div @606,2180,560,760 block absolute
+                        div .framer-xq3ulf @752,2404,268,72 flex absolute
+                          h3 .framer-text.framer-styles-preset-rrkxdq @752,2404,268,72 block "ClarityConsult"
+                            br .framer-text @841,2398,0,47 inline
+                        div [Container] .framer-16d9zrm @752,2540,268,240 block absolute
+                          div .framer-1hj17iu @752,2730,268,50 flex absolute
+                            p .framer-text.framer-styles-preset-99grtk @752,2730,268,50 block "A short-term space to ga…"
+                        div [Read More] .framer-6gv7qe @752,2898,104,18 flex absolute
+                          section [Circle A] .framer-1ir9am5 @752,2906,4,4 block relative
+                          div .framer-7p26wl @772,2899,84,17 flex relative
+                            p .framer-text.framer-styles-preset-9azdev @772,2899,84,17 block "read more"
+                div [Card C Container] .framer-1pblett @1060,2380,316,560 block relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-i1jtvi-container @1060,2380,316,560 block absolute
+                      a [Desktop] .framer-v3ZRv.framer-yOtxB.framer-xmhfD.framer-Tk0ms.framer-mi53us.framer-v-mi53us.framer-x2yilv @1060,2380,316,560 block relative
+                        div .framer-pt47h1-container @938,2380,560,560 block absolute
+                          div @938,2380,560,560 block relative
+                            img @938,2180,560,760 block
+                            div @938,2180,560,760 block absolute
+                        div .framer-xq3ulf @1084,2404,268,72 flex absolute
+                          h3 .framer-text.framer-styles-preset-rrkxdq @1084,2404,268,72 block "LifeCoaching"
+                            br .framer-text @1136,2398,0,47 inline
+                        div [Container] .framer-16d9zrm @1084,2540,268,240 block absolute
+                          div .framer-1hj17iu @1084,2730,268,50 flex absolute
+                            p .framer-text.framer-styles-preset-99grtk @1084,2730,268,50 block "Goal-focused sessions to…"
+                        div [Read More] .framer-6gv7qe @1084,2898,104,18 flex absolute
+                          section [Circle A] .framer-1ir9am5 @1084,2906,4,4 block relative
+                          div .framer-7p26wl @1104,2899,84,17 flex relative
+                            p .framer-text.framer-styles-preset-9azdev @1104,2899,84,17 block "read more"
+          div [Our Philosophy] .framer-o2f93q @0,2940,1440,630 flex relative
+            div [Our Philosophy] .framer-1jyixzk @0,3140,1440,430 flex relative
+              div [Icon] .framer-1c6kgk4 @655,3140,129,105 flex relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-3EBRz.framer-xgav4w @688,3140,64,64 block relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-1ndnjoo @655,3228,129,17 flex relative
+                    p .framer-text.framer-styles-preset-9azdev @655,3228,129,17 block "Our Philosophy"
+              div [Text Reveal] .framer-onh8ot @0,3309,1440,158 flex relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-x5o0gh-container @120,3309,1200,158 block relative
+                    h4 @120,3309,1200,158 block
+                      span @127,3308,54,54 inline "At"
+                      span @181,3308,219,54 inline "ClearPath,"
+                      span @400,3308,69,54 inline "we"
+                      span @469,3308,112,54 inline "don’t"
+                      span @581,3308,98,54 inline "rush"
+                      span @679,3308,158,54 inline "change"
+                      span @837,3308,53,54 inline "—"
+                      span @891,3308,69,54 inline "we"
+                      span @960,3308,95,54 inline "help"
+                      span @1055,3308,36,54 inline "it"
+                      span @1091,3308,137,54 inline "unfold"
+                      span @1228,3308,85,54 inline "with"
+                      span @140,3361,198,54 inline "intention."
+                      span @337,3361,178,54 inline "Through"
+                      span @516,3361,234,54 inline "meaningful"
+                      span @749,3361,281,54 inline "conversation,"
+                      span @1030,3361,160,54 inline "mindful"
+                      span @1190,3361,110,54 inline "tools,"
+                      span @238,3413,85,54 inline "and"
+                      span @323,3413,34,54 inline "a"
+                      span @357,3413,146,54 inline "steady"
+                      span @503,3413,120,54 inline "pace,"
+                      span @623,3413,69,54 inline "we"
+                      span @692,3413,166,54 inline "support"
+                      span @859,3413,150,54 inline "growth"
+                      span @1008,3413,193,54 inline "that lasts."
+              div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                div .framer-1f2qyz9-container @616,3531,209,39 block relative
+                  a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @616,3531,209,39 flex relative
+                    div .framer-pom6s4 @636,3543,141,17 flex relative
+                      p .framer-text.framer-styles-preset-9azdev @636,3543,141,17 block "About ClearPath"
+                    section [Circle A] .framer-utjt32 @804,3549,4,4 block absolute
+                    section [Circle B] .framer-1f48lt7 @600,3549,4,4 block absolute
+          div [Story A] .framer-qfmo2 @0,3570,1440,1022 flex relative
+            section [story-a] .framer-chywme @0,3530,8,1800 block absolute
+            div .framer-139thug @0,3770,1440,662 flex relative
+              div .framer-184ak5x @0,3770,1440,662 flex relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-158b3mx-container @56,3770,1328,662 block relative
+                    div [Desktop A] .framer-GNn10.framer-Tk0ms.framer-WsRmc.framer-itdRI.framer-18llw6b.framer-v-18llw6b @56,3770,1328,662 flex relative
+                      div [Sections] .framer-1p5e83i @56,3770,1328,17 flex relative
+                        section [Section] .framer-q0qgir @56,3770,1328,17 flex relative
+                          div [Title] .framer-lqpgkv @56,3770,1328,17 flex relative
+                            div .framer-1a48swy @64,3770,1312,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @64,3770,1312,17 block "Real people. Real change…"
+                      div .framer-3uzl3v @56,3835,1328,597 flex relative
+                        section [Section] .framer-10qex0i @56,3835,553,364 flex relative
+                          div [Text Container] .framer-ctj72w @56,3835,553,364 flex relative
+                            div [Title & Intro] .framer-g2hkwi @64,3835,537,277 flex relative
+                              div .framer-o5ob8k @64,3835,537,144 flex relative
+                                h2 .framer-text.framer-styles-preset-1omst67 @64,3835,537,144 block "Finding balance after bu…"
+                              div .framer-147e8y @64,4003,480,109 flex relative
+                                p .framer-text.framer-styles-preset-k1gzgo @64,4003,480,109 block "After years of chronic s…"
+                            div .framer-1oocx2r-container @64,4160,205,39 block relative
+                              a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @64,4160,205,39 flex relative
+                                div .framer-pom6s4 @84,4171,137,17 flex relative
+                                  p .framer-text.framer-styles-preset-9azdev @84,4171,137,17 block "Read full story"
+                                section [Circle A] .framer-utjt32 @249,4177,4,4 block absolute
+                                section [Circle B] .framer-1f48lt7 @48,4177,4,4 block absolute
+                        section [Section] .framer-1dpopsv @609,3835,111,597 block relative
+                        section [Section] .framer-1q5p0fi @720,3835,664,597 flex relative
+                          div [Images] .framer-139gixe @720,3835,664,597 flex relative
+                            a [Image 1] .framer-m5ypb2.framer-5x92j5 @987,3835,389,597 block relative
+                              div .framer-152bg29-container @987,3835,389,597 block absolute
+                                div @987,3835,389,597 block relative
+                                  img @987,3535,389,897 block
+                                  div @987,3535,389,897 block absolute
+                            a [Image 2] .framer-pr1g9f.framer-5x92j5 @728,3935,332,497 block absolute
+                              div .framer-2e4csz-container @728,3935,332,497 block absolute
+                                div @728,3935,332,497 block relative
+                                  img @728,3835,332,597 block
+                                  div @728,3835,332,597 block absolute
+          div [How It Works] .framer-1upqdvz @0,4592,1440,2562 flex relative
+            div [Text Container] .framer-235q4s @0,4752,1440,263 flex relative
+              div [Headline] .framer-drxdtu @56,4752,1328,114 flex relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-1outxv3 @64,4752,1312,114 flex relative
+                    h2 .framer-text.framer-styles-preset-1gy6fax @64,4752,1312,114 block "It Works"
+                      span .framer-text @64,4720,267,177 inline "How"
+              div [Sections] .framer-z6lb52 @56,4906,1328,109 flex relative
+                section [Section] .framer-if5y4d.hidden-1f5hb54.hidden-1ln1qcq @56,4906,332,109 block relative
+                section [Section] .framer-bzll76 @388,4906,996,109 flex relative
+                  div [Text Container] .framer-1fkitzd @388,4906,996,109 flex relative
+                    div .framer-mexo7x @396,4906,980,109 flex relative
+                      h5 .framer-text.framer-styles-preset-c1ofpr @396,4906,980,109 block "Getting started doesn’t …"
+            div [Steps] .framer-17a940e @0,5015,1440,2139 flex relative
+              div [Text] .framer-1sldokf @56,5015,664,2139 flex relative
+                section [Section] .framer-4g0fxq.hidden-1ln1qcq @64,5015,648,297 block relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div [Step 1] .framer-ybkyk @64,5312,648,224 flex relative
+                    div .framer-58jmcd @64,5312,648,72 flex relative
+                      h2 .framer-text.framer-styles-preset-1omst67 @64,5312,648,72 block "Reach Out"
+                    div .framer-lq0e4w @64,5400,480,136 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @64,5400,480,136 block "Start with a short intro…"
+                div [Trigger Container] .framer-m88l4p.hidden-1ln1qcq @64,5536,648,450 block relative
+                  section [step-2-trigger] .framer-1367myf @64,5757,8,8 block absolute
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div [Step 2] .framer-12n47es @64,5986,648,224 flex relative
+                    div .framer-1ftlmry @64,5986,648,72 flex relative
+                      h2 .framer-text.framer-styles-preset-1omst67 @64,5986,648,72 block "Define Direction"
+                    div .framer-17kyruz @64,6074,480,136 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @64,6074,480,136 block "Together, we’ll shape a …"
+                div [Trigger Container] .framer-14at36e.hidden-1ln1qcq @64,6210,648,450 block relative
+                  section [step-3-trigger] .framer-u9murr @64,6431,8,8 block absolute
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div [Step 3] .framer-1mipgfi @64,6660,648,197 flex relative
+                    div .framer-rs70hk @64,6660,648,72 flex relative
+                      h2 .framer-text.framer-styles-preset-1omst67 @64,6660,648,72 block "Meet & Reflect"
+                    div .framer-j0m89g @64,6748,480,109 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @64,6748,480,109 block "Ongoing one-on-one sessi…"
+                section [Section] .framer-13g8nb6.hidden-1ln1qcq @64,6857,648,297 block relative
+              section [Section] .framer-1ibbiu5.hidden-1ln1qcq @720,5015,108,2139 block relative
+              div [Big Number] .framer-1e3n8ls.hidden-1ln1qcq @828,5015,556,2139 flex relative
+                div [Big Number Container] .framer-1218cac @836,5015,540,900 block sticky
+                  div .hidden-1f5hb54 @0,0,0,0 contents
+                    div .framer-1s9i61r-container @836,5494,540,358 block absolute
+                      div [01] .framer-eucpG.framer-1iff3ar.framer-v-1iff3ar @836,5494,540,358 block relative
+                        div [B] .framer-5qw1q3 @1095,5494,281,358 block absolute
+                          svg [1] .framer-72ohcf @1095,5416,281,4617 flex absolute
+                            foreignobject .framer-fit-text @1095,5416,281,4617 block
+                              h2 .framer-text @1095,5416,281,4617 block
+                                span .framer-text @1095,5412,160,518 inline "1"
+                                span .framer-text @1255,5412,0,518 inline
+                                  br .framer-text @1255,5412,0,518 inline
+                                span .framer-text @1095,5925,247,518 inline "2"
+                                span .framer-text @1342,5925,0,518 inline
+                                  br .framer-text @1342,5925,0,518 inline
+                                span .framer-text @1095,6438,252,518 inline "3"
+                                span .framer-text @1348,6438,0,518 inline
+                                  br .framer-text @1348,6438,0,518 inline
+                                span .framer-text @1095,6951,264,518 inline "4"
+                                span .framer-text @1359,6951,0,518 inline
+                                  br .framer-text @1359,6951,0,518 inline
+                                span .framer-text @1095,7464,247,518 inline "5"
+                                span .framer-text @1342,7464,0,518 inline
+                                  br .framer-text @1342,7464,0,518 inline
+                                span .framer-text @1095,7977,252,518 inline "6"
+                                span .framer-text @1348,7977,0,518 inline
+                                  br .framer-text @1348,7977,0,518 inline
+                                span .framer-text @1095,8490,228,518 inline "7"
+                                span .framer-text @1323,8490,0,518 inline
+                                  br .framer-text @1323,8490,0,518 inline
+                                span .framer-text @1095,9003,252,518 inline "8"
+                                span .framer-text @1348,9003,0,518 inline
+                                  br .framer-text @1348,9003,0,518 inline
+                                span .framer-text @1095,9516,252,518 inline "9"
+                          svg [2] .framer-1ld3tnv @1095,5416,281,4617 flex absolute
+                            foreignobject .framer-fit-text @1095,5416,281,4617 block
+                              h2 .framer-text @1095,5416,281,4617 block
+                                span .framer-text @1095,5412,160,518 inline "1"
+                                span .framer-text @1255,5412,0,518 inline
+                                  br .framer-text @1255,5412,0,518 inline
+                                span .framer-text @1095,5925,247,518 inline "2"
+                                span .framer-text @1342,5925,0,518 inline
+                                  br .framer-text @1342,5925,0,518 inline
+                                span .framer-text @1095,6438,252,518 inline "3"
+                                span .framer-text @1348,6438,0,518 inline
+                                  br .framer-text @1348,6438,0,518 inline
+                                span .framer-text @1095,6951,264,518 inline "4"
+                                span .framer-text @1359,6951,0,518 inline
+                                  br .framer-text @1359,6951,0,518 inline
+                                span .framer-text @1095,7464,247,518 inline "5"
+                                span .framer-text @1342,7464,0,518 inline
+                                  br .framer-text @1342,7464,0,518 inline
+                                span .framer-text @1095,7977,252,518 inline "6"
+                                span .framer-text @1348,7977,0,518 inline
+                                  br .framer-text @1348,7977,0,518 inline
+                                span .framer-text @1095,8490,228,518 inline "7"
+                                span .framer-text @1323,8490,0,518 inline
+                                  br .framer-text @1323,8490,0,518 inline
+                                span .framer-text @1095,9003,252,518 inline "8"
+                                span .framer-text @1348,9003,0,518 inline
+                                  br .framer-text @1348,9003,0,518 inline
+                                span .framer-text @1095,9516,252,518 inline "9"
+                          svg [3] .framer-1wtqrpc @1095,5416,281,4617 flex absolute
+                            foreignobject .framer-fit-text @1095,5416,281,4617 block
+                              h2 .framer-text @1095,5416,281,4617 block
+                                span .framer-text @1095,5412,160,518 inline "1"
+                                span .framer-text @1255,5412,0,518 inline
+                                  br .framer-text @1255,5412,0,518 inline
+                                span .framer-text @1095,5925,247,518 inline "2"
+                                span .framer-text @1342,5925,0,518 inline
+                                  br .framer-text @1342,5925,0,518 inline
+                                span .framer-text @1095,6438,252,518 inline "3"
+                                span .framer-text @1348,6438,0,518 inline
+                                  br .framer-text @1348,6438,0,518 inline
+                                span .framer-text @1095,6951,264,518 inline "4"
+                                span .framer-text @1359,6951,0,518 inline
+                                  br .framer-text @1359,6951,0,518 inline
+                                span .framer-text @1095,7464,247,518 inline "5"
+                                span .framer-text @1342,7464,0,518 inline
+                                  br .framer-text @1342,7464,0,518 inline
+                                span .framer-text @1095,7977,252,518 inline "6"
+                                span .framer-text @1348,7977,0,518 inline
+                                  br .framer-text @1348,7977,0,518 inline
+                                span .framer-text @1095,8490,228,518 inline "7"
+                                span .framer-text @1323,8490,0,518 inline
+                                  br .framer-text @1323,8490,0,518 inline
+                                span .framer-text @1095,9003,252,518 inline "8"
+                                span .framer-text @1348,9003,0,518 inline
+                                  br .framer-text @1348,9003,0,518 inline
+                                span .framer-text @1095,9516,252,518 inline "9"
+                          svg [4] .framer-twwqax @1095,5416,281,4617 flex absolute
+                            foreignobject .framer-fit-text @1095,5416,281,4617 block
+                              h2 .framer-text @1095,5416,281,4617 block
+                                span .framer-text @1095,5412,160,518 inline "1"
+                                span .framer-text @1255,5412,0,518 inline
+                                  br .framer-text @1255,5412,0,518 inline
+                                span .framer-text @1095,5925,247,518 inline "2"
+                                span .framer-text @1342,5925,0,518 inline
+                                  br .framer-text @1342,5925,0,518 inline
+                                span .framer-text @1095,6438,252,518 inline "3"
+                                span .framer-text @1348,6438,0,518 inline
+                                  br .framer-text @1348,6438,0,518 inline
+                                span .framer-text @1095,6951,264,518 inline "4"
+                                span .framer-text @1359,6951,0,518 inline
+                                  br .framer-text @1359,6951,0,518 inline
+                                span .framer-text @1095,7464,247,518 inline "5"
+                                span .framer-text @1342,7464,0,518 inline
+                                  br .framer-text @1342,7464,0,518 inline
+                                span .framer-text @1095,7977,252,518 inline "6"
+                                span .framer-text @1348,7977,0,518 inline
+                                  br .framer-text @1348,7977,0,518 inline
+                                span .framer-text @1095,8490,228,518 inline "7"
+                                span .framer-text @1323,8490,0,518 inline
+                                  br .framer-text @1323,8490,0,518 inline
+                                span .framer-text @1095,9003,252,518 inline "8"
+                                span .framer-text @1348,9003,0,518 inline
+                                  br .framer-text @1348,9003,0,518 inline
+                                span .framer-text @1095,9516,252,518 inline "9"
+                          svg [5] .framer-15jlu9e @1095,5416,281,4617 flex absolute
+                            foreignobject .framer-fit-text @1095,5416,281,4617 block
+                              h2 .framer-text @1095,5416,281,4617 block
+                                span .framer-text @1095,5412,160,518 inline "1"
+                                span .framer-text @1255,5412,0,518 inline
+                                  br .framer-text @1255,5412,0,518 inline
+                                span .framer-text @1095,5925,247,518 inline "2"
+                                span .framer-text @1342,5925,0,518 inline
+                                  br .framer-text @1342,5925,0,518 inline
+                                span .framer-text @1095,6438,252,518 inline "3"
+                                span .framer-text @1348,6438,0,518 inline
+                                  br .framer-text @1348,6438,0,518 inline
+                                span .framer-text @1095,6951,264,518 inline "4"
+                                span .framer-text @1359,6951,0,518 inline
+                                  br .framer-text @1359,6951,0,518 inline
+                                span .framer-text @1095,7464,247,518 inline "5"
+                                span .framer-text @1342,7464,0,518 inline
+                                  br .framer-text @1342,7464,0,518 inline
+                                span .framer-text @1095,7977,252,518 inline "6"
+                                span .framer-text @1348,7977,0,518 inline
+                                  br .framer-text @1348,7977,0,518 inline
+                                span .framer-text @1095,8490,228,518 inline "7"
+                                span .framer-text @1323,8490,0,518 inline
+                                  br .framer-text @1323,8490,0,518 inline
+                                span .framer-text @1095,9003,252,518 inline "8"
+                                span .framer-text @1348,9003,0,518 inline
+                                  br .framer-text @1348,9003,0,518 inline
+                                span .framer-text @1095,9516,252,518 inline "9"
+                        div [A] .framer-oicitj @836,5494,281,358 block absolute
+                          svg .framer-exbr60 @836,5417,281,5130 flex absolute
+                            foreignobject .framer-fit-text @836,5417,281,5130 block
+                              h2 .framer-text @836,5417,281,5130 block
+                                span .framer-text @846,5413,260,518 inline "0"
+                                span .framer-text @1106,5413,0,518 inline
+                                  br .framer-text @1106,5413,0,518 inline
+                                span .framer-text @896,5927,160,518 inline "1"
+                                span .framer-text @1056,5927,0,518 inline
+                                  br .framer-text @1056,5927,0,518 inline
+                                span .framer-text @853,6440,247,518 inline "2"
+                                span .framer-text @1100,6440,0,518 inline
+                                  br .framer-text @1100,6440,0,518 inline
+                                span .framer-text @850,6953,252,518 inline "3"
+                                span .framer-text @1103,6953,0,518 inline
+                                  br .framer-text @1103,6953,0,518 inline
+                                span .framer-text @845,7466,264,518 inline "4"
+                                span .framer-text @1108,7466,0,518 inline
+                                  br .framer-text @1108,7466,0,518 inline
+                                span .framer-text @853,7979,247,518 inline "5"
+                                span .framer-text @1100,7979,0,518 inline
+                                  br .framer-text @1100,7979,0,518 inline
+                                span .framer-text @850,8492,252,518 inline "6"
+                                span .framer-text @1103,8492,0,518 inline
+                                  br .framer-text @1103,8492,0,518 inline
+                                span .framer-text @862,9005,228,518 inline "7"
+                                span .framer-text @1090,9005,0,518 inline
+                                  br .framer-text @1090,9005,0,518 inline
+                                span .framer-text @850,9518,252,518 inline "8"
+                                span .framer-text @1103,9518,0,518 inline
+                                  br .framer-text @1103,9518,0,518 inline
+                                span .framer-text @850,10031,252,518 inline "9"
+            section [how-it-works] .framer-4lswtw @0,4592,8,900 block absolute
+          div [Ready to find your path?] .framer-1rw3b1a @0,7154,1440,639 flex relative
+            div [Text Container] .framer-1175asy @0,7314,1440,319 flex relative
+              div [Sections] .framer-93x5ge @56,7314,1328,319 flex relative
+                div [Text Container] .framer-v06i1g @56,7314,672,319 flex relative
+                  div [Text Container] .framer-blgxsq @64,7314,656,203 flex relative
+                    div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                      div .framer-syvsyz @64,7314,656,106 flex relative
+                        h2 .framer-text.framer-styles-preset-19py25s @64,7314,656,106 block "Ready to find"
+                          br .framer-text @322,7313,0,54 inline
+                          span .framer-text @64,7366,205,54 inline "your path?"
+                    div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                      div .framer-nnvv7n @64,7436,480,82 flex relative
+                        p .framer-text.framer-styles-preset-k1gzgo @64,7436,480,82 block "Every step is flexible —…"
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1g4djyj-container @64,7594,235,39 block relative
+                      a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @64,7594,235,39 flex relative
+                        div .framer-pom6s4 @84,7606,167,17 flex relative
+                          p .framer-text.framer-styles-preset-9azdev @84,7606,167,17 block "Start your journey"
+                        section [Circle A] .framer-utjt32 @279,7612,4,4 block absolute
+                        section [Circle B] .framer-1f48lt7 @48,7612,4,4 block absolute
+                section [Section] .framer-1g4d5gh.hidden-1ln1qcq @728,7314,219,319 flex relative
+                div [Container] .framer-1mu4ox5 @947,7314,437,319 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div [Raiting] .framer-1n65icg @947,7314,300,148 flex relative
+                      div .framer-a93xvx @955,7314,151,25 flex relative
+                        p .framer-text.framer-styles-preset-99grtk @955,7314,151,25 block "Trusted by 80+ clients"
+                      a [Raiting] .framer-1wbeo4d.framer-lux5qc @955,7371,284,91 flex relative
+                        div [Users] .framer-1jqnwr8 @955,7371,208,48 block relative
+                          div .framer-qkx3g1-container @955,7371,48,48 block absolute
+                            div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @955,7371,48,48 block relative
+                              section [Image] .framer-fca2nr @957,7373,44,44 block absolute
+                                div @957,7373,44,44 block absolute
+                                  img @957,7373,44,44 block
+                          div .framer-f1zqed-container @987,7371,48,48 block absolute
+                            div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @987,7371,48,48 block relative
+                              section [Image] .framer-fca2nr @989,7373,44,44 block absolute
+                                div @989,7373,44,44 block absolute
+                                  img @989,7373,44,44 block
+                          div .framer-1sr6byk-container @1019,7371,48,48 block absolute
+                            div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @1019,7371,48,48 block relative
+                              section [Image] .framer-fca2nr @1021,7373,44,44 block absolute
+                                div @1021,7373,44,44 block absolute
+                                  img @1021,7373,44,44 block
+                          div .framer-gbej2d-container @1051,7371,48,48 block absolute
+                            div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @1051,7371,48,48 block relative
+                              section [Image] .framer-fca2nr @1053,7373,44,44 block absolute
+                                div @1053,7373,44,44 block absolute
+                                  img @1053,7373,44,44 block
+                          div .framer-2mvh86-container @1083,7371,48,48 block absolute
+                            div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @1083,7371,48,48 block relative
+                              section [Image] .framer-fca2nr @1085,7373,44,44 block absolute
+                                div @1085,7373,44,44 block absolute
+                                  img @1085,7373,44,44 block
+                          div [Container] .framer-4k55v9 @1115,7371,48,48 block absolute
+                            div .framer-r7bt8t @1118,7374,42,42 block absolute
+                              div .framer-1h2qso7 @1127,7389,21,13 flex absolute
+                                p .framer-text @1127,7389,21,13 block
+                                  strong .framer-text @1127,7388,21,14 inline "+81"
+                        div [Trustpoint] .framer-1ylork0 @955,7435,284,27 flex relative
+                          div .framer-cdzke6 @955,7435,169,27 flex relative
+                            p .framer-text.framer-styles-preset-k1gzgo @955,7435,169,27 block
+                              strong .framer-text @955,7438,169,20 inline "Excellent 4.9 out of 5"
+                          div [Trustpoint] .framer-atf7d9 @1132,7435,107,27 flex relative
+                            div [Star] .framer-1ukkv9o @1132,7438,23,22 block relative
+                              div [Vector] .framer-a23gyx @1133,7438,20,19 block absolute
+                            div .framer-15mtfir @1155,7435,84,27 flex relative
+                              p .framer-text.framer-styles-preset-k1gzgo @1155,7435,84,27 block
+                                strong .framer-text @1155,7438,84,20 inline "TrustPoint"
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div [Links] .framer-rxqlku @947,7527,437,106 flex relative
+                      div .framer-129cfna @955,7527,421,50 flex relative
+                        p .framer-text.framer-styles-preset-99grtk @955,7527,421,50 block "Prefer to chat first? or…"
+                          a .framer-text.framer-styles-preset-1vjqxut @1094,7531,122,17 inline
+                            strong .framer-text @1094,7531,122,17 inline "Send us an email"
+                      div [Social Links] .framer-10cob8z @955,7609,421,24 flex relative
+                        div .framer-1hs8m41-container @955,7609,24,24 block relative
+                          a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @955,7609,24,24 flex relative
+                            div .framer-pm1e4t-container @955,7609,24,24 block relative
+                              div @0,0,0,0 contents
+                                svg @955,7609,24,24 inline-block
+                                  g @957,7611,20,20 inline
+                                    path @957,7611,20,20 inline
+                        div .framer-1six7kk-container @1011,7609,24,24 block relative
+                          a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @1011,7609,24,24 flex relative
+                            div .framer-pm1e4t-container @1011,7609,24,24 block relative
+                              div @0,0,0,0 contents
+                                svg @1011,7609,24,24 inline-block
+                                  g @1014,7611,16,20 inline
+                                    path @1014,7611,16,20 inline
+                        div .framer-c5oasr-container @1067,7609,24,24 block relative
+                          a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @1067,7609,24,24 flex relative
+                            div .framer-pm1e4t-container @1067,7609,24,24 block relative
+                              div @0,0,0,0 contents
+                                svg @1067,7609,24,24 inline-block
+                                  g @1069,7611,20,20 inline
+                                    path @1069,7611,20,20 inline
+                        div .framer-1wwxhoa-container @1123,7609,24,24 block relative
+                          a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @1123,7609,24,24 flex relative
+                            div .framer-pm1e4t-container @1123,7609,24,24 block relative
+                              div @0,0,0,0 contents
+                                svg @1123,7609,24,24 inline-block
+                                  g @1124,7613,21,17 inline
+                                    path @1124,7613,21,17 inline
+          div [Pricing] .framer-vx4ngy @0,7793,1440,1104 flex relative
+            div [Container] .framer-1ggj8xh @0,7953,1440,944 flex relative
+              div [Text] .framer-d5vcjn @56,7953,1328,295 flex relative
+                div [Section Icon] .framer-1allcpg @677,7953,86,105 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-dqFGS.framer-s1u38l @688,7953,64,64 block relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-12jwcqo @677,8041,86,17 flex relative
+                      p .framer-text.framer-styles-preset-9azdev @677,8041,86,17 block "Our prices"
+                div [Headline] .framer-7n9k2x @320,8090,800,158 flex relative
+                  div .framer-zcb84t-container.hidden-1f5hb54.hidden-1ln1qcq @734,8081,310,80 block absolute
+                    div @734,8081,310,80 flex
+                      svg @734,8081,310,80 block
+                        path @760,8084,265,68 inline
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-20iwcy @320,8090,800,53 flex relative
+                      h2 .framer-text.framer-styles-preset-19py25s @320,8090,800,53 block "Support that fits your p…"
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1vo8ip3 @480,8167,480,82 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @480,8167,480,82 block "A first session is often…"
+              div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                div .framer-14r9rks-container @56,8328,1328,569 block relative
+                  div [Monthly] .framer-1chOq.framer-wjnnlx.framer-v-wjnnlx @56,8328,1328,569 flex relative
+                    div .framer-14386nm-container @572,8328,296,32 block relative
+                      div [Toggle Off] .framer-HNQ1j.framer-Tk0ms.framer-1uwbx76.framer-v-1uwbx76 @572,8328,296,32 flex relative
+                        div .framer-1jwonsi @572,8336,72,17 flex relative
+                          p .framer-text.framer-styles-preset-9azdev @572,8336,72,17 block "Monthly"
+                        div [Base] .framer-15ztfrt @660,8328,56,32 block relative
+                          section [Toggle] .framer-1wtl1jl @664,8332,24,24 block absolute
+                        div .framer-7u4eus @732,8336,136,17 flex relative
+                          p .framer-text.framer-styles-preset-9azdev @732,8336,136,17 block "(20% OFF)"
+                            span .framer-text @732,8336,60,15 inline "Yearly"
+                    div [Cards] .framer-1yegtnk @64,8408,1312,489 flex relative
+                      div .framer-1lzztwy-container @64,8408,427,489 block relative
+                        a [Monthly] .framer-h78ZB.framer-yOtxB.framer-xmhfD.framer-3KqKr.framer-Tk0ms.framer-15gt6mo.framer-v-15gt6mo.framer-gks1pg @64,8408,427,489 flex relative
+                          div [Card Title] .framer-srrpzx @96,8440,363,69 flex relative
+                            div .framer-1su8wzc @96,8440,363,36 flex relative
+                              h3 .framer-text.framer-styles-preset-rrkxdq @96,8440,363,36 block "Starter"
+                            div .framer-2tjxst @96,8484,363,25 flex relative
+                              p .framer-text.framer-styles-preset-99grtk @96,8484,363,25 block "Explore therapy at your …"
+                          div [Price] .framer-1y4yu2x @96,8549,363,48 flex relative
+                            div .framer-pdzdqt-container @96,8549,88,48 block relative
+                              div @96,8529,88,88 block
+                                number-flow-react @96,8529,88,88 inline-block
+                                  span @0,0,0,0 inline-block "$49"
+                            div .framer-okkvn4 @194,8567,64,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @194,8567,64,31 block "/ month"
+                          div [Options] .framer-qd258 @96,8637,363,149 flex relative
+                            div [Option] .framer-1dkg58f @96,8637,363,25 flex relative
+                              div .framer-67260j-container @96,8637,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @96,8637,24,24 inline-block
+                                    g @98,8640,20,20 inline
+                                      path @98,8640,20,20 inline
+                              div .framer-lr0pal @128,8637,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @128,8637,331,25 block "Dedicated therapist"
+                            div [Option] .framer-ljwsmu @96,8679,363,25 flex relative
+                              div .framer-1uy4umq-container @96,8679,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @96,8679,24,24 inline-block
+                                    g @98,8681,20,20 inline
+                                      path @98,8681,20,20 inline
+                              div .framer-17ex374 @128,8679,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @128,8679,331,25 block "Online or in-person"
+                            div [Option] .framer-37l1sv @96,8720,363,25 flex relative
+                              div .framer-6prd1w-container @96,8720,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @96,8720,24,24 inline-block
+                                    g @98,8722,20,20 inline
+                                      path @98,8722,20,20 inline
+                              div .framer-1stcge @128,8720,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @128,8720,331,25 block "Personalized goal-settin…"
+                            div [Option] .framer-xfpj05 @96,8761,363,25 flex relative
+                              div .framer-1191ay9-container @96,8761,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @96,8761,24,24 inline-block
+                                    g @98,8763,20,20 inline
+                                      path @98,8763,20,20 inline
+                              div .framer-1ei27sk @128,8761,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @128,8761,331,25 block "Client portal access"
+                          div [Variant 1] .framer-2se259 @96,8826,169,39 flex relative
+                            div .framer-1wtxfq2 @116,8838,101,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @116,8838,101,17 block "Get started"
+                            section [Circle A] .framer-6hgqi3 @245,8844,4,4 block absolute
+                            section [Circle B] .framer-xq4qlr @80,8844,4,4 block absolute
+                      div .framer-3al4fd-container @507,8408,427,489 block relative
+                        a [Monthly] .framer-h78ZB.framer-yOtxB.framer-xmhfD.framer-3KqKr.framer-Tk0ms.framer-15gt6mo.framer-v-15gt6mo.framer-gks1pg @507,8408,427,489 flex relative
+                          div [Card Title] .framer-srrpzx @539,8440,363,69 flex relative
+                            div .framer-1su8wzc @539,8440,363,36 flex relative
+                              h3 .framer-text.framer-styles-preset-rrkxdq @539,8440,363,36 block "Growth"
+                            div .framer-2tjxst @539,8484,363,25 flex relative
+                              p .framer-text.framer-styles-preset-99grtk @539,8484,363,25 block "Ongoing support for cont…"
+                          div [Price] .framer-1y4yu2x @539,8549,363,48 flex relative
+                            div .framer-pdzdqt-container @539,8549,87,48 block relative
+                              div @539,8529,87,88 block
+                                number-flow-react @539,8529,87,88 inline-block
+                                  span @0,0,0,0 inline-block "$89"
+                            div .framer-okkvn4 @636,8567,64,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @636,8567,64,31 block "/ month"
+                          div [Options] .framer-qd258 @539,8637,363,149 flex relative
+                            div [Option] .framer-1dkg58f @539,8637,363,25 flex relative
+                              div .framer-67260j-container @539,8637,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @539,8637,24,24 inline-block
+                                    g @541,8640,20,20 inline
+                                      path @541,8640,20,20 inline
+                              div .framer-lr0pal @571,8637,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @571,8637,331,25 block "Everything in Starter"
+                            div [Option] .framer-ljwsmu @539,8679,363,25 flex relative
+                              div .framer-1uy4umq-container @539,8679,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @539,8679,24,24 inline-block
+                                    g @541,8681,20,20 inline
+                                      path @541,8681,20,20 inline
+                              div .framer-17ex374 @571,8679,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @571,8679,331,25 block "More flexible scheduling…"
+                            div [Option] .framer-37l1sv @539,8720,363,25 flex relative
+                              div .framer-6prd1w-container @539,8720,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @539,8720,24,24 inline-block
+                                    g @541,8722,20,20 inline
+                                      path @541,8722,20,20 inline
+                              div .framer-1stcge @571,8720,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @571,8720,331,25 block "Progress tracking"
+                            div [Option] .framer-xfpj05 @539,8761,363,25 flex relative
+                              div .framer-1191ay9-container @539,8761,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @539,8761,24,24 inline-block
+                                    g @541,8763,20,20 inline
+                                      path @541,8763,20,20 inline
+                              div .framer-1ei27sk @571,8761,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @571,8761,331,25 block "Extra resources"
+                          div [Variant 1] .framer-2se259 @539,8826,169,39 flex relative
+                            div .framer-1wtxfq2 @559,8838,101,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @559,8838,101,17 block "Get started"
+                            section [Circle A] .framer-6hgqi3 @687,8844,4,4 block absolute
+                            section [Circle B] .framer-xq4qlr @523,8844,4,4 block absolute
+                      div .framer-1xzbl3z-container @949,8408,427,489 block relative
+                        a [Monthly] .framer-h78ZB.framer-yOtxB.framer-xmhfD.framer-3KqKr.framer-Tk0ms.framer-15gt6mo.framer-v-15gt6mo.framer-gks1pg @949,8408,427,489 flex relative
+                          div [Card Title] .framer-srrpzx @981,8440,363,69 flex relative
+                            div .framer-1su8wzc @981,8440,363,36 flex relative
+                              h3 .framer-text.framer-styles-preset-rrkxdq @981,8440,363,36 block "Complete"
+                            div .framer-2tjxst @981,8484,363,25 flex relative
+                              p .framer-text.framer-styles-preset-99grtk @981,8484,363,25 block "Consistent support with …"
+                          div [Price] .framer-1y4yu2x @981,8549,363,48 flex relative
+                            div .framer-pdzdqt-container @981,8549,112,48 block relative
+                              div @981,8529,112,88 block
+                                number-flow-react @981,8529,112,88 inline-block
+                                  span @0,0,0,0 inline-block "$229"
+                            div .framer-okkvn4 @1104,8567,64,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @1104,8567,64,31 block "/ month"
+                          div [Options] .framer-qd258 @981,8637,363,149 flex relative
+                            div [Option] .framer-1dkg58f @981,8637,363,25 flex relative
+                              div .framer-67260j-container @981,8637,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @981,8637,24,24 inline-block
+                                    g @984,8640,20,20 inline
+                                      path @984,8640,20,20 inline
+                              div .framer-lr0pal @1013,8637,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @1013,8637,331,25 block "All Growth features"
+                            div [Option] .framer-ljwsmu @981,8679,363,25 flex relative
+                              div .framer-1uy4umq-container @981,8679,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @981,8679,24,24 inline-block
+                                    g @984,8681,20,20 inline
+                                      path @984,8681,20,20 inline
+                              div .framer-17ex374 @1013,8679,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @1013,8679,331,25 block "Extended sessions"
+                            div [Option] .framer-37l1sv @981,8720,363,25 flex relative
+                              div .framer-6prd1w-container @981,8720,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @981,8720,24,24 inline-block
+                                    g @984,8722,20,20 inline
+                                      path @984,8722,20,20 inline
+                              div .framer-1stcge @1013,8720,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @1013,8720,331,25 block "Priority booking"
+                            div [Option] .framer-xfpj05 @981,8761,363,25 flex relative
+                              div .framer-1191ay9-container @981,8761,24,24 block relative
+                                div @0,0,0,0 contents
+                                  svg @981,8761,24,24 inline-block
+                                    g @984,8763,20,20 inline
+                                      path @984,8763,20,20 inline
+                              div .framer-1ei27sk @1013,8761,331,25 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @1013,8761,331,25 block "Direct therapist messagi…"
+                          div [Variant 1] .framer-2se259 @981,8826,169,39 flex relative
+                            div .framer-1wtxfq2 @1001,8838,101,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @1001,8838,101,17 block "Get started"
+                            section [Circle A] .framer-6hgqi3 @1130,8844,4,4 block absolute
+                            section [Circle B] .framer-xq4qlr @965,8844,4,4 block absolute
+          div [Text Section] .framer-1utyp0q @0,8897,1440,478 flex relative
+            div [Sections] .framer-7v38gi @0,9057,1440,158 flex relative
+              section [Section] .framer-1hqk1ik @56,9057,664,158 flex relative
+                div [Text Container] .framer-1cn0928 @56,9057,664,158 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1iymzjc @64,9057,648,158 flex relative
+                      h2 .framer-text.framer-styles-preset-19py25s @64,9057,648,158 block "Support grounded in expe…"
+                        span .framer-text @64,9109,586,107 inline "built for lasting change…"
+              section [Section] .framer-1odfe3y.hidden-1ln1qcq @720,9057,221,158 block relative
+              section [Section] .framer-11ceslg @941,9057,443,136 flex relative
+                div [Text Container] .framer-18r8rfq @941,9057,443,136 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1cnia2h @949,9057,427,136 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @949,9057,427,136 block "Our sessions create spac…"
+                        a .framer-text.framer-styles-preset-1vjqxut @1191,9142,103,20 inline
+                          strong .framer-text @1191,9142,103,20 inline "how we work"
+          div [Big Quote] .framer-1fn6jds @0,9376,1440,1080 flex relative
+            section [big-quote] .framer-3ehuza @0,9336,8,900 block absolute
+            div .framer-4p7lze-container @0,9376,1440,1080 block absolute
+              div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                div @0,9376,1440,1080 block relative
+                  img @0,8876,1440,1580 block
+                  div @0,8876,1440,1580 block absolute
+            div .framer-neb6i0-container.hidden-1f5hb54.hidden-1ln1qcq @692,8916,680,2000 block absolute
+              div @692,8916,680,2000 flex
+                svg @692,8916,680,2000 block
+                  path @722,4916,619,6000 inline
+            div .framer-9ycxc4-container.hidden-1f5hb54.hidden-1ln1qcq @692,8916,680,2000 block absolute
+              div @692,8916,680,2000 flex
+                svg @692,8916,680,2000 block
+                  path @724,4916,608,6000 inline
+            div [Text] .framer-17q7f2 @0,10022,1440,273 flex relative
+              div [Headline] .framer-9lhoz2 @56,10022,1328,273 flex relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-gt59ca @64,10022,720,216 flex relative
+                    h2 .framer-text.framer-styles-preset-1omst67 @64,10022,720,216 block "“What we don’t need in t…"
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-d0gdu5 @64,10270,1312,25 flex relative
+                    p .framer-text.framer-styles-preset-99grtk @64,10270,1312,25 block "— Anna Keller, Therapist…"
+            div [Shape Container] .framer-1123x3w @0,9165,1440,422 block absolute
+              div [Shape] .framer-d8tx67 @-1,9165,1442,422 block absolute
+                div @-1,9165,1442,422 block
+                  svg @-1,9165,1442,422 block
+                    use @0,9166,1440,420 inline
+          div [Story B] .framer-hqi881 @0,10456,1440,982 flex relative
+            section [story-b] .framer-sbr6q6 @0,10416,8,1800 block absolute
+            div .framer-195jv6h @0,10616,1440,662 flex relative
+              div .framer-1jms68z @0,10616,1440,662 flex relative
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-1qqqt5w-container @56,10616,1328,662 block relative
+                    div [Desktop A] .framer-GNn10.framer-Tk0ms.framer-WsRmc.framer-itdRI.framer-18llw6b.framer-v-18llw6b @56,10616,1328,662 flex relative
+                      div [Sections] .framer-1p5e83i @56,10616,1328,17 flex relative
+                        section [Section] .framer-q0qgir @56,10616,1328,17 flex relative
+                          div [Title] .framer-lqpgkv @56,10616,1328,17 flex relative
+                            div .framer-1a48swy @64,10616,1312,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @64,10616,1312,17 block "Real people. Real change…"
+                      div .framer-3uzl3v @56,10680,1328,597 flex relative
+                        section [Section] .framer-10qex0i @56,10680,553,463 flex relative
+                          div [Text Container] .framer-ctj72w @56,10680,553,463 flex relative
+                            div [Title & Intro] .framer-g2hkwi @64,10680,537,376 flex relative
+                              div .framer-o5ob8k @64,10680,537,216 flex relative
+                                h2 .framer-text.framer-styles-preset-1omst67 @64,10680,537,216 block "Starting over and findin…"
+                              div .framer-147e8y @64,10920,480,136 flex relative
+                                p .framer-text.framer-styles-preset-k1gzgo @64,10920,480,136 block "After moving to a new ci…"
+                            div .framer-1oocx2r-container @64,11104,205,39 block relative
+                              a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @64,11104,205,39 flex relative
+                                div .framer-pom6s4 @84,11116,137,17 flex relative
+                                  p .framer-text.framer-styles-preset-9azdev @84,11116,137,17 block "Read full story"
+                                section [Circle A] .framer-utjt32 @249,11122,4,4 block absolute
+                                section [Circle B] .framer-1f48lt7 @48,11122,4,4 block absolute
+                        section [Section] .framer-1dpopsv @609,10680,111,597 block relative
+                        section [Section] .framer-1q5p0fi @720,10680,664,597 flex relative
+                          div [Images] .framer-139gixe @720,10680,664,597 flex relative
+                            a [Image 1] .framer-m5ypb2.framer-5x92j5 @987,10680,389,597 block relative
+                              div .framer-152bg29-container @987,10680,389,597 block absolute
+                                div @987,10680,389,597 block relative
+                                  img @987,10380,389,897 block
+                                  div @987,10380,389,897 block absolute
+                            a [Image 2] .framer-pr1g9f.framer-5x92j5 @728,10781,332,497 block absolute
+                              div .framer-2e4csz-container @728,10781,332,497 block absolute
+                                div @728,10781,332,497 block relative
+                                  img @728,10681,332,597 block
+                                  div @728,10681,332,597 block absolute
+          div [Journal] .framer-15at6y2 @0,11437,1440,1367 flex relative
+            div [Header] .framer-3g8sad @0,11597,1440,388 flex relative
+              div [Text Container] .framer-15xdihr @56,11597,1328,388 flex relative
+                div [Section Icon] .framer-1pyokxp @668,11597,104,105 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-y88HA.framer-jayjtp @688,11597,64,64 block relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-10m8png @668,11685,104,17 flex relative
+                      p .framer-text.framer-styles-preset-9azdev @668,11685,104,17 block "our journal"
+                div [Headline] .framer-1cc2jh @64,11732,1312,184 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1ml3y2i @64,11732,1312,106 flex relative
+                      h2 .framer-text.framer-styles-preset-19py25s @64,11732,1312,106 block "Insights for Growth, Hea…"
+                        br .framer-text @990,11731,0,54 inline
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-124af1v @400,11862,640,54 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @400,11862,640,54 block "We share reflections, to…"
+                div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                  div .framer-ikilqd-container @619,11946,202,39 block relative
+                    a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @619,11946,202,39 flex relative
+                      div .framer-pom6s4 @639,11958,134,17 flex relative
+                        p .framer-text.framer-styles-preset-9azdev @639,11958,134,17 block "Browse Insights"
+                      section [Circle A] .framer-utjt32 @801,11964,4,4 block absolute
+                      section [Circle B] .framer-1f48lt7 @603,11964,4,4 block absolute
+            div [Articles] .framer-1o2gcmt @0,11985,1440,659 flex relative
+              div .framer-17bvj1g @64,11985,357,559 flex relative
+                div .framer-1qd2rm2 @64,11985,357,559 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-932eww-container @64,11985,357,559 block relative
+                      div [Article] .framer-NalMX.framer-yOtxB.framer-BxcMK.framer-xmhfD.framer-et0r4d.framer-v-et0r4d @64,11985,357,559 flex relative
+                        a [Image Container A] .framer-d05cx3.framer-m05rbx @64,11985,357,357 block relative
+                          div [Stroke] .framer-1g6bjvj @73,11995,336,289 block absolute
+                            div @73,11995,336,289 block
+                              svg @73,11995,336,289 block
+                                use @73,11996,335,289 inline
+                          div [Image] .framer-1kwdm5x @64,12029,357,269 block absolute
+                            div @64,12029,357,269 block absolute
+                              img @64,12029,357,269 block
+                            section [Noize] .framer-py2pf @64,11986,357,356 block absolute
+                              div @64,11986,357,356 block absolute
+                        div [Text] .framer-kgxoaw @64,12342,357,201 flex relative
+                          div [Container] .framer-1nb7fy2 @64,12342,357,138 flex relative
+                            div .framer-15dh444 @73,12342,340,72 flex relative
+                              h3 .framer-text.framer-styles-preset-rrkxdq @73,12342,340,72 block
+                                a .framer-text.framer-styles-preset-1jvkzq1 @125,12336,235,83 inline "Learning to Pause Withou…"
+                            div .framer-1lpje5l @73,12430,340,50 flow-root relative
+                              p .framer-text.framer-styles-preset-99grtk @73,12430,340,50 block "Taking a break isn’t fai…"
+                          div .framer-zker9l-container @167,12505,152,39 block relative
+                            a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @167,12505,152,39 flex relative
+                              div .framer-pom6s4 @187,12516,84,17 flex relative
+                                p .framer-text.framer-styles-preset-9azdev @187,12516,84,17 block "Read More"
+                              section [Circle A] .framer-utjt32 @299,12522,4,4 block absolute
+                              section [Circle B] .framer-1f48lt7 @151,12522,4,4 block absolute
+              div .framer-1pea8sz @541,11985,357,659 flex relative
+                div .framer-1kwfysb @541,12085,357,559 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-tnftrh-container @541,12085,357,559 block relative
+                      div [Article] .framer-NalMX.framer-yOtxB.framer-BxcMK.framer-xmhfD.framer-et0r4d.framer-v-et0r4d @541,12085,357,559 flex relative
+                        a [Image Container B] .framer-1fg66cf.framer-m05rbx @541,12085,357,357 block relative
+                          div [Stroke] .framer-mxd6er @574,12111,282,314 block absolute
+                            div @574,12111,282,314 block
+                              svg @574,12111,282,314 block
+                                use @575,12112,280,312 inline
+                          div [Image] .framer-xnyu70 @541,12130,357,267 block absolute
+                            div @541,12130,357,267 block absolute
+                              img @541,12130,357,267 block
+                            section [Noize] .framer-130rejx @541,12087,357,354 block absolute
+                              div @541,12087,357,354 block absolute
+                        div [Text] .framer-kgxoaw @541,12442,357,201 flex relative
+                          div [Container] .framer-1nb7fy2 @541,12442,357,138 flex relative
+                            div .framer-15dh444 @550,12442,340,72 flex relative
+                              h3 .framer-text.framer-styles-preset-rrkxdq @550,12442,340,72 block
+                                a .framer-text.framer-styles-preset-1jvkzq1 @616,12436,208,83 inline "What Makes Therapy Work?…"
+                            div .framer-1lpje5l @550,12530,340,50 flow-root relative
+                              p .framer-text.framer-styles-preset-99grtk @550,12530,340,50 block "Beyond techniques or too…"
+                          div .framer-zker9l-container @644,12605,152,39 block relative
+                            a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @644,12605,152,39 flex relative
+                              div .framer-pom6s4 @664,12616,84,17 flex relative
+                                p .framer-text.framer-styles-preset-9azdev @664,12616,84,17 block "Read More"
+                              section [Circle A] .framer-utjt32 @776,12622,4,4 block absolute
+                              section [Circle B] .framer-1f48lt7 @628,12622,4,4 block absolute
+              div .framer-ibj5iw.hidden-1f5hb54.hidden-1ln1qcq @1019,11985,357,559 flex relative
+                div .framer-1ccuqep @1019,11985,357,559 flex relative
+                  div .framer-1wqnqjr-container @1019,11985,357,559 block relative
+                    div [Article] .framer-NalMX.framer-yOtxB.framer-BxcMK.framer-xmhfD.framer-et0r4d.framer-v-et0r4d @1019,11985,357,559 flex relative
+                      a [Image Container C] .framer-i97exa.framer-m05rbx @1019,11985,357,357 block relative
+                        div [Stroke] .framer-1a5kq13 @1052,12002,314,311 block absolute
+                          div @1052,12002,314,311 block
+                            svg @1052,12002,314,311 block
+                              use @1053,12003,312,308 inline
+                        div [Image] .framer-l9u67a @1019,12044,357,240 block absolute
+                          div @1019,12044,357,240 block absolute
+                            img @1019,12044,357,240 block
+                          section [Noize] .framer-piuecg @1019,12001,357,327 block absolute
+                            div @1019,12001,357,327 block absolute
+                      div [Text] .framer-kgxoaw @1019,12342,357,201 flex relative
+                        div [Container] .framer-1nb7fy2 @1019,12342,357,138 flex relative
+                          div .framer-15dh444 @1027,12342,340,72 flex relative
+                            h3 .framer-text.framer-styles-preset-rrkxdq @1027,12342,340,72 block
+                              a .framer-text.framer-styles-preset-1jvkzq1 @1081,12336,233,83 inline "The Gentle Art of Slowin…"
+                          div .framer-1lpje5l @1027,12430,340,50 flow-root relative
+                            p .framer-text.framer-styles-preset-99grtk @1027,12430,340,50 block "Slowing down is more tha…"
+                        div .framer-zker9l-container @1121,12505,152,39 block relative
+                          a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @1121,12505,152,39 flex relative
+                            div .framer-pom6s4 @1141,12516,84,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @1141,12516,84,17 block "Read More"
+                            section [Circle A] .framer-utjt32 @1253,12522,4,4 block absolute
+                            section [Circle B] .framer-1f48lt7 @1105,12522,4,4 block absolute
+          div [Text Section] .framer-rp32zr @0,12804,1440,531 flex relative
+            div [Sections] .framer-h5xanu @0,12964,1440,211 flex relative
+              section [Section] .framer-g1bqd5 @56,12964,664,211 flex relative
+                div [Text Container] .framer-tov8mo @56,12964,664,211 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-prs0v1 @64,12964,648,211 flex relative
+                      h2 .framer-text.framer-styles-preset-19py25s @64,12964,648,211 block "From first steps to last…"
+                        span .framer-text @64,13068,597,107 inline "walking the path togethe…"
+              section [Section] .framer-14crtmf.hidden-1ln1qcq @720,12964,221,211 block relative
+              section [Section] .framer-1bp02b7 @941,12964,443,82 flex relative
+                div [Text Container] .framer-16m5bkk @941,12964,443,82 flex relative
+                  div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+                    div .framer-1xvs6ok @949,12964,427,82 flex relative
+                      p .framer-text.framer-styles-preset-k1gzgo @949,12964,427,82 block "Behind every number is a…"
+          div [Numbers] .framer-1gn7m3a @0,13335,1440,298 flex relative
+            div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+              div .framer-ojr16l-container @0,13335,1440,138 block relative
+                div [Desktop] .framer-j3SNS.framer-xmhfD.framer-zbc97v.framer-v-zbc97v @0,13335,1440,138 flex relative
+                  div [Counter Container] .framer-1763ut5 @64,13335,328,138 flex relative
+                    div .framer-j9nb64-container @64,13335,181,72 block relative
+                      p @64,13335,181,72 block "450+"
+                      p @64,13335,181,72 block absolute "450+"
+                    div .framer-dyfiz1 @64,13423,116,50 flex relative
+                      p .framer-text.framer-styles-preset-99grtk @64,13423,116,50 block "Therapy sessionscomplete…"
+                        br .framer-text @180,13427,0,17 inline
+                  div [Counter Container] .framer-vuvldw @392,13335,328,138 flex relative
+                    div .framer-1nb300w-container @392,13335,134,72 block relative
+                      p @392,13335,134,72 block "80+"
+                      p @392,13335,134,72 block absolute "80+"
+                    div .framer-abp2ip @392,13423,70,50 flex relative
+                      p .framer-text.framer-styles-preset-99grtk @392,13423,70,50 block "Clientssupported"
+                        br .framer-text @437,13427,0,17 inline
+                  div [Counter Container] .framer-y1xmqa @720,13335,328,138 flex relative
+                    div .framer-7evuhh-container @720,13335,90,72 block relative
+                      p @720,13335,90,72 block "9+"
+                      p @720,13335,90,72 block absolute "9+"
+                    div .framer-f7uxz4 @720,13423,143,50 flex relative
+                      p .framer-text.framer-styles-preset-99grtk @720,13423,143,50 block "Years of professionalexp…"
+                        br .framer-text @863,13427,0,17 inline
+                  div [Counter Container] .framer-yqfblc @1048,13335,328,138 flex relative
+                    div .framer-43hbr5-container @1048,13335,130,72 block relative
+                      p @1048,13335,130,72 block "25+"
+                      p @1048,13335,130,72 block absolute "25+"
+                    div .framer-iy3lfb @1048,13423,92,50 flex relative
+                      p .framer-text.framer-styles-preset-99grtk @1048,13423,92,50 block "Programs andtools offere…"
+                        br .framer-text @1140,13427,0,17 inline
+          div [FAQ] .framer-5fjq0f @0,13633,1440,736 flex relative
+            div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+              div .framer-1cuwi2d-container @0,13633,1440,576 block relative
+                div [Desktop] .framer-2ZMvV.framer-u3CcN.framer-itdRI.framer-xmhfD.framer-1o1z3hq.framer-v-1o1z3hq @0,13633,1440,576 flex relative
+                  div [Sections] .framer-qafj0c @0,13633,1440,576 flex relative
+                    section [Section] .framer-1nngile @56,13633,553,576 flex relative
+                      div [Text] .framer-1kzm5a3 @56,13633,553,576 flex relative
+                        div [Headline] .framer-1of8of4 @64,13633,537,184 flex relative
+                          div .framer-6f3piv @64,13633,537,106 flex relative
+                            h2 .framer-text.framer-styles-preset-19py25s @64,13633,537,106 block "Your questions."
+                              br .framer-text @368,13632,0,54 inline
+                              span .framer-text @64,13685,208,54 inline "Answered."
+                          div .framer-7pk20i @64,13763,537,54 flex relative
+                            p .framer-text.framer-styles-preset-k1gzgo @64,13763,537,54 block "Not sure what to expect?…"
+                        div [Text] .framer-1qdky17 @64,14088,537,121 flex relative
+                          div .framer-pjxn5n @64,14088,480,50 flex relative
+                            p .framer-text.framer-styles-preset-99grtk @64,14088,480,50 block "Didn’t find your answer?…"
+                          div .framer-1t5vmzm-container @64,14170,209,39 block relative
+                            a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @64,14170,209,39 flex relative
+                              div .framer-pom6s4 @84,14182,141,17 flex relative
+                                p .framer-text.framer-styles-preset-9azdev @84,14182,141,17 block "About ClearPath"
+                              section [Circle A] .framer-utjt32 @253,14188,4,4 block absolute
+                              section [Circle B] .framer-1f48lt7 @48,14188,4,4 block absolute
+                    section [Section] .framer-1rfgbed @609,13633,111,576 block relative
+                    section [Section] .framer-1kbua6c @720,13633,664,576 flex relative
+                      div [FAQ Accordion] .framer-1c3zske @720,13633,664,576 flex relative
+                        div .framer-1b32s69-container @728,13633,648,576 block relative
+                          div [Variant 1] .framer-zeXYL.framer-pmeiww.framer-v-pmeiww @728,13633,648,576 flex relative
+                            div .framer-3cz4kr @728,13633,648,576 flex relative
+                              div .framer-s075xu @728,13633,648,141 flex relative
+                                div .framer-1mw66ti-container @728,13633,648,141 block relative
+                                  div [Open] .framer-ujmcQ.framer-3KqKr.framer-WsRmc.framer-u3CcN.framer-yOtxB.framer-14oro.framer-yXK3M.framer-xmhfD.framer-485r1.framer-U4EOQ.framer-1fmQu.framer-ltb46s.framer-v-ltb46s @728,13633,648,141 flex relative
+                                    div [Placeholder] .framer-1r3pv6y @752,13657,600,93 flex relative
+                                      div [Text] .framer-iz6hlu @752,13657,560,93 flex relative
+                                        div .framer-5cn7lk @752,13657,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13657,560,31 block
+                                            strong .framer-text @752,13661,363,21 inline "How do I know if therapy…"
+                                        div .framer-18y5q4e @752,13700,560,50 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,13700,560,50 block "Therapy isn’t just for c…"
+                                      div .framer-1lurq8x-container @1321,13653,39,39 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1321,13653,39,39 inline-block
+                                            g @1326,13659,28,28 inline
+                                              path @1326,13659,28,28 inline
+                                    div [Visible Text] .framer-mgecwx @752,13657,600,93 flex absolute
+                                      div [Text] .framer-1yd04q0 @752,13657,560,93 flex relative
+                                        div .framer-d6vcbj @752,13657,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13657,560,31 block
+                                            strong .framer-text @752,13661,363,21 inline "How do I know if therapy…"
+                                        div .framer-iwcbhw @752,13700,560,50 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,13700,560,50 block "Therapy isn’t just for c…"
+                                      div .framer-vuegum-container @1321,13653,39,39 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1321,13653,39,39 inline-block
+                                            g @1326,13659,28,28 inline
+                                              path @1326,13659,28,28 inline
+                              div .framer-s075xu @728,13782,648,79 flex relative
+                                div .framer-1mw66ti-container @728,13782,648,79 block relative
+                                  div [Closed] .framer-ujmcQ.framer-3KqKr.framer-WsRmc.framer-u3CcN.framer-yOtxB.framer-14oro.framer-yXK3M.framer-xmhfD.framer-485r1.framer-U4EOQ.framer-1fmQu.framer-ltb46s.framer-v-kvw35u @728,13782,648,79 flex relative
+                                    div [Placeholder] .framer-1r3pv6y @752,13806,600,31 flex relative
+                                      div [Text] .framer-iz6hlu @752,13806,560,31 flex relative
+                                        div .framer-5cn7lk @752,13806,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13806,560,31 block
+                                            strong .framer-text @752,13810,371,21 inline "What can I expect from t…"
+                                      div .framer-1lurq8x-container @1328,13806,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,13806,24,31 inline-block
+                                            g @1330,13812,20,20 inline
+                                              path @1330,13812,20,20 inline
+                                    div [Visible Text] .framer-mgecwx @752,13806,600,118 flex absolute
+                                      div [Text] .framer-1yd04q0 @752,13806,560,118 flex relative
+                                        div .framer-d6vcbj @752,13806,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13806,560,31 block
+                                            strong .framer-text @752,13810,371,21 inline "What can I expect from t…"
+                                        div .framer-iwcbhw @752,13849,560,76 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,13849,560,76 block "The first session is a g…"
+                                      div .framer-vuegum-container @1328,13806,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,13806,24,31 inline-block
+                                            g @1330,13812,20,20 inline
+                                              path @1330,13812,20,20 inline
+                              div .framer-s075xu @728,13869,648,79 flex relative
+                                div .framer-1mw66ti-container @728,13869,648,79 block relative
+                                  div [Closed] .framer-ujmcQ.framer-3KqKr.framer-WsRmc.framer-u3CcN.framer-yOtxB.framer-14oro.framer-yXK3M.framer-xmhfD.framer-485r1.framer-U4EOQ.framer-1fmQu.framer-ltb46s.framer-v-kvw35u @728,13869,648,79 flex relative
+                                    div [Placeholder] .framer-1r3pv6y @752,13893,600,31 flex relative
+                                      div [Text] .framer-iz6hlu @752,13893,560,31 flex relative
+                                        div .framer-5cn7lk @752,13893,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13893,560,31 block
+                                            strong .framer-text @752,13897,438,21 inline "Do you offer both online…"
+                                      div .framer-1lurq8x-container @1328,13893,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,13893,24,31 inline-block
+                                            g @1330,13899,20,20 inline
+                                              path @1330,13899,20,20 inline
+                                    div [Visible Text] .framer-mgecwx @752,13893,600,93 flex absolute
+                                      div [Text] .framer-1yd04q0 @752,13893,560,93 flex relative
+                                        div .framer-d6vcbj @752,13893,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13893,560,31 block
+                                            strong .framer-text @752,13897,438,21 inline "Do you offer both online…"
+                                        div .framer-iwcbhw @752,13936,560,50 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,13936,560,50 block "Yes. Whether you prefer …"
+                                      div .framer-vuegum-container @1328,13893,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,13893,24,31 inline-block
+                                            g @1330,13899,20,20 inline
+                                              path @1330,13899,20,20 inline
+                              div .framer-s075xu @728,13956,648,79 flex relative
+                                div .framer-1mw66ti-container @728,13956,648,79 block relative
+                                  div [Closed] .framer-ujmcQ.framer-3KqKr.framer-WsRmc.framer-u3CcN.framer-yOtxB.framer-14oro.framer-yXK3M.framer-xmhfD.framer-485r1.framer-U4EOQ.framer-1fmQu.framer-ltb46s.framer-v-kvw35u @728,13956,648,79 flex relative
+                                    div [Placeholder] .framer-1r3pv6y @752,13980,600,31 flex relative
+                                      div [Text] .framer-iz6hlu @752,13980,560,31 flex relative
+                                        div .framer-5cn7lk @752,13980,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13980,560,31 block
+                                            strong .framer-text @752,13984,330,21 inline "How often should I come …"
+                                      div .framer-1lurq8x-container @1328,13980,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,13980,24,31 inline-block
+                                            g @1330,13986,20,20 inline
+                                              path @1330,13986,20,20 inline
+                                    div [Visible Text] .framer-mgecwx @752,13980,600,118 flex absolute
+                                      div [Text] .framer-1yd04q0 @752,13980,560,118 flex relative
+                                        div .framer-d6vcbj @752,13980,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,13980,560,31 block
+                                            strong .framer-text @752,13984,330,21 inline "How often should I come …"
+                                        div .framer-iwcbhw @752,14023,560,76 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,14023,560,76 block "There’s no one-size-fits…"
+                                      div .framer-vuegum-container @1328,13980,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,13980,24,31 inline-block
+                                            g @1330,13986,20,20 inline
+                                              path @1330,13986,20,20 inline
+                              div .framer-s075xu @728,14043,648,79 flex relative
+                                div .framer-1mw66ti-container @728,14043,648,79 block relative
+                                  div [Closed] .framer-ujmcQ.framer-3KqKr.framer-WsRmc.framer-u3CcN.framer-yOtxB.framer-14oro.framer-yXK3M.framer-xmhfD.framer-485r1.framer-U4EOQ.framer-1fmQu.framer-ltb46s.framer-v-kvw35u @728,14043,648,79 flex relative
+                                    div [Placeholder] .framer-1r3pv6y @752,14067,600,31 flex relative
+                                      div [Text] .framer-iz6hlu @752,14067,560,31 flex relative
+                                        div .framer-5cn7lk @752,14067,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,14067,560,31 block
+                                            strong .framer-text @752,14071,307,21 inline "Is everything I share ke…"
+                                      div .framer-1lurq8x-container @1328,14067,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,14067,24,31 inline-block
+                                            g @1330,14073,20,20 inline
+                                              path @1330,14073,20,20 inline
+                                    div [Visible Text] .framer-mgecwx @752,14067,600,93 flex absolute
+                                      div [Text] .framer-1yd04q0 @752,14067,560,93 flex relative
+                                        div .framer-d6vcbj @752,14067,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,14067,560,31 block
+                                            strong .framer-text @752,14071,307,21 inline "Is everything I share ke…"
+                                        div .framer-iwcbhw @752,14110,560,50 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,14110,560,50 block "Yes. Your sessions are c…"
+                                      div .framer-vuegum-container @1328,14067,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,14067,24,31 inline-block
+                                            g @1330,14073,20,20 inline
+                                              path @1330,14073,20,20 inline
+                              div .framer-s075xu @728,14130,648,79 flex relative
+                                div .framer-1mw66ti-container @728,14130,648,79 block relative
+                                  div [Closed] .framer-ujmcQ.framer-3KqKr.framer-WsRmc.framer-u3CcN.framer-yOtxB.framer-14oro.framer-yXK3M.framer-xmhfD.framer-485r1.framer-U4EOQ.framer-1fmQu.framer-ltb46s.framer-v-kvw35u @728,14130,648,79 flex relative
+                                    div [Placeholder] .framer-1r3pv6y @752,14154,600,31 flex relative
+                                      div [Text] .framer-iz6hlu @752,14154,560,31 flex relative
+                                        div .framer-5cn7lk @752,14154,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,14154,560,31 block
+                                            strong .framer-text @752,14158,360,21 inline "What if I don’t know wha…"
+                                      div .framer-1lurq8x-container @1328,14154,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,14154,24,31 inline-block
+                                            g @1330,14160,20,20 inline
+                                              path @1330,14160,20,20 inline
+                                    div [Visible Text] .framer-mgecwx @752,14154,600,185 flex absolute
+                                      div [Text] .framer-1yd04q0 @752,14154,560,185 flex relative
+                                        div .framer-d6vcbj @752,14154,560,31 flex relative
+                                          p .framer-text.framer-styles-preset-33sk3i @752,14154,560,31 block
+                                            strong .framer-text @752,14158,360,21 inline "What if I don’t know wha…"
+                                        div .framer-iwcbhw @752,14197,560,142 flex relative
+                                          p .framer-text.framer-styles-preset-99grtk @752,14197,560,50 block "That’s okay. You don’t n…"
+                                          p .framer-text.framer-styles-preset-99grtk @752,14263,560,76 block "Progress doesn’t always …"
+                                      div .framer-vuegum-container @1328,14154,24,31 block relative
+                                        div @0,0,0,0 contents
+                                          svg @1328,14154,24,31 inline-block
+                                            g @1330,14160,20,20 inline
+                                              path @1330,14160,20,20 inline
+                            div .framer-jsf5a1-container @728,13633,0,0 block absolute
+                              div @728,13633,0,0 block
+          div [Book A Session] .framer-z3q6dd @0,14369,1440,1688 flex relative
+            div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+              div .framer-1va956f-container @0,14529,1440,1368 block relative
+                div [Desktop] .framer-Pi41w.framer-Tk0ms.framer-WsRmc.framer-itdRI.framer-xmhfD.framer-485r1.framer-1opxll9.framer-v-1opxll9 @0,14529,1440,1368 flex relative
+                  div [Title] .framer-1qrrsp8 @0,14529,1440,17 flex relative
+                    div [Page Title] .framer-1bv8mug @56,14529,1328,17 flex relative
+                      div .framer-o8khtb @64,14529,1312,17 flex relative
+                        p .framer-text.framer-styles-preset-9azdev @64,14529,1312,17 block "Book a session"
+                  div [Sections] .framer-1dtxzwq @0,14602,1440,1295 flex relative
+                    section [Section] .framer-adl8p @56,14602,664,1295 flex relative
+                      div [Text Intro] .framer-i0v4gm @56,14602,664,277 flex relative
+                        div .framer-89jy4q @64,14602,648,144 flex relative
+                          h2 .framer-text.framer-styles-preset-1omst67 @64,14602,648,144 block "Support starts with"
+                            span .framer-text @200,14663,346,93 inline "a simple step."
+                        div .framer-ccgg2l @64,14770,480,109 flex relative
+                          p .framer-text.framer-styles-preset-k1gzgo @64,14770,480,109 block "Whether you’re starting …"
+                      div [Container] .framer-s06wt2 @56,14959,664,335 flex sticky
+                        div [Raiting] .framer-1v90fve @56,14959,300,148 flex relative
+                          div .framer-28rcza @64,14959,151,25 flex relative
+                            p .framer-text.framer-styles-preset-99grtk @64,14959,151,25 block "Trusted by 80+ clients"
+                          a [Raiting] .framer-1lg03o2.framer-166tkm0 @64,15016,284,91 flex relative
+                            div [Users] .framer-1y67086 @64,15016,208,48 block relative
+                              div .framer-1mrsfv6-container @64,15016,48,48 block absolute
+                                div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @64,15016,48,48 block relative
+                                  section [Image] .framer-fca2nr @66,15018,44,44 block absolute
+                                    div @66,15018,44,44 block absolute
+                                      img @66,15018,44,44 block
+                              div .framer-44o236-container @96,15016,48,48 block absolute
+                                div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @96,15016,48,48 block relative
+                                  section [Image] .framer-fca2nr @98,15018,44,44 block absolute
+                                    div @98,15018,44,44 block absolute
+                                      img @98,15018,44,44 block
+                              div .framer-czrl4d-container @128,15016,48,48 block absolute
+                                div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @128,15016,48,48 block relative
+                                  section [Image] .framer-fca2nr @130,15018,44,44 block absolute
+                                    div @130,15018,44,44 block absolute
+                                      img @130,15018,44,44 block
+                              div .framer-soo0kf-container @160,15016,48,48 block absolute
+                                div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @160,15016,48,48 block relative
+                                  section [Image] .framer-fca2nr @162,15018,44,44 block absolute
+                                    div @162,15018,44,44 block absolute
+                                      img @162,15018,44,44 block
+                              div .framer-10wo96m-container @192,15016,48,48 block absolute
+                                div [Variant 1] .framer-9z2F9.framer-jqnges.framer-v-jqnges @192,15016,48,48 block relative
+                                  section [Image] .framer-fca2nr @194,15018,44,44 block absolute
+                                    div @194,15018,44,44 block absolute
+                                      img @194,15018,44,44 block
+                              div [Container] .framer-1x6pl11 @224,15016,48,48 block absolute
+                                div .framer-16jczpu @227,15019,42,42 block absolute
+                                  div .framer-13imca0 @237,15034,21,13 flex absolute
+                                    p .framer-text @237,15034,21,13 block
+                                      strong .framer-text @237,15033,21,14 inline "+81"
+                            div [Trustpoint] .framer-cnyx4b @64,15080,284,27 flex relative
+                              div .framer-pzr3ja @64,15080,169,27 flex relative
+                                p .framer-text.framer-styles-preset-k1gzgo @64,15080,169,27 block
+                                  strong .framer-text @64,15083,169,20 inline "Excellent 4.9 out of 5"
+                              div [Trustpoint] .framer-1a5adn9 @241,15080,107,27 flex relative
+                                div [Star] .framer-ak487b @241,15083,23,22 block relative
+                                  div [Vector] .framer-whaqo5 @242,15083,20,19 block absolute
+                                div .framer-14n2ntt @264,15080,84,27 flex relative
+                                  p .framer-text.framer-styles-preset-k1gzgo @264,15080,84,27 block
+                                    strong .framer-text @264,15083,84,20 inline "TrustPoint"
+                        div [Links] .framer-swg9ar @56,15187,664,106 flex relative
+                          div .framer-1kf3n9q @64,15187,480,50 flex relative
+                            p .framer-text.framer-styles-preset-99grtk @64,15187,480,50 block "Prefer to chat first? or…"
+                              a .framer-text.framer-styles-preset-1vjqxut @203,15191,122,17 inline
+                                strong .framer-text @203,15191,122,17 inline "Send us an email"
+                          div [Social Links] .framer-15f3pzw @64,15270,648,24 flex relative
+                            div .framer-106nzqm-container @64,15270,24,24 block relative
+                              a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @64,15270,24,24 flex relative
+                                div .framer-pm1e4t-container @64,15270,24,24 block relative
+                                  div @0,0,0,0 contents
+                                    svg @64,15270,24,24 inline-block
+                                      g @66,15272,20,20 inline
+                                        path @66,15272,20,20 inline
+                            div .framer-ns83ph-container @120,15270,24,24 block relative
+                              a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @120,15270,24,24 flex relative
+                                div .framer-pm1e4t-container @120,15270,24,24 block relative
+                                  div @0,0,0,0 contents
+                                    svg @120,15270,24,24 inline-block
+                                      g @124,15272,16,20 inline
+                                        path @124,15272,16,20 inline
+                            div .framer-ix0bik-container @176,15270,24,24 block relative
+                              a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @176,15270,24,24 flex relative
+                                div .framer-pm1e4t-container @176,15270,24,24 block relative
+                                  div @0,0,0,0 contents
+                                    svg @176,15270,24,24 inline-block
+                                      g @178,15272,20,20 inline
+                                        path @178,15272,20,20 inline
+                            div .framer-1pxlgtk-container @232,15270,24,24 block relative
+                              a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @232,15270,24,24 flex relative
+                                div .framer-pm1e4t-container @232,15270,24,24 block relative
+                                  div @0,0,0,0 contents
+                                    svg @232,15270,24,24 inline-block
+                                      g @234,15274,21,17 inline
+                                        path @234,15274,21,17 inline
+                    section [Section] .framer-1r7p8te @720,14602,111,1295 block relative
+                    section [Section] .framer-17z5vyw @831,14602,553,1295 flex relative
+                      div .framer-wohlnw-container @831,14602,553,1295 block relative
+                        div [Variant 1] .framer-zB5lY.framer-yXK3M.framer-xmhfD.framer-1boqb9n.framer-v-1boqb9n @831,14602,553,1295 flex relative
+                          form .framer-1wbinl1 @839,14602,537,1295 flex relative
+                            div [A] .framer-ts2pi8 @839,14602,537,324 flex relative
+                              div .framer-1sio9fd @839,14602,537,36 flex relative
+                                h5 .framer-text.framer-styles-preset-c1ofpr @839,14602,537,36 block "Tell us about you."
+                              div .framer-form-text-input.framer-form-input-wrapper.framer-nxeron.framer-form-text-input-type @839,14671,537,40 flex relative
+                                input .framer-form-input.framer-form-input-empty @839,14671,537,40 block
+                              div .framer-form-text-input.framer-form-input-wrapper.framer-wz8qum @839,14743,537,40 flex relative
+                                input .framer-form-input.framer-form-input-empty @839,14743,537,40 block
+                              div .framer-form-text-input.framer-form-input-wrapper.framer-p17m85 @839,14815,537,40 flex relative
+                                input .framer-form-input.framer-form-input-empty @839,14815,537,40 block
+                              div .framer-form-input-wrapper.framer-form-select-wrapper.framer-a4zos8 @839,14887,537,40 block relative
+                                select .framer-form-input @839,14887,537,40 inline-block
+                                  option @0,0,0,0 block "Preferred Pronouns *"
+                                  option @0,0,0,0 block "She/Her"
+                                  option @0,0,0,0 block "He/Him"
+                                  option @0,0,0,0 block "They/Them"
+                                  option @0,0,0,0 block "Prefer not to say"
+                            div [B] .framer-q2i47n @839,14991,537,188 flex relative
+                              div .framer-viunjy @839,14991,537,36 flex relative
+                                h5 .framer-text.framer-styles-preset-c1ofpr @839,14991,537,36 block "How can we help?"
+                              div .framer-form-text-input.framer-form-input-wrapper.framer-mzuqma.framer-form-textarea-input-type @839,15059,537,120 flex relative
+                                textarea .framer-form-input @839,15059,537,120 flex
+                            div [C] .framer-1pmjxm1 @839,15243,537,290 flex relative
+                              div .framer-17yq99m @839,15243,537,36 flex relative
+                                h5 .framer-text.framer-styles-preset-c1ofpr @839,15243,537,36 block "What kind of support are…"
+                              div [Checkboxes] .framer-12v8tcr @839,15311,537,222 flex relative
+                                label .framer-hjlr1i @839,15311,537,25 flex relative
+                                  input .framer-form-boolean-input.framer-1m0ay1c @839,15314,20,20 flex relative
+                                  div .framer-4syvff @869,15311,507,25 flex relative
+                                    p .framer-text.framer-styles-preset-99grtk @869,15311,507,25 block "Individual Therapy"
+                                label .framer-ytx3c0 @839,15361,537,25 flex relative
+                                  input .framer-form-boolean-input.framer-1uf20ys @839,15363,20,20 flex relative
+                                  div .framer-h20kkc @869,15361,507,25 flex relative
+                                    p .framer-text.framer-styles-preset-99grtk @869,15361,507,25 block "Life Coaching"
+                                label .framer-1b2fsu5 @839,15410,537,25 flex relative
+                                  input .framer-form-boolean-input.framer-9upcjg @839,15412,20,20 flex relative
+                                  div .framer-1ouzxii @869,15410,507,25 flex relative
+                                    p .framer-text.framer-styles-preset-99grtk @869,15410,507,25 block "Stress & Mindfulness Sup…"
+                                label .framer-2hbomm @839,15459,537,25 flex relative
+                                  input .framer-form-boolean-input.framer-135r3db @839,15462,20,20 flex relative
+                                  div .framer-1pcknx8 @869,15459,507,25 flex relative
+                                    p .framer-text.framer-styles-preset-99grtk @869,15459,507,25 block "Clarity Session / One-Ti…"
+                                label .framer-rwgfxo @839,15508,537,25 flex relative
+                                  input .framer-form-boolean-input.framer-ydey6w @839,15511,20,20 flex relative
+                                  div .framer-ssi3nd @869,15508,507,25 flex relative
+                                    p .framer-text.framer-styles-preset-99grtk @869,15508,507,25 block "Not sure yet — just expl…"
+                            div [D] .framer-19yo463 @839,15597,537,40 flex relative
+                              div .framer-form-input-wrapper.framer-form-select-wrapper.framer-1lgw1bg @839,15597,537,40 block relative
+                                select .framer-form-input @839,15597,537,40 inline-block
+                                  option @0,0,0,0 block "Where did you hear about…"
+                                  option @0,0,0,0 block "Google Search"
+                                  option @0,0,0,0 block "A friend or colleague"
+                                  option @0,0,0,0 block "Therapist referral"
+                                  option @0,0,0,0 block "Other"
+                            div [E] .framer-1tav76j @839,15701,537,92 flex relative
+                              label .framer-hdkk6y @839,15701,537,25 flex relative
+                                input .framer-form-boolean-input.framer-1rk9qb0 @839,15704,20,20 flex relative
+                                div .framer-foou1m @869,15701,507,25 flex relative
+                                  p .framer-text.framer-styles-preset-99grtk @869,15701,507,25 block "Would you like to receiv…"
+                              div .framer-1k4bo8w @839,15743,480,50 flex relative
+                                p .framer-text.framer-styles-preset-99grtk @839,15743,480,50 block "We send an email newslet…"
+                            div .framer-1e3sc8m-container @839,15857,192,40 block relative
+                              button [Desktop] .framer-Rwk1G.framer-Tk0ms.framer-1vpdtys.framer-v-1vpdtys @839,15857,192,40 flex relative
+                                div .framer-h6q7mv @859,15869,126,17 flex relative
+                                  p .framer-text.framer-styles-preset-9azdev @859,15869,126,17 block
+                                    strong .framer-text @859,15869,126,15 inline "book a session"
+                                section [Circle A] .framer-gcw9qk @1011,15875,4,4 block absolute
+                                  section [Loading 1] .framer-1eclmd2 @1007,15871,12,12 block absolute
+                                  section [Loading 2] .framer-1am2zh3 @1009,15873,8,8 block absolute
+                                section [Circle B] .framer-1ont0yg @823,15875,4,4 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+                            input @920,14612,0,0 block absolute
+          section [footer-menu] .framer-170uist @0,16009,8,8 block absolute
+        div .framer-1exqt27-container.hidden-1f5hb54.hidden-1ln1qcq @720,16057,0,0 block relative
+        div .framer-1lr0ds-container @0,0,1440,79 block fixed
+          div .hidden-1f5hb54.hidden-1ln1qcq @0,0,0,0 contents
+            nav [Desktop] .framer-bU121.framer-1juce9w.framer-v-1juce9w @0,0,1440,79 flex relative
+              div .framer-g52bo5-container @64,43,160,36 block relative
+                a [White] .framer-YDojX.framer-184vqzk.framer-v-184vqzk.framer-anbkvn @64,43,160,36 flex relative
+                  div [Rectangle 1] .framer-kpzrys @64,59,8,8 block absolute
+                  div [clear—path] .framer-1x807hn @88,43,136,36 flex relative
+                    p .framer-text @88,43,136,36 block "clear—path"
+              div .framer-164z9qf-container @709,40,667,39 block relative
+                div [White] .framer-bL18V.framer-4avuzr.framer-v-4avuzr @709,40,667,39 flex relative
+                  div [Menu Dark] .framer-1k09cop-container @709,40,667,39 block absolute
+                    div [Desktop] .framer-xGCaD.framer-dzsk0e.framer-v-dzsk0e @709,40,667,39 flex relative
+                      div .framer-161i3vw-container @709,51,52,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @709,51,52,17 flex relative
+                          div [Text Container] .framer-8olea2 @709,51,52,17 flex relative
+                            div .framer-j7uo8u @709,51,52,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @709,51,52,17 block "About"
+                            div .framer-1olbkkm @709,69,52,1 flex absolute
+                              div [push] .framer-f6nxd0 @709,69,0,1 block relative
+                              div [line] .framer-11vmiil @709,69,0,1 block relative
+                      div .framer-1jf682h-container @816,51,70,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @816,51,70,17 flex relative
+                          div [Text Container] .framer-8olea2 @816,51,70,17 flex relative
+                            div .framer-j7uo8u @816,51,70,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @816,51,70,17 block "Services"
+                            div .framer-1olbkkm @816,69,70,1 flex absolute
+                              div [push] .framer-f6nxd0 @816,69,0,1 block relative
+                              div [line] .framer-11vmiil @816,69,0,1 block relative
+                      div .framer-1r49n52-container @942,51,62,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @942,51,62,17 flex relative
+                          div [Text Container] .framer-8olea2 @942,51,62,17 flex relative
+                            div .framer-j7uo8u @942,51,62,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @942,51,62,17 block "Stories"
+                            div .framer-1olbkkm @942,69,62,1 flex absolute
+                              div [push] .framer-f6nxd0 @942,69,0,1 block relative
+                              div [line] .framer-11vmiil @942,69,0,1 block relative
+                      div .framer-e78t0w-container @1060,51,68,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @1060,51,68,17 flex relative
+                          div [Text Container] .framer-8olea2 @1060,51,68,17 flex relative
+                            div .framer-j7uo8u @1060,51,68,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @1060,51,68,17 block "Journal"
+                            div .framer-1olbkkm @1060,69,68,1 flex absolute
+                              div [push] .framer-f6nxd0 @1060,69,0,1 block relative
+                              div [line] .framer-11vmiil @1060,69,0,1 block relative
+                      div .framer-1emsuyt-container @1185,40,191,39 block relative
+                        a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @1185,40,191,39 flex relative
+                          div .framer-pom6s4 @1205,52,123,17 flex relative
+                            p .framer-text.framer-styles-preset-9azdev @1205,52,123,17 block "book a session"
+                          section [Circle A] .framer-utjt32 @1356,58,4,4 block absolute
+                          section [Circle B] .framer-1f48lt7 @1169,58,4,4 block absolute
+                  div [Menu White] .framer-x59jr5-container @709,40,667,39 block relative
+                    div [Desktop] .framer-xGCaD.framer-dzsk0e.framer-v-dzsk0e @709,40,667,39 flex relative
+                      div .framer-161i3vw-container @709,51,52,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @709,51,52,17 flex relative
+                          div [Text Container] .framer-8olea2 @709,51,52,17 flex relative
+                            div .framer-j7uo8u @709,51,52,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @709,51,52,17 block "About"
+                            div .framer-1olbkkm @709,69,52,1 flex absolute
+                              div [push] .framer-f6nxd0 @709,69,0,1 block relative
+                              div [line] .framer-11vmiil @709,69,0,1 block relative
+                      div .framer-1jf682h-container @816,51,70,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @816,51,70,17 flex relative
+                          div [Text Container] .framer-8olea2 @816,51,70,17 flex relative
+                            div .framer-j7uo8u @816,51,70,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @816,51,70,17 block "Services"
+                            div .framer-1olbkkm @816,69,70,1 flex absolute
+                              div [push] .framer-f6nxd0 @816,69,0,1 block relative
+                              div [line] .framer-11vmiil @816,69,0,1 block relative
+                      div .framer-1r49n52-container @942,51,62,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @942,51,62,17 flex relative
+                          div [Text Container] .framer-8olea2 @942,51,62,17 flex relative
+                            div .framer-j7uo8u @942,51,62,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @942,51,62,17 block "Stories"
+                            div .framer-1olbkkm @942,69,62,1 flex absolute
+                              div [push] .framer-f6nxd0 @942,69,0,1 block relative
+                              div [line] .framer-11vmiil @942,69,0,1 block relative
+                      div .framer-e78t0w-container @1060,51,68,17 block relative
+                        a [Desktop] .framer-IBneK.framer-Tk0ms.framer-1l2g74h.framer-v-1l2g74h.framer-1os7fqe @1060,51,68,17 flex relative
+                          div [Text Container] .framer-8olea2 @1060,51,68,17 flex relative
+                            div .framer-j7uo8u @1060,51,68,17 flex relative
+                              p .framer-text.framer-styles-preset-9azdev @1060,51,68,17 block "Journal"
+                            div .framer-1olbkkm @1060,69,68,1 flex absolute
+                              div [push] .framer-f6nxd0 @1060,69,0,1 block relative
+                              div [line] .framer-11vmiil @1060,69,0,1 block relative
+                      div .framer-1emsuyt-container @1185,40,191,39 block relative
+                        a [Desktop] .framer-0LLEz.framer-Tk0ms.framer-wsdyl9.framer-v-wsdyl9.framer-1vf2x7g @1185,40,191,39 flex relative
+                          div .framer-pom6s4 @1205,52,123,17 flex relative
+                            p .framer-text.framer-styles-preset-9azdev @1205,52,123,17 block "book a session"
+                          section [Circle A] .framer-utjt32 @1356,58,4,4 block absolute
+                          section [Circle B] .framer-1f48lt7 @1169,58,4,4 block absolute
+      div @720,16057,0,0 block
+      div .framer-1uiqanv @720,16057,0,0 block relative
+      footer [Footer Container] .framer-cdmgys @0,16057,1440,991 flex relative
+        div .hidden-16glfzb @0,0,0,0 contents
+          div [Footer Background Image] .framer-1d0d1sn @0,15737,1440,1311 block absolute
+            div @0,15737,1440,1311 block absolute
+              img @0,15737,1440,1311 block
+            section [Noize] .framer-1svuirl @0,15737,1440,1311 block absolute
+              div @0,15737,1440,1311 block absolute
+        div [Sections A] .framer-5y5lvp @0,16257,1440,435 flex relative
+          section [Section] .framer-1xdryc5 @56,16257,664,435 flex relative
+            div [Container] .framer-167n8mr @56,16257,664,435 flex relative
+              div [Text Container] .framer-1s1xz2m @64,16257,648,250 flex relative
+                div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                  div .framer-1c0ypbu @64,16257,648,144 flex relative
+                    h2 .framer-text.framer-styles-preset-1omst67 @64,16257,648,144 block "Join OurNewsletter."
+                      br .framer-text @294,16246,0,93 inline
+                div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                  div .framer-1y1load @64,16425,480,82 flex relative
+                    p .framer-text.framer-styles-preset-k1gzgo @64,16425,480,82 block "We share occasional insi…"
+              div [Subscription Form] .framer-5d9ebz @64,16563,520,129 flex relative
+                div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                  form .framer-7edq71 @64,16563,520,47 flex relative
+                    label .framer-1ocj5hj @64,16563,354,47 flex relative
+                      div .framer-form-text-input.framer-form-input-wrapper.framer-1q2ckym @64,16563,354,47 flex relative
+                        input .framer-form-input.framer-form-input-empty @64,16563,354,47 block
+                    div .framer-1s71yim-container @434,16566,150,40 block relative
+                      button [Desktop] .framer-l8KPq.framer-Tk0ms.framer-1jrman6.framer-v-1jrman6 @434,16566,150,40 flex relative
+                        div .framer-yuqeze @454,16578,73,17 flex relative
+                          p .framer-text.framer-styles-preset-9azdev @454,16578,73,17 block
+                            strong .framer-text @454,16578,73,15 inline "Suscribe"
+                        section [Circle A] .framer-efjhvm @564,16584,4,4 block absolute
+                          section [Loading 1] .framer-3xoblw @560,16580,12,12 block absolute
+                          section [Loading 2] .framer-1ebjfv5 @562,16582,8,8 block absolute
+                        section [Circle B] .framer-16yf3w7 @418,16584,4,4 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                    input @324,16586,0,0 block absolute
+                div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                  div [By signing up to receive emails from FitFlow, you agree to our Privacy Policy. We treat your info responsibly. Unsubscribe anytime.] .framer-1ilekqw @64,16642,320,50 flex relative
+                    p .framer-text.framer-styles-preset-99grtk @64,16642,320,50 block "By signing up to receive…"
+                      a .framer-text.framer-styles-preset-1hi5j20 @180,16671,103,17 inline
+                        strong .framer-text @180,16671,103,17 inline "Privacy Policy."
+          section [Section] .framer-ap6qun.hidden-vtru7o.hidden-16glfzb @720,16257,221,435 block relative
+          section [Section] .framer-riqn5z @941,16257,443,368 flex relative
+            div [Container] .framer-bw093q @941,16257,443,368 flex relative
+              div [Navigation] .framer-16xm49o @949,16257,427,368 flex relative
+                div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                  div .framer-10gpddt @949,16257,64,17 flex relative
+                    p .framer-text.framer-styles-preset-9azdev @949,16257,64,17 block "Sitemap"
+                div [Links] .framer-1unuzqc @949,16322,427,304 flex relative
+                  div [Links A] .framer-1lt0l5u @949,16322,213,304 flex relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-1f1zvx4-container @949,16322,93,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @949,16322,93,31 flex relative
+                          div [Text Container] .framer-c1cf @949,16322,93,31 flex relative
+                            div .framer-1jyzgvs @949,16322,93,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @949,16322,93,31 block
+                                strong .framer-text @949,16326,93,21 inline "Main Page"
+                            div .framer-32rxtn @949,16351,93,1 flex absolute
+                              div [push] .framer-1ms889d @949,16351,0,1 block relative
+                              div [line] .framer-g11xph @949,16351,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-9ufdyf-container @949,16376,54,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @949,16376,54,31 flex relative
+                          div [Text Container] .framer-c1cf @949,16376,54,31 flex relative
+                            div .framer-1jyzgvs @949,16376,54,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @949,16376,54,31 block
+                                strong .framer-text @949,16380,54,21 inline "About"
+                            div .framer-32rxtn @949,16406,54,1 flex absolute
+                              div [push] .framer-1ms889d @949,16406,0,1 block relative
+                              div [line] .framer-g11xph @949,16406,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-1gmzyjx-container @949,16431,77,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @949,16431,77,31 flex relative
+                          div [Text Container] .framer-c1cf @949,16431,77,31 flex relative
+                            div .framer-1jyzgvs @949,16431,77,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @949,16431,77,31 block
+                                strong .framer-text @949,16435,77,21 inline "Services"
+                            div .framer-32rxtn @949,16461,77,1 flex absolute
+                              div [push] .framer-1ms889d @949,16461,0,1 block relative
+                              div [line] .framer-g11xph @949,16461,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-1r9jgur-container @949,16486,63,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @949,16486,63,31 flex relative
+                          div [Text Container] .framer-c1cf @949,16486,63,31 flex relative
+                            div .framer-1jyzgvs @949,16486,63,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @949,16486,63,31 block
+                                strong .framer-text @949,16490,63,21 inline "Stories"
+                            div .framer-32rxtn @949,16515,63,1 flex absolute
+                              div [push] .framer-1ms889d @949,16515,0,1 block relative
+                              div [line] .framer-g11xph @949,16515,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-1uce0ip-container @949,16540,106,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @949,16540,106,31 flex relative
+                          div [Text Container] .framer-c1cf @949,16540,106,31 flex relative
+                            div .framer-1jyzgvs @949,16540,106,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @949,16540,106,31 block
+                                strong .framer-text @949,16544,106,21 inline "Client Story"
+                            div .framer-32rxtn @949,16570,106,1 flex absolute
+                              div [push] .framer-1ms889d @949,16570,0,1 block relative
+                              div [line] .framer-g11xph @949,16570,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-1y5e434-container @949,16595,67,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @949,16595,67,31 flex relative
+                          div [Text Container] .framer-c1cf @949,16595,67,31 flex relative
+                            div .framer-1jyzgvs @949,16595,67,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @949,16595,67,31 block
+                                strong .framer-text @949,16599,67,21 inline "Journal"
+                            div .framer-32rxtn @949,16624,67,1 flex absolute
+                              div [push] .framer-1ms889d @949,16624,0,1 block relative
+                              div [line] .framer-g11xph @949,16624,0,1 block relative
+                  div [Links B] .framer-1d965wv @1163,16322,213,249 flex relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-1olhc8g-container @1163,16322,60,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @1163,16322,60,31 flex relative
+                          div [Text Container] .framer-c1cf @1163,16322,60,31 flex relative
+                            div .framer-1jyzgvs @1163,16322,60,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @1163,16322,60,31 block
+                                strong .framer-text @1163,16326,60,21 inline "Article"
+                            div .framer-32rxtn @1163,16351,60,1 flex absolute
+                              div [push] .framer-1ms889d @1163,16351,0,1 block relative
+                              div [line] .framer-g11xph @1163,16351,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-19xv3qr-container @1163,16376,134,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @1163,16376,134,31 flex relative
+                          div [Text Container] .framer-c1cf @1163,16376,134,31 flex relative
+                            div .framer-1jyzgvs @1163,16376,134,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @1163,16376,134,31 block
+                                strong .framer-text @1163,16380,134,21 inline "Book a Session"
+                            div .framer-32rxtn @1163,16406,134,1 flex absolute
+                              div [push] .framer-1ms889d @1163,16406,0,1 block relative
+                              div [line] .framer-g11xph @1163,16406,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-ezat1p-container @1163,16431,126,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @1163,16431,126,31 flex relative
+                          div [Text Container] .framer-c1cf @1163,16431,126,31 flex relative
+                            div .framer-1jyzgvs @1163,16431,126,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @1163,16431,126,31 block
+                                strong .framer-text @1163,16435,126,21 inline "Privacy Policy"
+                            div .framer-32rxtn @1163,16461,126,1 flex absolute
+                              div [push] .framer-1ms889d @1163,16461,0,1 block relative
+                              div [line] .framer-g11xph @1163,16461,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-lvuro2-container @1163,16486,118,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @1163,16486,118,31 flex relative
+                          div [Text Container] .framer-c1cf @1163,16486,118,31 flex relative
+                            div .framer-1jyzgvs @1163,16486,118,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @1163,16486,118,31 block
+                                strong .framer-text @1163,16490,118,21 inline "Terms of Use"
+                            div .framer-32rxtn @1163,16515,118,1 flex absolute
+                              div [push] .framer-1ms889d @1163,16515,0,1 block relative
+                              div [line] .framer-g11xph @1163,16515,0,1 block relative
+                    div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+                      div .framer-67t7zl-container @1163,16540,36,31 block relative
+                        a [Default] .framer-VHWEm.framer-3KqKr.framer-1mjjyss.framer-v-1mjjyss.framer-1pmmk5t @1163,16540,36,31 flex relative
+                          div [Text Container] .framer-c1cf @1163,16540,36,31 flex relative
+                            div .framer-1jyzgvs @1163,16540,36,31 flex relative
+                              p .framer-text.framer-styles-preset-33sk3i @1163,16540,36,31 block
+                                strong .framer-text @1163,16544,36,21 inline "404"
+                            div .framer-32rxtn @1163,16570,36,1 flex absolute
+                              div [push] .framer-1ms889d @1163,16570,0,1 block relative
+                              div [line] .framer-g11xph @1163,16570,0,1 block relative
+        div [Sections B] .framer-111lakq @0,16852,1440,132 flex relative
+          section [Section] .framer-1h88lol @56,16852,664,132 flex relative
+            div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+              div [Text Container] .framer-1nei8c0 @56,16852,664,132 flex relative
+                div .framer-154c266 @64,16852,648,31 flex relative
+                  p .framer-text.framer-styles-preset-33sk3i @64,16852,648,31 block "Contact us:"
+                    a .framer-text.framer-styles-preset-1hi5j20 @166,16856,190,21 inline
+                      strong .framer-text @166,16856,190,21 inline "hello@clearpath.com"
+                div [Social Links] .framer-14ijh3b @64,16960,648,24 flex relative
+                  div .framer-50vxpl-container @64,16960,24,24 block relative
+                    a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @64,16960,24,24 flex relative
+                      div .framer-pm1e4t-container @64,16960,24,24 block relative
+                        div @0,0,0,0 contents
+                          svg @64,16960,24,24 inline-block
+                            g @66,16962,20,20 inline
+                              path @66,16962,20,20 inline
+                  div .framer-1ki5eiv-container @120,16960,24,24 block relative
+                    a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @120,16960,24,24 flex relative
+                      div .framer-pm1e4t-container @120,16960,24,24 block relative
+                        div @0,0,0,0 contents
+                          svg @120,16960,24,24 inline-block
+                            g @124,16962,16,20 inline
+                              path @124,16962,16,20 inline
+                  div .framer-sfmjzp-container @176,16960,24,24 block relative
+                    a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @176,16960,24,24 flex relative
+                      div .framer-pm1e4t-container @176,16960,24,24 block relative
+                        div @0,0,0,0 contents
+                          svg @176,16960,24,24 inline-block
+                            g @178,16962,20,20 inline
+                              path @178,16962,20,20 inline
+                  div .framer-863yan-container @232,16960,24,24 block relative
+                    a [Desktop] .framer-zFlkZ.framer-19gd0gr.framer-v-19gd0gr.framer-15xbm96 @232,16960,24,24 flex relative
+                      div .framer-pm1e4t-container @232,16960,24,24 block relative
+                        div @0,0,0,0 contents
+                          svg @232,16960,24,24 inline-block
+                            g @234,16963,21,17 inline
+                              path @234,16963,21,17 inline
+          section [Section] .framer-17pz5m0.hidden-vtru7o.hidden-16glfzb @720,16852,221,132 block relative
+          section [Section] .framer-2hdnzo @941,16852,443,132 flex relative
+            div .hidden-16glfzb.hidden-vtru7o @0,0,0,0 contents
+              div [Container] .framer-v7xhz5 @941,16852,443,132 flex relative
+                div [Framer Template handcrafted by Anton Drukarov] .framer-azep56 @949,16852,427,50 flex relative
+                  div [Framer] .framer-9j3srw @949,16857,40,40 block relative
+                    div @949,16857,40,40 block
+                      svg @949,16857,40,40 block
+                        use @956,16857,27,40 inline
+                  div .framer-edynnx @997,16852,379,50 flex relative
+                    p .framer-text.framer-styles-preset-99grtk @997,16852,379,50 block "Templatehandcrafted by"
+                      a .framer-text.framer-styles-preset-1hi5j20 @997,16856,50,17 inline
+                        strong .framer-text @997,16856,50,17 inline "Framer"
+                      br .framer-text @1113,16856,0,17 inline
+                      a .framer-text.framer-styles-preset-1hi5j20 @1106,16881,112,17 inline
+                        strong .framer-text @1106,16881,112,17 inline "Anton Drukarov"
+                div .framer-ztp95v @949,16959,427,25 flex relative
+                  p .framer-text.framer-styles-preset-99grtk @949,16959,427,25 block "Copyright 2026 ClearPath…"
+      div .framer-1pj0vat-container.hidden-vtru7o.hidden-16glfzb @1280,737,140,103 block fixed
+        div [On] .framer-dCEup.framer-1bygqlm.framer-v-1bygqlm @1280,737,140,103 block relative
+          a .framer-190dhm9.framer-1s8duhu @1281,738,138,101 block absolute
+            div @1281,738,138,101 block absolute
+              img @1281,738,138,101 block
+            div [Backdrop] .framer-djo1oa @1281,738,138,101 block absolute
+          div .framer-1mmdrux-container @1392,747,18,18 block absolute
+            div @0,0,0,0 contents
+              svg @1392,747,18,18 inline-block
+                g @1395,750,12,12 inline
+                  path @1395,750,12,12 inline
+          div .framer-mxx5bg @1304,801,93,22 flex absolute
+            p .framer-text @1304,801,93,22 block "New Release"
+      div .framer-1vs2lkl-container.hidden-vtru7o.hidden-16glfzb @1280,842,140,38 block fixed
+        a [Desktop] .framer-F6oEL.framer-10c0k9q.framer-v-10c0k9q.framer-955hok @1280,842,140,38 block relative
+          div .framer-1hxgf09 @1281,843,138,36 block absolute
+            div .framer-chq722 @1293,850,115,22 flex absolute
+              p .framer-text @1293,850,115,22 block "Get this template"
+            div .framer-1njzeg6 @1317,890,66,22 flex absolute
+              p .framer-text @1317,890,66,22 block "from $129"
+    div @0,17048,1440,0 block
+  div @0,900,0,0 block absolute
+    svg @0,911,0,0 inline
+      path @0,941,6000,619 inline
+    svg @0,925,0,0 inline
+      path @0,961,6000,608 inline
+    svg @0,928,1516,443 inline
+      path @1,929,1514,441 inline
+    svg @0,1385,0,0 inline
+      path @4,1385,16,24 inline
+    svg @0,1388,293,254 inline
+      path @0,1388,292,253 inline
+    svg @0,1645,265,259 inline
+      path @0,1646,263,257 inline
+    svg @0,1907,302,265 inline
+      path @1,1908,300,263 inline

@@ -1,0 +1,8 @@
+# Framer colour tokens (from :root)
+--token-15d296e7-c5d1-416d-add7-be3f4225afa3:#fff
+--token-d424afa5-f2ca-4c1d-b1a5-805fed15097c:#535956
+--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae:#7fa69b
+--token-4c121226-8861-4f30-90ed-8491fbc3d043:#ffffffa6
+--token-b72f3c38-19aa-4001-b465-e11babd5f784:#2e3231
+--token-6d9fab8e-54e4-455e-b159-e77dc4089540:#fafafa
+--token-eac71914-1f5d-45ca-840a-434b3aeb07ee:#949e9b

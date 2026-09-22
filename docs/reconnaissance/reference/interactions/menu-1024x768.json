@@ -1,0 +1,103 @@
+{
+ "button": {
+  "x": 915,
+  "y": 39.9921875,
+  "name": null
+ },
+ "closedNav": [
+  "nav[Tablet]framer-v-1iks3dg @0,0,1024,79 op=1 bg=rgb(255, 255, 255) tf=none",
+  "div[] @40,21,160,36 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "a[Dark]framer-v-1yp4jpz @40,21,160,36 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "div[Rectangle 1] @40,37,8,8 op=1 bg=rgb(127, 166, 155) tf=matrix(1, 0, 0, 1, 0, -4) \"\"",
+  "div[clear—path] @64,21,136,36 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "p[] @64,21,136,36 op=1 bg=rgba(0, 0, 0, 0) tf=none \"clear—path\"",
+  "div[] @874,20,110,39 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "div[A]framer-v-dso3os @874,20,110,39 op=1 bg=rgb(127, 166, 155) tf=none",
+  "section[Circle B] @858,38,4,4 op=1 bg=rgb(255, 255, 255) tf=matrix(1, 0, 0, 1, 0, -2) \"\"",
+  "div[] @894,32,41,17 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "p[] @894,32,41,17 op=1 bg=rgba(0, 0, 0, 0) tf=none \"Menu\"",
+  "section[Circle A] @964,38,4,4 op=1 bg=rgb(255, 255, 255) tf=matrix(1, 0, 0, 1, 0, -2) \"\""
+ ],
+ "openTimeline": [
+  [
+   406,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ],
+  [
+   506,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ],
+  [
+   589,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ],
+  [
+   668,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ],
+  [
+   725,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ],
+  [
+   939,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ],
+  [
+   1340,
+   79,
+   "rgb(255, 255, 255)",
+   "framer-v-1iks3dg"
+  ]
+ ],
+ "openNav": [
+  "nav[Tablet]framer-v-1iks3dg @0,0,1024,79 op=1 bg=rgb(255, 255, 255) tf=none",
+  "div[] @40,21,160,36 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "a[Dark]framer-v-1yp4jpz @40,21,160,36 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "div[Rectangle 1] @40,37,8,8 op=1 bg=rgb(127, 166, 155) tf=matrix(1, 0, 0, 1, 0, -4) \"\"",
+  "div[clear—path] @64,21,136,36 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "p[] @64,21,136,36 op=1 bg=rgba(0, 0, 0, 0) tf=none \"clear—path\"",
+  "div[] @874,20,110,39 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "div[B]framer-v-1xryg0i @874,20,110,39 op=1 bg=rgb(127, 166, 155) tf=none",
+  "section[Circle B] @890,38,4,4 op=1 bg=rgb(255, 255, 255) tf=matrix(1, 0, 0, 1, 0, -2) \"\"",
+  "div[] @919,32,48,17 op=1 bg=rgba(0, 0, 0, 0) tf=none",
+  "p[] @919,32,48,17 op=1 bg=rgba(0, 0, 0, 0) tf=none \"Close\"",
+  "section[Circle A] @996,38,4,4 op=1 bg=rgb(255, 255, 255) tf=matrix(1, 0, 0, 1, 0, -2) \"\""
+ ],
+ "scrollLocked": {
+  "htmlOverflow": "hidden",
+  "bodyOverflow": "visible",
+  "lenisStopped": "",
+  "programmaticScrollMoved": true
+ },
+ "closeButton": {
+  "x": 943.0078125,
+  "y": 39.9921875
+ },
+ "closeTimeline": [
+  [
+   150,
+   79
+  ],
+  [
+   400,
+   79
+  ],
+  [
+   900,
+   79
+  ]
+ ]
+}
