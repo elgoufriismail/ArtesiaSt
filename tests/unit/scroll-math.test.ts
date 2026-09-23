@@ -50,7 +50,16 @@ test('B15 word opacity slices', () => {
   assert.equal(wordOpacity(1, 3, 4), 1);
 });
 
-test('markerPassed at half viewport', () => {
-  assert.equal(markerPassed(1846, 1395, 900), false);
-  assert.equal(markerPassed(1846, 1397, 900), true);
+test('markerPassed reproduces the original trigger positions binary-searched at 1440×900', () => {
+  // toggle-start marker: layout top 1144 (no transform); toggle-on marker: layout top 1850 (visual 1846, translateY −4)
+  const cases: [string, number, number, number][] = [
+    ['switch → Off (top edge)', 1144, 0, 693],
+    ['hero lines fade (bottom edge)', 1144, 8, 701],
+    ['switch → On (top edge)', 1850, 0, 1399],
+    ['Page Intro fade (bottom edge)', 1850, 8, 1407],
+  ];
+  for (const [name, top, h, y] of cases) {
+    assert.equal(markerPassed(top, y - 1, 900, 0.5, h), false, `${name} not before ${y}`);
+    assert.equal(markerPassed(top, y, 900, 0.5, h), true, `${name} at ${y}`);
+  }
 });

@@ -53,6 +53,7 @@ textarea {
   position: absolute;
   left: 0;
   width: 8px;
+  height: 8px;               /* 8×8 like the original's marker sections (their translateY(-50%) is −4 px) */
   pointer-events: none;
   visibility: hidden;
 }

@@ -1,23 +1,68 @@
-/* BalanceSection ("Toggle") — BREAKPOINTS.md §4. Height = sticky block S + 100vh; markers measured:
-   toggle-start 244 · dark-nav-1 S−16 · toggle-on-anchor S+33.6vh (phone 13.6vh) · toggle-on S+49.55vh.
-   S (sticky block): desktop 500 (510 at ≥1600 type tier) · tablet 486 · phone content-driven (476–585).
+/* BalanceSection ("Toggle"): measured geometry (1440×900 unless noted; same structure at all breakpoints).
+   root: flex column, padding 0 16; sticky block (top 0): flex column centred, gap 32, padding-top 244.
+   Switch link 140×32 (overflow hidden), switch box 139×32 at x +0.5. Text After: max-width 1200, gap 32;
+   H2 wrap max 800 (t-sans-h2 48/44/38/34), P wrap max 440 (t-body). Text Before: absolute top 0, centred.
+   Markers: toggle-start 244 (root) · Container 100vh: dark-nav-1 −16, toggle-on-anchor 34% (phone 14%),
+   toggle-on-animation 50%, the last two with translateY(−50%) of their 8 px box.
    Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
-  --s: 500px;
   position: relative;
+  z-index: 1;                /* original: Toggle z 1, sticky wrapper z 1, section pointer-events none */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 16px;
+  pointer-events: none;
 }
-.stickyBlock { position: sticky; top: 0; height: var(--s); }
-.container100vh { height: 100vh; }
+.sticky { position: sticky; top: 0; z-index: 1; width: 100%; }
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 244px;
+}
 
-.root > [data-marker='toggle-start-animation'] { top: 244px; }
-.darkNav { top: calc(var(--s) - 16px); }
-.root > [data-marker='toggle-on-anchor'] { top: calc(var(--s) + 33.6vh); }
-.root > [data-marker='toggle-on-animation'] { top: calc(var(--s) + 49.55vh); }
+/* ── switch ── (initial state = Start; balanceSequence sets the live state) */
+.link { position: relative; display: block; width: 140px; height: 32px; overflow: hidden; flex: none; pointer-events: auto; }
+.switch { position: absolute; top: 0; left: 0.5px; width: 139px; height: 32px; opacity: 0; }
+.label {
+  position: absolute;
+  top: 7.6px;
+  left: 50%;              /* centring (xPercent −50) is owned by balanceSequence; the label is hidden in Start */
+  color: var(--c-white);
+  opacity: 0;
+  white-space: nowrap;
+}
+.base { position: absolute; left: 68.5px; top: 15px; width: 2px; height: 2px; border-radius: 999px; background: var(--c-track-off); }
+.knob { position: absolute; left: 57.5px; top: 4px; width: 24px; height: 24px; border-radius: 999px; background: var(--c-white); }
 
-@media (min-width: 1600px) { .root { --s: 510px; } }
-@media (min-width: 810px) and (max-width: 1199.98px) { .root { --s: 486px; } }
+/* ── headline pairs ── */
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+}
+.before { position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+.h2Wrap { width: 100%; max-width: 800px; }
+.pWrap { width: 100%; max-width: 440px; }
+.h2, .p { margin: 0; text-align: center; }
+.onDark { color: var(--c-white); }
+.hidden { opacity: 0; }
+
+/* ── height + markers ── */
+.container100vh { position: relative; width: 100%; height: 100vh; }
+.mStart { top: 244px; left: 0; }
+.mDarkNav { top: -16px; left: 0; }
+.mAnchor { top: 34%; left: 0; transform: translateY(-50%); }
+.mOn { top: 50%; left: 0; transform: translateY(-50%); }
+
 @media (max-width: 809.98px) {
-  .root { --s: 585px; }
-  .root > [data-marker='toggle-on-anchor'] { top: calc(var(--s) + 13.6vh); }
+  .mAnchor { top: 14%; }
 }

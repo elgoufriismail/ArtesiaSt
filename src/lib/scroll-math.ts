@@ -39,12 +39,18 @@ export function sequenceValue(
 }
 
 /**
- * Marker crossing used by Framer scroll-target variants / appear targets (threshold .5):
- * true once the marker's top has passed `line` × viewport height from the top.
- * Calibrated: toggle-start (doc 1144) flips at scroll≈700–750, toggle-on (1846) at ≈1400–1450 @900vh.
+ * Framer scroll-target variant trigger. Binary-searched on the original at 1440, 1024 and 390, with the
+ * same px offsets at every viewport. A variant fires when an edge of the marker's UNTRANSFORMED layout
+ * box reaches `line`·vh + 1 px:
+ *   edge 'top'    → pass height 0: Framer in-view amount "some" (Balance switch states)
+ *   edge 'bottom' → pass the marker height (8): amount "all", the whole marker has passed
+ *                   (Page Intro fade, hero lines fade)
+ * `layoutTop` is the doc position without the marker's own transform (toggle-on markers carry
+ * translateY(−4 px); Framer ignores it).
  */
-export function markerPassed(docTop: number, scrollY: number, vh: number, line = 0.5): boolean {
-  return docTop - scrollY <= line * vh;
+export const MARKER_TOLERANCE_PX = 1;
+export function markerPassed(layoutTop: number, scrollY: number, vh: number, line = 0.5, height = 0): boolean {
+  return layoutTop + height - scrollY <= line * vh + MARKER_TOLERANCE_PX;
 }
 
 /**

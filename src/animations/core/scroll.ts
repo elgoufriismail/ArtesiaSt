@@ -29,17 +29,22 @@ export function onTargetProgress(target: Element, threshold: number, onProgress:
   });
 }
 
+export type MarkerEdge = 'top' | 'bottom';
+
 /**
- * Marker crossing (Framer scroll-target variants): fires onChange(true) when the marker's top
- * passes `line`×viewport from the top, onChange(false) when scrolling back above it.
+ * Marker crossing (Framer scroll-target variants; rule and measurements in lib/scroll-math markerPassed):
+ * fires onChange(true) once the marker's `edge` (untransformed layout box) reaches `line`×vh (+1 px),
+ * and onChange(false) when scrolling back above it.
  */
-export function onMarker(id: string, line: number, onChange: (passed: boolean) => void) {
+export function onMarker(id: string, line: number, onChange: (passed: boolean) => void, edge: MarkerEdge = 'top') {
   const el = marker(id);
   if (!el) return null;
   let state: boolean | null = null;
   const check = () => {
-    const top = el.getBoundingClientRect().top + window.scrollY;
-    const next = markerPassed(top, window.scrollY, window.innerHeight, line);
+    const r = el.getBoundingClientRect();
+    const ty = new DOMMatrixReadOnly(getComputedStyle(el).transform === 'none' ? undefined : getComputedStyle(el).transform).m42;
+    const layoutTop = r.top + window.scrollY - ty;
+    const next = markerPassed(layoutTop, window.scrollY, window.innerHeight, line, edge === 'bottom' ? r.height : 0);
     if (next !== state) { state = next; onChange(next); }
   };
   return ScrollTrigger.create({ trigger: document.documentElement, start: 0, end: 'max', onUpdate: check, onRefresh: check });

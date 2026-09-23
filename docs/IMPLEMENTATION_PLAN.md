@@ -259,13 +259,47 @@ gates for the sections touched.
 ### Step 1 measured corrections (Chrome + Hero)
 
 * `targetProgress` divides by the **target height**, not the viewport (verified at 390: hero 596px).
-* Hero H1 words: 1.6 s framer ease, blur 10→0, y 10→0, opacity; the **measured stagger is 0.1 s** (the
-  original's config value reads 0.2) and the first word starts ~1.6 s after the nav logo.
+* Hero H1 words (read from the original's WAAPI animations): 1.6 s framer ease, blur 10→0 and opacity,
+  JS-driven y 10→0; delay **0.2 s + 0.1 s × index**. The text effect mounts at hydration: its start is
+  1.21–1.57 s after the logo entrance start (median 1345 ms over 15 loads). The clone schedules both from
+  one load clock (`core/loadClock`), so the gap is fixed at the median. (The earlier "~1.6 s" figure was
+  a 10 %-opacity-crossing artefact.)
 * Mobile menu: the panel **slides down** (yPercent −150→0, spring 0.6) rather than using a clip reveal;
   the items follow (spring 0.55, delay .25); the close sequence runs items at 0.25 s, then the panel at 0.6 s.
 * Hero lines fade: 0.8 s strong ease forward, 1.2 s back (marker `toggle-start-animation`).
 * Desktop nav theme line sits 80px below the viewport top (dark-nav-1 flips between scroll 1450 and 1500 @1440×900).
 * Waves background ignores targets inside `[data-stub]` until those sections exist.
+* Marker-driven variants (Framer scroll targets): measured by binary search on both sites. They fire when
+  an edge of the marker's **untransformed** 8×8 box reaches vh/2 + 1 px: the top edge for the Balance
+  switch ("some"), the bottom edge for the Page Intro and hero lines fades ("all"). The clone reproduces
+  the trigger positions to the pixel at 1440/1024/390 (`lib/scroll-math` markerPassed, unit-tested).
+* Start phase: a variant animation starts a frame or more after the crossing (Page Intro +1, lines +2
+  frames; Balance switch boxes +2 and colours/opacity/text +3). `core/ticks.afterTicks` counts real
+  frames (GSAP runs listeners added mid-tick in the same tick, so nested one-shot listeners collapse).
+* Timing validation is frame-accurate (`tools/compare/timing.mjs`, `balance-timing.mjs`): rAF-timestamped
+  fresh samples, backdrop-filter disabled on both sides (software-rendered blur makes frames 150 ms),
+  model-free scoring against the original's runs, with its run-to-run noise as the floor.
+
+### Step 3 measured behaviour (BalanceSection, B3)
+
+* Layout: sticky block height = 244 + 32 + 32 + "Text After" (content-driven: 500 @1440, 509.6 @1920,
+  485.6 @1024, 476 @768, 584.8 @390). "Text Before" is absolutely stacked on it. Stand-in copy is fitted to
+  the original's line counts at all 8 viewports. Toggle root and sticky wrapper are z-index 1, the section is
+  pointer-events none, and the link is hit-testable.
+* Switch appear: opacity 0.001→1, 0.8 s framer ease, on any intersection. It replays, with an instant
+  reset whenever the switch leaves the viewport.
+* The TARGET variant's transition applies (Framer rule). → Start / → Off: spring 1.2 s bounce 0;
+  → On: spring 0.8 s bounce 0. Framer layout (FLIP) = linear interpolation of each visual box. The clone
+  tweens the boxes directly, without px rounding (`autoRound: false`; Framer's projection is sub-pixel).
+  Colours use Framer's squared-space RGB mix (`core/color`). Knob +24 px; track rgba(0,0,0,.2) → #7fa69b;
+  label white → #535956.
+* Headline pairs (both directions): the outgoing pair fades out over 0.3 s (framer ease); the incoming H2
+  fades in over 0.6 s and the P over 0.8 s, after a 0.4 s delay.
+* Link: `./#toggle-on-anchor` in Start/Off and `./#toggle-start-animation` in On. Lenis anchor scroll
+  (duration 2) lands on the same px as the original.
+* Not reproduced on purpose: the original sometimes stalls 100–190 ms after a large scroll jump before
+  starting a variant (non-deterministic React work). The tablet "Animated Lines" container is empty in the
+  original, so the clone renders no lines below desktop.
 
 ## 10. Testing strategy
 

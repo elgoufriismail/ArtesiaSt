@@ -1,11 +1,5 @@
-import { gsap } from '../core/gsap';
-import { onMarker } from '../core/scroll';
-
-/** Run `fn` after `frames` ticker ticks. */
-function afterTicks(frames: number, fn: () => void) {
-  if (frames <= 0) { fn(); return; }
-  gsap.ticker.add(() => afterTicks(frames - 1, fn), true);
-}
+import { onMarker, type MarkerEdge } from '../core/scroll';
+import { afterTicks } from '../core/ticks';
 
 /**
  * Framer scroll-target variants: calls onChange(true/false) when marker `id` crosses `line`×vh.
@@ -17,6 +11,6 @@ function afterTicks(frames: number, fn: () => void) {
  * Page Intro ≈ +1 frame. The Animated Lines code component ≈ +2 frames (the variant reaches it one
  * render later): t0 18–48 ms out, 28–34 ms back.
  */
-export function markerState(id: string, line: number, onChange: (passed: boolean) => void, frames = 1) {
-  return onMarker(id, line, (passed) => afterTicks(frames, () => onChange(passed)));
+export function markerState(id: string, line: number, onChange: (passed: boolean) => void, frames = 1, edge: MarkerEdge = 'top') {
+  return onMarker(id, line, (passed) => afterTicks(frames, () => onChange(passed)), edge);
 }

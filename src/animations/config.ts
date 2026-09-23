@@ -42,20 +42,45 @@ export const ANIM = {
     portraitFade: { threshold: 0, from: 1, to: 0 },               // onScrollTarget(Hero, 0)
     textParallaxFactor: { desktop: 0.3, tablet: 0, phone: 0 } as PerBp<number>, // speed 70
     // fading out = Framer "exit" (0.8 s), fading back in = "animate" (1.2 s) — verified frame-by-frame
-    linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, startFrames: 2, t: { duration: 0.8, ease: 'strong' } as Tween, back: { duration: 1.2, ease: 'strong' } as Tween },
-    introFadeOut: { marker: 'toggle-on-animation', line: 0.5, startFrames: 1, t: { spring: true, duration: 1.2, bounce: 0 } as Spring, back: { spring: true, duration: 0.8, bounce: 0 } as Spring },
+    linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, edge: 'bottom' as const, startFrames: 2, t: { duration: 0.8, ease: 'strong' } as Tween, back: { duration: 1.2, ease: 'strong' } as Tween },
+    introFadeOut: { marker: 'toggle-on-animation', line: 0.5, edge: 'bottom' as const, startFrames: 1, t: { spring: true, duration: 1.2, bounce: 0 } as Spring, back: { spring: true, duration: 0.8, bounce: 0 } as Spring },
   },
 
   /* ── B3 balance switch (first-class #3) ──────────────────────────── */
+  /** Measured frame by frame at 1440×900 (rAF-timestamped, backdrop-filter off; fits in docs/architecture
+   *  and tools/compare/balance-timing.mjs). Framer rule: the TARGET variant's transition applies. */
   B3: {
-    startMarker: 'toggle-start-animation',
-    onMarker: 'toggle-on-animation',
+    startMarker: 'toggle-start-animation',   // crosses `line` → Start → Off
+    onMarker: 'toggle-on-animation',         // crosses `line` → Off → On
     line: 0.5,
-    grow: { spring: true, duration: 0.4, bounce: 0 } as Spring,        // Start → Off (Flip), measured ≈0.3 s
-    flip: { spring: true, duration: 0.5, bounce: 0 } as Spring,        // Off → On knob/track
-    textCrossfade: { duration: 0.4, ease: 'framer' } as Tween,
-    trackOff: 'rgba(0, 0, 0, 0.2)',
-    trackOn: '#7fa69b',
+    edge: 'top' as const,                    // trigger edge (lib/scroll-math markerPassed): switch = "some"
+    startFrames: 1,                          // Framer variant start phase (see scroll/markerState)
+    /** Extra frames after the (startFrames-deferred) state change, calibrated with the best-time-shift fits
+     *  of tools/compare/balance-timing.mjs: the switch boxes first move ≈2 frames, and colours, label opacity
+     *  and text ≈3 frames after the crossing is seen (Framer: layout projection before variant animations). */
+    lagFrames: { layout: 2, variant: 2 },
+    /** In-view appear of the switch: any intersection, replays, instant reset on exit (either direction). */
+    appear: { from: 0.001, t: { duration: 0.8, ease: 'framer' } as Tween },
+    /** Switch transitions by target state. Layout moves are linear box interpolations (Framer FLIP). */
+    toStart: { spring: true, duration: 1.2, bounce: 0 } as Spring,
+    toOff: { spring: true, duration: 1.2, bounce: 0 } as Spring,
+    toOn: { spring: true, duration: 0.8, bounce: 0 } as Spring,
+    /** Switch boxes in px, relative to the 139×32 switch box. Label x uses left% + xPercent (centred at Start). */
+    boxes: {
+      start: { label: { left: '50%', xPercent: -50, top: 7.6, opacity: 0 }, base: { left: 68.5, top: 15, width: 2, height: 2 }, knob: { left: 57.5, top: 4 } },
+      off: { label: { left: '0%', xPercent: 0, top: 7.2, opacity: 1 }, base: { left: 83, top: 0, width: 56, height: 32 }, knob: { left: 87, top: 4 } },
+      on: { label: { left: '0%', xPercent: 0, top: 7.2, opacity: 1 }, base: { left: 83, top: 0, width: 56, height: 32 }, knob: { left: 111, top: 4 } },
+    },
+    colors: {
+      track: { start: 'rgba(0, 0, 0, 0.2)', off: 'rgba(0, 0, 0, 0.2)', on: '#7fa69b' },
+      label: { start: '#ffffff', off: '#ffffff', on: '#535956' },
+    },
+    /** Headline pair swap (both directions): outgoing pair out, incoming H2 / P in after a delay. */
+    text: {
+      out: { duration: 0.3, ease: 'framer' } as Tween,
+      inH2: { duration: 0.6, ease: 'framer', delay: 0.4 } as Tween,
+      inP: { duration: 0.8, ease: 'framer', delay: 0.4 } as Tween,
+    },
   },
 
   /* ── B4 image parallax (first-class #4) ──────────────────────────── */
