@@ -19,7 +19,7 @@ export function HowItWorks() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'How It Works'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'How It Works'} data-nav-theme="dark">
       <Marker id="how-it-works" />
       <Marker id="step-2-trigger" />
       <Marker id="step-3-trigger" />

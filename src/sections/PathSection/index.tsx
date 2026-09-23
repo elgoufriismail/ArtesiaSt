@@ -18,7 +18,7 @@ export function PathSection() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Ready to find your path?'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Ready to find your path?'} data-nav-theme="dark">
     </div>
   );
 }

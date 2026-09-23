@@ -1,7 +1,59 @@
-/* Navigation — fixed; 79px desktop/tablet, 69px phone (tokens --nav-h). */
-.root {
+/* Navigation — docs/reconnaissance/STRUCTURE.md, VISUAL.md §4, ANIMATIONS.md B1/B10/B17.
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+.header { position: relative; z-index: 10; }
+
+.nav {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 10;
   height: var(--nav-h);
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logoWrap { display: flex; }
+.logo { color: var(--c-white); --logo-dot: var(--c-white); }
+
+.desktopMenu { position: relative; display: flex; }
+.row {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  height: 39px;
+  transition: opacity 0.3s var(--ease-framer);
+}
+.rowDark { position: absolute; inset: 0; color: var(--c-green); }
+.rowLight { position: relative; color: var(--c-white); }
+
+/* theme cross-fade (B10) */
+.nav[data-theme='light'] .rowDark { opacity: 0; pointer-events: none; }
+.nav[data-theme='dark'] .rowLight { opacity: 0; pointer-events: none; }
+.nav[data-theme='dark'] .logo { color: var(--c-green); --logo-dot: var(--c-green); }
+
+.touchMenu { display: none; }
+.menuPill { width: 110px; }
+
+/* tablet */
+@media (max-width: 1199.98px) {
+  .nav {
+    padding: 0 40px;
+    align-items: center;
+    background: var(--c-white);
+  }
+  .desktopMenu { display: none; }
+  .touchMenu { display: flex; }
+  .logo,
+  .nav[data-theme='dark'] .logo { color: var(--c-green); --logo-dot: var(--c-green); }
+}
+
+/* phone */
+@media (max-width: 809.98px) {
+  .nav { padding: 0 16px; }
+}
+
+/* First-paint initial state of the desktop entrance (B1) — animated by GSAP */
+@media (min-width: 1200px) {
+  .nav [data-entrance] { opacity: 0.001; transform: translateY(20px); }
 }

@@ -19,7 +19,7 @@ export function Quote() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Big Quote'} data-nav-theme="light">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Big Quote'} data-nav-theme="light">
       <Marker id="big-quote" />
     </div>
   );

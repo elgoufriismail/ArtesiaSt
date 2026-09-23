@@ -1,11 +1,125 @@
-/* Hero — original "Page Intro". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+/* Hero ("Page Intro") — docs/reconnaissance VISUAL.md §7, BREAKPOINTS.md §4, measured geometry:
+   desktop: 900 px tall; text row absolute, bottom 64, padding 0 56, columns 7:1:4 (775·111·443 @1440)
+   tablet:  100vh; hero box 90 % centred; text row bottom 40, padding 0 32, columns 4:1:3 (480·120·360)
+   phone:   content height; padding-top 160; stacked column, gap 40, padding 0 8
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
 }
 
-@media (min-width: 810px) and (max-width: 1199.98px) {
+/* ── backdrop ─────────────────────────────────────────────── */
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400vh;
+  background: var(--c-white);
+  -webkit-mask-image: linear-gradient(#000 90%, transparent 100%);
+  mask-image: linear-gradient(#000 90%, transparent 100%);
+}
+.image {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--c-black);
+}
+.layer { position: absolute; inset: 0; overflow: hidden; }
+.fill { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.circles { position: absolute; inset: 0; overflow: hidden; }
+.circle {
+  position: absolute;
+  border: 1px solid var(--c-white);
+  border-radius: 9999px;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+}
+/* sizes/centres are viewport-relative (identical ratios at 1280/1440/1920) */
+.c1 { width: 76vw; height: 76vw; left: 85%; top: 107%; }
+.c2 { width: 60vw; height: 60vw; left: 89%; top: 36%; }
+.c3 { width: 68vw; height: 68vw; left: -2%; top: 73%; }
+
+/* ── content ──────────────────────────────────────────────── */
+.hero { position: relative; width: 100%; height: 100%; }
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 780px;
+  height: calc(100% + 240px);
+  margin-left: -390px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 85%, transparent 100%);
+  mask-image: linear-gradient(#000 85%, transparent 100%);
+  pointer-events: none;
+}
+.lineWrap { position: absolute; inset: 0; opacity: 0.001; }
+
+.textOuter { position: absolute; top: 0; left: 0; right: 0; height: min(100%, 100vh); }
+.textRow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 64px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 56px;
+}
+.colTitle { flex: 7 0 0; min-width: 0; display: flex; }
+.spacer { flex: 1 0 0; align-self: stretch; overflow: hidden; }
+.colIntro { flex: 4 0 0; min-width: 0; display: flex; }
+
+.container { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 8px; width: 100%; }
+.h1 { color: var(--c-white); width: 100%; }
+.h1 :global([data-word]) { will-change: transform, opacity, filter; }
+
+.introContainer { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; padding: 0 8px; width: 100%; }
+.paragraph { color: var(--c-white); text-indent: calc(20% + 16px); }
+
+/* ── tablet ───────────────────────────────────────────────── */
+@media (max-width: 1199.98px) {
+  .root { height: 100vh; }
+  .image { top: var(--nav-h); }
+  .circles, .lines { display: none; }
+  .hero { height: 90%; }
+  .textRow { bottom: 40px; padding: 0 32px; }
+  .colTitle { flex: 4 0 0; }
+  .spacer { flex: 1 0 0; }
+  .colIntro { flex: 3 0 0; }
 }
 
+/* ── phone ────────────────────────────────────────────────── */
 @media (max-width: 809.98px) {
+  .root { height: auto; justify-content: flex-start; }
+  .hero { height: auto; padding-top: 160px; }
+  .textOuter { position: relative; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  .textRow {
+    position: relative;
+    bottom: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 8px;
+  }
+  .spacer { display: none; }
+  .colTitle, .colIntro { flex: none; width: 100%; }
+}
+
+/* First-paint initial states (like Framer's SSR'd initial styles) — animated by GSAP */
+.h1 :global([data-word]) { opacity: 0.001; transform: translateY(10px); filter: blur(10px); }
+.image { opacity: 0.001; }
+@media (min-width: 1200px) {
+  .introContainer > div:first-child { opacity: 0.001; transform: translateY(-20px); }
+  .introContainer > div:last-child { opacity: 0.001; transform: translateY(20px); }
 }

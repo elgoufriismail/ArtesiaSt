@@ -1,0 +1,26 @@
+.root { display: none; }
+@media (max-width: 1199.98px) { .root { display: block; } }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  background: var(--c-white);
+  visibility: hidden;
+}
+.center {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9;
+  transform: translate(-50%, calc(-50% + 16px));
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  visibility: hidden;
+  opacity: 0;
+}
+.item { color: var(--c-ink); }

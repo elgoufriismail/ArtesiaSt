@@ -15,9 +15,9 @@ export const marker = (id: string) => document.querySelector<HTMLElement>(`[data
  * threshold 0: at top → one viewport later). Calls `onProgress(0…1)` on every scroll update.
  */
 export function onTargetProgress(target: Element, threshold: number, onProgress: (p: number) => void) {
-  let docTop = 0;
-  const measure = () => { docTop = target.getBoundingClientRect().top + window.scrollY; };
-  const update = () => onProgress(targetProgress(docTop, window.scrollY, window.innerHeight, threshold));
+  let docTop = 0, height = 1;
+  const measure = () => { const r = target.getBoundingClientRect(); docTop = r.top + window.scrollY; height = r.height; };
+  const update = () => onProgress(targetProgress(docTop, height, window.scrollY, window.innerHeight, threshold));
   measure();
   update();
   return ScrollTrigger.create({

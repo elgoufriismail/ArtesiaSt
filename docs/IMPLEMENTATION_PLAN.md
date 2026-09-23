@@ -217,7 +217,8 @@ Accessibility baseline kept from the original's semantics: real links/buttons, l
 * **Copy**: written fresh (never reworded from the original) to fit `docs/architecture/text-budgets.json`
   (chars ±10 %, words, rendered line count per breakpoint). Generic UI labels are kept. Placeholder brand
   "Calm Shore" / "calm—shore".
-* **Fonts**: Crimson Text 400 + Inter variable, self-hosted via Fontsource (OFL). **Icons**: Phosphor
+* **Fonts**: Crimson Text 400 (Fontsource) + Inter 4 static text cuts from `inter-ui` (OFL), self-hosted.
+  The Fontsource variable Inter rendered ~3–4 % narrower than the original and changed line breaks. **Icons**: Phosphor
   (social, check-circle, plus-circle, section icons).
 * Images are plain `<img>` with explicit width/height (`images.unoptimized`); no remote images.
 
@@ -231,7 +232,7 @@ Accessibility baseline kept from the original's semantics: real links/buttons, l
 | lenis | 1.3.26 | smooth scroll (original uses Lenis) |
 | @phosphor-icons/react | 2.1.10 | icons (original uses Phosphor) |
 | @fontsource/crimson-text | 5.3.0 | display serif |
-| @fontsource-variable/inter | 5.3.0 | sans |
+| inter-ui | 4.1.1 | sans (static Inter 4, metrics match the original; replaced @fontsource-variable/inter) |
 | **dev:** typescript 5.9.3, @types/react 19.3.0, @types/react-dom 19.3.0, @types/node 22.19.1 | | typing |
 | **dev:** @playwright/test 1.56.1, pixelmatch 7.2.0, pngjs 7.0.0 | | verification harness (1.56.1 matches the preinstalled Chromium) |
 
@@ -254,6 +255,17 @@ gates for the sections touched.
 8. **Journal**, **Numbers** (B8), **Faq** (#12), **Booking**.
 9. Stand-in copy pass against text budgets; line-art pass.
 10. Full sweep: 8 viewports × geometry/pixels/motion; interaction screenshots vs `reference/interactions`.
+
+### Step 1 measured corrections (Chrome + Hero)
+
+* `targetProgress` divides by the **target height**, not the viewport (verified at 390: hero 596px).
+* Hero H1 words: 1.6 s framer ease, blur 10→0, y 10→0, opacity; the **measured stagger is 0.1 s** (the
+  original's config value reads 0.2) and the first word starts ~1.6 s after the nav logo.
+* Mobile menu: the panel **slides down** (yPercent −150→0, spring 0.6) rather than using a clip reveal;
+  the items follow (spring 0.55, delay .25); the close sequence runs items at 0.25 s, then the panel at 0.6 s.
+* Hero lines fade: 0.8 s strong ease forward, 1.2 s back (marker `toggle-start-animation`).
+* Desktop nav theme line sits 80px below the viewport top (dark-nav-1 flips between scroll 1450 and 1500 @1440×900).
+* Waves background ignores targets inside `[data-stub]` until those sections exist.
 
 ## 10. Testing strategy
 

@@ -1,11 +1,23 @@
-/* BalanceSection — original "Toggle". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+/* BalanceSection ("Toggle") — BREAKPOINTS.md §4. Height = sticky block S + 100vh; markers measured:
+   toggle-start 244 · dark-nav-1 S−16 · toggle-on-anchor S+33.6vh (phone 13.6vh) · toggle-on S+49.55vh.
+   S (sticky block): desktop 500 (510 at ≥1600 type tier) · tablet 486 · phone content-driven (476–585).
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
+  --s: 500px;
   position: relative;
+  padding: 0 16px;
 }
+.stickyBlock { position: sticky; top: 0; height: var(--s); }
+.container100vh { height: 100vh; }
 
-@media (min-width: 810px) and (max-width: 1199.98px) {
-}
+.root > [data-marker='toggle-start-animation'] { top: 244px; }
+.darkNav { top: calc(var(--s) - 16px); }
+.root > [data-marker='toggle-on-anchor'] { top: calc(var(--s) + 33.6vh); }
+.root > [data-marker='toggle-on-animation'] { top: calc(var(--s) + 49.55vh); }
 
+@media (min-width: 1600px) { .root { --s: 510px; } }
+@media (min-width: 810px) and (max-width: 1199.98px) { .root { --s: 486px; } }
 @media (max-width: 809.98px) {
+  .root { --s: 585px; }
+  .root > [data-marker='toggle-on-anchor'] { top: calc(var(--s) + 13.6vh); }
 }

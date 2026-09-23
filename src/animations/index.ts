@@ -14,6 +14,7 @@ export * from './scroll/markerState';
 export * from './scroll/textScrollReveal';
 export * from './parallax/imageParallax';
 export * from './parallax/speedParallax';
+export * from './parallax/footerParallax';
 export * from './hover/hoverVars';
 export * from './pinned/rollingNumber';
 export * from './counters/counters';

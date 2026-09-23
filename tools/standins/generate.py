@@ -25,7 +25,9 @@ PUB = os.path.join(ROOT, 'public')
 # (e.g. "dark teal, light from upper right") — authored by hand from the design, not sampled.
 SLOTS = {
   'hero-backdrop':   ('A6yz8YhmbQkg8ACTADACAMNk7s', 2048, 2048, (122, 160, 146), [(.30,.25,.55,(186,214,196)), (.70,.75,.60,(214,200,140)), (.55,.45,.35,(150,190,180))], 'soft green/yellow haze, no subject'),
-  'hero-portrait':   ('vJzjZEQ7XEcIpUiaWAlM8HVcE', 3600, 3200, (118, 150, 140), [(.55,.28,.30,(222,200,182)), (.62,.62,.40,(200,190,160)), (.20,.50,.45,(140,176,168))], 'light subject upper-centre-right; crop anchored top (50% 0%)'),
+  # abstract tonal study: pale warm focal mass centre-right, warm yellow glow lower-left, cool teal
+  # upper-left, deep shadow on the right edge — keeps the original frame's light/dark balance
+  'hero-portrait':   ('vJzjZEQ7XEcIpUiaWAlM8HVcE', 3600, 3200, (96, 128, 124), [(.22,.14,.30,(150,196,196)), (.50,.26,.13,(214,186,166)), (.56,.50,.20,(206,196,170)), (.62,.84,.24,(214,206,176)), (.14,.84,.26,(222,200,120)), (.86,.42,.20,(48,72,76)), (.96,.90,.22,(40,58,60))], 'pale focal mass centre-right, warm glow lower-left, dark right edge; crop anchored top (50% 0%)'),
   'service-1':       ('VW2dIv9jFcnOEMXK68HcTW0X9g', 2048, 2048, (40, 70, 72), [(.55,.60,.35,(120,150,140)), (.30,.20,.40,(70,110,112))], 'deep teal water tone'),
   'service-2':       ('X1KAS3BPHbN4rR5FN8CCVsSUhM', 2048, 2048, (36, 42, 58), [(.50,.55,.25,(214,140,70)), (.40,.30,.45,(60,70,96))], 'dark blue with warm centre glow'),
   'service-3':       ('lZn0EEipDdK6TqFQ685W86d6r9M', 2048, 2048, (70, 90, 96), [(.50,.50,.22,(170,190,196)), (.20,.80,.40,(40,60,66))], 'blue-grey, bright centre'),
@@ -38,7 +40,8 @@ SLOTS = {
   'journal-a':       ('D6H1lHKBDuxkhpUVf8PPyt7Jivg', 2048, 2048, (150, 186, 160), [(.45,.50,.30,(230,190,110)), (.70,.30,.40,(190,210,180))], 'mint with warm centre'),
   'journal-b':       ('LksF7zMOHE97HJPqXDmb7LSvWE', 2048, 2048, (24, 44, 52), [(.50,.55,.25,(150,140,120)), (.30,.30,.40,(40,70,80))], 'dark teal'),
   'journal-c':       ('ZMX4xonC6WvSRyRzHHgOkTDzw4', 2048, 2048, (170, 196, 196), [(.50,.55,.35,(90,80,70)), (.20,.20,.40,(214,226,226))], 'pale blue-green, dark centre'),
-  'footer':          ('TF67zgMSYINSD7dymhKX4rhrTM', 2048, 2048, (30, 46, 54), [(.30,.70,.45,(70,100,110)), (.80,.40,.35,(50,74,84))], 'dark slate'),
+  # abstract: near-black blue-slate with a soft lit band across the middle, darker top and bottom
+  'footer':          ('TF67zgMSYINSD7dymhKX4rhrTM', 2048, 2048, (20, 28, 36), [(.50,.46,.22,(112,128,136)), (.30,.60,.20,(70,86,96)), (.72,.58,.18,(82,98,108)), (.50,.95,.30,(14,20,26)), (.10,.10,.30,(28,40,50))], 'near-black slate, soft lit band across the middle'),
   'avatar-1':        ('POpTLGuLzTuWYxuEYrRGJD678', 280, 280, (60, 80, 110), [(.50,.45,.30,(210,170,140))], 'avatar'),
   'avatar-2':        ('aLd0GlWVHywVWuurCk8JtAWSPw', 512, 512, (200, 150, 60), [(.50,.45,.30,(120,90,70))], 'avatar'),
   'avatar-3':        ('PH9MBoozXCDuSg7Zw0ksQExNo', 512, 512, (170, 90, 60), [(.50,.45,.30,(230,190,160))], 'avatar'),

@@ -1,0 +1,58 @@
+.pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 39px;
+  padding: 1px 48px 0 20px;
+  border: 0;
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: var(--f-sans);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.8px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.label,
+.dot {
+  transition:
+    transform var(--hover-pill-dur, 0.3s) var(--hover-pill-ease, ease-out),
+    color var(--hover-pill-dur, 0.3s) var(--hover-pill-ease, ease-out);
+}
+
+.label {
+  display: block;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  margin-top: -2px;
+  border-radius: var(--r-pill);
+}
+.dotA { right: 16px; }
+.dotB { left: -16px; }
+
+@media (hover: hover) {
+  .pill:hover .label { transform: translateX(28px); }
+  .pill:hover .dot { transform: translateX(32px); }
+}
+.pill.active .label { transform: translateX(28px); }
+.pill.active .dot { transform: translateX(32px); }
+.pill:focus-visible { outline: 2px solid var(--c-green); outline-offset: 2px; }
+
+.green { background: var(--c-green); color: var(--c-white); }
+.green .dot { background: var(--c-white); }
+
+.white { background: var(--c-white); color: var(--c-ink); }
+.white .dotA { background: var(--c-body); }
+.white .dotB { background: var(--c-green); }
+@media (hover: hover) { .white:hover .label { color: var(--c-green); } }
+.white.active .label { color: var(--c-green); }

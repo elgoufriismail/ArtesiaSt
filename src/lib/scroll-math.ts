@@ -8,15 +8,16 @@ export const clamp01 = (v: number) => (v < 0 ? 0 : v > 1 ? 1 : v);
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
 /**
- * Framer "onScrollTarget" transform progress for one target element.
- *   threshold 1 → 0 when the target's top enters at the viewport bottom, 1 when it reaches the top
- *   threshold 0 → 0 when the target's top is at the viewport top, 1 one viewport-height later
- * Verified: Waves (how-it-works top 4592 @1440×900 → 3700…4600), Big-Quote fold (9336 → 8436…9336),
- * Hero image fade (Hero top 0, threshold 0 → 0…900).
+ * Framer "onScrollTarget" transform progress for one target element of height `height`:
+ *   threshold 1 → 0 when the target's top enters at the viewport bottom, 1 after it has moved `height`
+ *   threshold 0 → 0 when the target's top is at the viewport top, 1 after it has moved `height`
+ * Verified against recon tracks: Waves & Big-Quote fold (marker sections are 100vh tall), Hero image
+ * fade at 1440 (height 900 = vh) AND at 390 (Hero height 596 ≠ vh 844: opacity 0.916 after 50px =
+ * 1 − 50/596) — the divisor is the target's height, not the viewport.
  */
-export function targetProgress(docTop: number, scrollY: number, vh: number, threshold: number): number {
+export function targetProgress(docTop: number, height: number, scrollY: number, vh: number, threshold: number): number {
   const top = docTop - scrollY;
-  return clamp01((threshold * vh - top) / vh);
+  return clamp01((threshold * vh - top) / Math.max(1, height));
 }
 
 /**
@@ -25,13 +26,13 @@ export function targetProgress(docTop: number, scrollY: number, vh: number, thre
  */
 export function sequenceValue(
   values: number[],
-  targets: { docTop: number; threshold: number }[],
+  targets: { docTop: number; height: number; threshold: number }[],
   scrollY: number,
   vh: number,
 ): number {
   let v = values[0];
   targets.forEach((t, i) => {
-    const p = targetProgress(t.docTop, scrollY, vh, t.threshold);
+    const p = targetProgress(t.docTop, t.height, scrollY, vh, t.threshold);
     if (p > 0) v = lerp(values[i], values[i + 1], p);
   });
   return v;

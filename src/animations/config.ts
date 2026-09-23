@@ -23,8 +23,11 @@ export const ANIM = {
       { to: { opacity: 0.5 }, t: { duration: 2, ease: 'hero', delay: 0.4 } as Tween },
       { to: { opacity: 1 }, t: { duration: 2, ease: 'hero', delay: 0.4 } as Tween },
     ],
-    /** Hero H1 word reveal (first-class #1) */
-    heroWords: { from: { opacity: 0.001, y: 10, filter: 'blur(10px)' }, duration: 1.6, ease: 'framer' as EaseName, delay: 0.1, stagger: 0.2, waitForFonts: true },
+    /** Hero H1 word reveal (first-class #1). Frame-accurate timing (tools/compare/timing.mjs):
+     *  words start ≈0.1 s apart (6 words spread over ≈0.45 s — the Framer `startDelay: 0.2` value is not
+     *  a per-word stagger) and the first word starts ≈1.6 s after the nav logo entrance begins (the
+     *  original waits for hydration) → delay 1.35 s after fonts are ready (calibrated: first word ≈1.6 s after the logo entrance). */
+    heroWords: { from: { opacity: 0.001, y: 10, filter: 'blur(10px)' }, duration: 1.6, ease: 'framer' as EaseName, delay: 1.35, stagger: 0.1, waitForFonts: true },
     /** Entrance y/opacity (desktop only for hero text; nav on all where shown) */
     entrance: { duration: 1, ease: 'entrance' as EaseName, distance: 20 },
     entranceDelays: {
@@ -39,7 +42,8 @@ export const ANIM = {
   B2: {
     portraitFade: { threshold: 0, from: 1, to: 0 },               // onScrollTarget(Hero, 0)
     textParallaxFactor: { desktop: 0.3, tablet: 0, phone: 0 } as PerBp<number>, // speed 70
-    linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, t: { duration: 1.2, ease: 'strong' } as Tween, back: { duration: 0.8, ease: 'strong' } as Tween },
+    // fading out = Framer "exit" (0.8 s), fading back in = "animate" (1.2 s) — verified frame-by-frame
+    linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, t: { duration: 0.8, ease: 'strong' } as Tween, back: { duration: 1.2, ease: 'strong' } as Tween },
     introFadeOut: { marker: 'toggle-on-animation', line: 0.5, t: { spring: true, duration: 1.2, bounce: 0 } as Spring, back: { spring: true, duration: 0.8, bounce: 0 } as Spring },
   },
 
@@ -85,7 +89,14 @@ export const ANIM = {
   B9: { t: { duration: 0.8, ease: 'framer' } as Tween, resetOnExit: true, threshold: 0 },
 
   /* ── B10 navigation colour transitions (first-class #10) ─────────── */
-  B10: { t: { duration: 0.3, ease: 'framer' } as Tween, enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean> },
+  B10: {
+    t: { duration: 0.3, ease: 'framer' } as Tween,
+    enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean>,
+    /** Viewport y (px) whose underlying [data-nav-theme] decides the theme. Recon: switches happen
+     *  when a boundary passes the top by ~66–116px (dark-nav-1 @1384 flips between scroll 1450 and 1500).
+     *  The original also shows scroll-direction hysteresis at later boundaries — calibrated in Step 7. */
+    line: -80,
+  },
 
   /* ── B11 big quote 3D arc fold (first-class #7) ──────────────────── */
   B11: { marker: 'big-quote', threshold: 1, rotateXTo: -90, transformOrigin: '50% 50%', perspective: null as number | null },
@@ -94,7 +105,9 @@ export const ANIM = {
   B12: { threshold: 1, image1Y: -16, image2Y: 120 },
 
   /* ── B13 footer background ───────────────────────────────────────── */
-  B13: { toY: 160, enabled: { desktop: true, tablet: true, phone: false } as PerBp<boolean> },
+  /** Footer background sits `offset` px above the footer and travels 0 → offset as it scrolls in
+   *  (linear, from its top entering the viewport to the page end) — recon: 320 @1440, 160 @1024. */
+  B13: { offset: { desktop: 320, tablet: 160, phone: 0 } as PerBp<number> },
 
   /* ── B15 philosophy word reveal ──────────────────────────────────── */
   B15: { start: 1, end: 0.25, min: 0.2, max: 1, smoothing: { stiffness: 500, damping: 60, mass: 1 } },
@@ -103,7 +116,18 @@ export const ANIM = {
   B16: { period: 1 },
 
   /* ── B17 mobile menu (first-class #11) ───────────────────────────── */
-  B17: { panel: { duration: 0.3, ease: 'framer' } as Tween, items: { delay: 0.3, duration: 0.5, ease: 'framer', fromY: 20 }, close: { duration: 0.4, ease: 'framer' } as Tween },
+  /** Frame-measured on the original (390×844): the white panel SLIDES DOWN from y −150 % to 0 with a
+   *  critically damped spring (~0.6 s; remaining distance halves every ~50 ms); links stay in place and
+   *  only fade in (from ~0.25 s, spring-like). */
+  B17: {
+    panel: { spring: true, duration: 0.6, bounce: 0 } as Spring,
+    panelFrom: '-150%',
+    items: { spring: true, duration: 0.55, bounce: 0, delay: 0.25 } as Spring,
+    /** close (measured): links fade out ≈0.25 s, then the panel slides back up to −150 % with an S-curve
+     *  (≈0.6 s 'framer'), overlay removed at ≈0.85 s */
+    closeItems: { duration: 0.25, ease: 'framer' } as Tween,
+    close: { duration: 0.6, ease: 'framer', delay: 0.25 } as Tween,
+  },
 
   /* ── Interactions ────────────────────────────────────────────────── */
   faq: { t: { spring: true, duration: 0.55, bounce: 0 } as Spring, iconRotate: 135, exclusive: false },           // first-class #12

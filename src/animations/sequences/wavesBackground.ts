@@ -7,9 +7,11 @@ import { sequenceValue } from '@/lib/scroll-math';
 export function wavesBackground(layer: HTMLElement, cfg = ANIM.B5) {
   const targets = cfg.targets.map((id) => marker(id)).filter(Boolean) as HTMLElement[];
   if (targets.length !== cfg.targets.length) return null;
+  // Targets inside not-yet-implemented sections have no real geometry → keep the layer hidden.
+  if (targets.some((el) => el.closest('[data-stub]'))) return null;
   const setO = gsap.quickSetter(layer, 'opacity');
   const update = () => {
-    const t = targets.map((el) => ({ docTop: el.getBoundingClientRect().top + window.scrollY, threshold: cfg.threshold }));
+    const t = targets.map((el) => { const r = el.getBoundingClientRect(); return { docTop: r.top + window.scrollY, height: r.height, threshold: cfg.threshold }; });
     setO(sequenceValue([...cfg.values], t, window.scrollY, window.innerHeight));
   };
   return ScrollTrigger.create({ start: 0, end: 'max', onUpdate: update, onRefresh: update });

@@ -18,7 +18,7 @@ export function Pricing() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Pricing'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Pricing'} data-nav-theme="dark">
     </div>
   );
 }

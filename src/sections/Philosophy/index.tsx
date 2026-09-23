@@ -18,7 +18,7 @@ export function Philosophy() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Our Philosophy'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Our Philosophy'} data-nav-theme="dark">
     </div>
   );
 }

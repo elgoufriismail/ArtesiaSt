@@ -1,0 +1,12 @@
+.row { display: flex; align-items: center; gap: 32px; }
+.icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--r-pill);
+  overflow: hidden;
+  transition: opacity 0.3s var(--ease-framer);
+}
+@media (hover: hover) { .icon:hover { opacity: 0.5; } }
+.dark { color: var(--c-green); }
+.light { color: var(--c-white); }

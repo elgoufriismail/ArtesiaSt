@@ -19,7 +19,7 @@ export function Numbers() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Numbers'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Numbers'} data-nav-theme="dark">
       <Marker id="numbers" />
     </div>
   );

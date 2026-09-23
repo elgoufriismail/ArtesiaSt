@@ -18,7 +18,7 @@ export function Journal() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Journal'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Journal'} data-nav-theme="dark">
     </div>
   );
 }

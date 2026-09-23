@@ -18,7 +18,7 @@ export function Faq() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'FAQ'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'FAQ'} data-nav-theme="dark">
     </div>
   );
 }

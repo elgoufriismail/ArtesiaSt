@@ -1,0 +1,9 @@
+.root {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 220px;
+  z-index: 9;
+  pointer-events: none;
+}
+.layer { position: absolute; inset: 0; }
+@media (max-width: 1199.98px) { .root { display: none; } }

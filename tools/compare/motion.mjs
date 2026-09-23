@@ -13,9 +13,10 @@ const MAP = JSON.parse(fs.readFileSync(new URL('./motion-map.json', import.meta.
 // Extract a numeric property from an inline-style string (recon track format or clone inline style).
 const EXTRACT = {
   opacity: (s) => num(s, /opacity:\s*([-\d.e]+)/) ?? 1,
-  translateY: (s) => num(s, /translateY\((-?[\d.]+)px\)/) ?? num(s, /translate3d\([^,]+,\s*(-?[\d.]+)px/) ?? 0,
+  translateY: (s) => num(s, /translateY\((-?[\d.]+)px\)/) ?? num(s, /translate3d\([^,]+,\s*(-?[\d.]+)px/) ?? num(s, /translate\([^,]+,\s*(-?[\d.]+)px\)/) ?? num(s, /matrix\([^)]*,\s*(-?[\d.]+)\)/) ?? 0,
   rotateX: (s) => num(s, /rotateX\((-?[\d.]+)deg\)/) ?? 0,
   dashoffset: (s) => num(s, /(?:strokeDashoffset|stroke-dashoffset):\s*(-?[\d.]+)/),
+  dashFraction: (s) => num(s, /dashFraction:\s*(-?[\d.]+)/),
 };
 function num(s, re) { const m = s && s.match(re); return m ? Number(m[1]) : undefined; }
 
@@ -45,7 +46,8 @@ for (const vp of vps) {
       const s = el.getAttribute('style') || '';
       const op = getComputedStyle(el).opacity;
       const dash = el.getAttribute('stroke-dashoffset');
-      return `${s}; opacity: ${op}${dash ? `; stroke-dashoffset: ${dash}` : ''}`;
+      const frac = el.getTotalLength ? `; dashFraction: ${parseFloat(getComputedStyle(el).strokeDashoffset) / el.getTotalLength()}` : '';
+      return `${s}; opacity: ${op}${dash ? `; stroke-dashoffset: ${dash}` : ''}${frac}`;
     }), effects.map((e) => e.clone));
     effects.forEach((e, i) => samples[e.id].push([y, vals[i]]));
   }
@@ -59,7 +61,8 @@ for (const vp of vps) {
     let missing = false;
     for (const [y, s] of samples[e.id]) {
       if (s === null) { missing = true; break; }
-      const o = orig(y, e.prop), c = EXTRACT[e.prop](s);
+      const o = e.prop === 'dashFraction' ? (orig(y, 'dashoffset') ?? NaN) / e.origLength : orig(y, e.prop), c = EXTRACT[e.prop](s);
+      if (Number.isNaN(o)) continue;
       if (o !== undefined && c !== undefined) errs.push(Math.abs(o - c));
     }
     const max = errs.length ? Math.max(...errs) : NaN, mean = errs.length ? errs.reduce((a, b) => a + b, 0) / errs.length : NaN;

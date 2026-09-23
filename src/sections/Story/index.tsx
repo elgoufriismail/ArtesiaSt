@@ -19,7 +19,7 @@ export function Story({ variant }: { variant: 'a' | 'b' }) {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={variant === 'a' ? 'Story A' : 'Story B'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={variant === 'a' ? 'Story A' : 'Story B'} data-nav-theme="dark">
       <Marker id={variant === 'a' ? 'story-a' : 'story-b'} />
     </div>
   );

@@ -1,0 +1,17 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -340px;
+  width: 6000px;
+  height: 680px;
+}
+@media (max-width: 1199.98px) { .root { display: none; } }

@@ -18,7 +18,7 @@ export function Booking() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Book A Session'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Book A Session'} data-nav-theme="dark">
     </div>
   );
 }

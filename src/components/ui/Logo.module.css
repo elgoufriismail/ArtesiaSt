@@ -1,0 +1,26 @@
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding-left: 24px;
+  white-space: nowrap;
+}
+.dot {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-radius: var(--r-pill);
+  background: var(--logo-dot, currentColor);
+  transition: background-color 0.3s var(--ease-framer);
+}
+.word {
+  font-family: var(--f-serif);
+  font-size: 26px;
+  line-height: 36.4px;
+  letter-spacing: 0.07em;
+  transition: color 0.3s var(--ease-framer);
+}

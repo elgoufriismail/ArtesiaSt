@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import '@fontsource/crimson-text/400.css';
-import '@fontsource-variable/inter/wght.css';
+import 'inter-ui/inter-latin.css'; // official Inter 4 static text fonts (OFL) — metrics match the original
 import '@/styles/tokens.css';
 import '@/styles/typography.css';
 import '@/styles/base.css';

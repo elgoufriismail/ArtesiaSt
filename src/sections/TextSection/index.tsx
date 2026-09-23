@@ -18,7 +18,7 @@ export function TextSection({ index }: { index: 1 | 2 }) {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={index === 1 ? 'Text Section' : 'Text Section#2'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={index === 1 ? 'Text Section' : 'Text Section#2'} data-nav-theme="dark">
     </div>
   );
 }

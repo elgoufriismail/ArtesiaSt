@@ -18,7 +18,7 @@ export function Services() {
   });
 
   return (
-    <div ref={root} className={styles.root} data-ref={'Our Services'} data-nav-theme="dark">
+    <div ref={root} className={styles.root} data-stub="" data-ref={'Our Services'} data-nav-theme="dark">
     </div>
   );
 }

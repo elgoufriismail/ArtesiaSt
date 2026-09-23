@@ -1,7 +1,73 @@
-import type { SiteContent } from './types';
-
 /**
- * Stand-in site content. Populated in the implementation phase with freshly written copy that fits
- * docs/architecture/text-budgets.json. Brand is a placeholder to be replaced in the modification phase.
+ * Stand-in site content — written fresh for this project (not reworded from the original) and sized
+ * to docs/architecture/text-budgets.json (chars ±10 %, words, rendered lines per breakpoint).
+ * Generic interface labels (page names, "Menu", "Close") are ordinary UI words.
+ * Brand is a placeholder, to be replaced in the modification phase.
+ * Sections not implemented yet are added in their implementation step.
  */
-export const BRAND = { name: 'Calm Shore', wordmark: 'calm—shore' } as const satisfies SiteContent['brand'];
+import type { Cta } from './types';
+
+export const BRAND = { name: 'Calm Shore', wordmark: 'calm—shore' } as const;
+
+export const NAV = {
+  links: [
+    { label: 'About', href: './about' },
+    { label: 'Services', href: './services' },
+    { label: 'Stories', href: './stories' },
+    { label: 'Journal', href: './journal' },
+  ] satisfies Cta[],
+  cta: { label: 'Book a session', href: './book-a-session' } satisfies Cta,
+  menuLabel: 'Menu',
+  closeLabel: 'Close',
+} as const;
+
+export const HERO = {
+  // budget: 31 chars · 6 words · 3 lines (1200–1599 / tablet / phone), 2 lines ≥1600
+  headline: 'A Steady Place To Find Yourself.',
+  // budget: 216 chars · 34 words · 5 lines @427px (first line indented 20% + 16px)
+  intro:
+    'We guide people through hard seasons of life with steady, practical care. Our counselling and coaching sessions help you understand yourself more clearly, build healthier habits and move toward change on your own terms.',
+  cta: { label: 'Begin your journey', href: './book-a-session' } satisfies Cta,
+} as const;
+
+export const FOOTER = {
+  // budget: 19 chars · 2 lines with explicit break
+  headline: ['Notes For', 'Quiet Days.'] as const,
+  // budget: 138 chars · 20 words · 3 lines @480
+  body: 'Every few weeks we send short reflections, simple exercises and gentle reminders to help you rest, reset and look after your mind and body.',
+  emailPlaceholder: 'Your Email',
+  subscribe: 'Subscribe',
+  // budget: 80 chars · 14 words · 2 lines @320 (link inside)
+  finePrint: { before: 'By subscribing you accept our ', link: 'Privacy Policy.', after: ' We never share your details.' },
+  sitemapLabel: 'Sitemap',
+  sitemap: [
+    [
+      { label: 'Main Page', href: './' },
+      { label: 'About', href: './about' },
+      { label: 'Services', href: './services' },
+      { label: 'Stories', href: './stories' },
+      { label: 'Client Story', href: './stories' },
+      { label: 'Journal', href: './journal' },
+    ],
+    [
+      { label: 'Article', href: './journal' },
+      { label: 'Book a Session', href: './book-a-session' },
+      { label: 'Privacy Policy', href: './legal/privacy-policy' },
+      { label: 'Terms of Use', href: './legal/terms-of-use' },
+      { label: '404', href: './404' },
+    ],
+  ] satisfies Cta[][],
+  // budget: 31 chars
+  contact: { label: 'Contact us:', email: 'hello@calmshore.com' },
+  // budget: 44 chars · 2 lines (explicit break)
+  credit: ['Site template', 'handcrafted by Calm Shore Studio'] as const,
+  // budget: 46 chars
+  copyright: 'Copyright 2026 Calm Shore. All rights reserved.',
+} as const;
+
+export const SOCIALS = [
+  { label: 'Instagram', href: 'https://instagram.com', icon: 'instagram' },
+  { label: 'Threads', href: 'https://www.threads.com/', icon: 'threads' },
+  { label: 'Facebook', href: 'https://facebook.com', icon: 'facebook' },
+  { label: 'YouTube', href: 'https://youtube.com', icon: 'youtube' },
+] as const;

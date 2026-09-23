@@ -12,19 +12,19 @@ const down = (t: [number, string][]) => { const out: [number, string][] = []; fo
 test('B11 fold: rotateX = -90·targetProgress(big-quote, 1) within 0.2°', () => {
   for (const [y, v] of down(track('Shape Container'))) {
     const meas = /rotateX/.test(v) ? num(v, /rotateX\((-?[\d.]+)deg/) : 0;
-    assert.ok(Math.abs(meas - -90 * targetProgress(9336, y, 900, 1)) < 0.2, `y=${y}`);
+    assert.ok(Math.abs(meas - -90 * targetProgress(9336, 900, y, 900, 1)) < 0.2, `y=${y}`);
   }
 });
 
 test('B2 portrait fade: opacity = 1 - targetProgress(Hero, 0) within 0.005', () => {
   for (const [y, v] of down(track('Hero Image'))) {
-    assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - (1 - targetProgress(0, y, 900, 0))) < 0.005, `y=${y}`);
+    assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - (1 - targetProgress(0, 900, y, 900, 0))) < 0.005, `y=${y}`);
   }
 });
 
 test('B5 waves: sequenceValue([0,1,0]) within 0.005', () => {
   for (const [y, v] of down(track('Waves Container'))) {
-    const pred = sequenceValue([0, 1, 0], [{ docTop: 4592, threshold: 1 }, { docTop: 9336, threshold: 1 }], y, 900);
+    const pred = sequenceValue([0, 1, 0], [{ docTop: 4592, height: 900, threshold: 1 }, { docTop: 9336, height: 900, threshold: 1 }], y, 900);
     assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - pred) < 0.005, `y=${y}`);
   }
 });
@@ -32,6 +32,14 @@ test('B5 waves: sequenceValue([0,1,0]) within 0.005', () => {
 test('B4 parallax: service image translateY within 0.01px', () => {
   for (const [y, v] of down(track('Desktop>img'))) {
     assert.ok(Math.abs(num(v, /translateY\((-?[\d.]+)px/) - parallaxOffset(2380 - y, 560, 900, 200)) < 0.01, `y=${y}`);
+  }
+});
+
+test('B2 portrait fade at 390×844 uses the Hero height (596), not the viewport', () => {
+  const rec390 = JSON.parse(fs.readFileSync(new URL('../../docs/reconnaissance/reference/animations/scroll-390x844.json', import.meta.url), 'utf8'));
+  const t = rec390.elements.find((e: { name: string }) => e.name === 'Hero Image').track as [number, string][];
+  for (const [y, v] of down(t)) {
+    assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - (1 - targetProgress(0, 596, y, 844, 0))) < 0.005, `y=${y}`);
   }
 });
 

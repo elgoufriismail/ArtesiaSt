@@ -6,22 +6,22 @@ import { Marker } from '@/components/ui/Marker';
 import styles from './BalanceSection.module.css';
 
 /**
- * BalanceSection — original layer "Toggle".
- * Sticky 500px block: Balance switch (Start/Off/On) + headline pair cross-fade
- * Recon: B3 · first-class #3. Spec: docs/IMPLEMENTATION_PLAN.md §3.
- * STATUS: skeleton (root, data-ref, nav theme, scroll markers). Content + animations: implementation phase.
+ * BalanceSection — original layer "Toggle". Sticky block (Balance switch + headline pair) + a 100vh
+ * container; recon B3 · first-class #3. Spec: docs/IMPLEMENTATION_PLAN.md §3.
+ *
+ * STATUS (Step 1): GEOMETRY-ONLY PLACEHOLDER — outer height and scroll-marker offsets match the
+ * original so the hero's sticky backdrop, marker-driven hero fades and nav theme behave correctly.
+ * Content and the balance sequence are implemented in Step 3.
  */
 export function BalanceSection() {
   const root = useRef<HTMLDivElement>(null);
-
-  useGsap(root, () => {
-    // animation factories from '@/animations' are wired here (per breakpoint) in the implementation phase
-  });
-
+  useGsap(root, () => {});
   return (
-    <div ref={root} className={styles.root} data-ref={'Toggle'} data-nav-theme="light">
+    <div ref={root} className={styles.root} data-ref="Toggle" data-nav-theme="light">
+      <div className={styles.stickyBlock} aria-hidden="true" />
+      <div className={styles.container100vh} data-ref="Toggle/Container 100vh" />
       <Marker id="toggle-start-animation" />
-      <Marker id="dark-nav-1" />
+      <span className={`marker ${styles.darkNav}`} data-marker="dark-nav-1" data-nav-theme="dark" aria-hidden="true" />
       <Marker id="toggle-on-anchor" />
       <Marker id="toggle-on-animation" />
     </div>
