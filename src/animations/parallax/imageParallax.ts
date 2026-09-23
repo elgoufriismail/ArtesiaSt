@@ -11,9 +11,13 @@ export function imageParallax(frame: Element, layers: Element[], P: number) {
   const setY = layers.map((l) => gsap.quickSetter(l, 'y', 'px'));
   const update = () => {
     const r = frame.getBoundingClientRect();
+    // the rendered rect, transforms included: on Story images the progress follows the parent link's
+    // drift (B12) — measured rate 0.2022 = 0.2004 × (1 + drift velocity) @1440, image 2 likewise
     const y = parallaxOffset(r.top, r.height, window.innerHeight, P);
     setY.forEach((s) => s(y));
   };
   update();
-  return ScrollTrigger.create({ trigger: frame, start: 'top bottom', end: 'bottom top', onUpdate: update, onRefresh: update });
+  // whole-document range: a drifting parent (Story, +120 px) moves the frame past a 'top bottom' →
+  // 'bottom top' range computed from its layout box, which froze the last in-range value
+  return ScrollTrigger.create({ trigger: document.documentElement, start: 0, end: 'max', onUpdate: update, onRefresh: update });
 }

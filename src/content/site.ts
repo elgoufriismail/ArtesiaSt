@@ -69,6 +69,27 @@ export const PHILOSOPHY = {
   cta: { label: 'About Our Craft', href: './about' } satisfies Cta,
 } as const;
 
+/** Stories A and B (same original component). Stand-in copy fitted to the original line counts; paragraphs
+ *  end with an NBSP-glued pair like the originals. "Read full story" is a generic UI label (the original
+ *  label starts with an NBSP, kept for identical pill width). */
+export const STORIES = {
+  a: {
+    eyebrow: 'Real stories. Real progress.',
+    title: 'Learning to rest without guilt.',
+    body: 'Years of long hours and constant worry left Daniel exhausted and distant from the people he loved. Session by session, he learned to slow down, set boundaries, and make room for rest and\u00a0joy.',
+    href: './stories/learning-to-rest',
+    images: ['story-a-1', 'story-a-2'],
+  },
+  b: {
+    eyebrow: 'Real stories. Real progress.',
+    title: 'Rebuilding her confidence after a difficult year.',
+    body: 'After a sudden job loss, Priya expected to bounce back quickly. Instead, she felt unsettled — withdrawing from friends, routines, and the hobbies that once grounded her. She came to therapy not because she was broken, but to trust her own choices again and feel steady in her\u00a0life.',
+    href: './stories/rebuilding-confidence',
+    images: ['story-b-1', 'story-b-2'],
+  },
+  cta: '\u00a0Read full story',
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

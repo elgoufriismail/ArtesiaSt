@@ -18,16 +18,16 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 | `X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-2` | stand-in wired (Services) |
 | `lZn0EEipDdK6TqFQ685W86d6r9M.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-3` | stand-in wired (Services) |
 | `Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-4` | stand-in wired (Services) |
-| `Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg` | 2048×2048 | Story A / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-a-1` | stand-in exists (section not built yet) |
-| `lLxmvlvWIZ4P7PBI7azU4zec.jpg` | 2048×2048 | Story A / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-a-2` | stand-in exists (section not built yet) |
+| `Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg` | 2048×2048 | Story A / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-a-1` | stand-in wired (Story) |
+| `lLxmvlvWIZ4P7PBI7azU4zec.jpg` | 2048×2048 | Story A / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-a-2` | stand-in wired (Story) |
 | `POpTLGuLzTuWYxuEYrRGJD678.jpg` | 280×280 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-1` | stand-in exists (section not built yet) |
 | `aLd0GlWVHywVWuurCk8JtAWSPw.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-2` | stand-in exists (section not built yet) |
 | `PH9MBoozXCDuSg7Zw0ksQExNo.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-3` | stand-in exists (section not built yet) |
 | `duZSo1YDta06usFuc3EkJTiRdM.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-4` | stand-in exists (section not built yet) |
 | `ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-5` | stand-in exists (section not built yet) |
 | `i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg` | 2048×2048 | Big Quote / Big Quote | 1440×1580 @1440<br>1024×914 @1024<br>390×675 @390 | cover 50% 50% | `big-quote` | stand-in exists (section not built yet) |
-| `PSjitKcEoMQOEmVvStpNCNRXmSk.jpg` | 2048×2048 | Story B / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-b-1` | stand-in exists (section not built yet) |
-| `yzTuL74LYLey46xO4X9rihvGRs4.jpg` | 2048×2048 | Story B / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-b-2` | stand-in exists (section not built yet) |
+| `PSjitKcEoMQOEmVvStpNCNRXmSk.jpg` | 2048×2048 | Story B / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-b-1` | stand-in wired (Story) |
+| `yzTuL74LYLey46xO4X9rihvGRs4.jpg` | 2048×2048 | Story B / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-b-2` | stand-in wired (Story) |
 | `D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg` | 2048×2048 | Journal / Image | 357×269 @1440<br>432×325 @1024<br>358×269 @390 | cover 50% 50% | `journal-a` | stand-in exists (section not built yet) |
 | `LksF7zMOHE97HJPqXDmb7LSvWE.jpg` | 2048×2048 | Journal / Image | 357×267 @1440<br>432×323 @1024<br>358×268 @390 | cover 50% 50% | `journal-b` | stand-in exists (section not built yet) |
 | `ZMX4xonC6WvSRyRzHHgOkTDzw4.jpg` | 2048×2048 | Journal / Image | 357×240 @1440 | cover 50% 50% | `journal-c` | stand-in exists (section not built yet) |
@@ -83,6 +83,6 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 
 ## Summary
 
-* stand-in wired: 7
-* stand-in exists: 13
+* stand-in wired: 11
+* stand-in exists: 9
 * excluded: 1

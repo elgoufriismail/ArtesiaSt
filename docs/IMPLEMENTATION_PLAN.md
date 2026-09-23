@@ -336,6 +336,25 @@ gates for the sections touched.
 * Stand-in copy mirrors the original's token-length profile (26 tokens) so wrapping matches at all 8 widths;
   CTA label within 1 px of the original width. Icon: own leaf glyph with the original's footprint.
 
+### Step 6 measured behaviour (Story A + Story B, B12 + B4 + B9)
+
+* One component, two instances (sections 5 and 11 of the page order). Layout: padding 200/160 (B 160/160),
+  tablet 160/120, phone 100 top; split 5:1:6 desktop, 3:1:4 tablet, phone column (images first, gap 40).
+  Image 1 60% width, aspect 0.651338 (phone 100% × 400); Image 2 absolute bottom-left, 50%, aspect 0.668342,
+  not rendered on phone. Geometry 0 off at all 8 viewports; line counts match for both stories.
+* B12 drift: marker 8 × 200vh at top −40, threshold 1; Image 1 y 0 → −16, Image 2 0 → 120, held at the end
+  values past the range (the recorded track stays at −16/120; there is no reset to `none` there).
+* B4 parallax (Image 1 P 300, Image 2 P 100): the progress uses the frame's rendered rect *including* the
+  parent link's drift — the original's rate is the plain rate × (1 + drift velocity) (0.2022 = 0.2004 × 1.0089
+  for Image 1, 0.0668 = 0.0716 × 0.933 for Image 2). `imageParallax` now listens on the whole document: a
+  'top bottom' → 'bottom top' range from the layout box ends 120 px too early for the drifting Image 2 and
+  froze its last value (−6.2 instead of 0).
+* Validation: motion.mjs Story A drift/parallax pass at 1440/1024/390 (≤ 0.087 / ≤ 0.021 px);
+  `tools/compare/story-motion.mjs` settled transforms per story, all 8 viewports: A ≤ 0.087 px, B ≤ 0.151 px.
+  B9 appears on eyebrow, H2, body and pill (same 4 elements and offsets as the original, both stories); edge
+  results differ only where the 0.19 px sub-pixel layout offset straddles the viewport edge.
+  `tools/compare/story-sbs.mjs` → section-aligned side-by-sides at 1440/1024/768/390.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

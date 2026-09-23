@@ -108,24 +108,121 @@
    "tol": 2
   },
   {
-   "id": "B12 story A frame 1 drift",
+   "id": "B12 story A image 1 drift (1440x900)",
    "orig": {
     "name": "Image 1",
     "nth": 0
    },
-   "clone": "Story A/Image 1",
+   "clone": "Story A/Desktop A/Section#3/Images/Image 1",
    "prop": "translateY",
-   "tol": 1
+   "tol": 1,
+   "viewports": [
+    "1440x900"
+   ]
   },
   {
-   "id": "B12 story A frame 2 drift",
+   "id": "B12 story A image 2 drift (1440x900)",
    "orig": {
     "name": "Image 2",
     "nth": 0
    },
-   "clone": "Story A/Image 2",
+   "clone": "Story A/Desktop A/Section#3/Images/Image 2",
    "prop": "translateY",
-   "tol": 2
+   "tol": 2,
+   "viewports": [
+    "1440x900"
+   ]
+  },
+  {
+   "id": "B4 story A image 1 parallax (1440x900)",
+   "orig": {
+    "name": "Image 1>img",
+    "nth": 0
+   },
+   "clone": "Story A/Desktop A/Section#3/Images/Image 1/Frame/img",
+   "prop": "translateY",
+   "tol": 2,
+   "viewports": [
+    "1440x900"
+   ]
+  },
+  {
+   "id": "B4 story A image 2 parallax (1440x900)",
+   "orig": {
+    "name": "Image 2>img",
+    "nth": 0
+   },
+   "clone": "Story A/Desktop A/Section#3/Images/Image 2/Frame/img",
+   "prop": "translateY",
+   "tol": 2,
+   "viewports": [
+    "1440x900"
+   ]
+  },
+  {
+   "id": "B12 story A image 1 drift (1024x768)",
+   "orig": {
+    "name": "Image 1",
+    "nth": 0
+   },
+   "clone": "Story A/Tablet A/Section#3/Images/Image 1",
+   "prop": "translateY",
+   "tol": 1,
+   "viewports": [
+    "1024x768"
+   ]
+  },
+  {
+   "id": "B12 story A image 2 drift (1024x768)",
+   "orig": {
+    "name": "Image 2",
+    "nth": 0
+   },
+   "clone": "Story A/Tablet A/Section#3/Images/Image 2",
+   "prop": "translateY",
+   "tol": 2,
+   "viewports": [
+    "1024x768"
+   ]
+  },
+  {
+   "id": "B4 story A image 1 parallax (1024x768)",
+   "orig": {
+    "name": "Image 1>img",
+    "nth": 0
+   },
+   "clone": "Story A/Tablet A/Section#3/Images/Image 1/Frame/img",
+   "prop": "translateY",
+   "tol": 2,
+   "viewports": [
+    "1024x768"
+   ]
+  },
+  {
+   "id": "B4 story A image 2 parallax (1024x768)",
+   "orig": {
+    "name": "Image 2>img",
+    "nth": 0
+   },
+   "clone": "Story A/Tablet A/Section#3/Images/Image 2/Frame/img",
+   "prop": "translateY",
+   "tol": 2,
+   "viewports": [
+    "1024x768"
+   ]
+  },
+  {
+   "id": "B12 story A image 1 drift (390x844)",
+   "orig": {
+    "name": "Image 1",
+    "nth": 0
+   },
+   "clone": "Story A/Phone A/Section#2/Images/Image 1",
+   "prop": "translateY",
+   "tol": 1,
+   "viewports": [
+    "390x844"
+   ]
   },
   {
    "id": "B6 how-it-works line draw",

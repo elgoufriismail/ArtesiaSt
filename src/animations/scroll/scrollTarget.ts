@@ -14,7 +14,10 @@ export function scrollTargetTransform(
   to: Record<string, number>,
 ) {
   const keys = Object.keys(to);
-  const setters = keys.map((k) => gsap.quickSetter(el, k));
+  // transform components need an explicit unit: without it, quickSetter updates GSAP's cache but the
+  // transform is not rendered (found with the Story drift, the first y consumer of this helper)
+  const unit = (k: string) => (/^(x|y|z)$/.test(k) ? 'px' : /^(rotation|rotate[XYZ]?|rotation[XYZ]|skew[XY]?)$/.test(k) ? 'deg' : undefined);
+  const setters = keys.map((k) => gsap.quickSetter(el, k, unit(k)));
   return onTargetProgress(target, threshold, (p) => {
     keys.forEach((k, i) => setters[i](from[k] + (to[k] - from[k]) * p));
   });
