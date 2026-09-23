@@ -42,7 +42,15 @@ const sections = Object.fromEntries(fs.readdirSync(secDir).map((d) => {
   const src = fs.readdirSync(path.join(secDir, d)).filter((f) => f.endsWith('.tsx')).map((f) => fs.readFileSync(path.join(secDir, d, f), 'utf8')).join('\n');
   return [d, { built: !/data-stub=""/.test(src), src }];
 }));
-const wiredIn = (slot) => Object.entries(sections).filter(([, s]) => s.built && (s.src.includes(`'${slot}'`) || s.src.includes(`"${slot}"`) || s.src.includes(`STANDINS['${slot}']`))).map(([d]) => d);
+// a slot is wired when it is referenced anywhere in src (sections or their content objects), except the
+// registry itself, and its owning section is built
+const srcFiles = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? srcFiles(path.join(dir, e.name)) : /\.(tsx?|css)$/.test(e.name) ? [path.join(dir, e.name)] : []));
+const allSrc = srcFiles(`${ROOT}src`).filter((f) => !f.endsWith('content/assets.ts')).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
+const OWNER = Object.fromEntries(Object.values(MAP).filter(([slot]) => slot).map(([slot, owner]) => [slot, owner]));
+const wiredIn = (slot) => {
+  if (!(allSrc.includes(`'${slot}'`) || allSrc.includes(`"${slot}"`))) return [];
+  return OWNER[slot].split(',').map((x) => x.trim()).filter((o) => sections[o]?.built);
+};
 const statusOf = (slot, owner) => {
   if (!slot) return 'excluded (not part of the design)';
   const w = wiredIn(slot);

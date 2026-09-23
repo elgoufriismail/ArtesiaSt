@@ -14,10 +14,10 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 |---|---|---|---|---|---|---|
 | `A6yz8YhmbQkg8ACTADACAMNk7s.jpg` | 2048×2048 | Page Intro / Green Background | 1440×900 @1440<br>1024×768 @1024<br>390×844 @390 | cover 49.5% 28.4% | `hero-backdrop` | stand-in wired (Hero) |
 | `vJzjZEQ7XEcIpUiaWAlM8HVcE.jpg` | 3600×3200 | Page Intro / Hero Image | 1440×900 @1440<br>1024×768 @1024<br>390×844 @390 | cover 50% 0% | `hero-portrait` | stand-in wired (Hero) |
-| `VW2dIv9jFcnOEMXK68HcTW0X9g.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-1` | stand-in exists, NOT wired |
-| `X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-2` | stand-in exists, NOT wired |
-| `lZn0EEipDdK6TqFQ685W86d6r9M.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-3` | stand-in exists, NOT wired |
-| `Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-4` | stand-in exists, NOT wired |
+| `VW2dIv9jFcnOEMXK68HcTW0X9g.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-1` | stand-in wired (Services) |
+| `X1KAS3BPHbN4rR5FN8CCVsSUhM.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-2` | stand-in wired (Services) |
+| `lZn0EEipDdK6TqFQ685W86d6r9M.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-3` | stand-in wired (Services) |
+| `Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-4` | stand-in wired (Services) |
 | `Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg` | 2048×2048 | Story A / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-a-1` | stand-in exists (section not built yet) |
 | `lLxmvlvWIZ4P7PBI7azU4zec.jpg` | 2048×2048 | Story A / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-a-2` | stand-in exists (section not built yet) |
 | `POpTLGuLzTuWYxuEYrRGJD678.jpg` | 280×280 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-1` | stand-in exists (section not built yet) |
@@ -75,7 +75,6 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 
 ## Summary
 
-* stand-in wired: 3
-* stand-in exists, NOT wired: 4
+* stand-in wired: 7
 * stand-in exists: 13
 * excluded: 1
