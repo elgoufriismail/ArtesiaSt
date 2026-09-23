@@ -42,8 +42,8 @@ export function heroSequence(p: HeroParts, bp: Breakpoint, cfg = ANIM) {
     p.paths.forEach((path) => drawPath(path, cfg.draw));
   }
   if (cfg.B1.heroTextEntranceEnabled[bp]) {
-    if (p.paragraph) entrance(p.paragraph, cfg.B1.entranceDelays.heroParagraph, -1);
-    if (p.cta) entrance(p.cta, cfg.B1.entranceDelays.heroCta, 1);
+    if (p.paragraph) entrance(p.paragraph, cfg.B1.entranceDelays.heroParagraph, -1, { fromLoad: true });
+    if (p.cta) entrance(p.cta, cfg.B1.entranceDelays.heroCta, 1, { fromLoad: true });
   }
 
   // ── scroll ──
@@ -54,10 +54,10 @@ export function heroSequence(p: HeroParts, bp: Breakpoint, cfg = ANIM) {
     const lines = p.lines;
     markerState(cfg.B2.linesFadeOut.marker, cfg.B2.linesFadeOut.line, (passed) => {
       gsap.to(lines, { opacity: passed ? 0 : 1, ...toVars(passed ? cfg.B2.linesFadeOut.t : cfg.B2.linesFadeOut.back), overwrite: true });
-    });
+    }, cfg.B2.linesFadeOut.startFrames);
   }
   const root = p.root;
   markerState(cfg.B2.introFadeOut.marker, cfg.B2.introFadeOut.line, (passed) => {
     gsap.to(root, { opacity: passed ? 0 : 1, ...toVars(passed ? cfg.B2.introFadeOut.t : cfg.B2.introFadeOut.back), overwrite: true });
-  });
+  }, cfg.B2.introFadeOut.startFrames);
 }

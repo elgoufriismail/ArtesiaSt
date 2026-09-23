@@ -35,7 +35,7 @@ export function Navigation() {
     nav.current.querySelectorAll<HTMLElement>('[data-entrance]').forEach((el) => {
       const key = el.dataset.entrance!;
       const delay = key === 'logo' ? d.navLogo : key === 'cta' ? d.navCta : d.navLinks[Number(key)];
-      entrance(el, delay);
+      entrance(el, delay, 1, { fromLoad: true, markAs: key === 'logo' ? 'anim:nav-logo' : undefined });
     });
   });
 

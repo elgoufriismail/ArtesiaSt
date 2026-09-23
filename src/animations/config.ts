@@ -23,11 +23,10 @@ export const ANIM = {
       { to: { opacity: 0.5 }, t: { duration: 2, ease: 'hero', delay: 0.4 } as Tween },
       { to: { opacity: 1 }, t: { duration: 2, ease: 'hero', delay: 0.4 } as Tween },
     ],
-    /** Hero H1 word reveal (first-class #1). Frame-accurate timing (tools/compare/timing.mjs):
-     *  words start ≈0.1 s apart (6 words spread over ≈0.45 s — the Framer `startDelay: 0.2` value is not
-     *  a per-word stagger) and the first word starts ≈1.6 s after the nav logo entrance begins (the
-     *  original waits for hydration) → delay 1.35 s after fonts are ready (calibrated: first word ≈1.6 s after the logo entrance). */
-    heroWords: { from: { opacity: 0.001, y: 10, filter: 'blur(10px)' }, duration: 1.6, ease: 'framer' as EaseName, delay: 1.35, stagger: 0.1, waitForFonts: true },
+    /** Hero H1 word reveal (first-class #1). Read from the original's WAAPI animations: 1.6 s framer ease,
+     *  delay 0.2 s + stagger 0.1 s per word, mounted `mountLag` s after the appear start (median of 15
+     *  loads; range 1.21–1.57 s, depends on hydration). See load/heroWords.ts and core/loadClock.ts. */
+    heroWords: { from: { opacity: 0.001, y: 10, filter: 'blur(10px)' }, duration: 1.6, ease: 'framer' as EaseName, mountLag: 1.345, delay: 0.2, stagger: 0.1, waitForFonts: true },
     /** Entrance y/opacity (desktop only for hero text; nav on all where shown) */
     entrance: { duration: 1, ease: 'entrance' as EaseName, distance: 20 },
     entranceDelays: {
@@ -43,8 +42,8 @@ export const ANIM = {
     portraitFade: { threshold: 0, from: 1, to: 0 },               // onScrollTarget(Hero, 0)
     textParallaxFactor: { desktop: 0.3, tablet: 0, phone: 0 } as PerBp<number>, // speed 70
     // fading out = Framer "exit" (0.8 s), fading back in = "animate" (1.2 s) — verified frame-by-frame
-    linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, t: { duration: 0.8, ease: 'strong' } as Tween, back: { duration: 1.2, ease: 'strong' } as Tween },
-    introFadeOut: { marker: 'toggle-on-animation', line: 0.5, t: { spring: true, duration: 1.2, bounce: 0 } as Spring, back: { spring: true, duration: 0.8, bounce: 0 } as Spring },
+    linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, startFrames: 2, t: { duration: 0.8, ease: 'strong' } as Tween, back: { duration: 1.2, ease: 'strong' } as Tween },
+    introFadeOut: { marker: 'toggle-on-animation', line: 0.5, startFrames: 1, t: { spring: true, duration: 1.2, bounce: 0 } as Spring, back: { spring: true, duration: 0.8, bounce: 0 } as Spring },
   },
 
   /* ── B3 balance switch (first-class #3) ──────────────────────────── */
