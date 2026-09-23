@@ -14,7 +14,8 @@
     "capture": "node tools/recon/capture.mjs",
     "compare:geometry": "node tools/compare/geometry.mjs",
     "compare:pixels": "node tools/compare/pixels.mjs",
-    "compare:motion": "node tools/compare/motion.mjs"
+    "compare:motion": "node tools/compare/motion.mjs",
+    "assets:ledger": "node tools/assets/ledger.mjs"
   },
   "dependencies": {
     "@fontsource/crimson-text": "5.3.0",

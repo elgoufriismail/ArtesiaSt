@@ -92,6 +92,22 @@ export const ANIM = {
     noiseOpacity: { default: 0.15, quote: 0.1 },
   },
 
+  /* ── B18 service card cursor proximity (found in Step 4; missing from the recon notes) ─── */
+  /** Each desktop card's height follows the cursor's HORIZONTAL distance to the card centre (window
+   *  mousemove; vertical position irrelevant): h = max(min, max − k·|dx|). Exact at 1920/1440/1280
+   *  (error ≤ 0.03 px). Cards stay at `max` until the first mousemove. The height chases its target
+   *  with motion useSpring(stiffness 150, damping 25) (fit rmse 0.0012; retargets keep velocity).
+   *  The card box shrinks symmetrically about its centre; image, description and noise stay fixed.
+   *  Hover (pointer inside the card): "read more" label opacity 0 → 1, spring 0.6 s bounce 0.
+   *  Tablet/phone (Touch variant): static 400 px cards, no proximity, no hover label. */
+  B18: {
+    enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean>,
+    max: 560, min: 440, k: 0.1875,
+    spring: { stiffness: 150, damping: 25, mass: 1 },
+    startFrames: 1,                          // motion applies the new target / hover variant next frame
+    label: { spring: true, duration: 0.6, bounce: 0 } as Spring,
+  },
+
   /* ── B5 waves background ─────────────────────────────────────────── */
   B5: { values: [0, 1, 0], targets: ['how-it-works', 'big-quote'], threshold: 1, enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean> },
 

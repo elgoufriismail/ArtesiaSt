@@ -16,6 +16,7 @@ export * from './parallax/imageParallax';
 export * from './parallax/speedParallax';
 export * from './parallax/footerParallax';
 export * from './hover/hoverVars';
+export * from './hover/cardProximity';
 export * from './pinned/rollingNumber';
 export * from './counters/counters';
 export * from './navigation/navTheme';

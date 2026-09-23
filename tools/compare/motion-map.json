@@ -54,11 +54,24 @@
     "name": "Desktop>img",
     "nth": 0
    },
-   "clone": "Our Services/Cards/Container/Card A Container/img",
+   "clone": "Our Services/Cards/Container/Card A Container/Desktop/Image/img",
    "prop": "translateY",
    "tol": 2,
    "viewports": [
     "1440x900"
+   ]
+  },
+  {
+   "id": "B4 service card parallax (tablet)",
+   "orig": {
+    "name": "Touch>img",
+    "nth": 0
+   },
+   "clone": "Our Services/Cards/Container/Card A Container/Touch/Image/img",
+   "prop": "translateY",
+   "tol": 2,
+   "viewports": [
+    "1024x768"
    ]
   },
   {

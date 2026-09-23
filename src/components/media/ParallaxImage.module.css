@@ -1,0 +1,20 @@
+/* Parallax frame (B4): layers are frame height + P, anchored at the top, moved −P → 0 by imageParallax. */
+.frame { position: relative; overflow: hidden; background: var(--c-white); --p: var(--p-desktop); }
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: calc(100% + var(--p));
+}
+.noise {
+  opacity: var(--noise-opacity);
+  mix-blend-mode: overlay;
+  background-image: url('/textures/noise-b.png');
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  pointer-events: none;
+}
+@media (min-width: 810px) and (max-width: 1199.98px) { .frame { --p: var(--p-tablet); } }
+@media (max-width: 809.98px) { .frame { --p: var(--p-phone); } }

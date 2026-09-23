@@ -306,6 +306,21 @@ gates for the sections touched.
   starting a variant (non-deterministic React work). The tablet "Animated Lines" container is empty in the
   original, so the clone renders no lines below desktop.
 
+### Step 4 measured behaviour (Services, B4 + B18)
+
+* Layout: Our Services padding-top 80 → Cards (max 1600, padding 0 56/32/8) → Container (padding 0 8,
+  gap 16; desktop row of 4 × 560, tablet 2-column grid of 400, phone column of 400). Desktop: a 560²
+  parallax square centred in each card (image 560×760, P 200); tablet: card-sized frame (P 200); phone:
+  static. H3 t-card-title with text-wrap balance (B/C/D have explicit breaks); description bottom-aligned
+  in a centred 240 px box (touch: bottom 80); "Read More" row bottom 24 (label hidden except on hover).
+* NEW (not in the recon notes): B18 cursor proximity. Desktop card height = max(440, 560 − 0.1875·|dx|)
+  (window mousemove, horizontal distance to card centre only; exact at 1920/1440/1280). It follows with
+  motion useSpring(stiffness 150, damping 25) (fit rmse 0.0012; exact analytic stepper `stepSpring`).
+  A new target starts moving the frame after it arrives. Hover label: spring 0.6 s, +1 frame.
+* Validation: geometry 8/8 viewports; line counts 64/64 (`tools/compare/lines.mjs`); proximity function
+  identical to the original (sweep); dynamics unshifted rmse ≤ 0.0024 (height), ≤ 0.009 (label); parallax
+  max error 0.005 px (1440) / 0.006 px (1024).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
