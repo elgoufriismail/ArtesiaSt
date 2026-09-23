@@ -1,0 +1,273 @@
+# IMPLEMENTATION PLAN — ClearPath homepage clone (Next.js + GSAP)
+
+Status: **Phase 2 (implementation architecture) complete.** Project initialised; core animation
+infrastructure, scroll math, providers and hooks are implemented and tested; sections and most
+animation modules are **typed skeletons/contracts** — the page is not built yet.
+
+Source of truth: `docs/reconnaissance/*`. This plan supersedes `docs/architecture/ARCHITECTURE.md`
+(Vite/Motion draft); its stand-in policy is carried over in §7.
+
+## Recon → implementation map
+
+| Reconnaissance | Implemented in |
+|---|---|
+| `STRUCTURE.md` §2 section order, layer names | `src/app/page.tsx` (order), `src/sections/*` (one folder per section), `data-ref` = original layer path |
+| `STRUCTURE.md` markers | `src/components/ui/Marker.tsx` + marker `<Marker id>` inside owning sections |
+| `VISUAL.md` tokens + typography | `src/styles/tokens.css`, `src/styles/typography.css` |
+| `BREAKPOINTS.md` | literal media queries in `src/styles/*.css` + section CSS modules; `src/lib/breakpoints.ts` (JS); `gsap.matchMedia` in `src/animations/core/media.ts` |
+| `RESPONSIVE.md` §4 per-breakpoint behaviour | `PerBp` values in `src/animations/config.ts` |
+| `ANIMATIONS.md` B1–B17 | `src/animations/config.ts` (all numbers, keyed B1…B17) + `src/animations/<category>/*` |
+| `INTERACTIONS.md` | `src/components/ui/*` (markup/state), `src/hooks/*` (state, scroll lock), `src/animations/{hover,menu,faq,pricing}` |
+| `ASSETS.md` | `src/content/assets.ts` + `public/{standins,textures,masks}` via `tools/standins/generate.py` |
+| recon references (screenshots, tracks, dumps) | `tools/compare/*` gates + `tests/unit/*` |
+
+---
+
+## 1. Component tree
+
+```
+app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()}>
+└─ <SmoothScroll>                 Lenis (duration 2, smoothWheel, native touch) on the GSAP ticker
+   └─ app/page.tsx (server)
+      ├─ <ProgressiveBlur/>       fixed 220px, 8 backdrop-filter layers (desktop)
+      ├─ <WavesBackground/>       fixed wavy lines layer (desktop)                         B5
+      ├─ <main> "Main Container"
+      │  ├─ <Hero/>               "Page Intro"      markers: hero                            B1 B2 · #1 #2 #13
+      │  ├─ <BalanceSection/>     "Toggle"          markers: toggle-start-animation, dark-nav-1,
+      │  │                                            toggle-on-anchor, toggle-on-animation   B3 · #3
+      │  ├─ <Services/>           "Our Services"    4 × ServiceCard(ParallaxImage)           B4 B9 · #4 #9
+      │  ├─ <Philosophy/>         "Our Philosophy"  SectionIcon, TextScrollReveal, Pill      B9 B15
+      │  ├─ <Story variant="a"/>  "Story A"         marker story-a; 2 × ParallaxImage        B4 B9 B12 · #4
+      │  ├─ <HowItWorks/>         "How It Works"    markers how-it-works, step-2/3-trigger;
+      │  │                                            sticky RollingNumber, DrawnPath          B6 B7 B9 · #5 #6 #13
+      │  ├─ <PathSection/>        "Ready to find your path?"  RatingWidget, SocialRow        B1 B9
+      │  ├─ <Pricing/>            "Pricing"         Switch, 3 × PricingCard(DigitRoll), scribble  B14 · #8 #13
+      │  ├─ <TextSection index=1/> "Text Section"                                             B9
+      │  ├─ <Quote/>              "Big Quote"       marker big-quote; ParallaxImage, arc, lines  B4 B11 · #7 #13
+      │  ├─ <Story variant="b"/>  "Story B"         marker story-b
+      │  ├─ <Journal/>            "Journal"         3 × ArticleCard (blob masks)             B9
+      │  ├─ <TextSection index=2/> "Text Section#2"
+      │  ├─ <Numbers/>            "Numbers"         marker numbers; 4 × Counter              B8
+      │  ├─ <Faq/>                "FAQ"             6 × AccordionItem                        #12
+      │  └─ <Booking/>            "Book A Session"  sticky RatingWidget/SocialRow, BookingForm(FormField…)
+      ├─ <Footer/>                "Footer Container" marker footer-menu; newsletter, sitemap  B13
+      └─ <Navigation/>            fixed; desktop rows (light/dark) + Menu pill → <MobileMenu/>  B1 B10 B17 · #10 #11
+```
+
+Server/client split: `layout.tsx` and `page.tsx` are server components; every section is a client
+component (needs refs for GSAP). Static markup still pre-renders (page is `○ Static`).
+
+## 2. File structure
+
+```
+src/
+  app/            layout.tsx · page.tsx · page.module.css
+  sections/       <Name>/index.tsx + <Name>.module.css for:
+                  Navigation (+ MobileMenu.tsx) · Hero · BalanceSection · Services · Philosophy · Story ·
+                  HowItWorks · PathSection · Pricing · TextSection · Quote · Journal · Numbers · Faq ·
+                  Booking · Footer
+  components/
+    providers/    SmoothScroll.tsx
+    ui/           Marker · SplitWords · PillButton · NavLink · Eyebrow · SectionIcon · SocialRow ·
+                  RatingWidget · Switch · DigitRoll · AccordionItem · FormField
+    media/        StandInImage · ParallaxImage · NoiseOverlay
+    decor/        ProgressiveBlur · WavesBackground · DrawnPath
+  animations/
+    config.ts     ALL tunable values (B1…B17, faq, pricing, serviceCard, pill)
+    index.ts      barrel
+    core/         gsap.ts (plugin registration) · eases.ts (Framer beziers → CustomEase) ·
+                  spring.ts (Framer springs → GSAP ease / CSS linear()) · transition.ts · media.ts
+                  (gsap.matchMedia per breakpoint) · scroll.ts (target progress + marker crossing) · todo.ts
+    load/         heroWords · entrance · loadFade
+    scroll/       reveal · scrollTarget · markerState · textScrollReveal
+    parallax/     imageParallax · speedParallax
+    hover/        hoverVars (CSS custom properties for CSS hover transitions)
+    pinned/       rollingNumber
+    counters/     counters
+    navigation/   navTheme
+    menu/         mobileMenu
+    faq/          accordion
+    pricing/      digitRoll · pricingSwitch
+    svg/          drawPath
+    sequences/    heroSequence · balanceSequence · quoteFold · storyDrift · wavesBackground
+  hooks/          useGsap · useBreakpoint · useLenis · useScrollLock · useDisclosure
+  lib/            breakpoints.ts · scroll-math.ts (pure, validated)
+  content/        assets.ts (stand-in registry) · types.ts (content model) · site.ts (stand-in copy)
+  styles/         tokens.css · typography.css · base.css
+public/           standins/*.jpg (+manifest) · textures/noise-{a,b}.png · masks/*.svg
+tests/unit/       scroll-math.test.ts · spring.test.ts
+tools/            standins/generate.py · recon/{lib,capture,text-budgets}.mjs · compare/{geometry,pixels,motion}.mjs
+docs/             reconnaissance/ · architecture/text-budgets.json · IMPLEMENTATION_PLAN.md
+```
+
+## 3. Section responsibilities
+
+Every section: renders its markup from `content/site.ts`, puts `data-ref` on elements that correspond to
+original layers, owns its markers, declares `data-nav-theme`, and wires animation factories inside one
+`useGsap(root, bp => …)` call. **Sections contain no animation numbers and no raw GSAP.**
+
+| Section | Layout (desktop → tablet → phone) | Animations wired |
+|---|---|---|
+| Navigation | transparent 79px bar, 4 links + pill; → opaque white bar + Menu pill (79/69px) | entrance (B1), navTheme (B10, desktop), mobileMenuTimeline (B17) + useScrollLock |
+| Hero | 900 / 768 / ~596px; sticky 100vh backdrop inside 4×100vh track (bottom fade mask); portrait `50% 0%`; circles + lines desktop only | heroWordReveal (B1), heroSequence (B1/B2: backdrop fade, portrait fade, lines fade, intro fade, speedParallax), drawPath ×2 |
+| BalanceSection | 1400px section, sticky 500px block; markers at original offsets | balanceSequence (B3), reveal |
+| Services | 4 × 316×560 → 2×2 → 1 col; image overscan 200 | imageParallax (P per bp), reveal; hover = CSS (--hover-card-*) |
+| Philosophy | centred statement 44px | textScrollReveal (B15), reveal |
+| Story (a/b) | 553 · 111 · 664 split; images 389×597 + 332×497 → stacked, image 2 hidden on phone | imageParallax 300/100, storyDrift (B12), reveal |
+| HowItWorks | display H2 + lead; steps with 450px spacers; sticky 540×900 number column → no number/spacers on phone | rollingNumber (B7), drawPath (B6), reveal, entrance (lead) |
+| PathSection | text left, rating/contact/socials right → stacked | entrance (rating), reveal |
+| Pricing | 3 cards (radius 16) → stacked; switch 56×32 | pricingSwitch + rollDigits (#8), drawPath (B14), reveal; card hover = CSS |
+| TextSection | 664 · 221 · 443 → stacked (gap 38) | reveal |
+| Quote | 1080 / 614 / ~650px; black bg; arc container top edge | quoteFold (B11), imageParallax 500/300/0, drawPath ×2, reveal |
+| Journal | 3 cards (middle +100px) → 2+1 → 1 col; blob masks | reveal |
+| Numbers | 4 in a row → 2×2 → 1 col | counters (B8, desktop) |
+| Faq | left text / right list → reordered on phone (headline, intro, list, helper, pill) | accordionToggle (#12), reveal |
+| Booking | left sticky rating block / right form → reordered on phone (form before rating) | entrance ×5 (load-time, off-screen), reveal |
+| Footer | photo starts 320px above; 3 columns → stacked | scrollTargetTransform y 0→160 (B13, not phone), reveal |
+
+## 4. Animation architecture
+
+**Principles**
+
+1. **One tuning surface** — `src/animations/config.ts` holds every duration, ease, distance, threshold,
+   marker id and per-breakpoint switch, keyed by recon IDs (B1…B17). Re-tuning never touches sections.
+2. **Factories, not components** — each animation is a function `(elements, cfg = ANIM.x) => ScrollTrigger | tween | null`
+   in its category folder. Factories are composable (sequences/ combine load + scroll + parallax pieces).
+3. **Lifecycle via `useGsap`** — sections call factories only inside `useGsap(root, bp => …)`, which runs
+   them in a `gsap.matchMedia` context for the active breakpoint and reverts everything (tweens,
+   ScrollTriggers, inline styles) on unmount or breakpoint change.
+4. **Scroll math is pure and tested** — `lib/scroll-math.ts` reproduces Framer's `onScrollTarget`,
+   parallax and word-reveal mappings; unit tests replay the original's recorded tracks
+   (fold ≤0.2°, fades ≤0.005, parallax ≤0.01px).
+5. **Framer semantics preserved** — Framer cubic-beziers are registered as named GSAP eases
+   (`framer`, `entrance`, `hero`, `strong`); Framer springs `{duration, bounce}` become GSAP eases via
+   `springEase()` (critically damped for bounce 0) and CSS `linear()` easings for CSS hovers; Framer
+   layout (FLIP) animations use **GSAP Flip**.
+6. **Where GSAP vs CSS** — GSAP/ScrollTrigger for everything scroll-driven, sequenced or measured
+   (load sequence, parallax, markers, pinned number, fold, draws, counters, nav theme, menu, FAQ height,
+   digit roll). CSS transitions for simple hover states (pill dot slide, underline, social opacity, card
+   border, service-card expansion) using spring-derived `linear()` easings from `hoverCssVars()`.
+   CSS `position: sticky` for all pinning (the original uses no JS pin-spacers).
+
+**Categories → first-class animations**
+
+| Category (folder) | Module | First-class # / recon |
+|---|---|---|
+| load | `heroWords` | #1 hero word blur reveal (B1) |
+| load | `entrance`, `loadFade` | nav/hero/booking entrances, backdrop/waves/lines load fades (B1) |
+| sequences | `heroSequence` | #2 portrait/background transition (B1+B2) |
+| sequences | `balanceSequence` | #3 balance scroll-driven switch (B3, Flip) |
+| parallax | `imageParallax`, `speedParallax` | #4 image parallax (B4), hero text parallax (B2) |
+| pinned | `rollingNumber` (+ CSS sticky) | #5 pinned How It Works, #6 odometer number (B7) |
+| sequences | `quoteFold` | #7 Big Quote 3D arc fold (B11) |
+| pricing | `digitRoll`, `pricingSwitch` | #8 NumberFlow-style digits + switch |
+| hover | `hoverVars` (+ CSS modules) | #9 service card hover expansion, pills, links |
+| navigation | `navTheme` | #10 nav colour transitions (B10) |
+| menu | `mobileMenu` | #11 mobile menu (B17) |
+| faq | `accordion` | #12 FAQ expansion |
+| svg | `drawPath` | #13 decorative SVG line drawing (B2/B6/B14, quote lines) |
+| scroll | `reveal`, `scrollTarget`, `markerState`, `textScrollReveal` | B9 fades, generic onScrollTarget, marker variants, B15 |
+| counters | `counters` | B8 |
+| sequences | `storyDrift`, `wavesBackground` | B12, B5 |
+
+Implemented now (generic, used everywhere): core/*, `entrance`, `loadFade`, `reveal`, `scrollTarget`,
+`markerState`, `imageParallax`, `speedParallax`, `drawPath`, `hoverVars`, `quoteFold`, `storyDrift`,
+`wavesBackground`. Contracts (typed signature + spec, dev warning) for the rest.
+
+## 5. Interaction architecture
+
+| Interaction (INTERACTIONS.md) | State owner | Animation |
+|---|---|---|
+| Hover: pill, nav link, social, pricing card, inline links, service card | CSS `:hover` / `:focus-visible` | CSS transitions with `--hover-*` vars |
+| Balance switch click | anchor `#toggle-on-anchor` → Lenis `anchors:true` smooth scroll | state change comes from scroll (balanceSequence) |
+| Pricing Monthly/Yearly | `useDisclosure` in `Pricing` | `pricingSwitch` + `rollDigits`; prices = monthly × (1 − 0.2) rounded like the original |
+| FAQ items | per-item `useDisclosure` (independent, first item open) | `accordionToggle` (Flip height, icon 135°) |
+| Mobile menu | `useDisclosure` in `Navigation` + `useScrollLock` (html overflow hidden + lenis.stop) | `mobileMenuTimeline` |
+| Forms | native inputs (no submission backend in clone; `onSubmit` prevented) | CSS states (checkbox checked green) |
+| Links to other pages | plain `<a href>` to original-like routes (out of scope) | — |
+
+Accessibility baseline kept from the original's semantics: real links/buttons, labelled form fields,
+`aria-expanded` on FAQ and menu buttons, `aria-hidden` on decorative layers and markers.
+
+## 6. Responsive strategy
+
+* **One DOM per component** (the original renders 3 variants and hides 2); layout switches with media
+  queries using the original breakpoints **literally**: `≥1200`, `810–1199.98`, `≤809.98` (+ type tier
+  `≥1600`). 768px is phone.
+* Tokens swap per breakpoint (`--gutter` 56/32/8, `--nav-h` 79/69); typography presets have 4 tiers.
+* Section CSS modules contain desktop base rules + tablet + phone blocks with the numbers from
+  BREAKPOINTS.md §4–5; phone reorders (FAQ, Booking, Story) use flex `order`.
+* Behaviour differences are data, not branches: `PerBp` values in `config.ts`, applied through
+  `gsap.matchMedia` (`useGsap` passes the active breakpoint). Example: parallax P `{500,300,0}`,
+  counters `{true,false,false}`, nav theme desktop-only.
+* Fluid widths inside a breakpoint are derived per section from the 1920/1440/1280 and 430/390/375 dumps
+  and verified by the geometry gate at all 8 viewports.
+* Lenis: `smoothWheel` for mouse/trackpad; touch stays native (`syncTouch:false`) exactly like the original.
+
+## 7. Asset strategy
+
+* **Photos**: 20 generated stand-ins (`tools/standins/generate.py`) at the **original pixel sizes**, with
+  hand-authored tonal keys (not sampled from the originals); crops via the original `object-fit`/
+  `object-position`/overscan; `StandInImage` marks them `data-standin="photo"` for pixel-diff masking.
+  Replace 1:1 with licensed photos later.
+* **Textures / masks**: generated grain tiles (256 / 240 px) and original blob/avatar masks at the original
+  bounding boxes.
+* **Line art**: new paths drawn inside the original viewBoxes (780×1140, 6000×680, 680×2000, 310×80,
+  1516×443 arc, journal outlines).
+* **Copy**: written fresh (never reworded from the original) to fit `docs/architecture/text-budgets.json`
+  (chars ±10 %, words, rendered line count per breakpoint). Generic UI labels are kept. Placeholder brand
+  "Calm Shore" / "calm—shore".
+* **Fonts**: Crimson Text 400 + Inter variable, self-hosted via Fontsource (OFL). **Icons**: Phosphor
+  (social, check-circle, plus-circle, section icons).
+* Images are plain `<img>` with explicit width/height (`images.unoptimized`); no remote images.
+
+## 8. Dependency list (installed, exact versions)
+
+| Package | Version | Why |
+|---|---|---|
+| next | 16.3.6 | App Router framework (requested) |
+| react / react-dom | 19.3.0 | UI |
+| gsap | 3.15.0 | animations; bundled plugins used: ScrollTrigger, Flip, CustomEase |
+| lenis | 1.3.26 | smooth scroll (original uses Lenis) |
+| @phosphor-icons/react | 2.1.10 | icons (original uses Phosphor) |
+| @fontsource/crimson-text | 5.3.0 | display serif |
+| @fontsource-variable/inter | 5.3.0 | sans |
+| **dev:** typescript 5.9.3, @types/react 19.3.0, @types/react-dom 19.3.0, @types/node 22.19.1 | | typing |
+| **dev:** @playwright/test 1.56.1, pixelmatch 7.2.0, pngjs 7.0.0 | | verification harness (1.56.1 matches the preinstalled Chromium) |
+
+Deliberately **not** installed: Framer Motion (replaced by GSAP + springEase/Flip), NumberFlow (own
+`DigitRoll`), @gsap/react (own `useGsap`), Tailwind/Sass (plain CSS), ESLint (not required by `next build`).
+
+## 9. Implementation order
+
+Each step ends with `npm run typecheck`, `npm run test:unit`, `npm run build` and the geometry + motion
+gates for the sections touched.
+
+1. **Chrome** — Navigation (desktop bar, stacked themed rows, entrance), MobileMenu (#11), ProgressiveBlur,
+   WavesBackground, Footer (layout + B13).
+2. **Hero** — sticky backdrop track, portrait, circles, lines (#13), H1 (#1), intro text; heroSequence (#2).
+3. **BalanceSection** — sticky block, markers, Switch; balanceSequence (#3); nav theme boundaries (#10).
+4. **Services** (#4, #9) → **Philosophy** (B15) → **Story** A/B (#4, B12).
+5. **HowItWorks** — sticky column (#5), RollingNumber (#6), long line (#13).
+6. **PathSection**, **Pricing** (#8, scribble #13), **TextSection** ×2.
+7. **Quote** — parallax 500, arc fold (#7), lines.
+8. **Journal**, **Numbers** (B8), **Faq** (#12), **Booking**.
+9. Stand-in copy pass against text budgets; line-art pass.
+10. Full sweep: 8 viewports × geometry/pixels/motion; interaction screenshots vs `reference/interactions`.
+
+## 10. Testing strategy
+
+| Layer | Tool | Criterion |
+|---|---|---|
+| Types | `npm run typecheck` | 0 errors |
+| Pure logic | `npm run test:unit` (node:test, no extra deps) | scroll math replays original tracks within tolerance; spring eases monotonic / correct overshoot |
+| Build | `npm run build` | static prerender succeeds |
+| Geometry | `capture.mjs clone` + `geometry.mjs` | every `data-ref` within ±2px (x, section-relative y, w, h) at all 8 viewports; 0 unknown refs |
+| Text fit | text budgets | stand-in blocks: same line count per breakpoint, chars ±10 % |
+| Motion | `motion.mjs` + `motion-map.json` | each mapped effect within tolerance at 1440/1024/390 (e.g. fold ±1°, fades ±0.02, parallax ±2px) |
+| Pixels | `pixels.mjs` | masked diff per frame reviewed; target < 2 % outside masks for static frames |
+| Interactions | Playwright hover/click scripts (ported from recon) | state screenshots side-by-side with `reference/interactions/*`; timing within ±100 ms of recon |
+| Load sequence | appear sampler (recon `appear` protocol) | word stagger/duration within ±100 ms |
+
+Current smoke-test result (skeleton): build static ✓, 9/9 unit tests ✓, harness resolves 18/18 clone refs
+to original layers (0 unknown) at 1440×900 and 390×844 (geometry fails as expected — sections are empty).

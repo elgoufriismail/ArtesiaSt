@@ -58,11 +58,10 @@ export async function dumpNamed(page, attr) {
       let next = prefix;
       // Original: path is built from named ancestors; roots are re-based so paths match the clone's data-ref values.
       // Clone: data-ref already holds the full path.
+      const root = isOriginal ? (el.tagName === 'NAV' ? 'Nav' : name === 'Footer Container' ? name : null) : null;
       if (isOriginal && name === 'Main Container') next = '';
-      else if (isOriginal && el.tagName === 'NAV') next = 'Nav';
-      else if (isOriginal && name === 'Footer Container') next = 'Footer Container';
-      else if (name) {
-        let path = isOriginal && prefix ? prefix + '/' + name : name;
+      else if (name || root) {
+        let path = root ?? (isOriginal && prefix ? prefix + '/' + name : name);
         const n = (seen.get(path) || 0) + 1;
         seen.set(path, n);
         if (n > 1) path += '#' + n;

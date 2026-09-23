@@ -1,0 +1,11 @@
+/* BalanceSection — original "Toggle". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
+   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+.root {
+  position: relative;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+}
+
+@media (max-width: 809.98px) {
+}

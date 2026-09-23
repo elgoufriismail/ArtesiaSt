@@ -1,0 +1,48 @@
+// Validates lib/scroll-math against the ORIGINAL's recorded scroll tracks (1440×900).
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { targetProgress, sequenceValue, parallaxOffset, wordOpacity, markerPassed } from '../../src/lib/scroll-math.ts';
+
+const rec = JSON.parse(fs.readFileSync(new URL('../../docs/reconnaissance/reference/animations/scroll-1440x900.json', import.meta.url), 'utf8'));
+const track = (name: string) => rec.elements.filter((e: { name: string }) => e.name === name)[0].track as [number, string][];
+const num = (s: string, re: RegExp) => { const m = s.match(re); return m ? Number(m[1]) : NaN; };
+const down = (t: [number, string][]) => { const out: [number, string][] = []; for (const r of t) { if (out.length && r[0] < out.at(-1)![0]) break; out.push(r); } return out; };
+
+test('B11 fold: rotateX = -90·targetProgress(big-quote, 1) within 0.2°', () => {
+  for (const [y, v] of down(track('Shape Container'))) {
+    const meas = /rotateX/.test(v) ? num(v, /rotateX\((-?[\d.]+)deg/) : 0;
+    assert.ok(Math.abs(meas - -90 * targetProgress(9336, y, 900, 1)) < 0.2, `y=${y}`);
+  }
+});
+
+test('B2 portrait fade: opacity = 1 - targetProgress(Hero, 0) within 0.005', () => {
+  for (const [y, v] of down(track('Hero Image'))) {
+    assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - (1 - targetProgress(0, y, 900, 0))) < 0.005, `y=${y}`);
+  }
+});
+
+test('B5 waves: sequenceValue([0,1,0]) within 0.005', () => {
+  for (const [y, v] of down(track('Waves Container'))) {
+    const pred = sequenceValue([0, 1, 0], [{ docTop: 4592, threshold: 1 }, { docTop: 9336, threshold: 1 }], y, 900);
+    assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - pred) < 0.005, `y=${y}`);
+  }
+});
+
+test('B4 parallax: service image translateY within 0.01px', () => {
+  for (const [y, v] of down(track('Desktop>img'))) {
+    assert.ok(Math.abs(num(v, /translateY\((-?[\d.]+)px/) - parallaxOffset(2380 - y, 560, 900, 200)) < 0.01, `y=${y}`);
+  }
+});
+
+test('B15 word opacity slices', () => {
+  assert.equal(wordOpacity(0, 0, 4), 0.2);
+  assert.equal(wordOpacity(0.25, 0, 4), 1);
+  assert.equal(wordOpacity(0.25, 1, 4), 0.2);
+  assert.equal(wordOpacity(1, 3, 4), 1);
+});
+
+test('markerPassed at half viewport', () => {
+  assert.equal(markerPassed(1846, 1395, 900), false);
+  assert.equal(markerPassed(1846, 1397, 900), true);
+});

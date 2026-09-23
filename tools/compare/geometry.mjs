@@ -24,11 +24,10 @@ function originalFromRecon(vp) {
     while (stack.length && stack.at(-1)[0] >= n.d) stack.pop();
     const prefix = stack.length ? stack.at(-1)[1] : '';
     let next = prefix;
+    const root = n.tag === 'nav' ? 'Nav' : n.name === 'Footer Container' ? n.name : null;
     if (n.name === 'Main Container') next = '';
-    else if (n.tag === 'nav') next = 'Nav';
-    else if (n.name === 'Footer Container') next = 'Footer Container';
-    else if (n.name) {
-      let path = prefix ? `${prefix}/${n.name}` : n.name;
+    else if (n.name || root) {
+      let path = root ?? (prefix ? `${prefix}/${n.name}` : n.name);
       const k = (seen.get(path) || 0) + 1;
       seen.set(path, k);
       if (k > 1) path += `#${k}`;

@@ -1,0 +1,6 @@
+/* "Main Container": flex column, gap 0 (STRUCTURE.md §3). */
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
