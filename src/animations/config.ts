@@ -23,7 +23,7 @@ export const ANIM = {
       { to: { opacity: 0.5 }, t: { duration: 2, ease: 'hero', delay: 0.4 } as Tween },
       { to: { opacity: 1 }, t: { duration: 2, ease: 'hero', delay: 0.4 } as Tween },
     ],
-    /** Hero H1 word reveal (first-class #1). Read from the original's WAAPI animations: 1.6 s framer ease,
+    /** Hero H1 word reveal (first-class #1), DESKTOP ONLY (tablet/phone: static headline, verified). Read from the original's WAAPI animations: 1.6 s framer ease,
      *  delay 0.2 s + stagger 0.1 s per word, mounted `mountLag` s after the appear start (median of 15
      *  loads; range 1.21–1.57 s, depends on hydration). See load/heroWords.ts and core/loadClock.ts. */
     heroWords: { from: { opacity: 0.001, y: 10, filter: 'blur(10px)' }, duration: 1.6, ease: 'framer' as EaseName, mountLag: 1.345, delay: 0.2, stagger: 0.1, waitForFonts: true },

@@ -52,7 +52,7 @@ and the ≥1600 type tier; 430 vs 375 differ only by widths/wrapping.
 
 | Effect | Desktop | Tablet | Phone |
 |---|---|---|---|
-| Hero H1 word blur-reveal | ✅ | ✅ | ✅ |
+| Hero H1 word blur-reveal | ✅ | — (static, corrected in Step 3) | — (static, corrected in Step 3) |
 | Hero paragraph/pill/nav appear | ✅ | ❌ | ❌ (nav logo only) |
 | Hero portrait fade / Page Intro fade | ✅ | ✅ | ✅ |
 | Hero text parallax (0.3×) | ✅ | ❌ | ❌ |

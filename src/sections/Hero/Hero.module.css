@@ -80,7 +80,7 @@
 .colIntro { flex: 4 0 0; min-width: 0; display: flex; }
 
 .container { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 8px; width: 100%; }
-.h1 { color: var(--c-white); width: 100%; }
+.h1 { color: var(--c-white); width: 100%; text-wrap: balance; }  /* original: text-wrap balance (per text layer) */
 .h1 :global([data-word]) { will-change: transform, opacity, filter; }
 
 .introContainer { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; padding: 0 8px; width: 100%; }
@@ -116,10 +116,12 @@
   .colTitle, .colIntro { flex: none; width: 100%; }
 }
 
-/* First-paint initial states (like Framer's SSR'd initial styles) — animated by GSAP */
-.h1 :global([data-word]) { opacity: 0.001; transform: translateY(10px); filter: blur(10px); }
+/* First-paint initial states (like Framer's SSR'd initial styles) — animated by GSAP.
+   The H1 word reveal is desktop-only: on tablet/phone the original shows the headline sharp from the
+   first frame (verified by load screenshots; no word spans or animations there). */
 .image { opacity: 0.001; }
 @media (min-width: 1200px) {
+  .h1 :global([data-word]) { opacity: 0.001; transform: translateY(10px); filter: blur(10px); }
   .introContainer > div:first-child { opacity: 0.001; transform: translateY(-20px); }
   .introContainer > div:last-child { opacity: 0.001; transform: translateY(20px); }
 }

@@ -41,7 +41,8 @@ export function Hero() {
 
   useGsap(root, (bp) => {
     if (!root.current || !hero.current || !backdrop.current || !portrait.current) return;
-    heroWordReveal([...(h1.current?.querySelectorAll<HTMLElement>('[data-word]') ?? [])]);
+    // word reveal is desktop-only in the original (tablet/phone: headline visible from first paint)
+    if (bp === 'desktop') heroWordReveal([...(h1.current?.querySelectorAll<HTMLElement>('[data-word]') ?? [])]);
     heroSequence({
       root: root.current,
       hero: hero.current,

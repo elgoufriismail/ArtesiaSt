@@ -53,6 +53,7 @@
 .h2Wrap { width: 100%; max-width: 800px; }
 .pWrap { width: 100%; max-width: 440px; }
 .h2, .p { margin: 0; text-align: center; }
+.h2 { text-wrap: balance; }  /* original: both headline layers use text-wrap balance; paragraphs wrap */
 .onDark { color: var(--c-white); }
 .hidden { opacity: 0; }
 

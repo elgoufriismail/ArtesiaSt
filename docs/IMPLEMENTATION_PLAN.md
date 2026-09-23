@@ -297,6 +297,11 @@ gates for the sections touched.
   fades in over 0.6 s and the P over 0.8 s, after a 0.4 s delay.
 * Link: `./#toggle-on-anchor` in Start/Off and `./#toggle-start-animation` in On. Lenis anchor scroll
   (duration 2) lands on the same px as the original.
+* Text wrapping: `text-wrap` is set per text layer in the original. The hero H1 and both Balance H2s are
+  `balance`, and paragraphs wrap. Balancing keeps line counts and makes the green clause start line 2
+  at desktop and tablet, as in the original.
+* Correction to Step 1: the hero H1 word reveal is DESKTOP ONLY. On tablet and phone the original shows
+  the headline sharp from first paint (load screenshots; no word spans, no animations).
 * Not reproduced on purpose: the original sometimes stalls 100–190 ms after a large scroll jump before
   starting a variant (non-deterministic React work). The tablet "Animated Lines" container is empty in the
   original, so the clone renders no lines below desktop.
