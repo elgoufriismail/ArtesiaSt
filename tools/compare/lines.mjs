@@ -11,7 +11,12 @@ const collect = (sel) => {
   return [...root.querySelectorAll('h1,h2,h3,h4,h5,p')].filter((e) => {
     const cs = getComputedStyle(e);
     return e.getBoundingClientRect().width > 0 && e.textContent.trim() && !/^(pre|nowrap)$/.test(cs.whiteSpace);
-  }).map((e) => { const cs = getComputedStyle(e); return [e.tagName, Math.round(e.getBoundingClientRect().height / parseFloat(cs.lineHeight)), e.textContent.trim().slice(0, 24)]; });
+  }).map((e) => {
+    // line-height may live on descendant spans (e.g. word-split statements with h4 line-height: normal)
+    let lh = parseFloat(getComputedStyle(e).lineHeight);
+    if (!Number.isFinite(lh)) { const d = [...e.querySelectorAll('*')].find((x) => Number.isFinite(parseFloat(getComputedStyle(x).lineHeight))); lh = d ? parseFloat(getComputedStyle(d).lineHeight) : NaN; }
+    return [e.tagName, Math.round(e.getBoundingClientRect().height / lh), e.textContent.trim().slice(0, 24)];
+  });
 };
 const b = await launch();
 let bad = 0;

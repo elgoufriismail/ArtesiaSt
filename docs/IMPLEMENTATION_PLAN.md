@@ -321,6 +321,21 @@ gates for the sections touched.
   identical to the original (sweep); dynamics unshifted rmse ≤ 0.0024 (height), ≤ 0.009 (label); parallax
   max error 0.005 px (1440) / 0.006 px (1024).
 
+### Step 5 measured behaviour (Philosophy, B15 + B9)
+
+* Layout: padding-top 200/160/100; column gap 64/56/48; icon block (64² masked icon + eyebrow, gap 24);
+  Text Reveal padding 0 64/40/16, statement max 1200: H4 Inter 500, −0.03em, 44/52.8 desktop (no 1600
+  tier), 38/53.2 tablet, 30/42 phone, text-wrap normal; 26 inline word spans (NBSP pairs are one token).
+  Pill CTA = the hero pill component (`framer-wsdyl9`).
+* B15 verified: progress = clamp((vh − top)/(0.75·vh)) of the statement; word i: 0.2 → 1 over
+  [i/n, (i+1)/n] (≤ 0.006 error); smoothing motion useSpring(500, 60) (rmse 0.0052). Clone: exact stepper,
+  next-frame retarget → dynamics unshifted rmse ≤ 0.0041, phase 0 ms.
+* B9 appears on icon, label, statement and pill: 0.8 s framer ease, IntersectionObserver amount 0 (edge contact
+  counts: the icon's top lands exactly on the viewport edge at the trigger step), replays, instant reset.
+  `reveal()` moved from ScrollTrigger to IO. Trigger/reset steps are identical to the original.
+* Stand-in copy mirrors the original's token-length profile (26 tokens) so wrapping matches at all 8 widths;
+  CTA label within 1 px of the original width. Icon: own leaf glyph with the original's footprint.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

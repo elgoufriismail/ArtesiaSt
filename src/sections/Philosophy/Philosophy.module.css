@@ -1,11 +1,43 @@
-/* Philosophy — original "Our Philosophy". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
-.root {
-  position: relative;
+/* Philosophy ("Our Philosophy"): measured (recon Step 5) at 1920/1440/1280/1024/768/430/390/375.
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+.root { position: relative; display: flex; flex-direction: column; align-items: center; padding-top: 200px; overflow: hidden; }
+.inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 64px; width: 100%; overflow: hidden; }
+.iconBlock { display: flex; flex-direction: column; align-items: center; gap: 24px; overflow: hidden; }
+.appear { opacity: 0; } /* B9 in-view appear; first paint hidden like the original */
+
+/* 64² green box masked by the icon (original: inline SVG mask, centred, no-repeat, auto size) */
+.icon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--c-green);
+  -webkit-mask: url('/icons/philosophy-standin.svg') 50% 50% / auto no-repeat;
+  mask: url('/icons/philosophy-standin.svg') 50% 50% / auto no-repeat;
 }
+.label { margin: 0; text-align: center; white-space: pre; }
+
+.textReveal { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 0 64px; overflow: hidden; }
+.statementWrap { width: 100%; max-width: 1200px; }
+.statement {
+  margin: 0;
+  font-family: var(--f-sans);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--c-ink);
+  text-align: center;
+}
+.word { opacity: 0.2; } /* B15 min; driven by textScrollReveal */
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
+  .root { padding-top: 160px; }
+  .inner { gap: 56px; }
+  .textReveal { padding: 0 40px; }
+  .statement { font-size: 38px; line-height: 1.4; }
 }
-
 @media (max-width: 809.98px) {
+  .root { padding-top: 100px; }
+  .inner { gap: 48px; }
+  .textReveal { padding: 0 16px; }
+  .statement { font-size: 30px; line-height: 1.4; }
 }

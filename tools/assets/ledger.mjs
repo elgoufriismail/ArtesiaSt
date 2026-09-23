@@ -90,6 +90,17 @@ lines.push('', '## Masks', '', '| Original file | Intrinsic | Use | Clone |', '|
 for (const mk of manifest.masks) lines.push(`| \`${mk.url.split('/').pop()}\` | ${mk.intrinsic} | ${mk.use} | stand-in in \`public/masks/\` (see \`MASKS\`) |`);
 lines.push('', '## Inline SVG / line art', '', '| Original | Detail | Clone |', '|---|---|---|');
 for (const s of manifest.inlineSvg) lines.push(`| ${s.name} | ${[s.viewBox && `viewBox ${s.viewBox}`, s.render, s.stroke && `stroke ${s.stroke}`].filter(Boolean).join(' · ')} | stand-in paths (\`tools/standins/lines.mjs\` → \`src/components/decor/paths.ts\`) |`);
+// section icons: inline data-URI SVG masks (64×64, green fill via background-color) — ASSETS.md §icons
+const ICONS = [
+  ['Philosophy', 'line-art seated figure (3 paths, bbox x 9–54, y 3–59 of 64)', 'public/icons/philosophy-standin.svg', 'Philosophy'],
+  ['Pricing', 'waves', null, 'Pricing'],
+  ['Journal', 'lotus', null, 'Journal'],
+];
+lines.push('', '## Section icons (inline SVG masks, 64×64, #7fa69b fill)', '', '| Section | Original motif | Clone stand-in | Status |', '|---|---|---|---|');
+for (const [sec, motif, file, owner] of ICONS) {
+  const wired = file && fs.existsSync(`${ROOT}${file}`) && sections[owner]?.built && allSrc.includes(file.replace('public', ''));
+  lines.push(`| ${sec} | ${motif} | ${file ? `\`${file}\` (different motif, same footprint/stroke)` : '—'} | ${wired ? 'stand-in wired' : file ? 'stand-in exists, NOT wired' : 'to be drawn with the section'} |`);
+}
 lines.push('', '## Fonts and icons', '', '| Original | Clone | Status |', '|---|---|---|');
 lines.push('| Crimson Text 400 (Google Fonts, OFL) | @fontsource/crimson-text 400 | same font, final |');
 lines.push('| Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 static text cuts (metrics verified) | same family, final |');

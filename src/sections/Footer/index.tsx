@@ -26,7 +26,7 @@ export function Footer() {
 
   useGsap(root, (bp) => {
     if (bg.current) footerParallax(bg.current, ANIM.B13.offset[bp]);
-    if (root.current) reveal([...root.current.querySelectorAll('[data-reveal]')]);
+    if (root.current) return reveal([...root.current.querySelectorAll('[data-reveal]')]);
   });
 
   return (

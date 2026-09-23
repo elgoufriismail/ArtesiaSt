@@ -64,6 +64,14 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 | Journal 'Stroke' outlines (3) | viewBox 293x254 / 265x259 / 302x265 · stroke #7FA69B thin outline behind blob images | stand-in paths (`tools/standins/lines.mjs` → `src/components/decor/paths.ts`) |
 | How It Works big numbers |  | stand-in paths (`tools/standins/lines.mjs` → `src/components/decor/paths.ts`) |
 
+## Section icons (inline SVG masks, 64×64, #7fa69b fill)
+
+| Section | Original motif | Clone stand-in | Status |
+|---|---|---|---|
+| Philosophy | line-art seated figure (3 paths, bbox x 9–54, y 3–59 of 64) | `public/icons/philosophy-standin.svg` (different motif, same footprint/stroke) | stand-in wired |
+| Pricing | waves | — | to be drawn with the section |
+| Journal | lotus | — | to be drawn with the section |
+
 ## Fonts and icons
 
 | Original | Clone | Status |

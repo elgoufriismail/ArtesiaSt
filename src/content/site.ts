@@ -59,6 +59,16 @@ export const SERVICES = {
   ],
 } as const;
 
+/** Philosophy ("Our Philosophy"). Stand-in statement with the original's 26 reveal tokens and a similar
+ *  token-length profile (the brand and the last pair are NBSP-glued single tokens, like "ClearPath," and
+ *  "that lasts."), fitted to its line counts at all 8 viewports. CTA label chosen to render within 1 px of the original label width (pill geometry). */
+export const PHILOSOPHY = {
+  label: 'Our Philosophy',
+  statement:
+    'At Calm\u00a0Shore, we never push change — we let it emerge with patience. Through thoughtful conversation, simple tools, and a gentle pace, we nurture growth that\u00a0endures.',
+  cta: { label: 'About Our Craft', href: './about' } satisfies Cta,
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,
