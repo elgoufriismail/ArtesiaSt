@@ -215,6 +215,10 @@ overlapping start). Parallax "sinking" background. Reversible. Desktop + tablet;
 
 ### B14. Pricing scribble underline — `scroll-linked` (GSAP)
 
+> Step 9 measurement: the draw window is the path's own bbox crossing 50 % (68 px, linear, scrub 0.5); the
+> price roll is NumberFlow (1 s spring transform, 500 ms opacity) plus a Framer layout FLIP (spring 0.6 s); the
+> switch uses springs 0.8 s (to Yearly) / 1.2 s (to Monthly). Details: IMPLEMENTATION_PLAN.md Step 9.
+
 Hand-drawn green loop under the Pricing headline (viewBox 310×80): dashoffset 622 → 0 between scrollY
 ≈ 7600 and ≈ 7800 (short draw, scrub 0.5). Desktop only.
 

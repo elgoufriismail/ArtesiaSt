@@ -131,6 +131,23 @@ export const RATING = {
   avatars: ['avatar-1', 'avatar-2', 'avatar-3', 'avatar-4', 'avatar-5'],
 } as const;
 
+/** Pricing. Stand-in copy with the original's budgets (label 10, H2 28, intro 143, plan names 7/6/8, descriptions
+ *  33/37/36, four features each, CTA 11), fitted to its line counts and widths. The prices and the discount are
+ *  the original's values (monthly 49/89/229 → yearly 39/71/183), rendered by NumberFlow. */
+export const PRICING = {
+  label: 'Fair Prices',
+  title: 'Support that fits your week',
+  intro: 'A clear price for every rhythm of care. Start monthly, or commit for a year and save — every plan includes the same warm, personal\u00a0support.',
+  switch: { monthly: 'Monthly', yearly: 'Yearly', discount: ' (20% OFF)' },
+  suffix: '/ month',
+  cta: { label: 'Choose now', href: './book-a-session' } satisfies Cta,
+  plans: [
+    { name: 'Harbour', desc: 'Gentle support for first steps.', monthly: 49, yearly: 39, features: ['Two sessions a month', 'Email check-ins', 'Guided breathing audio', 'Progress journal'] },
+    { name: 'Steady', desc: 'Weekly care to build lasting new habits.', monthly: 89, yearly: 71, features: ['Weekly one-hour sessions', 'Personal care plan', 'Messaging support', 'Monthly review'] },
+    { name: 'Flourish', desc: 'Deep guidance for bigger changes.', monthly: 229, yearly: 183, features: ['Two sessions each week', 'Priority booking', 'Family consultations', 'Workshops and group calls'] },
+  ],
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

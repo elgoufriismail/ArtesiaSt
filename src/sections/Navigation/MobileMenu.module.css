@@ -14,6 +14,7 @@
   top: 50%;
   z-index: 9;
   transform: translate(-50%, calc(-50% + 16px));
+  pointer-events: none;   /* the box stays laid out while the menu is closed; only the (visible) list takes input */
 }
 .list {
   display: flex;
@@ -22,5 +23,6 @@
   gap: 56px;
   visibility: hidden;
   opacity: 0;
+  pointer-events: auto;
 }
 .item { color: var(--c-ink); }

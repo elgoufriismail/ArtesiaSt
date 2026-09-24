@@ -94,7 +94,7 @@ for (const s of manifest.inlineSvg) lines.push(`| ${s.name} | ${[s.viewBox && `v
 // section icons: inline data-URI SVG masks (64×64, green fill via background-color) — ASSETS.md §icons
 const ICONS = [
   ['Philosophy', 'line-art seated figure (3 paths, bbox x 9–54, y 3–59 of 64)', 'public/icons/philosophy-standin.svg', 'Philosophy'],
-  ['Pricing', 'waves', null, 'Pricing'],
+  ['Pricing', 'waves (ink bbox x 7–57, y 15–50 of 64)', 'public/icons/pricing-standin.svg', 'Pricing'],
   ['Journal', 'lotus', null, 'Journal'],
 ];
 lines.push('', '## Section icons (inline SVG masks, 64×64, #7fa69b fill)', '', '| Section | Original motif | Clone stand-in | Status |', '|---|---|---|---|');
@@ -106,6 +106,9 @@ lines.push('', '## Fonts and icons', '', '| Original | Clone | Status |', '|---|
 lines.push('| Crimson Text 400 (Google Fonts, OFL) | @fontsource/crimson-text 400 | same font, final |');
 lines.push('| Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 static text cuts (metrics verified) | same family, final |');
 lines.push('| Phosphor icons (Framer module) | @phosphor-icons/react | same set, final |');
+lines.push('| Pricing feature ticks: Phosphor CheckCircle (regular, 24 px, green; identified by path) | @phosphor-icons/react CheckCircle | same icon, final |');
+lines.push('| Pricing prices: NumberFlow web component (Framer "Number Flow") | @number-flow/react 0.5.12 (core 0.5.10, MIT), same options | same library, final |');
+lines.push('| Pricing scribble path (viewBox 310×80, stroke 3, green) | own loop fitted to the original bbox (`PATHS.scribble`) | stand-in wired (Pricing) |');
 lines.push('| How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |');
 lines.push('| Star icon (Trustpoint, inline data-URI svg 20×19, rgb(0,182,122)) | own five-point star drawn in the same 20×19 box (`RatingWidget`) | stand-in wired (PathSection; Booking reuses it) |');
 lines.push('| Avatar ring mask (`9O8sLldl6mV9miUVjkyrhGJsZ7c.svg`, mask-size contain, 0% 50%) | `public/masks/avatar-ring.svg` stand-in | stand-in wired (PathSection) |');

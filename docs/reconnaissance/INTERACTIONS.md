@@ -20,7 +20,7 @@ no drag/swipe carousels, no tabs, no modals/lightboxes, no dropdown menus (other
 | Nav text link (About…Journal) | uppercase 12 px label; hidden 0-width "line" + "push" elements under the text | 1 px underline ("line") grows to full label width under the text | ≈300 ms; reverts |
 | Logo | — | no visual change | — |
 | **Service card** | (corrected in Step 4) cards are 560 tall until the first mousemove | **cursor proximity** (window mousemove, any vertical position): each desktop card height = max(440, 560 − 0.1875·\|cursor x − card centre x\|), motion useSpring(150, 25); box shrinks about its centre (image, description fixed; title/read-more follow the edges). **Hover** (pointer inside the card): "read more" label 0 → 1 (spring 0.6 s) | height starts the frame after the move; label ~1 frame later |
-| Pricing card | white, no border | a 1 px light-grey border appears (radius 16); inner "Get started" pill does its pill hover | ≈300 ms |
+| Pricing card | white, no border | a 1 px border appears (radius 16) — measured Step 9: **green** rgb(127,166,155), spring 0.6 s both ways; inner pill does its pill hover | ≈600 ms (spring) |
 | Social icon (24 px) | opacity 1 | icon opacity **1 → 0.5** | ≈300 ms; reverts |
 | Inline rich-text link ("Send us an email", "how we work", footer "Privacy Policy.") | green (or white in footer), no underline | underline appears | instant (CSS) |
 | Footer sitemap links | white | underline appears (Framer link hover preset) | instant |

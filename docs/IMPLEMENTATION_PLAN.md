@@ -41,7 +41,7 @@ app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()
       │  ├─ <HowItWorks/>         "How It Works"    markers how-it-works, step-2/3-trigger;
       │  │                                            sticky RollingNumber, DrawnPath          B6 B7 B9 · #5 #6 #13
       │  ├─ <PathSection/>        "Ready to find your path?"  RatingWidget, SocialRow        B1 B9
-      │  ├─ <Pricing/>            "Pricing"         Switch, 3 × PricingCard(DigitRoll), scribble  B14 · #8 #13
+      │  ├─ <Pricing/>            "Pricing"         switch, 3 cards (NumberFlow prices), scribble  B14 · #8 #13
       │  ├─ <TextSection index=1/> "Text Section"                                             B9
       │  ├─ <Quote/>              "Big Quote"       marker big-quote; ParallaxImage, arc, lines  B4 B11 · #7 #13
       │  ├─ <Story variant="b"/>  "Story B"         marker story-b
@@ -69,7 +69,7 @@ src/
   components/
     providers/    SmoothScroll.tsx
     ui/           Marker · SplitWords · PillButton · NavLink · Eyebrow · SectionIcon · SocialRow ·
-                  RatingWidget · Switch · DigitRoll · AccordionItem · FormField
+                  RatingWidget · Switch · AccordionItem · FormField
     media/        StandInImage · ParallaxImage · NoiseOverlay
     decor/        ProgressiveBlur · WavesBackground · DrawnPath
   animations/
@@ -87,7 +87,7 @@ src/
     navigation/   navTheme
     menu/         mobileMenu
     faq/          accordion
-    pricing/      digitRoll · pricingSwitch
+    pricing/      pricingSwitch · layoutFlip
     svg/          drawPath
     sequences/    heroSequence · balanceSequence · quoteFold · storyDrift · wavesBackground
   hooks/          useGsap · useBreakpoint · useLenis · useScrollLock · useDisclosure
@@ -116,7 +116,7 @@ original layers, owns its markers, declares `data-nav-theme`, and wires animatio
 | Story (a/b) | 553 · 111 · 664 split; images 389×597 + 332×497 → stacked, image 2 hidden on phone | imageParallax 300/100, storyDrift (B12), reveal |
 | HowItWorks | display H2 + lead; steps with 450px spacers; sticky 540×900 number column → no number/spacers on phone | rollingNumber (B7), drawPath (B6), reveal, entrance (lead) |
 | PathSection | text left, rating/contact/socials right → stacked | entrance (rating), reveal |
-| Pricing | 3 cards (radius 16) → stacked; switch 56×32 | pricingSwitch + rollDigits (#8), drawPath (B14), reveal; card hover = CSS |
+| Pricing | 3 cards (radius 16) → stacked; switch 56×32 | pricingSwitch + NumberFlow + layoutFlip (#8), drawPath (B14), reveal; card hover = CSS (spring linear()) |
 | TextSection | 664 · 221 · 443 → stacked (gap 38) | reveal |
 | Quote | 1080 / 614 / ~650px; black bg; arc container top edge | quoteFold (B11), imageParallax 500/300/0, drawPath ×2, reveal |
 | Journal | 3 cards (middle +100px) → 2+1 → 1 col; blob masks | reveal |
@@ -160,7 +160,7 @@ original layers, owns its markers, declares `data-nav-theme`, and wires animatio
 | parallax | `imageParallax`, `speedParallax` | #4 image parallax (B4), hero text parallax (B2) |
 | pinned | `rollingNumber` (+ CSS sticky) | #5 pinned How It Works, #6 odometer number (B7) |
 | sequences | `quoteFold` | #7 Big Quote 3D arc fold (B11) |
-| pricing | `digitRoll`, `pricingSwitch` | #8 NumberFlow-style digits + switch |
+| pricing | `pricingSwitch`, `layoutFlip` (+ @number-flow/react) | #8 NumberFlow digits + switch + price-row FLIP |
 | hover | `hoverVars` (+ CSS modules) | #9 service card hover expansion, pills, links |
 | navigation | `navTheme` | #10 nav colour transitions (B10) |
 | menu | `mobileMenu` | #11 mobile menu (B17) |
@@ -180,7 +180,7 @@ Implemented now (generic, used everywhere): core/*, `entrance`, `loadFade`, `rev
 |---|---|---|
 | Hover: pill, nav link, social, pricing card, inline links, service card | CSS `:hover` / `:focus-visible` | CSS transitions with `--hover-*` vars |
 | Balance switch click | anchor `#toggle-on-anchor` → Lenis `anchors:true` smooth scroll | state change comes from scroll (balanceSequence) |
-| Pricing Monthly/Yearly | `useDisclosure` in `Pricing` | `pricingSwitch` + `rollDigits`; prices = monthly × (1 − 0.2) rounded like the original |
+| Pricing Monthly/Yearly | `useDisclosure` in `Pricing` | `pricingSwitch` + NumberFlow (@number-flow/react, the original's library) + `layoutFlip`; prices = the original's values |
 | FAQ items | per-item `useDisclosure` (independent, first item open) | `accordionToggle` (Flip height, icon 135°) |
 | Mobile menu | `useDisclosure` in `Navigation` + `useScrollLock` (html overflow hidden + lenis.stop) | `mobileMenuTimeline` |
 | Forms | native inputs (no submission backend in clone; `onSubmit` prevented) | CSS states (checkbox checked green) |
@@ -236,8 +236,9 @@ Accessibility baseline kept from the original's semantics: real links/buttons, l
 | **dev:** typescript 5.9.3, @types/react 19.3.0, @types/react-dom 19.3.0, @types/node 22.19.1 | | typing |
 | **dev:** @playwright/test 1.56.1, pixelmatch 7.2.0, pngjs 7.0.0 | | verification harness (1.56.1 matches the preinstalled Chromium) |
 
-Deliberately **not** installed: Framer Motion (replaced by GSAP + springEase/Flip), NumberFlow (own
-`DigitRoll`), @gsap/react (own `useGsap`), Tailwind/Sass (plain CSS), ESLint (not required by `next build`).
+Deliberately **not** installed: Framer Motion (replaced by GSAP + springEase/Flip), @gsap/react (own `useGsap`),
+Tailwind/Sass (plain CSS), ESLint (not required by `next build`). Added in Step 9: @number-flow/react 0.5.12 (MIT) —
+the original's own price-roll library, pinned to its 0.5.x line; a hand-written approximation was dropped.
 
 ## 9. Implementation order
 
@@ -401,6 +402,45 @@ gates for the sections touched.
   labels checked not to coincide with the original's (one candidate rejected).
 * Tools: lines.mjs / section-geometry.mjs / section-sbs.mjs find sections by whitespace-normalised names
   (this layer name contains an NBSP); copyfit.mjs accepts HTML candidates (inline links).
+
+### Step 9 measured behaviour (Pricing, B14 + #8 + B9)
+
+* Layout: #fafafa, padding-top 160/80/80; Container max 1600, padding 0 56/32/8, gap 80; Text (gap 32): Section
+  Icon (64 mask + eyebrow, gap 24) and Headline (gap 24, max 800 desktop only; intro max 480). Plans component
+  (gap 48): switch 296×32 (label · 56×32 track, 24 px knob at left 4/28, top 16 − 12 · "Yearly (20% OFF)") and
+  Cards: `flex-wrap`, gap 16, card slots `flex: 1 0 0; min-width: 280px` → 3 per row down to 1024, 2 + 1 (the lone
+  third card full width) at 768, 1 per row ≤ 430. Card: radius 16, padding 32, gap 40; title (Crimson card title)
+  + 14 px description; price row (NumberFlow 48 px + 18/20 px suffix, gap 10, align end); four Phosphor
+  CheckCircle (regular) features, gap 16; green pill. At 1024 the middle card is 25 px taller (its description
+  wraps), so the row centres the others 12.6 px lower. Geometry (both switch states): ≤ 0.33 px at all 8 viewports;
+  line counts match at all 8.
+* Prices = the original's NumberFlow ("Number Flow" Framer component → @number-flow/react, core 0.5.x; the
+  original has no 0.5.12 `visibilityState` guard and still uses `--number-flow-char-height`, i.e. ≤ 0.5.11 core,
+  behaviourally identical to the pinned 0.5.12/0.5.10). Options from the original bundle: transformTiming
+  {1000 ms, NumberFlow's own spring linear()}, opacityTiming {500 ms, ease-out}, trend "nearest", continuous,
+  isolate, willChange, mask height 20 px (wrapper margins −20). Digits spin `--_number-flow-d` (e.g. 9 → 9 spins
+  a full turn with continuous; 49 → 39 positive, 39 → 49 negative). Clone vs original: all 36 animations per
+  round trip identical (keyframes, targets, duration, delay, easing, composite) at 1440, 1024 and 390; start
+  after the tap 44–75 ms on both (run-to-run spread of the original itself).
+* Around the price change Framer runs a layout FLIP on each price wrapper (translate + scaleX, origin centre —
+  the digits are visibly stretched) and suffix (translate): spring 0.6 s, bounce 0, both directions
+  (`animations/pricing/layoutFlip.ts`). A plain state change would snap the widths; the original glides.
+* Switch (`pricingSwitch`): variant springs entering Yearly 0.8 s / entering Monthly 1.2 s, bounce 0 (critically
+  damped; same component family as the Balance switch); knob (layout) starts 3 frames and the colours (variant:
+  track rgba(0,0,0,.2) ↔ green, "Monthly" ink ↔ body grey, squared-space mix) 5 frames after the tap. Clone vs
+  original over repeated runs: phase within −17 … +20 ms (the original varies up to 25–41 ms between its own
+  runs), shape ≤ 0.8 % of the span.
+* Card hover (Framer data-border overlay): border transparent → green (not grey), spring 0.6 s both ways,
+  starting ≈ 24 ms (enter) / 12 ms (leave) after the pointer; CSS transition with the spring as `linear()` and
+  those delays → phase 0–3 ms, max |Δalpha| 0.02. The inner pill shows its hover while the card is hovered.
+* B14 scribble: the trigger is the path itself ('top 50%' → 'bottom 50%', scrub 0.5) → its bbox (x 26–291,
+  y 3–71 of 310×80) defines the 68 px window; own loop fitted to that bbox. Same window at 1920/1440/1280
+  (1 scroll step early at 1440/1920 from the section sitting 0.36 px higher — sub-pixel drift from above).
+  Desktop only. B9 appears on icon, eyebrow, H2, intro (desktop only).
+* Fixed while validating (shared chrome): the closed mobile menu's centre box intercepted taps in the middle of
+  the viewport on tablet/phone (it is laid out even when hidden) → `pointer-events: none` on the box, list only.
+* Tools: pricing-switch.mjs + pricing-switch-cmp.mjs (rAF recordings, per-channel phase/shape),
+  pricing-numberflow.mjs (WAAPI comparison), section-geometry.mjs `--click-o/--click-c` (settled switch states).
 
 ## 10. Testing strategy
 

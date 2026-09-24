@@ -2,6 +2,7 @@
 // both measured relative to the section's own box (so page-order/stub differences don't matter).
 // Paths follow tools/recon/lib.mjs dumpNamed (named ancestors joined by "/", repeated siblings "#n").
 // Usage: node tools/compare/section-geometry.mjs "<section name>" [vp …] [--tol=1] [--scroll=<px from section top>]
+//        [--click-o=<css> --click-c=<css>]   click a (visible) element on each side first, then compare the settled state
 import { launch, CLONE_URL, ORIGINAL_URL, VIEWPORTS, parseVp } from '../recon/lib.mjs';
 
 const args = process.argv.slice(2);
@@ -9,6 +10,7 @@ const sec = args[0];
 const tol = Number((args.find((a) => a.startsWith('--tol=')) || '--tol=1').split('=')[1]);
 const scroll = Number((args.find((a) => a.startsWith('--scroll=')) || '--scroll=0').split('=')[1]);
 const vps = args.slice(1).filter((a) => !a.startsWith('--'));
+const clickSel = { o: args.find((a) => a.startsWith('--click-o='))?.slice(10), c: args.find((a) => a.startsWith('--click-c='))?.slice(10) };
 
 const collect = ({ sec, isOriginal, scroll }) => {
   const attr = isOriginal ? 'data-framer-name' : 'data-ref';
@@ -45,6 +47,10 @@ for (const vp of vps.length ? vps : VIEWPORTS) {
     const p = await (await b.newContext({ viewport: { width: W, height: H } })).newPage();
     await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
     await p.evaluate(() => document.fonts.ready); await p.waitForTimeout(2500); // on-load entrances settle
+    if (clickSel[t]) {
+      const pt = await p.evaluate((sel) => { const e = [...document.querySelectorAll(sel)].find((x) => x.getBoundingClientRect().width > 0); e.scrollIntoView({ block: 'center' }); const r = e.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; }, clickSel[t]);
+      await p.mouse.click(pt[0], pt[1]); await p.mouse.move(1, 1); await p.waitForTimeout(2500);
+    }
     got[t] = await p.evaluate(collect, { sec, isOriginal: t === 'o', scroll });
     await p.context().close();
   }

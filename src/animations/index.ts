@@ -22,7 +22,6 @@ export * from './counters/counters';
 export * from './navigation/navTheme';
 export * from './menu/mobileMenu';
 export * from './faq/accordion';
-export * from './pricing/digitRoll';
 export * from './pricing/pricingSwitch';
 export * from './svg/drawPath';
 export * from './sequences/heroSequence';

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Stand-in section icon (own three-wave glyph; the original is a different drawing, see docs/ASSET_LEDGER.md).
+       Drawn to the original's footprint (x 7–57, y 15–50 of 64) and stroke weight (~3.2). Used as a CSS mask. -->
+  <path d="M8.6 19.2 q6.1 -4.4 12.2 0 t12.2 0 t12.2 0 t10.2 -1"/>
+  <path d="M8.6 32.6 q6.1 -4.4 12.2 0 t12.2 0 t12.2 0 t10.2 -1"/>
+  <path d="M8.6 46 q6.1 -4.4 12.2 0 t12.2 0 t12.2 0 t10.2 -1"/>
+</svg>
