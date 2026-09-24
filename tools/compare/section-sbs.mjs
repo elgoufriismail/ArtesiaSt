@@ -15,7 +15,7 @@ for (const vp of vps) {
     for (const [url, attr] of [[ORIGINAL_URL, 'data-framer-name'], [CLONE_URL, 'data-ref']]) {
       const p = await (await b.newContext({ viewport: { width: W, height: H } })).newPage();
       await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 }); await p.waitForTimeout(1500);
-      const top = await p.evaluate(([sec, attr]) => { const r = [...document.querySelectorAll(`[${attr}="${sec}"]`)].sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0]; return r.getBoundingClientRect().top + scrollY; }, [sec, attr]);
+      const top = await p.evaluate(([sec, attr]) => { const r = [...document.querySelectorAll(`[${attr}]`)].filter((e) => e.getAttribute(attr).replace(/\s+/g, ' ') === sec).sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0]; return r.getBoundingClientRect().top + scrollY; }, [sec, attr]);
       await p.evaluate((y) => window.scrollTo(0, y), Math.round(top + off)); await p.waitForTimeout(1800);
       shots.push(PNG.sync.read(await p.screenshot()));
       await p.context().close();

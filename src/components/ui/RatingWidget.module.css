@@ -1,0 +1,39 @@
+/* RatingWidget — original "Raiting" link (1440×900 measured; same at all breakpoints except the stacked trust line). */
+.root { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; overflow: hidden; }
+.users { position: relative; flex: none; width: 208px; height: 48px; overflow: hidden; }
+.avatar {
+  position: absolute;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  overflow: hidden;
+  mask-size: contain;
+  mask-position: 0% 50%;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: 0% 50%;
+  -webkit-mask-repeat: no-repeat;
+}
+.photo { position: absolute; top: 2px; left: 2px; width: 44px; height: 44px; border-radius: 999px; }
+.counter { position: absolute; top: 0; left: 160px; width: 48px; height: 48px; border-radius: 999px; overflow: hidden; }
+.disc { position: absolute; top: 3px; left: 3px; width: 42px; height: 42px; border-radius: 999px; overflow: hidden; background: var(--c-ink); }
+.count {
+  position: absolute;
+  top: 21px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--f-sans);
+  font-size: 11px;
+  line-height: 1.2;
+  color: var(--c-white);
+  white-space: nowrap;
+}
+.count strong { font-weight: 700; }
+.trust { display: flex; justify-content: flex-start; align-items: flex-end; gap: 8px; overflow: hidden; flex: none; }
+.trust.stacked { flex-direction: column; align-items: flex-start; gap: 0; }
+.trustText { margin: 0; font-family: var(--f-sans); font-size: 16px; line-height: 1.7; color: var(--c-ink); white-space: nowrap; }
+.trustText strong { font-weight: 600; }
+.scoreRow { display: flex; justify-content: center; align-items: center; overflow: hidden; flex: none; }
+.star { position: relative; flex: none; width: 23px; height: 22px; overflow: hidden; color: var(--c-star); }
+.vector { position: absolute; top: 0; left: 1px; width: 20px; height: 19px; }

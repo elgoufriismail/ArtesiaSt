@@ -107,7 +107,8 @@ lines.push('| Crimson Text 400 (Google Fonts, OFL) | @fontsource/crimson-text 40
 lines.push('| Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 static text cuts (metrics verified) | same family, final |');
 lines.push('| Phosphor icons (Framer module) | @phosphor-icons/react | same set, final |');
 lines.push('| How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |');
-lines.push('| Star icon (TrustPoint, inline data-URI svg 20×19, rgb(0,182,122)) | to be redrawn at 20×19 | pending (Booking/Path sections) |');
+lines.push('| Star icon (Trustpoint, inline data-URI svg 20×19, rgb(0,182,122)) | own five-point star drawn in the same 20×19 box (`RatingWidget`) | stand-in wired (PathSection; Booking reuses it) |');
+lines.push('| Avatar ring mask (`9O8sLldl6mV9miUVjkyrhGJsZ7c.svg`, mask-size contain, 0% 50%) | `public/masks/avatar-ring.svg` stand-in | stand-in wired (PathSection) |');
 lines.push('', '## Summary', '', ...Object.entries(counts).map(([k, v]) => `* ${k}: ${v}`));
 fs.writeFileSync(`${ROOT}docs/ASSET_LEDGER.md`, lines.join('\n') + '\n');
 console.log(`docs/ASSET_LEDGER.md written · ${Object.entries(counts).map(([k, v]) => `${k}: ${v}`).join(' · ')}`);

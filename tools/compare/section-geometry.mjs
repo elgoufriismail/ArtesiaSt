@@ -12,7 +12,7 @@ const vps = args.slice(1).filter((a) => !a.startsWith('--'));
 
 const collect = ({ sec, isOriginal, scroll }) => {
   const attr = isOriginal ? 'data-framer-name' : 'data-ref';
-  const root = [...document.querySelectorAll(`[${attr}="${sec}"]`)].sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0];
+  const root = [...document.querySelectorAll(`[${attr}]`)].filter((e) => e.getAttribute(attr).replace(/\s+/g, ' ') === sec).sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0];
   if (!root) return null;
   window.scrollTo(0, root.getBoundingClientRect().top + scrollY + scroll);
   const R = root.getBoundingClientRect();

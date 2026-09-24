@@ -112,6 +112,25 @@ export const HOW_IT_WORKS = {
   ],
 } as const;
 
+/** "Ready to find your path?" CTA block. Stand-in copy with the original's budgets (H2 13 + 10 ch on two
+ *  lines, paragraph ≈158, CTA 18, contact ≈97 with a bold underlined e-mail link), fitted to its line counts. */
+export const PATH_CTA = {
+  title: ['Ready to feel', 'more at home?'] as const,
+  body: 'Take the first step whenever you feel ready. Book a free introductory call, ask anything you need, and we will find a gentle pace and a plan that suits\u00a0you.',
+  cta: { label: 'Plan a First Meeting', href: './book-a-session' } satisfies Cta,
+  contact: { before: 'Questions before you book? Write to ', email: 'hello@calmshore.com', after: ' and we reply\u00a0soon.' },
+} as const;
+
+/** Rating widget (PathSection + Booking): label, five avatar stand-ins + counter, trust line with star. */
+export const RATING = {
+  label: 'Loved by our community',
+  counter: '5k+',
+  trust: 'Clients rank us highly',
+  score: '4.9 overall',
+  href: './stories',
+  avatars: ['avatar-1', 'avatar-2', 'avatar-3', 'avatar-4', 'avatar-5'],
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

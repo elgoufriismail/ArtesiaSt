@@ -1,11 +1,94 @@
-/* PathSection — original "Ready to find your path?". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+/* PathSection — original "Ready to find your path?" (measured, recon Step 8; 1440×900 unless noted).
+   root max 1600, padding 160/120/80 vertical, overflow hidden → Text Container (z 1, padding 0 56/32/8,
+   align-items flex-end) → Sections (flex, align start): text column 6 (tablet 4) · spacer 2 (1) · Container 4 (3).
+   Phone: Sections column, gap 64, no spacer.
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 160px 0;
+  overflow: hidden;
 }
+.textContainer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 56px;
+  overflow: hidden;
+}
+.sections { flex: 6 0 0; min-width: 0; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; }
+.textCol {
+  flex: 6 0 0;
+  min-width: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 8px;
+  overflow: hidden;
+}
+.textBlock { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; overflow: hidden; }
+.textBlock > div { width: 100%; }
+.textBlock > .bodyWrap { max-width: 480px; }
+.h2, .textBlock p { margin: 0; }
+.green { color: var(--c-green); }
+.spacer { flex: 2 0 0; align-self: stretch; }
+.container {
+  position: relative;
+  z-index: 1;
+  flex: 4 0 0;
+  min-width: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  overflow: hidden;
+}
+.rating { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; padding: 0 8px; flex: none; }
+.rating p { margin: 0; }
+.muted { color: var(--c-muted); white-space: nowrap; }  /* original: auto-width text layer */
+.links { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; width: 100%; padding: 0 8px; flex: none; }
+.contactWrap { width: 100%; max-width: 480px; }
+.contact { margin: 0; }
+.contact a {
+  color: var(--c-green);
+  text-decoration: underline 1px solid rgba(128, 166, 155, 0);   /* original: underline hidden at rest */
+  text-underline-offset: 8px;
+  transition: color 0.4s var(--ease-framer), text-decoration-color 0.4s var(--ease-framer),
+    text-decoration-thickness 0.4s var(--ease-framer), text-underline-offset 0.4s var(--ease-framer);
+}
+@media (hover: hover) { .contact a:hover { text-decoration-color: var(--c-green); text-underline-offset: 5px; } }
+.contact strong { font-weight: 600; }
+.links > :last-child { width: 100%; }
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
+  .root { padding: 120px 0; }
+  .textContainer { padding: 0 32px; }
+  .textCol { flex: 4 0 0; }
+  .spacer { flex: 1 0 0; }
+  .container { flex: 3 0 0; }
+  .rating { gap: 48px; }
+  .links { gap: 48px; justify-content: flex-start; }
 }
 
 @media (max-width: 809.98px) {
+  .root { padding: 80px 0; }
+  .textContainer { padding: 0 8px; }
+  .sections { flex-direction: column; gap: 64px; }
+  .textCol { flex: none; width: 100%; justify-content: center; gap: 40px; }
+  .container { flex: none; width: 100%; gap: 0; }
+  .rating { gap: 40px; }
+  .links { gap: 48px; justify-content: flex-start; }
 }

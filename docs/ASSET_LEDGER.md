@@ -20,11 +20,11 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 | `Ux4Is85LWxm9dXetoVhxJWLGhLI.jpg` | 2048×2048 | Our Services / Desktop<br>Our Services / Touch | 560×760 @1440<br>464×600 @1024<br>358×400 @390 | cover 50% 50% | `service-4` | stand-in wired (Services) |
 | `Xgg8qSDKhoEnATJuF3xxVuO0bw.jpg` | 2048×2048 | Story A / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-a-1` | stand-in wired (Story) |
 | `lLxmvlvWIZ4P7PBI7azU4zec.jpg` | 2048×2048 | Story A / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-a-2` | stand-in wired (Story) |
-| `POpTLGuLzTuWYxuEYrRGJD678.jpg` | 280×280 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-1` | stand-in exists (section not built yet) |
-| `aLd0GlWVHywVWuurCk8JtAWSPw.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-2` | stand-in exists (section not built yet) |
-| `PH9MBoozXCDuSg7Zw0ksQExNo.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-3` | stand-in exists (section not built yet) |
-| `duZSo1YDta06usFuc3EkJTiRdM.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-4` | stand-in exists (section not built yet) |
-| `ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-5` | stand-in exists (section not built yet) |
+| `POpTLGuLzTuWYxuEYrRGJD678.jpg` | 280×280 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-1` | stand-in wired (PathSection) |
+| `aLd0GlWVHywVWuurCk8JtAWSPw.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-2` | stand-in wired (PathSection) |
+| `PH9MBoozXCDuSg7Zw0ksQExNo.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-3` | stand-in wired (PathSection) |
+| `duZSo1YDta06usFuc3EkJTiRdM.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-4` | stand-in wired (PathSection) |
+| `ES6IJ8JiS4iNVkDK38fQhwjZDr4.jpg` | 512×512 | Book A Session / Image<br>Ready to find your path? / Image | 44×44 @1440<br>44×44 @1024<br>44×44 @390 | cover 50% 50% | `avatar-5` | stand-in wired (PathSection) |
 | `i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg` | 2048×2048 | Big Quote / Big Quote | 1440×1580 @1440<br>1024×914 @1024<br>390×675 @390 | cover 50% 50% | `big-quote` | stand-in exists (section not built yet) |
 | `PSjitKcEoMQOEmVvStpNCNRXmSk.jpg` | 2048×2048 | Story B / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-b-1` | stand-in wired (Story) |
 | `yzTuL74LYLey46xO4X9rihvGRs4.jpg` | 2048×2048 | Story B / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-b-2` | stand-in wired (Story) |
@@ -80,10 +80,11 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 | Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 static text cuts (metrics verified) | same family, final |
 | Phosphor icons (Framer module) | @phosphor-icons/react | same set, final |
 | How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |
-| Star icon (TrustPoint, inline data-URI svg 20×19, rgb(0,182,122)) | to be redrawn at 20×19 | pending (Booking/Path sections) |
+| Star icon (Trustpoint, inline data-URI svg 20×19, rgb(0,182,122)) | own five-point star drawn in the same 20×19 box (`RatingWidget`) | stand-in wired (PathSection; Booking reuses it) |
+| Avatar ring mask (`9O8sLldl6mV9miUVjkyrhGJsZ7c.svg`, mask-size contain, 0% 50%) | `public/masks/avatar-ring.svg` stand-in | stand-in wired (PathSection) |
 
 ## Summary
 
-* stand-in wired: 11
-* stand-in exists: 9
+* stand-in wired: 16
+* stand-in exists: 4
 * excluded: 1

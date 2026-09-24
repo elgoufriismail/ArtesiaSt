@@ -5,8 +5,9 @@ import { CLONE_URL, ORIGINAL_URL, VIEWPORTS, launch, parseVp } from '../recon/li
 
 const [origName, cloneRef, ...vpArg] = process.argv.slice(2);
 const vps = vpArg.length ? vpArg : VIEWPORTS;
-const collect = (sel) => {
-  const root = [...document.querySelectorAll(sel)].sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0];
+const collect = ([attr, name]) => {
+  // names are compared whitespace-normalised (Framer layer names may contain NBSP)
+  const root = [...document.querySelectorAll(`[${attr}]`)].filter((e) => e.getAttribute(attr).replace(/\s+/g, ' ') === name).sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0];
   if (!root) return [];
   return [...root.querySelectorAll('h1,h2,h3,h4,h5,p')].filter((e) => {
     const cs = getComputedStyle(e);
@@ -23,7 +24,7 @@ let bad = 0;
 for (const vp of vps) {
   const [W, H] = parseVp(vp);
   const got = {};
-  for (const [t, url, sel] of [['o', ORIGINAL_URL, `[data-framer-name="${origName}"]`], ['c', CLONE_URL, `[data-ref="${cloneRef}"]`]]) {
+  for (const [t, url, sel] of [['o', ORIGINAL_URL, ['data-framer-name', origName]], ['c', CLONE_URL, ['data-ref', cloneRef]]]) {
     const p = await (await b.newContext({ viewport: { width: W, height: H } })).newPage();
     await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
     await p.evaluate(() => document.fonts.ready);

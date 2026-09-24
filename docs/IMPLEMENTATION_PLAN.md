@@ -381,6 +381,27 @@ gates for the sections touched.
 * Validation tools: `section-geometry.mjs` (section-relative, all 8: ≤ 0.31 px), `lines.mjs` (all match),
   `hiw-number.mjs` (number pixel diff per state), `section-sbs.mjs` (side-by-sides).
 
+### Step 8 measured behaviour ("Ready to find your path?", B1 + B9, RatingWidget)
+
+* Layout: section max 1600, padding 160/120/80 vertical; Text Container padding 0 56/32/8; Sections: text
+  column 6 (tablet 4, space-between: sans H2 two lines, "your path?"-style second line green, paragraph max 480;
+  pill at the bottom) · spacer 2 (1) · Container 4 (3, gap 64): Raiting block (muted 14 px auto-width label,
+  gap 32/48/40) and Links (contact paragraph with bold e-mail link + SocialRow, gap 32/48/48). Phone: column,
+  gap 64, text column gap 40, Container gap 0.
+* RatingWidget (shared with Booking): Users row 208×48 (five ring-masked 48 px avatars at a 32 px step, 44 px
+  photo inset 2; counter circle at x 160 with a 42 px ink disc and an 11 px bold white label) above the
+  Trustpoint line (16 px 600 text · 23×22 star box, 20×19 vector · score; tablet: two rows). No hover state.
+* E-mail link hover (measured): underline 1 px, colour transparent → green and offset 8 → 5 px, 0.4 s framer.
+* Motion, desktop only (static on tablet/phone, as measured): B1 Raiting block entrance = WAAPI appear
+  (1 s cubic-bezier(.2,0,.2,1), y 20 → 0, opacity 0.001 → 1, delay 0.8) → 600 ms after the nav logo (clone
+  604–606 ms); B9 on H2, paragraph, pill, rating label, rating link and Links (same 6 targets/positions).
+* Validation: section-geometry all 8 viewports ≤ 1.00 px (whole-pixel text advances in the trust row);
+  lines.mjs all match (the original's auto-width labels are nowrap and excluded, the clone's label too);
+  stand-in labels chosen by in-page width (CTA label within 0.6 px, trust row 284 px exactly). Stand-in
+  labels checked not to coincide with the original's (one candidate rejected).
+* Tools: lines.mjs / section-geometry.mjs / section-sbs.mjs find sections by whitespace-normalised names
+  (this layer name contains an NBSP); copyfit.mjs accepts HTML candidates (inline links).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
