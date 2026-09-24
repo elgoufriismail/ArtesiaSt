@@ -49,8 +49,8 @@ export function sequenceValue(
  * translateY(−4 px); Framer ignores it).
  */
 export const MARKER_TOLERANCE_PX = 1;
-export function markerPassed(layoutTop: number, scrollY: number, vh: number, line = 0.5, height = 0): boolean {
-  return layoutTop + height - scrollY <= line * vh + MARKER_TOLERANCE_PX;
+export function markerPassed(layoutTop: number, scrollY: number, vh: number, line = 0.5, height = 0, tolerance = MARKER_TOLERANCE_PX): boolean {
+  return layoutTop + height - scrollY <= line * vh + tolerance;
 }
 
 /**

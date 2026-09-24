@@ -63,3 +63,11 @@ test('markerPassed reproduces the original trigger positions binary-searched at 
     assert.equal(markerPassed(top, y, 900, 0.5, h), true, `${name} at ${y}`);
   }
 });
+
+test('markerPassed tolerance: How It Works step triggers flip at 0.5·vh + 1.9 (1 px sweeps)', () => {
+  // [markerTop, vh, first scrollY that flips going down] measured on the original
+  for (const [top, vh, y] of [[5757.36, 900, 5306], [6154.89, 1080, 5613], [5525.67, 800, 5124], [5767.94, 768, 5383]]) {
+    assert.equal(markerPassed(top, y - 1, vh, 0.5, 0, 1.9), false, `not before ${y}`);
+    assert.equal(markerPassed(top, y, vh, 0.5, 0, 1.9), true, `at ${y}`);
+  }
+});

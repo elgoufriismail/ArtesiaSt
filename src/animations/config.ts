@@ -118,8 +118,16 @@ export const ANIM = {
   B7: {
     markers: ['step-2-trigger', 'step-3-trigger'],
     line: 0.5,
-    rollDistance: { desktop: 408, tablet: 270, phone: null } as PerBp<number | null>, // FLIP start offset
-    t: { spring: true, duration: 0.5, bounce: 0 } as Spring,                           // measured 0.4–0.6 s
+    /** measured flip: layoutTop − scrollY ≤ 0.5·vh + c; c ∈ [1.89, 1.94) from 1 px sweeps at 6 viewports
+     *  (tablet included), same position both directions (no hysteresis) */
+    tolerance: 1.9,
+    /** digit strip `top` (% of the digit box height) per variant 01 … 05 (original CSS) */
+    tops: [623, 481, 337, 195, 51],
+    /** strip slide and layer cross-fade: cubic-bezier(.6,0,.4,1) 0.8 s both ways (fit rmse ≤ 0.0017) */
+    t: { duration: 0.8, ease: 'strong' } as Tween,
+    /** variant start phase: the slide starts ≈ 36 ms, the cross-fade ≈ 50 ms after the scroll (one frame apart) */
+    lagFrames: { layout: 2, opacity: 3 },
+    enabled: { desktop: true, tablet: true, phone: false } as PerBp<boolean>,
   },
 
   /* ── B8 counters ─────────────────────────────────────────────────── */

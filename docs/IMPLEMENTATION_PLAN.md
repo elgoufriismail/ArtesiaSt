@@ -355,6 +355,32 @@ gates for the sections touched.
   results differ only where the 0.19 px sub-pixel layout offset straddles the viewport edge.
   `tools/compare/story-sbs.mjs` → section-aligned side-by-sides at 1440/1024/768/390.
 
+### Step 7 measured behaviour (How It Works, B7 + B1 + B9)
+
+* Layout: padding-top 160/120/80 (phone gap 64); Text Container max 1600, padding 0 56/32/8, gap 40/32/32;
+  Display H2 ("How " ink, "It Works" green); lead row desktop 3:9 spacer + lead, tablet lead max 720; lead
+  `text-indent: calc(20% + 16px)` at every breakpoint. Steps row: text (6 / tablet 4) · gap (1) · Big Number
+  (5 / 3); text column: 33vh spacers top and bottom, trigger containers 50vh (tablet 33vh) with the step
+  markers at `calc(50% − 4px)`; step gap 16/28/24, phone column gap 48 and no spacers, triggers or number.
+* Big number: sticky 100vh box; number 1.50943 : 1, `bottom: 64px` (tablet centred); digit columns 52% wide,
+  aspect 0.784211. Column B = five SVG fit-text strips "1…9" (viewBox 149×2450, `translateY(−50%)`), layer k
+  colours only digit k; column A = "0…9" strip (viewBox 149×2722) clipped. Spans Inter 500 226.858 px, own
+  120% line height, −0.04em, inside an H2 of 145.915 px / 1.2. Pixel-identical at 1024 in all three states.
+* B7: variant = step markers passed, flip at layoutTop − scrollY ≤ 0.5·vh + 1.9 (c ∈ [1.89, 1.94) from 1 px
+  sweeps at 6 viewports; same position both directions). Strip `top` 623 → 481 → 337 % (layout FLIP, all five
+  layers together) and outgoing/incoming layer cross-fade, both 0.8 s cubic-bezier(.6,0,.4,1) (the existing
+  `strong` ease; fit rmse ≤ 0.0017); slide starts 2 frames and fade 3 frames after the scroll. Clone vs
+  original (1440 01→02, 02→01, 02→03; 1024 both ways): phase ≤ 4 ms, shape ≤ 0.0073 of the span.
+  Trigger sweeps: same scroll pixel as the original at 1920/1440/1280/1024 (1024 step 3 ±1 px, the original's
+  own run-to-run spread; the clone's marker is 0.35 px higher).
+* B1 lead entrance is a load-time WAAPI appear exactly like the nav: 1 s cubic-bezier(.2,0,.2,1), y 20 → 0,
+  opacity 0.001 → 1, delay 0.6 → starts 400 ms after the nav logo on every load (clone 406–412 ms, first tick
+  after the delay). B9 appears on the headline and the three steps, desktop only (static on tablet/phone).
+* The "How It Works long line" (B6, two paths 12 727 / 12 843 long, viewBox 680×2000) is a child of the Big
+  Quote section, not of How It Works → implemented with Quote. B5 waves keep their stub guard until Quote exists.
+* Validation tools: `section-geometry.mjs` (section-relative, all 8: ≤ 0.31 px), `lines.mjs` (all match),
+  `hiw-number.mjs` (number pixel diff per state), `section-sbs.mjs` (side-by-sides).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

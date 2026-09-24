@@ -125,6 +125,10 @@ Fixed full-viewport container with two very wide wavy green lines (opacity .4 / 
 
 ### B6. How It Works long line — `scroll-linked` (GSAP)
 
+> Correction (Step 7): the two paths live inside the **Big Quote** section wrapper (they only start drawing while
+> How It Works scrolls by). B7 correction: the number transition is 0.8 s cubic-bezier(.6,0,.4,1), not a spring —
+> see IMPLEMENTATION_PLAN.md Step 7.
+
 One long hand-drawn path (viewBox 680×2000, rendered very tall) drawn with `stroke-dashoffset` 12 727 → 0
 between scrollY ≈ 4500 and ≈ 10 200 (desktop), linear, scrub 0.5. Reversible. Hidden on phone.
 

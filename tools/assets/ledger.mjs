@@ -89,6 +89,7 @@ for (const t of manifest.tiledTextures) { const f = t.url.split('/').pop(); line
 lines.push('', '## Masks', '', '| Original file | Intrinsic | Use | Clone |', '|---|---|---|---|');
 for (const mk of manifest.masks) lines.push(`| \`${mk.url.split('/').pop()}\` | ${mk.intrinsic} | ${mk.use} | stand-in in \`public/masks/\` (see \`MASKS\`) |`);
 lines.push('', '## Inline SVG / line art', '', '| Original | Detail | Clone |', '|---|---|---|');
+// "How-It-Works long line": the two 680×2000 paths are children of the Big Quote section (measured Step 7) → built with Quote
 for (const s of manifest.inlineSvg) lines.push(`| ${s.name} | ${[s.viewBox && `viewBox ${s.viewBox}`, s.render, s.stroke && `stroke ${s.stroke}`].filter(Boolean).join(' · ')} | stand-in paths (\`tools/standins/lines.mjs\` → \`src/components/decor/paths.ts\`) |`);
 // section icons: inline data-URI SVG masks (64×64, green fill via background-color) — ASSETS.md §icons
 const ICONS = [
@@ -105,6 +106,7 @@ lines.push('', '## Fonts and icons', '', '| Original | Clone | Status |', '|---|
 lines.push('| Crimson Text 400 (Google Fonts, OFL) | @fontsource/crimson-text 400 | same font, final |');
 lines.push('| Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 static text cuts (metrics verified) | same family, final |');
 lines.push('| Phosphor icons (Framer module) | @phosphor-icons/react | same set, final |');
+lines.push('| How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |');
 lines.push('| Star icon (TrustPoint, inline data-URI svg 20×19, rgb(0,182,122)) | to be redrawn at 20×19 | pending (Booking/Path sections) |');
 lines.push('', '## Summary', '', ...Object.entries(counts).map(([k, v]) => `* ${k}: ${v}`));
 fs.writeFileSync(`${ROOT}docs/ASSET_LEDGER.md`, lines.join('\n') + '\n');

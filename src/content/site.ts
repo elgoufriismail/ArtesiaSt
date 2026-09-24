@@ -90,6 +90,28 @@ export const STORIES = {
   cta: '\u00a0Read full story',
 } as const;
 
+/** How It Works. Section title kept as a functional label (two colours like the original: "How " ink,
+ *  "It Works" green). Lead and steps are stand-in copy with the original's character budgets
+ *  (lead ≈199, steps ≈240 / 262 / 222) fitted to its line counts at all 8 viewports. */
+export const HOW_IT_WORKS = {
+  title: ['How ', 'It Works'] as const,
+  lead: 'Healing begins quietly. We listen closely, learn what brought you here and what support should feel like, then map a path at your own pace — one that respects your story, your limits, and your\u00a0life.',
+  steps: [
+    {
+      title: 'Say Hello',
+      body: 'Send a short note or book a free first call. We ask a few gentle questions about what is on your mind, what you hope to change, and what has helped before, so the very first session can start from understanding instead of from forms and\u00a0paperwork.',
+    },
+    {
+      title: 'Gentle Direction',
+      body: 'Together we shape a plan that suits your week, your energy, and your goals. Some clients want weekly sessions, others prefer a slower rhythm with small exercises in between. Nothing is fixed, and the plan grows with you as you notice what truly helps.',
+    },
+    {
+      title: 'Find a Balance',
+      body: 'Slowly, techniques become dependable habits. You recognise tension sooner, respond gently, and recover faster whenever life feels heavy. Sessions become occasional check-ins, and your abilities keep working\u00a0afterwards.',
+    },
+  ],
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

@@ -11,6 +11,6 @@ import { afterTicks } from '../core/ticks';
  * Page Intro ≈ +1 frame. The Animated Lines code component ≈ +2 frames (the variant reaches it one
  * render later): t0 18–48 ms out, 28–34 ms back.
  */
-export function markerState(id: string, line: number, onChange: (passed: boolean) => void, frames = 1, edge: MarkerEdge = 'top') {
-  return onMarker(id, line, (passed) => afterTicks(frames, () => onChange(passed)), edge);
+export function markerState(id: string, line: number, onChange: (passed: boolean) => void, frames = 1, edge: MarkerEdge = 'top', tolerance?: number) {
+  return onMarker(id, line, (passed) => afterTicks(frames, () => onChange(passed)), edge, tolerance);
 }

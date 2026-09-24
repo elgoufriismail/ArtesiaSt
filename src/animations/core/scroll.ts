@@ -1,5 +1,5 @@
 import { ScrollTrigger } from './gsap';
-import { markerPassed, targetProgress } from '@/lib/scroll-math';
+import { MARKER_TOLERANCE_PX, markerPassed, targetProgress } from '@/lib/scroll-math';
 
 /**
  * Scroll primitives shared by scroll/parallax/pinned/navigation modules.
@@ -36,7 +36,7 @@ export type MarkerEdge = 'top' | 'bottom';
  * fires onChange(true) once the marker's `edge` (untransformed layout box) reaches `line`×vh (+1 px),
  * and onChange(false) when scrolling back above it.
  */
-export function onMarker(id: string, line: number, onChange: (passed: boolean) => void, edge: MarkerEdge = 'top') {
+export function onMarker(id: string, line: number, onChange: (passed: boolean) => void, edge: MarkerEdge = 'top', tolerance = MARKER_TOLERANCE_PX) {
   const el = marker(id);
   if (!el) return null;
   let state: boolean | null = null;
@@ -44,7 +44,7 @@ export function onMarker(id: string, line: number, onChange: (passed: boolean) =
     const r = el.getBoundingClientRect();
     const ty = new DOMMatrixReadOnly(getComputedStyle(el).transform === 'none' ? undefined : getComputedStyle(el).transform).m42;
     const layoutTop = r.top + window.scrollY - ty;
-    const next = markerPassed(layoutTop, window.scrollY, window.innerHeight, line, edge === 'bottom' ? r.height : 0);
+    const next = markerPassed(layoutTop, window.scrollY, window.innerHeight, line, edge === 'bottom' ? r.height : 0, tolerance);
     if (next !== state) { state = next; onChange(next); }
   };
   return ScrollTrigger.create({ trigger: document.documentElement, start: 0, end: 'max', onUpdate: check, onRefresh: check });
