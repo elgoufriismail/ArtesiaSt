@@ -251,11 +251,13 @@ gates for the sections touched.
 3. **BalanceSection** — sticky block, markers, Switch; balanceSequence (#3); nav theme boundaries (#10).
 4. **Services** (#4, #9) → **Philosophy** (B15) → **Story** A/B (#4, B12).
 5. **HowItWorks** — sticky column (#5), RollingNumber (#6), long line (#13).
-6. **PathSection**, **Pricing** (#8, scribble #13), **TextSection** ×2.
-7. **Quote** — parallax 500, arc fold (#7), lines.
-8. **Journal**, **Numbers** (B8), **Faq** (#12), **Booking**.
-9. Stand-in copy pass against text budgets; line-art pass.
-10. Full sweep: 8 viewports × geometry/pixels/motion; interaction screenshots vs `reference/interactions`.
+6. **PathSection**, **Pricing** (#8, scribble #13). ~~TextSection ×2~~ — on hold.
+7. ~~Quote~~, 8. ~~Journal, Numbers, Faq, Booking~~ — **on hold, not to be implemented unless re-added to the
+   scope** (their recon, config entries and stubs stay available).
+9. Stand-in copy pass against text budgets; line-art pass → folded into §11 (selected sections only).
+10. Full sweep → replaced by §11 (scope finalisation and release checklist).
+
+**Current phase (after Step 9): no new sections.** The remaining work is §11.
 
 ### Step 1 measured corrections (Chrome + Hero)
 
@@ -458,3 +460,102 @@ gates for the sections touched.
 
 Current smoke-test result (skeleton): build static ✓, 9/9 unit tests ✓, harness resolves 18/18 clone refs
 to original layers (0 unknown) at 1440×900 and 390×844 (geometry fails as expected — sections are empty).
+
+## 11. Scope finalisation and release checklist (current phase)
+
+Implementation is paused after Pricing. No further sections are built. The remaining work narrows the page to
+the owner's final section list, removes what that list leaves unused, and verifies the result end to end.
+**Nothing destructive happens before the owner confirms the final section list (§11.1).**
+
+### 11.0 Status at the pause
+
+| Section (page order) | Clone component | State |
+|---|---|---|
+| Navigation / chrome (nav bar, mobile menu, progressive blur, waves) | `Navigation`, `ProgressiveBlur`, `WavesBackground` | implemented + validated (Step 1) |
+| Page Intro (hero) | `Hero` | implemented + validated (Steps 1–2) |
+| Toggle (Balance) | `BalanceSection` | implemented + validated (Step 3) |
+| Our Services | `Services` | implemented + validated (Step 4) |
+| Our Philosophy | `Philosophy` | implemented + validated (Step 5) |
+| Story A | `Story variant="a"` | implemented + validated (Step 6) |
+| How It Works | `HowItWorks` | implemented + validated (Step 7) |
+| Ready to find your path? | `PathSection` | implemented + validated (Step 8) |
+| Pricing | `Pricing` | implemented + validated (Step 9) |
+| Text Section 1 | `TextSection index={1}` | stub (rendered, empty) |
+| Big Quote | `Quote` | stub; hosts the `big-quote` marker |
+| Story B | `Story variant="b"` | **implemented + validated (Step 6)** — not named in the current list, decision needed |
+| Journal · Text Section 2 · Numbers · FAQ · Book A Session | `Journal`, `TextSection index={2}`, `Numbers`, `Faq`, `Booking` | stubs (rendered, empty); `Numbers` hosts the `numbers` marker |
+| Footer | `Footer` | **implemented + validated (Step 1, B13)** — not named in the current list, decision needed |
+
+### 11.1 Finalise the section list (owner decision — blocking)
+
+Confirm the final list, including the items the current list does not mention:
+
+1. **Story B**: keep (already built) or omit.
+2. **Footer**: keep (already built, part of the chrome) or omit / replace.
+3. Any section still to be built later (for example Booking as the target of every "Book a session" CTA)?
+4. Navigation targets: the nav links (About, Services, Stories, Journal), the CTAs (`./book-a-session`,
+   `./about`, `./services`, `./stories/*`) and the footer sitemap point to pages that do not exist in this
+   one-page clone. Decide per link: keep as-is, point to in-page anchors of kept sections, or remove.
+5. Waves background (B5): it fades in over How It Works and fades out at the `big-quote` marker. While
+   `Quote` is omitted it stays hidden (stub guard). Decide: (a) omit B5, (b) keep the fade-in and choose a new
+   fade-out target in a kept section (needs a measured decision, not the original's behaviour), or (c) keep
+   hidden.
+
+### 11.2 Omit unused sections from the rendered page (after 11.1, non-destructive first)
+
+1. Remove the omitted sections from `src/app/page.tsx` only; keep their code for one verification round.
+2. Re-check everything that depends on page order or on markers in removed sections:
+   - nav theme boundaries (`data-nav-theme` of each rendered section; B10 switches at section edges);
+   - B5 waves targets (`how-it-works`, `big-quote`) per the 11.1 decision; `numbers` marker users;
+   - footer background parallax (B13 depends on page length) and anything measured in page coordinates;
+   - `tools/compare/motion-map.json` entries for removed sections (drop them, keep the kept ones).
+3. Run §11.4 on the reduced page. Only then continue with 11.3.
+
+### 11.3 Clean up code no longer required (destructive — only with the confirmed list)
+
+Remove only what the confirmed page cannot reach. Current candidates if the stub sections are all omitted:
+
+| Kind | Candidates | Notes |
+|---|---|---|
+| Section stubs | `TextSection`, `Quote`, `Journal`, `Numbers`, `Faq`, `Booking` (+ their CSS modules) | `Story` stays either way (Story A) |
+| UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches are section-local |
+| Animation modules used only by stubs | `counters/counters`, `faq/accordion`, `sequences/quoteFold` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
+| Config entries | `ANIM.B8` (counters), `B11` (quote fold), `faq`, any journal/booking entries; `B5` per 11.1 | remove together with their modules |
+| Content | unused keys in `src/content/site.ts` (journal, numbers, faq, booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
+| Stand-in assets | `big-quote`, `journal-a/b/c` photos; `blob-a/b/c` masks; line-art paths only used by Quote | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
+
+**Keep regardless** (reusable infrastructure / reference): `docs/reconnaissance/**` and its reference data,
+`docs/ASSET_LEDGER.md` (regenerated), all of `tools/**` (recon, compare, standins, assets), `src/animations/core/**`,
+shared components (`PillButton`, `Marker`, `StandInImage`, `ParallaxImage`, `DrawnPath`, `RatingWidget`,
+`SocialRow`, `NavLink`, `SplitWords`, `Logo`), and the measured Step 1–9 notes in this document.
+After removal: `npm run typecheck`, `npm run test:unit` (drop tests only for removed modules), `npm run build`.
+
+### 11.4 Final verification of the selected sections
+
+All gates at the 8 reference viewports (1920×1080, 1440×900, 1280×800, 1024×768, 768×1024, 430×932, 390×844,
+375×812) unless noted.
+
+1. **Visual comparison**: `tools/compare/section-sbs.mjs` side-by-sides per kept section; full-page frames via
+   `tools/recon/capture.mjs` + `tools/compare/pixels.mjs` with stand-ins masked; review every diff hot spot.
+2. **Geometry and text**: `tools/compare/section-geometry.mjs "<section>"` (target ≤ 1 px; Pricing also with
+   `--click-o/--click-c` for the Yearly state) and `tools/compare/lines.mjs` (all line counts match) per section.
+3. **Scroll animations**: `tools/compare/motion.mjs` (hero, Balance, Services parallax, Story drift/parallax,
+   B5 per 11.1, footer B13 if kept) at 1440/1024/390; `story-motion.mjs`; `timing.mjs` and `balance-timing.mjs`
+   (load and marker fades); How It Works rolling number (trigger sweeps + rAF transition comparison);
+   Pricing scribble window.
+4. **Interactions** (forward and reverse, both directions of every state change): Balance switch; Services card
+   proximity + hover label (desktop) / touch labels; pill hovers; Philosophy word reveal (scroll both ways);
+   PathSection e-mail link hover; Pricing switch (`pricing-switch.mjs` + `pricing-switch-cmp.mjs`, repeated runs
+   against the original's own noise floor), NumberFlow (`pricing-numberflow.mjs`: identical animations),
+   price-row FLIP, card hover; social icon hovers; footer inputs/links if kept.
+5. **Navigation and mobile menu**: desktop nav entrance, link hovers, theme switching at every kept section
+   boundary (light/dark, B10) and the progressive blur; tablet/phone menu button → open/close animation (#11),
+   item stagger, body scroll lock, Escape / link tap closes, focus handling, the menu CTA; regression check that
+   the closed menu does not intercept taps anywhere on the page (fixed in Step 9); in-page links per 11.1.
+6. **Load behaviour**: hero entrance and word reveal timing from the shared load clock; no layout shift after
+   fonts load; reduced-motion behaviour noted.
+7. **Build and code health**: `npm run typecheck`, `npm run test:unit`, `npm run build` (production), then a last
+   run of the full gate list on the production server.
+
+Acceptance: geometry within ~1 px where practical, identical line counts, animation phase within one frame and
+shape within the original's own run-to-run noise, no unexplained layout shift, no console errors.
