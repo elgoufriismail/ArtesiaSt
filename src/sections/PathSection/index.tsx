@@ -59,7 +59,7 @@ export function PathSection() {
             </div>
             <div className={styles.links} data-ref={`${right}/Links`} data-appear="">
               <div className={styles.contactWrap}>
-                <p className={`t-small ${styles.contact}`}>{c.contact.before}<a href={`mailto:${c.contact.email}`} target="_blank" rel="noreferrer"><strong>{c.contact.email}</strong></a>{c.contact.after}</p>
+                <p className={`t-small ${styles.contact}`}>{c.contact.before}<a className="t-inline-link" href={`mailto:${c.contact.email}`} target="_blank" rel="noreferrer"><strong>{c.contact.email}</strong></a>{c.contact.after}</p>
               </div>
               <SocialRow dataRef={`${right}/Links/Social Links`} variant={touch} />
             </div>

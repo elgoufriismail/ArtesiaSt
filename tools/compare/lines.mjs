@@ -1,13 +1,14 @@
 // Rendered line-count comparison for one section, original vs clone, at every viewport.
 // Text elements (h1–h5, p; the original's nowrap/pre labels skipped) are paired by document order.
-// Usage: node tools/compare/lines.mjs "<original layer name>" "<clone data-ref>" [vp …]
+// Usage: [IDX=N] node tools/compare/lines.mjs "<original layer name>" "<clone data-ref>" [vp …]   (IDX: Nth same-named original section)
 import { CLONE_URL, ORIGINAL_URL, VIEWPORTS, launch, parseVp } from '../recon/lib.mjs';
 
 const [origName, cloneRef, ...vpArg] = process.argv.slice(2);
 const vps = vpArg.length ? vpArg : VIEWPORTS;
-const collect = ([attr, name]) => {
-  // names are compared whitespace-normalised (Framer layer names may contain NBSP)
-  const root = [...document.querySelectorAll(`[${attr}]`)].filter((e) => e.getAttribute(attr).replace(/\s+/g, ' ') === name).sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0];
+const collect = ([attr, name, idx]) => {
+  // names are compared whitespace-normalised (Framer layer names may contain NBSP); idx > 0 = Nth by document order
+  const all = [...document.querySelectorAll(`[${attr}]`)].filter((e) => e.getAttribute(attr).replace(/\s+/g, ' ') === name && e.getBoundingClientRect().height > 0);
+  const root = idx ? all.sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top)[idx - 1] : all.sort((a, b) => b.getBoundingClientRect().height - a.getBoundingClientRect().height)[0];
   if (!root) return [];
   return [...root.querySelectorAll('h1,h2,h3,h4,h5,p')].filter((e) => {
     const cs = getComputedStyle(e);
@@ -24,7 +25,7 @@ let bad = 0;
 for (const vp of vps) {
   const [W, H] = parseVp(vp);
   const got = {};
-  for (const [t, url, sel] of [['o', ORIGINAL_URL, ['data-framer-name', origName]], ['c', CLONE_URL, ['data-ref', cloneRef]]]) {
+  for (const [t, url, sel] of [['o', ORIGINAL_URL, ['data-framer-name', origName, Number(process.env.IDX || 0)]], ['c', CLONE_URL, ['data-ref', cloneRef, 0]]]) {
     const p = await (await b.newContext({ viewport: { width: W, height: H } })).newPage();
     await p.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
     await p.evaluate(() => document.fonts.ready);

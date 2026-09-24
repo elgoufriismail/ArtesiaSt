@@ -1,11 +1,52 @@
-/* TextSection — original "Text Section". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+/* TextSection — original "Text Section" (×2; measured, recon Step 10; 1440×900 unless noted).
+   root #fafafa, padding 160 0 (tablet 120, phone 80), overflow hidden → Sections: z 1, max 1600, padding 0 56/32/8,
+   flex row align start: title Section flex 6 (tablet 4) · spacer 2 (1) · body Section 4 (3). Each Section: flex,
+   centred, align start, overflow hidden → Text Container: column, padding 0 8, gap 48/40/32, flex 1.
+   Phone: Sections column, gap 38; spacer hidden.
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 0;
+  overflow: hidden;
+  background: var(--c-grey-bg);
 }
+.sections {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 56px;
+  overflow: hidden;
+}
+.titleCol, .bodyCol { display: flex; justify-content: center; align-items: flex-start; min-width: 0; overflow: hidden; }
+.titleCol { flex: 6 0 0; }
+.spacer { flex: 2 0 0; align-self: stretch; overflow: hidden; }
+.bodyCol { flex: 4 0 0; }
+.textContainer { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 48px; flex: 1 0 0; min-width: 0; padding: 0 8px; overflow: hidden; }
+.full { width: 100%; }
+.bodyWrap { width: 100%; max-width: 480px; }
+.h2, .body { margin: 0; }
+.green { color: var(--c-green); }
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
+  .root { padding: 120px 0; }
+  .sections { padding: 0 32px; }
+  .titleCol { flex: 4 0 0; }
+  .spacer { flex: 1 0 0; }
+  .bodyCol { flex: 3 0 0; }
+  .textContainer { gap: 40px; }
 }
 
 @media (max-width: 809.98px) {
+  .root { padding: 80px 0; }
+  .sections { flex-direction: column; gap: 38px; padding: 0 8px; }
+  .titleCol, .bodyCol { flex: none; width: 100%; }
+  .textContainer { gap: 32px; }
 }

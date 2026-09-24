@@ -108,6 +108,7 @@ lines.push('| Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 stati
 lines.push('| Phosphor icons (Framer module) | @phosphor-icons/react | same set, final |');
 lines.push('| Pricing feature ticks: Phosphor CheckCircle (regular, 24 px, green; identified by path) | @phosphor-icons/react CheckCircle | same icon, final |');
 lines.push('| Pricing prices: NumberFlow web component (Framer "Number Flow") | @number-flow/react 0.5.12 (core 0.5.10, MIT), same options | same library, final |');
+lines.push('| Text Sections (×2): no images, icons or line art — text only (sans H2 with green tail, paragraph, inline link) | — | nothing to replace |');
 lines.push('| Pricing scribble path (viewBox 310×80, stroke 3, green) | own loop fitted to the original bbox (`PATHS.scribble`) | stand-in wired (Pricing) |');
 lines.push('| How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |');
 lines.push('| Star icon (Trustpoint, inline data-URI svg 20×19, rgb(0,182,122)) | own five-point star drawn in the same 20×19 box (`RatingWidget`) | stand-in wired (PathSection; Booking reuses it) |');

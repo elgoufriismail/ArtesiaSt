@@ -444,6 +444,21 @@ gates for the sections touched.
 * Tools: pricing-switch.mjs + pricing-switch-cmp.mjs (rAF recordings, per-channel phase/shape),
   pricing-numberflow.mjs (WAAPI comparison), section-geometry.mjs `--click-o/--click-c` (settled switch states).
 
+### Step 10 measured behaviour (Text Section ×2, B9)
+
+* One component, two instances (page order 9 and 13): #fafafa, padding 160/120/80 top and bottom, overflow hidden →
+  Sections (z 1, max 1600, padding 0 56/32/8, row align start): title Section flex 6 (tablet 4) · spacer 2 (1) ·
+  body Section 4 (3). Text Containers: padding 0 8, gap 48/40/32. Phone: stacked, gap 38, no spacer. H2 = sans
+  H2 (48/44/38/34) with an ink part and a green tail span; paragraph t-body, max 480. No images or decorations.
+* Instance 1's paragraph has a bold inline link with the same behaviour as Step 8's e-mail link (underline
+  transparent → green, offset 8 → 5 px, 0.4 s framer) — now the shared `.t-inline-link` class (PathSection uses it too).
+* Motion: B9 appear on the H2 and paragraph wrappers, desktop only (both instances; nothing hidden on tablet/phone).
+* Validation: geometry ≤ 0.10 px (instance 1) / ≤ 0.07 px (instance 2) at all 8 viewports; line counts match at all
+  8 for both. The narrow wrapping windows (e.g. 4 lines at 480 px but 6 at 398 px) were met the way the original
+  does it — non-breaking word pairs in the stand-in copy.
+* Tools: section-geometry `--index=N`, lines.mjs `IDX=N`, section-sbs `IDX=N` (Nth same-named section; clone
+  root `<name>#N`, children `<name>/…`); copyfit HTML candidates for paragraphs with inline links.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

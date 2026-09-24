@@ -148,6 +148,24 @@ export const PRICING = {
   ],
 } as const;
 
+/** Text Sections (two instances of one component). Stand-in copy with the original's budgets: H2 = ink part + green
+ *  tail (55 + 24 / 72 + 26 ch), paragraph 228 ch with a bold inline link near its end / 137 ch; fitted to the
+ *  original line counts at all 8 viewports. */
+export const TEXT_SECTIONS = [
+  {
+    title: ['Each session is shaped around your story, your rhythm and ', 'the goals that\u00a0matter.'],
+    body: {
+      before: 'We blend proven methods with a calm, personal\u00a0approach. Sessions happen in our quiet studio or online, and you can switch whenever it\u00a0suits\u00a0you. Curious how we\u00a0work? Meet ',
+      link: { label: 'our\u00a0studio', href: './about' },
+      after: ' and the people who make it a\u00a0safe\u00a0place.',
+    },
+  },
+  {
+    title: ['Small, steady steps add up. With patient guidance you learn what you need ', 'and to act on it with\u00a0care.'],
+    body: { before: 'Progress rarely follows a straight line. We celebrate small wins, learn from setbacks and keep going, together, at a pace that feels\u00a0right.' },
+  },
+] as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,
