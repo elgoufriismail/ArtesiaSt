@@ -6,3 +6,4 @@ next-env.d.ts
 # comparison runs (regenerated locally)
 tools/.runs/
 test-results/
+__pycache__/

@@ -173,6 +173,23 @@ export const BIG_QUOTE = {
   image: 'big-quote',
 } as const;
 
+/** Journal. Stand-in copy with the original's budgets (eyebrow 11, H2 40 on two lines with an explicit break, intro
+ *  96, pill 15, titles 32 / 24 / 30, excerpts 95 / 83 / 277 — the third one clamped to two lines with an ellipsis),
+ *  fitted to its line counts. Card C only exists on desktop. Pill labels chosen to render
+ *  within 0.4 px of the original label widths (pill geometry); no original text reused (clash-checked). */
+export const JOURNAL = {
+  label: 'Deep Reading',
+  title: ['Thoughtful Perspectives on', 'Calmer Living'] as const,
+  intro: 'Short essays and gentle, practical ideas on rest, relationships and change, to help you feel steadier.',
+  cta: { label: 'Browse Journal', href: './journal' } satisfies Cta,
+  readMore: 'Open note',
+  articles: [
+    { key: 'A', slot: 'journal-a', mask: 'blobA', stroke: 'journalStrokeA', title: 'Finding Calm in Crowded Weeks', excerpt: 'A few small habits that turn busy days into calmer ones, without needing a whole new routine.', href: './journal/finding-calm-in-crowded-weeks' },
+    { key: 'B', slot: 'journal-b', mask: 'blobB', stroke: 'journalStrokeB', title: 'When Everything Feels Loud', excerpt: 'Simple ways to settle a crowded mind when noise, news and worry arrive all at once.', href: './journal/when-everything-feels-loud' },
+    { key: 'C', slot: 'journal-c', mask: 'blobC', stroke: 'journalStrokeC', title: 'How to Start Again After Loss', excerpt: 'Loss changes the ordinary shape of a day. The empty chair, the message you almost send, the plans that quietly fall away. Starting again rarely means moving on; it means learning to carry what happened while making space for new routines, new people and new reasons to rest and hope.', href: './journal/how-to-start-again-after-loss' },
+  ],
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

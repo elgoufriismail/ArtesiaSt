@@ -45,7 +45,7 @@ app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()
       │  ├─ <TextSection index=1/> "Text Section"                                             B9
       │  ├─ <Quote/>              "Big Quote"       marker big-quote; ParallaxImage, arc, lines  B4 B11 · #7 #13
       │  ├─ <Story variant="b"/>  "Story B"         marker story-b
-      │  ├─ <Journal/>            "Journal"         3 × ArticleCard (blob masks)             B9
+      │  ├─ <Journal/>            "Journal"         3 article cards (blob masks, outlines)   B9
       │  ├─ <TextSection index=2/> "Text Section#2"
       │  ├─ <Numbers/>            "Numbers"         marker numbers; 4 × Counter              B8
       │  ├─ <Faq/>                "FAQ"             6 × AccordionItem                        #12
@@ -119,7 +119,7 @@ original layers, owns its markers, declares `data-nav-theme`, and wires animatio
 | Pricing | 3 cards (radius 16) → stacked; switch 56×32 | pricingSwitch + instant price swap (#8), drawPath (B14), reveal; card hover = CSS (spring linear()) |
 | TextSection | 664 · 221 · 443 → stacked (gap 38) | reveal |
 | Quote | 1080 / 614 / ~650px; black bg; arc container top edge | quoteFold (B11), imageParallax 500/300/0, drawPath ×2, reveal |
-| Journal | 3 cards (middle +100px) → 2+1 → 1 col; blob masks | reveal |
+| Journal | 3 cards (middle +100px) → 2 cards (no C) → 1 col of 2; blob masks + outline strokes; 2-line clamped excerpts | reveal (header desktop only, article texts all breakpoints) |
 | Numbers | 4 in a row → 2×2 → 1 col | counters (B8, desktop) |
 | Faq | left text / right list → reordered on phone (headline, intro, list, helper, pill) | accordionToggle (#12), reveal |
 | Booking | left sticky rating block / right form → reordered on phone (form before rating) | entrance ×5 (load-time, off-screen), reveal |
@@ -253,8 +253,9 @@ gates for the sections touched.
 4. **Services** (#4, #9) → **Philosophy** (B15) → **Story** A/B (#4, B12).
 5. **HowItWorks** — sticky column (#5), RollingNumber (#6), long line (#13).
 6. **PathSection**, **Pricing** (#8, scribble #13), **TextSection ×2** (re-added, Step 10).
-7. **Quote** (Big Quote) — re-added by the owner, built in Step 11. 8. ~~Journal, Numbers, Faq, Booking~~ — **on
-   hold, not to be implemented unless re-added to the scope** (their recon, config entries and stubs stay available).
+7. **Quote** (Big Quote) — re-added by the owner, built in Step 11. 8. **Journal** — re-added, built in Step 12.
+   ~~Numbers, Faq, Booking~~ — **on hold, not to be implemented unless re-added to the scope** (their recon, config
+   entries and stubs stay available).
 9. Stand-in copy pass against text budgets; line-art pass → folded into §11 (selected sections only).
 10. Full sweep → replaced by §11 (scope finalisation and release checklist).
 
@@ -507,6 +508,32 @@ gates for the sections touched.
   never named — an earlier misreading). Resolved on the owner's decision: the clone follows the live original
   (docs/reconnaissance/SOURCE-DRIFT.md); Big Quote re-checked afterwards (fold ≤ 0.099°, no regression).
 
+### Step 12 measured behaviour (Journal, B9) — live original, 2026-09-28
+
+* Layout: transparent over the white page, column, padding 160/120/80 vertical, gap 0/32/48, overflow hidden. Header
+  (z 1, max 1600, padding 0 56/32/8) → Text Container (gap 30, padding 0 8): Section Icon (64 masked icon + eyebrow,
+  gap 24) · Headline (gap 24): sans H2 with an explicit break (2/2/2/2/2/3/3/3 lines) + intro (t-body, max 640) · pill.
+  Articles (z 1, max 1600, padding 0 64/40/16, gap 120/80; phone: column, gap 40): columns flex 1 0 0, the middle one
+  padded 100 px on desktop only. **Card C is not rendered on tablet or phone** (two cards; the first recon's "2 + 1"
+  was wrong — RESPONSIVE.md corrected).
+* Article (column): Image Container link (square) → Stroke (absolute, per-card insets in % of the square, svg
+  stretched with preserveAspectRatio none, #7FA69B at opacity .21, stroke 0.73/1/1 in viewBox units) + Image (centred
+  via translate −50 %, full width, aspect 1.33051 / 1.33784 / 1.48815, blob mask-image cover, overflow hidden) →
+  photo cover + "Noize" (opacity .1, overlay, 128 px tile, top −43 / bottom −44). Text (gap 24) → Container (gap 16,
+  overflow hidden): serif article title (t-article-title 38/36/34/32, green, the text is a link) max 340 · excerpt
+  (t-small) max 340 in a **2-line clamp with an ellipsis** (card A wraps to 3 at 1280 and C to 6–7 → both show "…").
+* Motion: B9 appears only — icon, eyebrow, H2, intro and pill on desktop; the article Text blocks on every
+  breakpoint (the header is static on tablet/phone). Nothing is scroll-linked; no hover except the pills' own.
+* Stand-ins: copy fitted to the budgets and to the natural wraps (clash-checked, no original text); own open-book
+  icon on the glyph's footprint; own outline strokes (lines.mjs `journalStrokeA/B/C`) on the measured path boxes;
+  blob masks regenerated so the drawn curve fills its viewBox exactly (the earlier generator let curves overflow →
+  flat, clipped edges).
+* Validation: geometry ≤ 0.33 px at all 8 (named layers; missing = the pills' Circle A/B dots only); H2, texts, img
+  and stroke boxes ≤ 0.31 px; line counts and natural wraps (ellipsis position) all match at all 8; appears — same
+  targets (8 desktop / 2 tablet / 2 phone), trigger within one wheel step, same fade band; the motion suite passes
+  everything except B13 (footer — Numbers/FAQ/Booking are still stubs).
+* Tools: copyfit `RANGE=1` (natural wraps of line-clamped text).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
@@ -547,7 +574,8 @@ the owner's final section list, removes what that list leaves unused, and verifi
 | Big Quote | `Quote` | implemented + validated (Step 11) |
 | Story B | `Story variant="b"` | **implemented + validated (Step 6)** — not named in the current list, decision needed |
 | Text Section 2 | `TextSection index={2}` | implemented + validated (Step 10) |
-| Journal · Numbers · FAQ · Book A Session | `Journal`, `Numbers`, `Faq`, `Booking` | stubs (rendered, empty); `Numbers` hosts the `numbers` marker |
+| Journal | `Journal` | implemented + validated (Step 12) |
+| Numbers · FAQ · Book A Session | `Numbers`, `Faq`, `Booking` | stubs (rendered, empty); `Numbers` hosts the `numbers` marker |
 | Footer | `Footer` | **implemented + validated (Step 1, B13)** — not named in the current list, decision needed |
 
 ### 11.1 Finalise the section list (owner decision — blocking)
@@ -581,12 +609,12 @@ Remove only what the confirmed page cannot reach. Current candidates if the stub
 
 | Kind | Candidates | Notes |
 |---|---|---|
-| Section stubs | `Journal`, `Numbers`, `Faq`, `Booking` (+ their CSS modules) | `Story`, `TextSection`, `Quote` are built |
+| Section stubs | `Numbers`, `Faq`, `Booking` (+ their CSS modules) | `Story`, `TextSection`, `Quote`, `Journal` are built |
 | UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches are section-local |
 | Animation modules used only by stubs | `counters/counters`, `faq/accordion` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
 | Config entries | `ANIM.B8` (counters), `faq`, any journal/booking entries | remove together with their modules |
 | Content | unused keys in `src/content/site.ts` (journal, numbers, faq, booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
-| Stand-in assets | `journal-a/b/c` photos; `blob-a/b/c` masks | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
+| Stand-in assets | (none left: the Journal photos and masks are used since Step 12) | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
 
 **Keep regardless** (reusable infrastructure / reference): `docs/reconnaissance/**` and its reference data,
 `docs/ASSET_LEDGER.md` (regenerated), all of `tools/**` (recon, compare, standins, assets), `src/animations/core/**`,

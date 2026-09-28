@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Stand-in section icon (own open-book glyph; the original is a different drawing, see docs/ASSET_LEDGER.md).
+       Filled like the original glyph and drawn to its footprint (x 6–58, y 12–52 of 64). Used as a CSS mask. -->
+  <path d="M30 17.6 C24.2 13.3 15.4 11.6 6 12.6 L6 47.4 C15.2 46.5 23.8 48 30 52 Z" fill="#000"/>
+  <path d="M34 17.6 C39.8 13.3 48.6 11.6 58 12.6 L58 47.4 C48.8 46.5 40.2 48 34 52 Z" fill="#000"/>
+</svg>

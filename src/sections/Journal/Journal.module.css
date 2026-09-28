@@ -1,11 +1,89 @@
-/* Journal — original "Journal". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+/* Journal — original "Journal" (live original, measured 2026-09-28; 1440×900 unless noted).
+   root: transparent (white page), column, centred, padding 160 0 (tablet 120, phone 80), gap 0 (32 / 48), overflow hidden.
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: 160px 0;
+  overflow: hidden;
 }
 
+/* ── header ── */
+.header { position: relative; z-index: 1; display: flex; justify-content: center; align-items: flex-start; width: 100%; max-width: 1600px; padding: 0 56px; overflow: hidden; }
+.textContainer { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; flex: 1 0 0; min-width: 0; padding: 0 8px; }
+.iconBlock { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; overflow: hidden; }
+.iconBlock p { margin: 0; white-space: pre; }
+.icon {
+  width: 64px;
+  height: 64px;
+  background: var(--c-green);
+  -webkit-mask: url('/icons/journal-standin.svg') 50% 50% / auto no-repeat;
+  mask: url('/icons/journal-standin.svg') 50% 50% / auto no-repeat;
+}
+.headline { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; width: 100%; }
+.full { width: 100%; }
+.introWrap { width: 100%; max-width: 640px; }
+.center { margin: 0; text-align: center; }
+
+/* ── articles ── */
+.articles { position: relative; z-index: 1; display: flex; justify-content: center; align-items: flex-start; gap: 120px; width: 100%; max-width: 1600px; padding: 0 64px; }
+.col { display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1 0 0; min-width: 0; }
+.colB { padding-top: 100px; }
+.colInner { display: flex; flex-direction: column; align-items: center; gap: 40px; width: 100%; }
+.article { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; gap: 0; width: 100%; }
+
+/* square image link: hairline outline behind a centred blob-masked photo */
+.imageLink { position: relative; display: block; width: 100%; aspect-ratio: 1 / 1; }
+.stroke { position: absolute; pointer-events: none; }
+.stroke svg { display: block; overflow: hidden; }
+.strokeA { top: 2.8292%; left: 2.4968%; right: 3.5069%; bottom: 16.1747%; }
+.strokeB { top: 7.25%;   left: 9.1652%; right: 11.837%; bottom: 4.7532%; }
+.strokeC { top: 4.7488%; left: 9.2483%; right: 2.7548%; bottom: 8.2514%; }
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: 50% 50%;
+  mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.imageA { aspect-ratio: 1.33051 / 1; }
+.imageB { aspect-ratio: 1.33784 / 1; }
+.imageC { aspect-ratio: 1.48815 / 1; }
+.photo { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* text block (B9 appear) */
+.text { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; width: 100%; }
+.container { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; width: 100%; overflow: hidden; }
+.titleWrap { width: 100%; max-width: 340px; }
+.titleLink { color: inherit; text-decoration: none; }
+/* two-line clamp with an ellipsis (the original's excerpt container) */
+.excerptWrap { width: 100%; max-width: 340px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+
 @media (min-width: 810px) and (max-width: 1199.98px) {
+  .root { gap: 32px; padding: 120px 0; }
+  .header { padding: 0 32px; }
+  .articles { gap: 80px; padding: 0 40px; }
+  .colB { padding-top: 0; }
+  .colC { display: none; }   /* card C is not part of the tablet layout */
 }
 
 @media (max-width: 809.98px) {
+  .root { gap: 48px; padding: 80px 0; }
+  .header { padding: 0 8px; }
+  .articles { flex-direction: column; justify-content: flex-start; gap: 40px; padding: 0 16px; }
+  .col { flex: none; width: 100%; }
+  .colB { padding-top: 0; }
+  .colC { display: none; }   /* nor of the phone layout */
 }

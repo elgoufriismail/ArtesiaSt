@@ -93,17 +93,27 @@ def blob_path(w, h, seed, points=7):
         a = 2 * math.pi * i / points + rng.uniform(-0.2, 0.2)
         k = rng.uniform(0.78, 1.0)
         pts.append((cx + math.cos(a) * cx * k, cy + math.sin(a) * cy * k))
-    # normalise to the full bounding box
-    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
-    sx, sy = w / (max(xs) - min(xs)), h / (max(ys) - min(ys))
-    pts = [((x - min(xs)) * sx, (y - min(ys)) * sy) for x, y in pts]
-    d = f'M {pts[0][0]:.1f} {pts[0][1]:.1f}'
     n = len(pts)
+    segs = []
     for i in range(n):
         p0, p1, p2, p3 = pts[i - 1], pts[i], pts[(i + 1) % n], pts[(i + 2) % n]
         c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6)
         c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
-        d += f' C {c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}'
+        segs.append((p1, c1, c2, p2))
+    # normalise the DRAWN curve (sampled), not the through-points, to the full box: the mask must not overflow its
+    # viewBox (overflow is clipped into flat edges); the original blob masks touch all four sides
+    xs, ys = [], []
+    for a, b, c, e in segs:
+        for j in range(65):
+            t = j / 64; u = 1 - t
+            xs.append(u*u*u*a[0] + 3*u*u*t*b[0] + 3*u*t*t*c[0] + t*t*t*e[0])
+            ys.append(u*u*u*a[1] + 3*u*u*t*b[1] + 3*u*t*t*c[1] + t*t*t*e[1])
+    x0, y0 = min(xs), min(ys)
+    sx, sy = w / (max(xs) - x0), h / (max(ys) - y0)
+    f = lambda q: f'{(q[0] - x0) * sx:.2f} {(q[1] - y0) * sy:.2f}'
+    d = f'M {f(segs[0][0])}'
+    for a, b, c, e in segs:
+        d += f' C {f(b)} {f(c)} {f(e)}'
     return d + ' Z'
 
 

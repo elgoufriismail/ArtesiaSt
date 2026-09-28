@@ -95,7 +95,7 @@ for (const s of manifest.inlineSvg) lines.push(`| ${s.name} | ${[s.viewBox && `v
 const ICONS = [
   ['Philosophy', 'line-art seated figure (3 paths, bbox x 9–54, y 3–59 of 64)', 'public/icons/philosophy-standin.svg', 'Philosophy'],
   ['Pricing', 'waves (ink bbox x 7–57, y 15–50 of 64)', 'public/icons/pricing-standin.svg', 'Pricing'],
-  ['Journal', 'lotus', null, 'Journal'],
+  ['Journal', 'lotus (one filled glyph, bbox x 6–58, y 12–52 of 64)', 'public/icons/journal-standin.svg', 'Journal'],
 ];
 lines.push('', '## Section icons (inline SVG masks, 64×64, #7fa69b fill)', '', '| Section | Original motif | Clone stand-in | Status |', '|---|---|---|---|');
 for (const [sec, motif, file, owner] of ICONS) {
@@ -112,6 +112,7 @@ lines.push('| Text Sections (×2): no images, icons or line art — text only (s
 lines.push('| Pricing scribble path (viewBox 310×80, stroke 3, green) | own loop fitted to the original bbox (`PATHS.scribble`) | stand-in wired (Pricing) |');
 lines.push('| Big Quote long lines ×2 (viewBox 680×2000, path boxes 619×6000 / 608×6000, white, stroke 2) | own looped meanders matched only on bbox, band extents, start/end, length and arclength per 400-unit level (`PATHS.quoteA/quoteB`) | stand-in wired (Quote) |');
 lines.push('| Big Quote \'Shape\' arc (viewBox 1516×443, fill #FAFAFA) | own symmetric cubic cut-out (≤ 0.66 units from the sampled edge), inline in `Quote` | stand-in wired (Quote) |');
+lines.push('| Journal outline strokes ×3 (viewBox 293×254 / 265×259 / 302×265, #7FA69B at .21) | own closed outlines on the measured path boxes (`PATHS.journalStrokeA/B/C`) | stand-in wired (Journal) |');
 lines.push('| How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |');
 lines.push('| Star icon (Trustpoint, inline data-URI svg 20×19, rgb(0,182,122)) | own five-point star drawn in the same 20×19 box (`RatingWidget`) | stand-in wired (PathSection; Booking reuses it) |');
 lines.push('| Avatar ring mask (`9O8sLldl6mV9miUVjkyrhGJsZ7c.svg`, mask-size contain, 0% 50%) | `public/masks/avatar-ring.svg` stand-in | stand-in wired (PathSection) |');

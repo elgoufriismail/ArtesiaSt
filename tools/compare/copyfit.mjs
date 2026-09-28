@@ -2,6 +2,8 @@
 // at all 8 viewports; prints the combinations whose rendered line counts match the original's.
 // Usage: node tools/compare/copyfit.mjs '<clone selector>' '<8 target line counts csv>' '<JSON [[alt, …], …]>' [nbspLastPair=1]
 // Candidates containing '<' are set as innerHTML (e.g. paragraphs with an inline link).
+// RANGE=1 counts distinct line boxes from Range rects instead of height / line-height — for line-clamped text, whose
+// box height stops at the clamp while the natural wrap (what decides where the ellipsis falls) continues.
 import { launch, CLONE_URL, VIEWPORTS, parseVp } from '../recon/lib.mjs';
 const [sel, wantS, partsJ, nb = '1'] = process.argv.slice(2); const want = wantS.split(',').map(Number); const parts = JSON.parse(partsJ);
 let combos = [''];
@@ -12,7 +14,9 @@ for (const [j, vp] of VIEWPORTS.entries()) {
   const [W, H] = parseVp(vp);
   const p = await (await b.newContext({ viewport: { width: W, height: H } })).newPage();
   await p.goto(CLONE_URL, { waitUntil: 'networkidle' }); await p.evaluate(() => document.fonts.ready);
-  const r = await p.evaluate(([sel, combos]) => { const h = document.querySelector(sel); const lh = parseFloat(getComputedStyle(h).lineHeight); return combos.map((c) => { if (c.includes("<")) h.innerHTML = c; else h.textContent = c; return Math.round(h.getBoundingClientRect().height / lh); }); }, [sel, combos]);
+  const r = await p.evaluate(([sel, combos, range]) => { const h = document.querySelector(sel); const lh = parseFloat(getComputedStyle(h).lineHeight);
+    const count = () => { if (!range) return Math.round(h.getBoundingClientRect().height / lh); const rg = document.createRange(); rg.selectNodeContents(h); return new Set([...rg.getClientRects()].filter((q) => q.width > 0).map((q) => Math.round(q.top))).size; };
+    return combos.map((c) => { if (c.includes("<")) h.innerHTML = c; else h.textContent = c; return count(); }); }, [sel, combos, process.env.RANGE === '1']);
   r.forEach((n, i) => { got[i].push(n); if (n !== want[j]) ok[i] = false; });
   await p.context().close();
 }

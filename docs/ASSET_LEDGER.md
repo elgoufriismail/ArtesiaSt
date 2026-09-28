@@ -28,9 +28,9 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 | `i3wLiFEx85bL9zj8Y2GBkjDc5z4.jpg` | 2048×2048 | Big Quote / Big Quote | 1440×1580 @1440<br>1024×914 @1024<br>390×675 @390 | cover 50% 50% | `big-quote` | stand-in wired (Quote) |
 | `PSjitKcEoMQOEmVvStpNCNRXmSk.jpg` | 2048×2048 | Story B / Image 1 | 389×897 @1440<br>278×727 @1024<br>358×400 @390 | cover 50% 50% | `story-b-1` | stand-in wired (Story) |
 | `yzTuL74LYLey46xO4X9rihvGRs4.jpg` | 2048×2048 | Story B / Image 2 | 332×597 @1440<br>240×459 @1024 | cover 50% 50% | `story-b-2` | stand-in wired (Story) |
-| `D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg` | 2048×2048 | Journal / Image | 357×269 @1440<br>432×325 @1024<br>358×269 @390 | cover 50% 50% | `journal-a` | stand-in exists (section not built yet) |
-| `LksF7zMOHE97HJPqXDmb7LSvWE.jpg` | 2048×2048 | Journal / Image | 357×267 @1440<br>432×323 @1024<br>358×268 @390 | cover 50% 50% | `journal-b` | stand-in exists (section not built yet) |
-| `ZMX4xonC6WvSRyRzHHgOkTDzw4.jpg` | 2048×2048 | Journal / Image | 357×240 @1440 | cover 50% 50% | `journal-c` | stand-in exists (section not built yet) |
+| `D6H1lHKBDuxkhpUVf8PPyt7Jivg.jpg` | 2048×2048 | Journal / Image | 357×269 @1440<br>432×325 @1024<br>358×269 @390 | cover 50% 50% | `journal-a` | stand-in wired (Journal) |
+| `LksF7zMOHE97HJPqXDmb7LSvWE.jpg` | 2048×2048 | Journal / Image | 357×267 @1440<br>432×323 @1024<br>358×268 @390 | cover 50% 50% | `journal-b` | stand-in wired (Journal) |
+| `ZMX4xonC6WvSRyRzHHgOkTDzw4.jpg` | 2048×2048 | Journal / Image | 357×240 @1440 | cover 50% 50% | `journal-c` | stand-in wired (Journal) |
 | `TF67zgMSYINSD7dymhKX4rhrTM.jpg` | 2048×2048 | Footer Container / Footer Background Image | 1440×1311 @1440<br>1024×1726 @1024<br>390×1874 @390 | cover 50% 50% | `footer` | stand-in wired (Footer) |
 | `6HsC0d9bhLu4NT4YGuH3j68zl8.jpg` | 1333×1000 | fixed/overlay / On | 138×101 @1440 | cover 50% 50% | — | excluded (not part of the design) |
 
@@ -70,7 +70,7 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 |---|---|---|---|
 | Philosophy | line-art seated figure (3 paths, bbox x 9–54, y 3–59 of 64) | `public/icons/philosophy-standin.svg` (different motif, same footprint/stroke) | stand-in wired |
 | Pricing | waves (ink bbox x 7–57, y 15–50 of 64) | `public/icons/pricing-standin.svg` (different motif, same footprint/stroke) | stand-in wired |
-| Journal | lotus | — | to be drawn with the section |
+| Journal | lotus (one filled glyph, bbox x 6–58, y 12–52 of 64) | `public/icons/journal-standin.svg` (different motif, same footprint/stroke) | stand-in wired |
 
 ## Fonts and icons
 
@@ -85,12 +85,12 @@ object-position, so layout and crops stay unchanged. Textures, masks and SVGs ar
 | Pricing scribble path (viewBox 310×80, stroke 3, green) | own loop fitted to the original bbox (`PATHS.scribble`) | stand-in wired (Pricing) |
 | Big Quote long lines ×2 (viewBox 680×2000, path boxes 619×6000 / 608×6000, white, stroke 2) | own looped meanders matched only on bbox, band extents, start/end, length and arclength per 400-unit level (`PATHS.quoteA/quoteB`) | stand-in wired (Quote) |
 | Big Quote 'Shape' arc (viewBox 1516×443, fill #FAFAFA) | own symmetric cubic cut-out (≤ 0.66 units from the sampled edge), inline in `Quote` | stand-in wired (Quote) |
+| Journal outline strokes ×3 (viewBox 293×254 / 265×259 / 302×265, #7FA69B at .21) | own closed outlines on the measured path boxes (`PATHS.journalStrokeA/B/C`) | stand-in wired (Journal) |
 | How It Works odometer digits (SVG foreignObject fit-text, Inter 500 226.858 px in a 149-unit viewBox) | same markup, live text (pixel-identical @1024) | final, no asset |
 | Star icon (Trustpoint, inline data-URI svg 20×19, rgb(0,182,122)) | own five-point star drawn in the same 20×19 box (`RatingWidget`) | stand-in wired (PathSection; Booking reuses it) |
 | Avatar ring mask (`9O8sLldl6mV9miUVjkyrhGJsZ7c.svg`, mask-size contain, 0% 50%) | `public/masks/avatar-ring.svg` stand-in | stand-in wired (PathSection) |
 
 ## Summary
 
-* stand-in wired: 17
-* stand-in exists: 3
+* stand-in wired: 20
 * excluded: 1
