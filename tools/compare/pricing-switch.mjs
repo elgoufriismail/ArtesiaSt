@@ -1,5 +1,7 @@
 // Pricing Monthly/Yearly switch: rAF-sampled transition after a real tap (o = original, c = clone), forward then back.
-// Columns: t, knob x, track colour, Monthly label colour, Yearly label colour, 3 NumberFlow host widths, 3 suffix x.
+// Columns: t, knob x, track colour, Monthly label colour, Yearly label colour, 3 amount widths, 3 suffix x.
+// (Live original since 2026-09-28: prices are plain text swapped instantly — the amount is the price row's 2nd child,
+// the suffix its padded Container.)
 // Usage: node tools/compare/pricing-switch.mjs <o|c> <WxH> <out.json>   (compare two recordings with pricing-switch-cmp.mjs)
 import fs from 'node:fs';
 import { launch, ORIGINAL_URL, CLONE_URL, parseVp } from '../recon/lib.mjs';
@@ -18,8 +20,9 @@ const arm = () => p.evaluate((site) => {
   const knob = base.firstElementChild;
   const tog = site === 'o' ? q('[data-framer-name^="Toggle "]') : q('[data-ref*="/Toggle O"]');
   const labels = [tog.querySelector('p'), [...tog.querySelectorAll('p')].at(-1)];
-  const nfs = [...s.querySelectorAll('number-flow-react')].filter((e) => e.getBoundingClientRect().width > 0);
-  const suffix = nfs.map((n) => n.parentElement.parentElement.nextElementSibling);
+  const rows = [...s.querySelectorAll(site === 'o' ? '[data-framer-name="Price"]' : '[data-ref$="/Price"]')].filter((e) => e.getBoundingClientRect().width > 0);
+  const nfs = rows.map((r) => r.children[1]);
+  const suffix = rows.map((r) => r.children[2]);
   const sample = (t) => [+t.toFixed(1), +(knob.getBoundingClientRect().left - base.getBoundingClientRect().left).toFixed(2), getComputedStyle(base).backgroundColor, getComputedStyle(labels[0]).color, getComputedStyle(labels[1]).color, ...nfs.map((n) => +n.getBoundingClientRect().width.toFixed(2)), ...suffix.map((x) => +x.getBoundingClientRect().left.toFixed(2))];
   window.__rows = [];
   const r = base.getBoundingClientRect(); window.__pt = [r.left + r.width / 2, r.top + r.height / 2];

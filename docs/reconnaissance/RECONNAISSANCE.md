@@ -47,7 +47,7 @@ in the originals and must be masked out when diffing.
    (≥1200 / 810–1199 / <810) plus a 4th typography tier at ≥1600. 768 px renders the **phone** layout.
 2. **Animation stack**: Framer Motion (appear, in-view, scroll transforms, parallax, variants, layout/FLIP),
    Web Animations API (optimised first-paint appear), **GSAP 3.12.5 + ScrollTrigger** (only for scrubbed SVG
-   line drawing, `scrub:0.5`), **Lenis** smooth scroll (`duration 2`), **NumberFlow** (price digits), and
+   line drawing, `scrub:0.5`), **Lenis** smooth scroll (`duration 2`), **NumberFlow** (price digits; removed from the live site 2026-09-28 — SOURCE-DRIFT.md), and
    custom React components (word-by-word scroll text reveal, image parallax with noise).
 3. **Signature motions**: hero word-by-word blur reveal; sticky hero backdrop that the portrait fades out
    of; scroll-driven "Balance" switch sequence (dot → switch → on) that swaps headlines and turns the page

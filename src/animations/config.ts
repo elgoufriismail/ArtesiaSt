@@ -185,17 +185,11 @@ export const ANIM = {
     toYearly: { spring: true, duration: 0.8, bounce: 0 } as Spring,
     toMonthly: { spring: true, duration: 1.2, bounce: 0 } as Spring,
     knob: { off: 4, on: 28 },
-    /** start phase after the tap (frames), tuned against the rAF recordings */
-    lagFrames: { knob: 3, colors: 5, prices: 3 },
-    /** NumberFlow (Framer "Number Flow" component options, read from the original bundle): 1 s
-     *  transformTiming with NumberFlow's own spring linear() easing, opacity ease-out half as long,
-     *  trend "nearest", continuous, isolate, mask/gradient height 20 px */
-    flow: { duration: 1000, opacityDuration: 500, maskHeight: 20, continuous: true },
+    /** start phase after the tap (frames), tuned against rAF recordings of the live original (re-measured
+     *  2026-09-28, after it dropped NumberFlow: knob + price swap together ≈ 15–28 ms, colours 2 frames later) */
+    lagFrames: { knob: 2, colors: 3, prices: 1 },
     /** card hover: data-border overlay colour transparent → green, spring 0.6 s bounce 0 both ways */
     cardHover: { spring: true, duration: 0.6, bounce: 0 } as Spring,
-    /** Framer layout FLIP of each price wrapper (translate + scaleX) and suffix (translate) when the price
-     *  widths change: spring 0.6 s, bounce 0, both directions (fit rmse 0.0026 / 0.0059) */
-    layout: { spring: true, duration: 0.6, bounce: 0 } as Spring,
   }, // #8
   serviceCard: { lift: 60, t: { spring: true, duration: 0.6, bounce: 0 } as Spring },                               // #9 (CSS)
   pill: { slide: 30, t: { spring: true, duration: 0.3, bounce: 0 } as Spring },                                    // CSS

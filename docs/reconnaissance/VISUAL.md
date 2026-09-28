@@ -50,7 +50,7 @@ Non-preset text (measured @1440):
   is stacked absolutely for the slide effect — see ANIMATIONS §B8).
 * How-It-Works giant numbers: Inter 500 **fit-text ≈226.86px** (line-height 272px, −0.04em), green, inside
   SVG foreignObject 281px wide per digit column.
-* Prices (NumberFlow): Inter **48px/48px, 500, −1.92px (−0.04em)**, green, `$` symbol same style.
+* Prices (NumberFlow): Inter **48px/48px, 500, −1.92px (−0.04em)**, green, `$` symbol same style. _(Superseded 2026-09-28: the live original dropped NumberFlow — prices swap instantly as plain text; see SOURCE-DRIFT.md.)_ Live: sans H2 48/44/38/34 px, line-height 1.2.
 * Philosophy statement (Text Scroll Reveal, `h4`): Inter 44px/52.8px, 500, −1.32px (−0.03em), #2e3231,
   centered, words at opacity 0.2 until revealed.
 * Coloured tails in headlines (e.g. second line of the toggle H2, "It Works", "your path?", "Answered.",

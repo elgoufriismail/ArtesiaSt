@@ -107,7 +107,7 @@ lines.push('| Crimson Text 400 (Google Fonts, OFL) | @fontsource/crimson-text 40
 lines.push('| Inter (Framer-hosted variable subsets, OFL) | inter-ui 4.1.1 static text cuts (metrics verified) | same family, final |');
 lines.push('| Phosphor icons (Framer module) | @phosphor-icons/react | same set, final |');
 lines.push('| Pricing feature ticks: Phosphor CheckCircle (regular, 24 px, green; identified by path) | @phosphor-icons/react CheckCircle | same icon, final |');
-lines.push('| Pricing prices: NumberFlow web component (Framer "Number Flow") | @number-flow/react 0.5.12 (core 0.5.10, MIT), same options | same library, final |');
+lines.push('| Pricing prices: plain rich text (live original since 2026-09-28; NumberFlow before — docs/reconnaissance/SOURCE-DRIFT.md) | plain text in the sans-H2 style, instant swap | no library, final |');
 lines.push('| Text Sections (×2): no images, icons or line art — text only (sans H2 with green tail, paragraph, inline link) | — | nothing to replace |');
 lines.push('| Pricing scribble path (viewBox 310×80, stroke 3, green) | own loop fitted to the original bbox (`PATHS.scribble`) | stand-in wired (Pricing) |');
 lines.push('| Big Quote long lines ×2 (viewBox 680×2000, path boxes 619×6000 / 608×6000, white, stroke 2) | own looped meanders matched only on bbox, band extents, start/end, length and arclength per 400-unit level (`PATHS.quoteA/quoteB`) | stand-in wired (Quote) |');

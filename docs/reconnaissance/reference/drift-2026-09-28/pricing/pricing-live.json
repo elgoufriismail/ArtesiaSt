@@ -1,0 +1,7561 @@
+{
+ "1920x1080": {
+  "monthly": {
+   "section": [
+    1920,
+    1120.61
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1920,
+     1120.61
+    ],
+    "Pricing/Container": [
+     160,
+     160,
+     1600,
+     960.61
+    ],
+    "Pricing/Container/Text": [
+     216,
+     160,
+     1488,
+     300
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     916.89,
+     160,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     560,
+     296.8,
+     800,
+     163.2
+    ],
+    "Pricing/Container/Monthly": [
+     216,
+     540,
+     1488,
+     580.61
+    ],
+    "Pricing/Container/Monthly/Toggle Off": [
+     811.8,
+     540,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base": [
+     900.05,
+     540,
+     56,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base/Toggle": [
+     904.05,
+     544,
+     24,
+     24
+    ],
+    "Pricing/Container/Monthly/Cards": [
+     224,
+     620,
+     1472,
+     500.61
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly": [
+     224,
+     620,
+     480,
+     500.61
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Card Title": [
+     256,
+     652,
+     416,
+     71.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price": [
+     256,
+     763.2,
+     416,
+     57.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price/Container": [
+     348.27,
+     778.8,
+     83,
+     42
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options": [
+     256,
+     860.8,
+     416,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option": [
+     256,
+     860.8,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#2": [
+     256,
+     902,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#3": [
+     256,
+     943.2,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#4": [
+     256,
+     984.41,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1": [
+     256,
+     1049.61,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle A": [
+     404.53,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle B": [
+     240,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2": [
+     720,
+     620,
+     480,
+     500.61
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Card Title": [
+     752,
+     652,
+     416,
+     71.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price": [
+     752,
+     763.2,
+     416,
+     57.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price/Container": [
+     843.27,
+     778.8,
+     83,
+     42
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options": [
+     752,
+     860.8,
+     416,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option": [
+     752,
+     860.8,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#2": [
+     752,
+     902,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#3": [
+     752,
+     943.2,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#4": [
+     752,
+     984.41,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1": [
+     752,
+     1049.61,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle A": [
+     900.53,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle B": [
+     736,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3": [
+     1216,
+     620,
+     480,
+     500.61
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Card Title": [
+     1248,
+     652,
+     416,
+     71.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price": [
+     1248,
+     763.2,
+     416,
+     57.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price/Container": [
+     1364.34,
+     778.8,
+     83,
+     42
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options": [
+     1248,
+     860.8,
+     416,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option": [
+     1248,
+     860.8,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#2": [
+     1248,
+     902,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#3": [
+     1248,
+     943.2,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#4": [
+     1248,
+     984.41,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1": [
+     1248,
+     1049.61,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle A": [
+     1396.53,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle B": [
+     1232,
+     1067.11,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "57.5938px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      256,
+      763.2,
+      416,
+      57.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      256,
+      763.2,
+      29.09,
+      57.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      256,
+      763.2,
+      29.09,
+      57.59
+     ],
+     "text": "$",
+     "font": "500 48px/57.6px Inter",
+     "ls": "-1.92px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      287.09,
+      763.2,
+      59.17,
+      57.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      287.09,
+      763.2,
+      59.17,
+      57.59
+     ],
+     "text": "49",
+     "font": "500 48px/57.6px Inter",
+     "ls": "-1.92px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      348.27,
+      778.8,
+      83,
+      42
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      352.27,
+      782.8,
+      75,
+      34
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      352.27,
+      782.8,
+      75,
+      34
+     ],
+     "text": "/ month",
+     "font": "400 20px/34px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      974,
+      287.8,
+      310,
+      80
+     ],
+     "display": "block"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -39.92,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -39.92,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": true,
+     "parent": "Headline",
+     "rect": [
+      974,
+      287.8,
+      310,
+      80
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": [
+      "3"
+     ]
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      860.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      902,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      943.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      984.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      860.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      902,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      943.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      984.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      860.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      902,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      943.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      984.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "yearly": {
+   "section": [
+    1920,
+    1120.61
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1920,
+     1120.61
+    ],
+    "Pricing/Container": [
+     160,
+     160,
+     1600,
+     960.61
+    ],
+    "Pricing/Container/Text": [
+     216,
+     160,
+     1488,
+     300
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     916.89,
+     160,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     560,
+     296.8,
+     800,
+     163.2
+    ],
+    "Pricing/Container/Yearly": [
+     216,
+     540,
+     1488,
+     580.61
+    ],
+    "Pricing/Container/Yearly/Toggle On": [
+     811.8,
+     540,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base": [
+     900.05,
+     540,
+     56,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base/Toggle": [
+     928.05,
+     544,
+     24,
+     24
+    ],
+    "Pricing/Container/Yearly/Cards": [
+     224,
+     620,
+     1472,
+     500.61
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly": [
+     224,
+     620,
+     480,
+     500.61
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Card Title": [
+     256,
+     652,
+     416,
+     71.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price": [
+     256,
+     763.2,
+     416,
+     57.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price/Container": [
+     346.27,
+     778.8,
+     83,
+     42
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options": [
+     256,
+     860.8,
+     416,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option": [
+     256,
+     860.8,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#2": [
+     256,
+     902,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#3": [
+     256,
+     943.2,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#4": [
+     256,
+     984.41,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1": [
+     256,
+     1049.61,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle A": [
+     404.53,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle B": [
+     240,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2": [
+     720,
+     620,
+     480,
+     500.61
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Card Title": [
+     752,
+     652,
+     416,
+     71.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price": [
+     752,
+     763.2,
+     416,
+     57.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price/Container": [
+     828.27,
+     778.8,
+     83,
+     42
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options": [
+     752,
+     860.8,
+     416,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option": [
+     752,
+     860.8,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#2": [
+     752,
+     902,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#3": [
+     752,
+     943.2,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#4": [
+     752,
+     984.41,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1": [
+     752,
+     1049.61,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle A": [
+     900.53,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle B": [
+     736,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3": [
+     1216,
+     620,
+     480,
+     500.61
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Card Title": [
+     1248,
+     652,
+     416,
+     71.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price": [
+     1248,
+     763.2,
+     416,
+     57.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price/Container": [
+     1356.34,
+     778.8,
+     83,
+     42
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options": [
+     1248,
+     860.8,
+     416,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option": [
+     1248,
+     860.8,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#2": [
+     1248,
+     902,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#3": [
+     1248,
+     943.2,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#4": [
+     1248,
+     984.41,
+     416,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1": [
+     1248,
+     1049.61,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle A": [
+     1396.53,
+     1067.11,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle B": [
+     1232,
+     1067.11,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$39/month",
+    "$71/month",
+    "$183/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "57.5938px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      256,
+      763.2,
+      416,
+      57.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      256,
+      763.2,
+      29.09,
+      57.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      256,
+      763.2,
+      29.09,
+      57.59
+     ],
+     "text": "$",
+     "font": "500 48px/57.6px Inter",
+     "ls": "-1.92px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      287.09,
+      763.2,
+      57.17,
+      57.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      287.09,
+      763.2,
+      57.17,
+      57.59
+     ],
+     "text": "39",
+     "font": "500 48px/57.6px Inter",
+     "ls": "-1.92px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      346.27,
+      778.8,
+      83,
+      42
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "transform: none; transform-origin: 50% 50% 0px;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      350.27,
+      782.8,
+      75,
+      34
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; transform-origin: 50% 50% 0px;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      350.27,
+      782.8,
+      75,
+      34
+     ],
+     "text": "/ month",
+     "font": "400 20px/34px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      974,
+      287.8,
+      310,
+      80
+     ],
+     "display": "block"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      16.08,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      16.08,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": true,
+     "parent": "Headline",
+     "rect": [
+      974,
+      287.8,
+      310,
+      80
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": [
+      "3"
+     ]
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      860.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      902,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      943.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      256,
+      984.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      860.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      902,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      943.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      752,
+      984.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      860.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      902,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      943.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      1248,
+      984.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "monthlyAgain": {
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ]
+  },
+  "fwd": {
+   "log": [
+    [
+     24.4,
+     3,
+     "div",
+     "|1|none|none|287.1|59.2|747.1|57.6",
+     "|1|none|none|287.1|57.2|747.1|57.6"
+    ],
+    [
+     24.4,
+     4,
+     "h2",
+     "49|1|none|none|287.1|59.2|747.1|57.6",
+     "39|1|none|none|287.1|57.2|747.1|57.6"
+    ],
+    [
+     24.4,
+     5,
+     "Container",
+     "|1|none|none|348.3|83.0|762.7|42.0",
+     "|1|none|none|346.3|83.0|762.7|42.0"
+    ],
+    [
+     24.4,
+     6,
+     "div",
+     "|1|none|none|352.3|75.0|766.7|34.0",
+     "|1|none|none|350.3|75.0|766.7|34.0"
+    ],
+    [
+     24.4,
+     7,
+     "p",
+     "/ month|1|none|none|352.3|75.0|766.7|34.0",
+     "/ month|1|none|none|350.3|75.0|766.7|34.0"
+    ],
+    [
+     24.4,
+     11,
+     "div",
+     "|1|none|none|783.1|58.2|747.1|57.6",
+     "|1|none|none|783.1|43.2|747.1|57.6"
+    ],
+    [
+     24.4,
+     12,
+     "h2",
+     "89|1|none|none|783.1|58.2|747.1|57.6",
+     "71|1|none|none|783.1|43.2|747.1|57.6"
+    ],
+    [
+     24.4,
+     13,
+     "Container",
+     "|1|none|none|843.3|83.0|762.7|42.0",
+     "|1|none|none|828.3|83.0|762.7|42.0"
+    ],
+    [
+     24.4,
+     14,
+     "div",
+     "|1|none|none|847.3|75.0|766.7|34.0",
+     "|1|none|none|832.3|75.0|766.7|34.0"
+    ],
+    [
+     24.4,
+     15,
+     "p",
+     "/ month|1|none|none|847.3|75.0|766.7|34.0",
+     "/ month|1|none|none|832.3|75.0|766.7|34.0"
+    ],
+    [
+     24.4,
+     19,
+     "div",
+     "|1|none|none|1279.1|83.3|747.1|57.6",
+     "|1|none|none|1279.1|75.3|747.1|57.6"
+    ],
+    [
+     24.4,
+     20,
+     "h2",
+     "229|1|none|none|1279.1|83.3|747.1|57.6",
+     "183|1|none|none|1279.1|75.3|747.1|57.6"
+    ],
+    [
+     24.4,
+     21,
+     "Container",
+     "|1|none|none|1364.3|83.0|762.7|42.0",
+     "|1|none|none|1356.3|83.0|762.7|42.0"
+    ],
+    [
+     24.4,
+     22,
+     "div",
+     "|1|none|none|1368.3|75.0|766.7|34.0",
+     "|1|none|none|1360.3|75.0|766.7|34.0"
+    ],
+    [
+     24.4,
+     23,
+     "p",
+     "/ month|1|none|none|1368.3|75.0|766.7|34.0",
+     "/ month|1|none|none|1360.3|75.0|766.7|34.0"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  },
+  "back": {
+   "log": [
+    [
+     28.7,
+     3,
+     "div",
+     "|1|none|none|287.1|57.2|747.1|57.6",
+     "|1|none|none|287.1|59.2|747.1|57.6"
+    ],
+    [
+     28.7,
+     4,
+     "h2",
+     "39|1|none|none|287.1|57.2|747.1|57.6",
+     "49|1|none|none|287.1|59.2|747.1|57.6"
+    ],
+    [
+     28.7,
+     5,
+     "Container",
+     "|1|none|none|346.3|83.0|762.7|42.0",
+     "|1|none|none|348.3|83.0|762.7|42.0"
+    ],
+    [
+     28.7,
+     6,
+     "div",
+     "|1|none|none|350.3|75.0|766.7|34.0",
+     "|1|none|none|352.3|75.0|766.7|34.0"
+    ],
+    [
+     28.7,
+     7,
+     "p",
+     "/ month|1|none|none|350.3|75.0|766.7|34.0",
+     "/ month|1|none|none|352.3|75.0|766.7|34.0"
+    ],
+    [
+     28.7,
+     11,
+     "div",
+     "|1|none|none|783.1|43.2|747.1|57.6",
+     "|1|none|none|783.1|58.2|747.1|57.6"
+    ],
+    [
+     28.7,
+     12,
+     "h2",
+     "71|1|none|none|783.1|43.2|747.1|57.6",
+     "89|1|none|none|783.1|58.2|747.1|57.6"
+    ],
+    [
+     28.7,
+     13,
+     "Container",
+     "|1|none|none|828.3|83.0|762.7|42.0",
+     "|1|none|none|843.3|83.0|762.7|42.0"
+    ],
+    [
+     28.7,
+     14,
+     "div",
+     "|1|none|none|832.3|75.0|766.7|34.0",
+     "|1|none|none|847.3|75.0|766.7|34.0"
+    ],
+    [
+     28.7,
+     15,
+     "p",
+     "/ month|1|none|none|832.3|75.0|766.7|34.0",
+     "/ month|1|none|none|847.3|75.0|766.7|34.0"
+    ],
+    [
+     28.7,
+     19,
+     "div",
+     "|1|none|none|1279.1|75.3|747.1|57.6",
+     "|1|none|none|1279.1|83.3|747.1|57.6"
+    ],
+    [
+     28.7,
+     20,
+     "h2",
+     "183|1|none|none|1279.1|75.3|747.1|57.6",
+     "229|1|none|none|1279.1|83.3|747.1|57.6"
+    ],
+    [
+     28.7,
+     21,
+     "Container",
+     "|1|none|none|1356.3|83.0|762.7|42.0",
+     "|1|none|none|1364.3|83.0|762.7|42.0"
+    ],
+    [
+     28.7,
+     22,
+     "div",
+     "|1|none|none|1360.3|75.0|766.7|34.0",
+     "|1|none|none|1368.3|75.0|766.7|34.0"
+    ],
+    [
+     28.7,
+     23,
+     "p",
+     "/ month|1|none|none|1360.3|75.0|766.7|34.0",
+     "/ month|1|none|none|1368.3|75.0|766.7|34.0"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  }
+ },
+ "1440x900": {
+  "monthly": {
+   "section": [
+    1440,
+    1109.02
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1440,
+     1109.02
+    ],
+    "Pricing/Container": [
+     0,
+     160,
+     1440,
+     949.02
+    ],
+    "Pricing/Container/Text": [
+     56,
+     160,
+     1328,
+     295.2
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     676.89,
+     160,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     320,
+     296.8,
+     800,
+     158.41
+    ],
+    "Pricing/Container/Monthly": [
+     56,
+     535.2,
+     1328,
+     573.81
+    ],
+    "Pricing/Container/Monthly/Toggle Off": [
+     571.8,
+     535.2,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base": [
+     660.05,
+     535.2,
+     56,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base/Toggle": [
+     664.05,
+     539.2,
+     24,
+     24
+    ],
+    "Pricing/Container/Monthly/Cards": [
+     64,
+     615.2,
+     1312,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly": [
+     64,
+     615.2,
+     426.67,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Card Title": [
+     96,
+     647.2,
+     362.67,
+     69.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price": [
+     96,
+     756.41,
+     362.67,
+     52.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price/Container": [
+     177.73,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options": [
+     96,
+     849.2,
+     362.67,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option": [
+     96,
+     849.2,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#2": [
+     96,
+     890.41,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#3": [
+     96,
+     931.61,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#4": [
+     96,
+     972.81,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1": [
+     96,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle A": [
+     244.53,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle B": [
+     80,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2": [
+     506.67,
+     615.2,
+     426.67,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Card Title": [
+     538.67,
+     647.2,
+     362.67,
+     69.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price": [
+     538.67,
+     756.41,
+     362.67,
+     52.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price/Container": [
+     619.41,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options": [
+     538.67,
+     849.2,
+     362.67,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option": [
+     538.67,
+     849.2,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#2": [
+     538.67,
+     890.41,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#3": [
+     538.67,
+     931.61,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#4": [
+     538.67,
+     972.81,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1": [
+     538.67,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle A": [
+     687.2,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle B": [
+     522.67,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3": [
+     949.34,
+     615.2,
+     426.67,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Card Title": [
+     981.34,
+     647.2,
+     362.67,
+     69.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price": [
+     981.34,
+     756.41,
+     362.67,
+     52.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price/Container": [
+     1087.33,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options": [
+     981.34,
+     849.2,
+     362.67,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option": [
+     981.34,
+     849.2,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#2": [
+     981.34,
+     890.41,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#3": [
+     981.34,
+     931.61,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#4": [
+     981.34,
+     972.81,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1": [
+     981.34,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle A": [
+     1129.88,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle B": [
+     965.34,
+     1055.52,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "52.7969px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      96,
+      756.41,
+      362.67,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "text": "$",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "text": "49",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      177.73,
+      770.61,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      734,
+      287.8,
+      310,
+      80
+     ],
+     "display": "block"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -40,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -40,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": true,
+     "parent": "Headline",
+     "rect": [
+      734,
+      287.8,
+      310,
+      80
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": [
+      "3"
+     ]
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "yearly": {
+   "section": [
+    1440,
+    1109.02
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1440,
+     1109.02
+    ],
+    "Pricing/Container": [
+     0,
+     160,
+     1440,
+     949.02
+    ],
+    "Pricing/Container/Text": [
+     56,
+     160,
+     1328,
+     295.2
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     676.89,
+     160,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     320,
+     296.8,
+     800,
+     158.41
+    ],
+    "Pricing/Container/Yearly": [
+     56,
+     535.2,
+     1328,
+     573.81
+    ],
+    "Pricing/Container/Yearly/Toggle On": [
+     571.8,
+     535.2,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base": [
+     660.05,
+     535.2,
+     56,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base/Toggle": [
+     688.05,
+     539.2,
+     24,
+     24
+    ],
+    "Pricing/Container/Yearly/Cards": [
+     64,
+     615.2,
+     1312,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly": [
+     64,
+     615.2,
+     426.67,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Card Title": [
+     96,
+     647.2,
+     362.67,
+     69.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price": [
+     96,
+     756.41,
+     362.67,
+     52.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price/Container": [
+     177.73,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options": [
+     96,
+     849.2,
+     362.67,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option": [
+     96,
+     849.2,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#2": [
+     96,
+     890.41,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#3": [
+     96,
+     931.61,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#4": [
+     96,
+     972.81,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1": [
+     96,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle A": [
+     244.53,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle B": [
+     80,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2": [
+     506.67,
+     615.2,
+     426.67,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Card Title": [
+     538.67,
+     647.2,
+     362.67,
+     69.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price": [
+     538.67,
+     756.41,
+     362.67,
+     52.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price/Container": [
+     608.41,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options": [
+     538.67,
+     849.2,
+     362.67,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option": [
+     538.67,
+     849.2,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#2": [
+     538.67,
+     890.41,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#3": [
+     538.67,
+     931.61,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#4": [
+     538.67,
+     972.81,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1": [
+     538.67,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle A": [
+     687.2,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle B": [
+     522.67,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3": [
+     949.34,
+     615.2,
+     426.67,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Card Title": [
+     981.34,
+     647.2,
+     362.67,
+     69.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price": [
+     981.34,
+     756.41,
+     362.67,
+     52.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price/Container": [
+     1079.33,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options": [
+     981.34,
+     849.2,
+     362.67,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option": [
+     981.34,
+     849.2,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#2": [
+     981.34,
+     890.41,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#3": [
+     981.34,
+     931.61,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#4": [
+     981.34,
+     972.81,
+     362.67,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1": [
+     981.34,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle A": [
+     1129.88,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle B": [
+     965.34,
+     1055.52,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$39/month",
+    "$71/month",
+    "$183/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "52.7969px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      96,
+      756.41,
+      362.67,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "text": "$",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "text": "39",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      177.73,
+      770.61,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      734,
+      287.8,
+      310,
+      80
+     ],
+     "display": "block"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      101,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      101,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": true,
+     "parent": "Headline",
+     "rect": [
+      734,
+      287.8,
+      310,
+      80
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": [
+      "3"
+     ]
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      538.67,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      981.34,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "monthlyAgain": {
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ]
+  },
+  "fwd": {
+   "log": [
+    [
+     178.9,
+     4,
+     "h2",
+     "49|1|none|none|124.3|51.5|655.4|52.8",
+     "39|1|none|none|124.3|51.5|655.4|52.8"
+    ],
+    [
+     178.9,
+     11,
+     "div",
+     "|1|none|none|566.9|50.5|655.4|52.8",
+     "|1|none|none|566.9|39.5|655.4|52.8"
+    ],
+    [
+     178.9,
+     12,
+     "h2",
+     "89|1|none|none|566.9|50.5|655.4|52.8",
+     "71|1|none|none|566.9|39.5|655.4|52.8"
+    ],
+    [
+     178.9,
+     13,
+     "Container",
+     "|1|none|none|619.4|72.0|669.6|38.6",
+     "|1|none|none|608.4|72.0|669.6|38.6"
+    ],
+    [
+     178.9,
+     14,
+     "div",
+     "|1|none|none|623.4|64.0|673.6|30.6",
+     "|1|none|none|612.4|64.0|673.6|30.6"
+    ],
+    [
+     178.9,
+     15,
+     "p",
+     "/ month|1|none|none|623.4|64.0|673.6|30.6",
+     "/ month|1|none|none|612.4|64.0|673.6|30.6"
+    ],
+    [
+     178.9,
+     19,
+     "div",
+     "|1|none|none|1009.6|75.7|655.4|52.8",
+     "|1|none|none|1009.6|67.7|655.4|52.8"
+    ],
+    [
+     178.9,
+     20,
+     "h2",
+     "229|1|none|none|1009.6|75.7|655.4|52.8",
+     "183|1|none|none|1009.6|67.7|655.4|52.8"
+    ],
+    [
+     178.9,
+     21,
+     "Container",
+     "|1|none|none|1087.3|72.0|669.6|38.6",
+     "|1|none|none|1079.3|72.0|669.6|38.6"
+    ],
+    [
+     178.9,
+     22,
+     "div",
+     "|1|none|none|1091.3|64.0|673.6|30.6",
+     "|1|none|none|1083.3|64.0|673.6|30.6"
+    ],
+    [
+     178.9,
+     23,
+     "p",
+     "/ month|1|none|none|1091.3|64.0|673.6|30.6",
+     "/ month|1|none|none|1083.3|64.0|673.6|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  },
+  "back": {
+   "log": [
+    [
+     177.8,
+     4,
+     "h2",
+     "39|1|none|none|124.3|51.5|655.4|52.8",
+     "49|1|none|none|124.3|51.5|655.4|52.8"
+    ],
+    [
+     177.8,
+     11,
+     "div",
+     "|1|none|none|566.9|39.5|655.4|52.8",
+     "|1|none|none|566.9|50.5|655.4|52.8"
+    ],
+    [
+     177.8,
+     12,
+     "h2",
+     "71|1|none|none|566.9|39.5|655.4|52.8",
+     "89|1|none|none|566.9|50.5|655.4|52.8"
+    ],
+    [
+     177.8,
+     13,
+     "Container",
+     "|1|none|none|608.4|72.0|669.6|38.6",
+     "|1|none|none|619.4|72.0|669.6|38.6"
+    ],
+    [
+     177.8,
+     14,
+     "div",
+     "|1|none|none|612.4|64.0|673.6|30.6",
+     "|1|none|none|623.4|64.0|673.6|30.6"
+    ],
+    [
+     177.8,
+     15,
+     "p",
+     "/ month|1|none|none|612.4|64.0|673.6|30.6",
+     "/ month|1|none|none|623.4|64.0|673.6|30.6"
+    ],
+    [
+     177.8,
+     19,
+     "div",
+     "|1|none|none|1009.6|67.7|655.4|52.8",
+     "|1|none|none|1009.6|75.7|655.4|52.8"
+    ],
+    [
+     177.8,
+     20,
+     "h2",
+     "183|1|none|none|1009.6|67.7|655.4|52.8",
+     "229|1|none|none|1009.6|75.7|655.4|52.8"
+    ],
+    [
+     177.8,
+     21,
+     "Container",
+     "|1|none|none|1079.3|72.0|669.6|38.6",
+     "|1|none|none|1087.3|72.0|669.6|38.6"
+    ],
+    [
+     177.8,
+     22,
+     "div",
+     "|1|none|none|1083.3|64.0|673.6|30.6",
+     "|1|none|none|1091.3|64.0|673.6|30.6"
+    ],
+    [
+     177.8,
+     23,
+     "p",
+     "/ month|1|none|none|1083.3|64.0|673.6|30.6",
+     "/ month|1|none|none|1091.3|64.0|673.6|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  }
+ },
+ "1280x800": {
+  "monthly": {
+   "section": [
+    1280,
+    1109.02
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1280,
+     1109.02
+    ],
+    "Pricing/Container": [
+     0,
+     160,
+     1280,
+     949.02
+    ],
+    "Pricing/Container/Text": [
+     56,
+     160,
+     1168,
+     295.2
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     596.89,
+     160,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     240,
+     296.8,
+     800,
+     158.41
+    ],
+    "Pricing/Container/Monthly": [
+     56,
+     535.2,
+     1168,
+     573.81
+    ],
+    "Pricing/Container/Monthly/Toggle Off": [
+     491.8,
+     535.2,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base": [
+     580.05,
+     535.2,
+     56,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base/Toggle": [
+     584.05,
+     539.2,
+     24,
+     24
+    ],
+    "Pricing/Container/Monthly/Cards": [
+     64,
+     615.2,
+     1152,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly": [
+     64,
+     615.2,
+     373.33,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Card Title": [
+     96,
+     647.2,
+     309.33,
+     69.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price": [
+     96,
+     756.41,
+     309.33,
+     52.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price/Container": [
+     177.73,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options": [
+     96,
+     849.2,
+     309.33,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option": [
+     96,
+     849.2,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#2": [
+     96,
+     890.41,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#3": [
+     96,
+     931.61,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#4": [
+     96,
+     972.81,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1": [
+     96,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle A": [
+     244.53,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle B": [
+     80,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2": [
+     453.33,
+     615.2,
+     373.33,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Card Title": [
+     485.33,
+     647.2,
+     309.33,
+     69.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price": [
+     485.33,
+     756.41,
+     309.33,
+     52.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price/Container": [
+     566.06,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options": [
+     485.33,
+     849.2,
+     309.33,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option": [
+     485.33,
+     849.2,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#2": [
+     485.33,
+     890.41,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#3": [
+     485.33,
+     931.61,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#4": [
+     485.33,
+     972.81,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1": [
+     485.33,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle A": [
+     633.86,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle B": [
+     469.33,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3": [
+     842.66,
+     615.2,
+     373.33,
+     493.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Card Title": [
+     874.66,
+     647.2,
+     309.33,
+     69.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price": [
+     874.66,
+     756.41,
+     309.33,
+     52.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price/Container": [
+     980.64,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options": [
+     874.66,
+     849.2,
+     309.33,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option": [
+     874.66,
+     849.2,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#2": [
+     874.66,
+     890.41,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#3": [
+     874.66,
+     931.61,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#4": [
+     874.66,
+     972.81,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1": [
+     874.66,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle A": [
+     1023.19,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle B": [
+     858.66,
+     1055.52,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "52.7969px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      96,
+      756.41,
+      309.33,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "text": "$",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "text": "49",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      177.73,
+      770.61,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      654,
+      287.8,
+      310,
+      80
+     ],
+     "display": "block"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -40.31,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -40.31,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": true,
+     "parent": "Headline",
+     "rect": [
+      654,
+      287.8,
+      310,
+      80
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": [
+      "3"
+     ]
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "yearly": {
+   "section": [
+    1280,
+    1109.02
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1280,
+     1109.02
+    ],
+    "Pricing/Container": [
+     0,
+     160,
+     1280,
+     949.02
+    ],
+    "Pricing/Container/Text": [
+     56,
+     160,
+     1168,
+     295.2
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     596.89,
+     160,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     240,
+     296.8,
+     800,
+     158.41
+    ],
+    "Pricing/Container/Yearly": [
+     56,
+     535.2,
+     1168,
+     573.81
+    ],
+    "Pricing/Container/Yearly/Toggle On": [
+     491.8,
+     535.2,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base": [
+     580.05,
+     535.2,
+     56,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base/Toggle": [
+     608.05,
+     539.2,
+     24,
+     24
+    ],
+    "Pricing/Container/Yearly/Cards": [
+     64,
+     615.2,
+     1152,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly": [
+     64,
+     615.2,
+     373.33,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Card Title": [
+     96,
+     647.2,
+     309.33,
+     69.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price": [
+     96,
+     756.41,
+     309.33,
+     52.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price/Container": [
+     177.73,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options": [
+     96,
+     849.2,
+     309.33,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option": [
+     96,
+     849.2,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#2": [
+     96,
+     890.41,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#3": [
+     96,
+     931.61,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#4": [
+     96,
+     972.81,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1": [
+     96,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle A": [
+     244.53,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle B": [
+     80,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2": [
+     453.33,
+     615.2,
+     373.33,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Card Title": [
+     485.33,
+     647.2,
+     309.33,
+     69.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price": [
+     485.33,
+     756.41,
+     309.33,
+     52.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price/Container": [
+     555.06,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options": [
+     485.33,
+     849.2,
+     309.33,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option": [
+     485.33,
+     849.2,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#2": [
+     485.33,
+     890.41,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#3": [
+     485.33,
+     931.61,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#4": [
+     485.33,
+     972.81,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1": [
+     485.33,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle A": [
+     633.86,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle B": [
+     469.33,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3": [
+     842.66,
+     615.2,
+     373.33,
+     493.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Card Title": [
+     874.66,
+     647.2,
+     309.33,
+     69.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price": [
+     874.66,
+     756.41,
+     309.33,
+     52.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price/Container": [
+     972.64,
+     770.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options": [
+     874.66,
+     849.2,
+     309.33,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option": [
+     874.66,
+     849.2,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#2": [
+     874.66,
+     890.41,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#3": [
+     874.66,
+     931.61,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#4": [
+     874.66,
+     972.81,
+     309.33,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1": [
+     874.66,
+     1038.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle A": [
+     1023.19,
+     1055.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle B": [
+     858.66,
+     1055.52,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$39/month",
+    "$71/month",
+    "$183/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "52.7969px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      96,
+      756.41,
+      309.33,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      96,
+      756.41,
+      26.25,
+      52.8
+     ],
+     "text": "$",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      124.25,
+      756.41,
+      51.48,
+      52.8
+     ],
+     "text": "39",
+     "font": "500 44px/52.8px Inter",
+     "ls": "-1.76px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      177.73,
+      770.61,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      181.73,
+      774.61,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      654,
+      287.8,
+      310,
+      80
+     ],
+     "display": "block"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      151.69,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      151.69,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": true,
+     "parent": "Headline",
+     "rect": [
+      654,
+      287.8,
+      310,
+      80
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": [
+      "3"
+     ]
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      96,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      485.33,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      849.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      890.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      931.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      874.66,
+      972.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "monthlyAgain": {
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ]
+  },
+  "fwd": {
+   "log": [
+    [
+     247.1,
+     4,
+     "h2",
+     "49|1|none|none|124.3|51.5|604.7|52.8",
+     "39|1|none|none|124.3|51.5|604.7|52.8"
+    ],
+    [
+     247.1,
+     11,
+     "div",
+     "|1|none|none|513.6|50.5|604.7|52.8",
+     "|1|none|none|513.6|39.5|604.7|52.8"
+    ],
+    [
+     247.1,
+     12,
+     "h2",
+     "89|1|none|none|513.6|50.5|604.7|52.8",
+     "71|1|none|none|513.6|39.5|604.7|52.8"
+    ],
+    [
+     247.1,
+     13,
+     "Container",
+     "|1|none|none|566.1|72.0|618.9|38.6",
+     "|1|none|none|555.1|72.0|618.9|38.6"
+    ],
+    [
+     247.1,
+     14,
+     "div",
+     "|1|none|none|570.1|64.0|622.9|30.6",
+     "|1|none|none|559.1|64.0|622.9|30.6"
+    ],
+    [
+     247.1,
+     15,
+     "p",
+     "/ month|1|none|none|570.1|64.0|622.9|30.6",
+     "/ month|1|none|none|559.1|64.0|622.9|30.6"
+    ],
+    [
+     247.1,
+     19,
+     "div",
+     "|1|none|none|902.9|75.7|604.7|52.8",
+     "|1|none|none|902.9|67.7|604.7|52.8"
+    ],
+    [
+     247.1,
+     20,
+     "h2",
+     "229|1|none|none|902.9|75.7|604.7|52.8",
+     "183|1|none|none|902.9|67.7|604.7|52.8"
+    ],
+    [
+     247.1,
+     21,
+     "Container",
+     "|1|none|none|980.6|72.0|618.9|38.6",
+     "|1|none|none|972.6|72.0|618.9|38.6"
+    ],
+    [
+     247.1,
+     22,
+     "div",
+     "|1|none|none|984.6|64.0|622.9|30.6",
+     "|1|none|none|976.6|64.0|622.9|30.6"
+    ],
+    [
+     247.1,
+     23,
+     "p",
+     "/ month|1|none|none|984.6|64.0|622.9|30.6",
+     "/ month|1|none|none|976.6|64.0|622.9|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  },
+  "back": {
+   "log": [
+    [
+     188,
+     4,
+     "h2",
+     "39|1|none|none|124.3|51.5|604.7|52.8",
+     "49|1|none|none|124.3|51.5|604.7|52.8"
+    ],
+    [
+     188,
+     11,
+     "div",
+     "|1|none|none|513.6|39.5|604.7|52.8",
+     "|1|none|none|513.6|50.5|604.7|52.8"
+    ],
+    [
+     188,
+     12,
+     "h2",
+     "71|1|none|none|513.6|39.5|604.7|52.8",
+     "89|1|none|none|513.6|50.5|604.7|52.8"
+    ],
+    [
+     188,
+     13,
+     "Container",
+     "|1|none|none|555.1|72.0|618.9|38.6",
+     "|1|none|none|566.1|72.0|618.9|38.6"
+    ],
+    [
+     188,
+     14,
+     "div",
+     "|1|none|none|559.1|64.0|622.9|30.6",
+     "|1|none|none|570.1|64.0|622.9|30.6"
+    ],
+    [
+     188,
+     15,
+     "p",
+     "/ month|1|none|none|559.1|64.0|622.9|30.6",
+     "/ month|1|none|none|570.1|64.0|622.9|30.6"
+    ],
+    [
+     188,
+     19,
+     "div",
+     "|1|none|none|902.9|67.7|604.7|52.8",
+     "|1|none|none|902.9|75.7|604.7|52.8"
+    ],
+    [
+     188,
+     20,
+     "h2",
+     "183|1|none|none|902.9|67.7|604.7|52.8",
+     "229|1|none|none|902.9|75.7|604.7|52.8"
+    ],
+    [
+     188,
+     21,
+     "Container",
+     "|1|none|none|972.6|72.0|618.9|38.6",
+     "|1|none|none|980.6|72.0|618.9|38.6"
+    ],
+    [
+     188,
+     22,
+     "div",
+     "|1|none|none|976.6|64.0|622.9|30.6",
+     "|1|none|none|984.6|64.0|622.9|30.6"
+    ],
+    [
+     188,
+     23,
+     "p",
+     "/ month|1|none|none|976.6|64.0|622.9|30.6",
+     "/ month|1|none|none|984.6|64.0|622.9|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  }
+ },
+ "1024x768": {
+  "monthly": {
+   "section": [
+    1024,
+    1037.81
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1024,
+     1037.81
+    ],
+    "Pricing/Container": [
+     0,
+     80,
+     1024,
+     957.81
+    ],
+    "Pricing/Container/Text": [
+     32,
+     80,
+     960,
+     288
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     468.89,
+     80,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     40,
+     216.8,
+     944,
+     151.2
+    ],
+    "Pricing/Container/Monthly": [
+     32,
+     448,
+     960,
+     589.81
+    ],
+    "Pricing/Container/Monthly/Toggle Off": [
+     363.8,
+     448,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base": [
+     452.05,
+     448,
+     56,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base/Toggle": [
+     456.05,
+     452,
+     24,
+     24
+    ],
+    "Pricing/Container/Monthly/Cards": [
+     40,
+     528,
+     944,
+     509.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly": [
+     40,
+     540.59,
+     304,
+     484.61
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Card Title": [
+     72,
+     572.59,
+     240,
+     67.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price": [
+     72,
+     679.8,
+     240,
+     45.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price/Container": [
+     145.45,
+     686.8,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options": [
+     72,
+     765.39,
+     240,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option": [
+     72,
+     765.39,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#2": [
+     72,
+     806.59,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#3": [
+     72,
+     847.8,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#4": [
+     72,
+     889,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1": [
+     72,
+     954.2,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle A": [
+     220.53,
+     971.7,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle B": [
+     56,
+     971.7,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2": [
+     360,
+     528,
+     304,
+     509.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Card Title": [
+     392,
+     560,
+     240,
+     92.41
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price": [
+     392,
+     692.41,
+     240,
+     45.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price/Container": [
+     464.45,
+     699.41,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options": [
+     392,
+     778,
+     240,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option": [
+     392,
+     778,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#2": [
+     392,
+     819.2,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#3": [
+     392,
+     860.41,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#4": [
+     392,
+     901.61,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1": [
+     392,
+     966.81,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle A": [
+     540.53,
+     984.31,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle B": [
+     376,
+     984.31,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3": [
+     680,
+     540.59,
+     304,
+     484.61
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Card Title": [
+     712,
+     572.59,
+     240,
+     67.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price": [
+     712,
+     679.8,
+     240,
+     45.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price/Container": [
+     804.94,
+     686.8,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options": [
+     712,
+     765.39,
+     240,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option": [
+     712,
+     765.39,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#2": [
+     712,
+     806.59,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#3": [
+     712,
+     847.8,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#4": [
+     712,
+     889,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1": [
+     712,
+     954.2,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle A": [
+     860.53,
+     971.7,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle B": [
+     696,
+     971.7,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "45.5938px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      72,
+      679.8,
+      240,
+      45.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      72,
+      679.8,
+      23.48,
+      45.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      72,
+      679.8,
+      23.48,
+      45.59
+     ],
+     "text": "$",
+     "font": "500 38px/45.6px Inter",
+     "ls": "-1.52px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      97.48,
+      679.8,
+      45.97,
+      45.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      97.48,
+      679.8,
+      45.97,
+      45.59
+     ],
+     "text": "49",
+     "font": "500 38px/45.6px Inter",
+     "ls": "-1.52px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      145.45,
+      686.8,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      149.45,
+      690.8,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      149.45,
+      690.8,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -40.13,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -40.13,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      765.39,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      806.59,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      847.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      889,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      778,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      819.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      860.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      901.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      765.39,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      806.59,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      847.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      889,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "yearly": {
+   "section": [
+    1024,
+    1037.81
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     1024,
+     1037.81
+    ],
+    "Pricing/Container": [
+     0,
+     80,
+     1024,
+     957.81
+    ],
+    "Pricing/Container/Text": [
+     32,
+     80,
+     960,
+     288
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     468.89,
+     80,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     40,
+     216.8,
+     944,
+     151.2
+    ],
+    "Pricing/Container/Yearly": [
+     32,
+     448,
+     960,
+     589.81
+    ],
+    "Pricing/Container/Yearly/Toggle On": [
+     363.8,
+     448,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base": [
+     452.05,
+     448,
+     56,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base/Toggle": [
+     480.05,
+     452,
+     24,
+     24
+    ],
+    "Pricing/Container/Yearly/Cards": [
+     40,
+     528,
+     944,
+     509.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly": [
+     40,
+     540.59,
+     304,
+     484.61
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Card Title": [
+     72,
+     572.59,
+     240,
+     67.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price": [
+     72,
+     679.8,
+     240,
+     45.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price/Container": [
+     143.45,
+     686.8,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options": [
+     72,
+     765.39,
+     240,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option": [
+     72,
+     765.39,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#2": [
+     72,
+     806.59,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#3": [
+     72,
+     847.8,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#4": [
+     72,
+     889,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1": [
+     72,
+     954.2,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle A": [
+     220.53,
+     971.7,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle B": [
+     56,
+     971.7,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2": [
+     360,
+     528,
+     304,
+     509.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Card Title": [
+     392,
+     560,
+     240,
+     92.41
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price": [
+     392,
+     692.41,
+     240,
+     45.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price/Container": [
+     453.45,
+     699.41,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options": [
+     392,
+     778,
+     240,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option": [
+     392,
+     778,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#2": [
+     392,
+     819.2,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#3": [
+     392,
+     860.41,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#4": [
+     392,
+     901.61,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1": [
+     392,
+     966.81,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle A": [
+     540.53,
+     984.31,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle B": [
+     376,
+     984.31,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3": [
+     680,
+     540.59,
+     304,
+     484.61
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Card Title": [
+     712,
+     572.59,
+     240,
+     67.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price": [
+     712,
+     679.8,
+     240,
+     45.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price/Container": [
+     796.94,
+     686.8,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options": [
+     712,
+     765.39,
+     240,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option": [
+     712,
+     765.39,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#2": [
+     712,
+     806.59,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#3": [
+     712,
+     847.8,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#4": [
+     712,
+     889,
+     240,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1": [
+     712,
+     954.2,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle A": [
+     860.53,
+     971.7,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle B": [
+     696,
+     971.7,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$39/month",
+    "$71/month",
+    "$183/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "45.5938px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      72,
+      679.8,
+      240,
+      45.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      72,
+      679.8,
+      23.48,
+      45.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      72,
+      679.8,
+      23.48,
+      45.59
+     ],
+     "text": "$",
+     "font": "500 38px/45.6px Inter",
+     "ls": "-1.52px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      97.48,
+      679.8,
+      43.97,
+      45.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      97.48,
+      679.8,
+      43.97,
+      45.59
+     ],
+     "text": "39",
+     "font": "500 38px/45.6px Inter",
+     "ls": "-1.52px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      143.45,
+      686.8,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "transform: none; transform-origin: 50% 50% 0px;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      147.45,
+      690.8,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; transform-origin: 50% 50% 0px;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      147.45,
+      690.8,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      79.88,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      79.88,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      765.39,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      806.59,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      847.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      72,
+      889,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      778,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      819.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      860.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      392,
+      901.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      765.39,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      806.59,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      847.8,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      712,
+      889,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "monthlyAgain": {
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ]
+  },
+  "fwd": {
+   "log": [
+    [
+     18.5,
+     3,
+     "div",
+     "|1|none|none|97.5|46.0|599.9|45.6",
+     "|1|none|none|97.5|44.0|599.9|45.6"
+    ],
+    [
+     18.5,
+     4,
+     "h2",
+     "49|1|none|none|97.5|46.0|599.9|45.6",
+     "39|1|none|none|97.5|44.0|599.9|45.6"
+    ],
+    [
+     18.5,
+     5,
+     "Container",
+     "|1|none|none|145.5|72.0|606.9|38.6",
+     "|1|none|none|143.5|72.0|606.9|38.6"
+    ],
+    [
+     18.5,
+     6,
+     "div",
+     "|1|none|none|149.5|64.0|610.9|30.6",
+     "|1|none|none|147.5|64.0|610.9|30.6"
+    ],
+    [
+     18.5,
+     7,
+     "p",
+     "/ month|1|none|none|149.5|64.0|610.9|30.6",
+     "/ month|1|none|none|147.5|64.0|610.9|30.6"
+    ],
+    [
+     18.5,
+     11,
+     "div",
+     "|1|none|none|417.5|45.0|612.5|45.6",
+     "|1|none|none|417.5|34.0|612.5|45.6"
+    ],
+    [
+     18.5,
+     12,
+     "h2",
+     "89|1|none|none|417.5|45.0|612.5|45.6",
+     "71|1|none|none|417.5|34.0|612.5|45.6"
+    ],
+    [
+     18.5,
+     13,
+     "Container",
+     "|1|none|none|464.5|72.0|619.5|38.6",
+     "|1|none|none|453.5|72.0|619.5|38.6"
+    ],
+    [
+     18.5,
+     14,
+     "div",
+     "|1|none|none|468.5|64.0|623.5|30.6",
+     "|1|none|none|457.5|64.0|623.5|30.6"
+    ],
+    [
+     18.5,
+     15,
+     "p",
+     "/ month|1|none|none|468.5|64.0|623.5|30.6",
+     "/ month|1|none|none|457.5|64.0|623.5|30.6"
+    ],
+    [
+     18.5,
+     19,
+     "div",
+     "|1|none|none|737.5|65.5|599.9|45.6",
+     "|1|none|none|737.5|57.5|599.9|45.6"
+    ],
+    [
+     18.5,
+     20,
+     "h2",
+     "229|1|none|none|737.5|65.5|599.9|45.6",
+     "183|1|none|none|737.5|57.5|599.9|45.6"
+    ],
+    [
+     18.5,
+     21,
+     "Container",
+     "|1|none|none|804.9|72.0|606.9|38.6",
+     "|1|none|none|796.9|72.0|606.9|38.6"
+    ],
+    [
+     18.5,
+     22,
+     "div",
+     "|1|none|none|808.9|64.0|610.9|30.6",
+     "|1|none|none|800.9|64.0|610.9|30.6"
+    ],
+    [
+     18.5,
+     23,
+     "p",
+     "/ month|1|none|none|808.9|64.0|610.9|30.6",
+     "/ month|1|none|none|800.9|64.0|610.9|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  },
+  "back": {
+   "log": [
+    [
+     21.8,
+     3,
+     "div",
+     "|1|none|none|97.5|44.0|599.9|45.6",
+     "|1|none|none|97.5|46.0|599.9|45.6"
+    ],
+    [
+     21.8,
+     4,
+     "h2",
+     "39|1|none|none|97.5|44.0|599.9|45.6",
+     "49|1|none|none|97.5|46.0|599.9|45.6"
+    ],
+    [
+     21.8,
+     5,
+     "Container",
+     "|1|none|none|143.5|72.0|606.9|38.6",
+     "|1|none|none|145.5|72.0|606.9|38.6"
+    ],
+    [
+     21.8,
+     6,
+     "div",
+     "|1|none|none|147.5|64.0|610.9|30.6",
+     "|1|none|none|149.5|64.0|610.9|30.6"
+    ],
+    [
+     21.8,
+     7,
+     "p",
+     "/ month|1|none|none|147.5|64.0|610.9|30.6",
+     "/ month|1|none|none|149.5|64.0|610.9|30.6"
+    ],
+    [
+     21.8,
+     11,
+     "div",
+     "|1|none|none|417.5|34.0|612.5|45.6",
+     "|1|none|none|417.5|45.0|612.5|45.6"
+    ],
+    [
+     21.8,
+     12,
+     "h2",
+     "71|1|none|none|417.5|34.0|612.5|45.6",
+     "89|1|none|none|417.5|45.0|612.5|45.6"
+    ],
+    [
+     21.8,
+     13,
+     "Container",
+     "|1|none|none|453.5|72.0|619.5|38.6",
+     "|1|none|none|464.5|72.0|619.5|38.6"
+    ],
+    [
+     21.8,
+     14,
+     "div",
+     "|1|none|none|457.5|64.0|623.5|30.6",
+     "|1|none|none|468.5|64.0|623.5|30.6"
+    ],
+    [
+     21.8,
+     15,
+     "p",
+     "/ month|1|none|none|457.5|64.0|623.5|30.6",
+     "/ month|1|none|none|468.5|64.0|623.5|30.6"
+    ],
+    [
+     21.8,
+     19,
+     "div",
+     "|1|none|none|737.5|57.5|599.9|45.6",
+     "|1|none|none|737.5|65.5|599.9|45.6"
+    ],
+    [
+     21.8,
+     20,
+     "h2",
+     "183|1|none|none|737.5|57.5|599.9|45.6",
+     "229|1|none|none|737.5|65.5|599.9|45.6"
+    ],
+    [
+     21.8,
+     21,
+     "Container",
+     "|1|none|none|796.9|72.0|606.9|38.6",
+     "|1|none|none|804.9|72.0|606.9|38.6"
+    ],
+    [
+     21.8,
+     22,
+     "div",
+     "|1|none|none|800.9|64.0|610.9|30.6",
+     "|1|none|none|808.9|64.0|610.9|30.6"
+    ],
+    [
+     21.8,
+     23,
+     "p",
+     "/ month|1|none|none|800.9|64.0|610.9|30.6",
+     "/ month|1|none|none|808.9|64.0|610.9|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  }
+ },
+ "390x844": {
+  "monthly": {
+   "section": [
+    390,
+    2056.64
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     390,
+     2056.64
+    ],
+    "Pricing/Container": [
+     0,
+     80,
+     390,
+     1976.64
+    ],
+    "Pricing/Container/Text": [
+     8,
+     80,
+     374,
+     351.2
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     151.89,
+     80,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     16,
+     216.8,
+     358,
+     214.41
+    ],
+    "Pricing/Container/Monthly": [
+     8,
+     511.2,
+     374,
+     1545.44
+    ],
+    "Pricing/Container/Monthly/Toggle Off": [
+     46.8,
+     511.2,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base": [
+     135.05,
+     511.2,
+     56,
+     32
+    ],
+    "Pricing/Container/Monthly/Toggle Off/Base/Toggle": [
+     139.05,
+     515.2,
+     24,
+     24
+    ],
+    "Pricing/Container/Monthly/Cards": [
+     16,
+     591.2,
+     358,
+     1465.44
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly": [
+     16,
+     591.2,
+     358,
+     477.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Card Title": [
+     48,
+     623.2,
+     294,
+     65.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price": [
+     48,
+     728.41,
+     294,
+     40.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Price/Container": [
+     113.92,
+     730.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options": [
+     48,
+     809.2,
+     294,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option": [
+     48,
+     809.2,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#2": [
+     48,
+     850.41,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#3": [
+     48,
+     891.61,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Options/Option#4": [
+     48,
+     932.81,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1": [
+     48,
+     998.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle A": [
+     196.53,
+     1015.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly/Variant 1/Circle B": [
+     32,
+     1015.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2": [
+     16,
+     1085.02,
+     358,
+     477.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Card Title": [
+     48,
+     1117.02,
+     294,
+     65.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price": [
+     48,
+     1222.22,
+     294,
+     40.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Price/Container": [
+     112.92,
+     1224.42,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options": [
+     48,
+     1303.02,
+     294,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option": [
+     48,
+     1303.02,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#2": [
+     48,
+     1344.22,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#3": [
+     48,
+     1385.42,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Options/Option#4": [
+     48,
+     1426.63,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1": [
+     48,
+     1491.83,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle A": [
+     196.53,
+     1509.33,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#2/Variant 1/Circle B": [
+     32,
+     1509.33,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3": [
+     16,
+     1578.83,
+     358,
+     477.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Card Title": [
+     48,
+     1610.83,
+     294,
+     65.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price": [
+     48,
+     1716.03,
+     294,
+     40.8
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Price/Container": [
+     129.56,
+     1718.23,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options": [
+     48,
+     1796.83,
+     294,
+     148.81
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option": [
+     48,
+     1796.83,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#2": [
+     48,
+     1838.03,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#3": [
+     48,
+     1879.23,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Options/Option#4": [
+     48,
+     1920.44,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1": [
+     48,
+     1985.64,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle A": [
+     196.53,
+     2003.14,
+     4,
+     4
+    ],
+    "Pricing/Container/Monthly/Cards/Monthly#3/Variant 1/Circle B": [
+     32,
+     2003.14,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "40.7969px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      48,
+      728.41,
+      294,
+      40.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      48,
+      728.41,
+      19.64,
+      40.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      48,
+      728.41,
+      19.64,
+      40.8
+     ],
+     "text": "$",
+     "font": "500 34px/40.8px Inter",
+     "ls": "-1.36px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      69.64,
+      728.41,
+      42.28,
+      40.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      69.64,
+      728.41,
+      42.28,
+      40.8
+     ],
+     "text": "49",
+     "font": "500 34px/40.8px Inter",
+     "ls": "-1.36px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      113.92,
+      730.61,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      117.92,
+      734.61,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      117.92,
+      734.61,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -39.94,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      -39.94,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      809.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      850.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      891.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      932.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1303.02,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1344.22,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1385.42,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1426.63,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1796.83,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1838.03,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1879.23,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1920.44,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "yearly": {
+   "section": [
+    390,
+    2056.64
+   ],
+   "layers": {
+    "Pricing": [
+     0,
+     0,
+     390,
+     2056.64
+    ],
+    "Pricing/Container": [
+     0,
+     80,
+     390,
+     1976.64
+    ],
+    "Pricing/Container/Text": [
+     8,
+     80,
+     374,
+     351.2
+    ],
+    "Pricing/Container/Text/Section Icon": [
+     151.89,
+     80,
+     86.2,
+     104.8
+    ],
+    "Pricing/Container/Text/Headline": [
+     16,
+     216.8,
+     358,
+     214.41
+    ],
+    "Pricing/Container/Yearly": [
+     8,
+     511.2,
+     374,
+     1545.44
+    ],
+    "Pricing/Container/Yearly/Toggle On": [
+     46.8,
+     511.2,
+     296.39,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base": [
+     135.05,
+     511.2,
+     56,
+     32
+    ],
+    "Pricing/Container/Yearly/Toggle On/Base/Toggle": [
+     163.05,
+     515.2,
+     24,
+     24
+    ],
+    "Pricing/Container/Yearly/Cards": [
+     16,
+     591.2,
+     358,
+     1465.44
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly": [
+     16,
+     591.2,
+     358,
+     477.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Card Title": [
+     48,
+     623.2,
+     294,
+     65.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price": [
+     48,
+     728.41,
+     294,
+     40.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Price/Container": [
+     112.92,
+     730.61,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options": [
+     48,
+     809.2,
+     294,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option": [
+     48,
+     809.2,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#2": [
+     48,
+     850.41,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#3": [
+     48,
+     891.61,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Options/Option#4": [
+     48,
+     932.81,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1": [
+     48,
+     998.02,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle A": [
+     196.53,
+     1015.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly/Variant 1/Circle B": [
+     32,
+     1015.52,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2": [
+     16,
+     1085.02,
+     358,
+     477.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Card Title": [
+     48,
+     1117.02,
+     294,
+     65.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price": [
+     48,
+     1222.22,
+     294,
+     40.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Price/Container": [
+     101.92,
+     1224.42,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options": [
+     48,
+     1303.02,
+     294,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option": [
+     48,
+     1303.02,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#2": [
+     48,
+     1344.22,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#3": [
+     48,
+     1385.42,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Options/Option#4": [
+     48,
+     1426.63,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1": [
+     48,
+     1491.83,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle A": [
+     196.53,
+     1509.33,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#2/Variant 1/Circle B": [
+     32,
+     1509.33,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3": [
+     16,
+     1578.83,
+     358,
+     477.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Card Title": [
+     48,
+     1610.83,
+     294,
+     65.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price": [
+     48,
+     1716.03,
+     294,
+     40.8
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Price/Container": [
+     125.56,
+     1718.23,
+     72,
+     38.59
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options": [
+     48,
+     1796.83,
+     294,
+     148.81
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option": [
+     48,
+     1796.83,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#2": [
+     48,
+     1838.03,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#3": [
+     48,
+     1879.23,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Options/Option#4": [
+     48,
+     1920.44,
+     294,
+     25.2
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1": [
+     48,
+     1985.64,
+     168.53,
+     39
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle A": [
+     196.53,
+     2003.14,
+     4,
+     4
+    ],
+    "Pricing/Container/Yearly/Cards/Yearly#3/Variant 1/Circle B": [
+     32,
+     2003.14,
+     4,
+     4
+    ]
+   },
+   "prices": [
+    "$39/month",
+    "$71/month",
+    "$183/month"
+   ],
+   "rowCss": {
+    "display": "flex",
+    "gap": "2px",
+    "align": "flex-end",
+    "justify": "flex-start",
+    "height": "40.7969px",
+    "padding": "0px"
+   },
+   "rowTree": [
+    {
+     "d": 0,
+     "name": "Price",
+     "tag": "div",
+     "cls": "framer-1y4yu2x",
+     "rect": [
+      48,
+      728.41,
+      294,
+      40.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "opacity: 1;"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1iw3ncw",
+     "rect": [
+      48,
+      728.41,
+      19.64,
+      40.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      48,
+      728.41,
+      19.64,
+      40.8
+     ],
+     "text": "$",
+     "font": "500 34px/40.8px Inter",
+     "ls": "-1.36px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-1qttyx3",
+     "rect": [
+      69.64,
+      728.41,
+      41.28,
+      40.8
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--extracted-1of0zx5: var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decor"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "h2",
+     "cls": "framer-text framer-styles-preset-19py25s",
+     "rect": [
+      69.64,
+      728.41,
+      41.28,
+      40.8
+     ],
+     "text": "39",
+     "font": "500 34px/40.8px Inter",
+     "ls": "-1.36px",
+     "color": "rgb(127, 166, 155)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-text-color:var(--extracted-1of0zx5, var(--token-534ca2ef-c37b-4157-bbaa-6f2919ef42ae, rgb(127, 166, 155)))"
+    },
+    {
+     "d": 1,
+     "name": "Container",
+     "tag": "div",
+     "cls": "framer-av55wu",
+     "rect": [
+      112.92,
+      730.61,
+      72,
+      38.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "normal",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "transform: none; transform-origin: 50% 50% 0px;"
+    },
+    {
+     "d": 2,
+     "name": null,
+     "tag": "div",
+     "cls": "framer-okkvn4",
+     "rect": [
+      116.92,
+      734.61,
+      64,
+      30.59
+     ],
+     "font": "400 12px/normal sans-serif",
+     "ls": "normal",
+     "color": "rgb(0, 0, 238)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal",
+     "style": "--framer-paragraph-spacing: 0px; transform: none; transform-origin: 50% 50% 0px;"
+    },
+    {
+     "d": 3,
+     "name": null,
+     "tag": "p",
+     "cls": "framer-text framer-styles-preset-33sk3i",
+     "rect": [
+      116.92,
+      734.61,
+      64,
+      30.59
+     ],
+     "text": "/ month",
+     "font": "400 18px/30.6px Inter",
+     "ls": "normal",
+     "color": "rgb(83, 89, 86)",
+     "ws": "pre",
+     "fv": "normal",
+     "ff": "normal"
+    }
+   ],
+   "headlineKids": [
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      105.06,
+      0,
+      0
+     ],
+     "display": "contents"
+    },
+    {
+     "name": null,
+     "tag": "div",
+     "rect": [
+      0,
+      105.06,
+      0,
+      0
+     ],
+     "display": "contents"
+    }
+   ],
+   "svgs": [
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      809.2,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      850.41,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      891.61,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      932.81,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1303.02,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1344.22,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1385.42,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1426.63,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1796.83,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1838.03,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1879.23,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    },
+    {
+     "inHeadline": false,
+     "parent": "Option",
+     "rect": [
+      48,
+      1920.44,
+      24,
+      24
+     ],
+     "paths": 1,
+     "visible": true,
+     "strokes": []
+    }
+   ],
+   "nf": 0
+  },
+  "monthlyAgain": {
+   "prices": [
+    "$49/month",
+    "$89/month",
+    "$229/month"
+   ]
+  },
+  "fwd": {
+   "log": [
+    [
+     16.3,
+     3,
+     "div",
+     "|1|none|none|69.6|42.3|623.3|40.8",
+     "|1|none|none|69.6|41.3|623.3|40.8"
+    ],
+    [
+     16.3,
+     4,
+     "h2",
+     "49|1|none|none|69.6|42.3|623.3|40.8",
+     "39|1|none|none|69.6|41.3|623.3|40.8"
+    ],
+    [
+     16.3,
+     5,
+     "Container",
+     "|1|none|none|113.9|72.0|625.5|38.6",
+     "|1|none|none|112.9|72.0|625.5|38.6"
+    ],
+    [
+     16.3,
+     6,
+     "div",
+     "|1|none|none|117.9|64.0|629.5|30.6",
+     "|1|none|none|116.9|64.0|629.5|30.6"
+    ],
+    [
+     16.3,
+     7,
+     "p",
+     "/ month|1|none|none|117.9|64.0|629.5|30.6",
+     "/ month|1|none|none|116.9|64.0|629.5|30.6"
+    ],
+    [
+     16.3,
+     11,
+     "div",
+     "|1|none|none|69.6|41.3|1117.2|40.8",
+     "|1|none|none|69.6|30.3|1117.2|40.8"
+    ],
+    [
+     16.3,
+     12,
+     "h2",
+     "89|1|none|none|69.6|41.3|1117.2|40.8",
+     "71|1|none|none|69.6|30.3|1117.2|40.8"
+    ],
+    [
+     16.3,
+     13,
+     "Container",
+     "|1|none|none|112.9|72.0|1119.4|38.6",
+     "|1|none|none|101.9|72.0|1119.4|38.6"
+    ],
+    [
+     16.3,
+     14,
+     "div",
+     "|1|none|none|116.9|64.0|1123.4|30.6",
+     "|1|none|none|105.9|64.0|1123.4|30.6"
+    ],
+    [
+     16.3,
+     15,
+     "p",
+     "/ month|1|none|none|116.9|64.0|1123.4|30.6",
+     "/ month|1|none|none|105.9|64.0|1123.4|30.6"
+    ],
+    [
+     16.3,
+     19,
+     "div",
+     "|1|none|none|69.6|57.9|1611.0|40.8",
+     "|1|none|none|69.6|53.9|1611.0|40.8"
+    ],
+    [
+     16.3,
+     20,
+     "h2",
+     "229|1|none|none|69.6|57.9|1611.0|40.8",
+     "183|1|none|none|69.6|53.9|1611.0|40.8"
+    ],
+    [
+     16.3,
+     21,
+     "Container",
+     "|1|none|none|129.6|72.0|1613.2|38.6",
+     "|1|none|none|125.6|72.0|1613.2|38.6"
+    ],
+    [
+     16.3,
+     22,
+     "div",
+     "|1|none|none|133.6|64.0|1617.2|30.6",
+     "|1|none|none|129.6|64.0|1617.2|30.6"
+    ],
+    [
+     16.3,
+     23,
+     "p",
+     "/ month|1|none|none|133.6|64.0|1617.2|30.6",
+     "/ month|1|none|none|129.6|64.0|1617.2|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  },
+  "back": {
+   "log": [
+    [
+     20.7,
+     3,
+     "div",
+     "|1|none|none|69.6|41.3|623.3|40.8",
+     "|1|none|none|69.6|42.3|623.3|40.8"
+    ],
+    [
+     20.7,
+     4,
+     "h2",
+     "39|1|none|none|69.6|41.3|623.3|40.8",
+     "49|1|none|none|69.6|42.3|623.3|40.8"
+    ],
+    [
+     20.7,
+     5,
+     "Container",
+     "|1|none|none|112.9|72.0|625.5|38.6",
+     "|1|none|none|113.9|72.0|625.5|38.6"
+    ],
+    [
+     20.7,
+     6,
+     "div",
+     "|1|none|none|116.9|64.0|629.5|30.6",
+     "|1|none|none|117.9|64.0|629.5|30.6"
+    ],
+    [
+     20.7,
+     7,
+     "p",
+     "/ month|1|none|none|116.9|64.0|629.5|30.6",
+     "/ month|1|none|none|117.9|64.0|629.5|30.6"
+    ],
+    [
+     20.7,
+     11,
+     "div",
+     "|1|none|none|69.6|30.3|1117.2|40.8",
+     "|1|none|none|69.6|41.3|1117.2|40.8"
+    ],
+    [
+     20.7,
+     12,
+     "h2",
+     "71|1|none|none|69.6|30.3|1117.2|40.8",
+     "89|1|none|none|69.6|41.3|1117.2|40.8"
+    ],
+    [
+     20.7,
+     13,
+     "Container",
+     "|1|none|none|101.9|72.0|1119.4|38.6",
+     "|1|none|none|112.9|72.0|1119.4|38.6"
+    ],
+    [
+     20.7,
+     14,
+     "div",
+     "|1|none|none|105.9|64.0|1123.4|30.6",
+     "|1|none|none|116.9|64.0|1123.4|30.6"
+    ],
+    [
+     20.7,
+     15,
+     "p",
+     "/ month|1|none|none|105.9|64.0|1123.4|30.6",
+     "/ month|1|none|none|116.9|64.0|1123.4|30.6"
+    ],
+    [
+     20.7,
+     19,
+     "div",
+     "|1|none|none|69.6|53.9|1611.0|40.8",
+     "|1|none|none|69.6|57.9|1611.0|40.8"
+    ],
+    [
+     20.7,
+     20,
+     "h2",
+     "183|1|none|none|69.6|53.9|1611.0|40.8",
+     "229|1|none|none|69.6|57.9|1611.0|40.8"
+    ],
+    [
+     20.7,
+     21,
+     "Container",
+     "|1|none|none|125.6|72.0|1613.2|38.6",
+     "|1|none|none|129.6|72.0|1613.2|38.6"
+    ],
+    [
+     20.7,
+     22,
+     "div",
+     "|1|none|none|129.6|64.0|1617.2|30.6",
+     "|1|none|none|133.6|64.0|1617.2|30.6"
+    ],
+    [
+     20.7,
+     23,
+     "p",
+     "/ month|1|none|none|129.6|64.0|1617.2|30.6",
+     "/ month|1|none|none|133.6|64.0|1617.2|30.6"
+    ]
+   ],
+   "anims": [],
+   "animFrames": 0
+  }
+ }
+}

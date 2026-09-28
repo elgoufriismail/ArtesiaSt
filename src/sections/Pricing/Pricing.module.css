@@ -86,10 +86,13 @@
 .cardTitle { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; overflow: hidden; }
 .cardTitle h3, .cardTitle p { margin: 0; }
 .planName { color: var(--c-ink); }
-.price { display: flex; justify-content: flex-start; align-items: flex-end; gap: 10px; width: 100%; }
-.priceNum { position: relative; flex: none; height: 48px; }
-.flowWrap { white-space: pre; }
-.suffixWrap { flex: none; }
+/* price row (live original, re-measured 2026-09-28): "$" + amount as two sans-H2 texts (48/44/38/34, green), suffix
+   in a 4 px-padded Container; gap 2, bottom-aligned → 57.6 / 52.8 / 45.6 / 40.8 px tall */
+.price { display: flex; justify-content: flex-start; align-items: flex-end; gap: 2px; width: 100%; }
+.priceText { display: flex; flex: none; white-space: pre; }
+.priceGlyph { margin: 0; white-space: pre; color: var(--c-green); }
+.suffixBox { display: flex; flex: none; align-items: center; padding: 4px; }
+.suffixWrap { display: flex; flex: none; white-space: pre; }
 .suffix { margin: 0; white-space: pre; }
 .options { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; overflow: hidden; }
 .option { display: flex; justify-content: flex-start; align-items: flex-start; gap: 8px; width: 100%; overflow: hidden; }

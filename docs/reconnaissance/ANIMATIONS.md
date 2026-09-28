@@ -23,7 +23,7 @@ Viewports sampled for motion: **1440×900 (desktop), 1024×768 (tablet), 390×84
 | **Web Animations API** | ✅ (via Framer "optimized appear") | first-paint appear animations are started with `element.animate()` from the inline appear script, then handed to Framer Motion |
 | **GSAP 3.12.5 + ScrollTrigger** | ✅ | only inside the "Animator Basic With Scroll" code component: SVG path draw via `stroke-dashoffset`, `scrub: 0.5` |
 | **Lenis** (Framer "Smooth Scroll" code component) | ✅ | global smooth scroll: `smoothWheel:true`, `duration = intensity/10 = 2.0`, `anchors:true`, `autoRaf`, `syncTouch:false` (native touch on phones) |
-| **NumberFlow** (`number-flow-react` web component) | ✅ | pricing digits roll between monthly / yearly |
+| **NumberFlow** (`number-flow-react` web component) | ✅ | pricing digits roll between monthly / yearly (snapshot 2026-09-22; **removed from the live site 2026-09-28**, see SOURCE-DRIFT.md) |
 | Custom React code components | ✅ | `TextScrollReveal` (word opacity by scroll), `ImageParallaxVerticalNoize` (image translateY by scroll + noise), `TextIndent` (loaded, not visibly used on the homepage) |
 | CSS transitions / keyframes | minimal | no authored CSS keyframes on the page; all motion is JS-driven (Framer adds `transition` only for its own FLIP helpers) |
 | WebGL / Three.js / Lottie / canvas | ❌ none | — |
@@ -230,6 +230,7 @@ overlapping start). Parallax "sinking" background. Reversible. Desktop + tablet;
 > Step 9 measurement: the draw window is the path's own bbox crossing 50 % (68 px, linear, scrub 0.5); the
 > price roll is NumberFlow (1 s spring transform, 500 ms opacity) plus a Framer layout FLIP (spring 0.6 s); the
 > switch uses springs 0.8 s (to Yearly) / 1.2 s (to Monthly). Details: IMPLEMENTATION_PLAN.md Step 9.
+> _(Superseded 2026-09-28: the live original dropped NumberFlow — prices swap instantly as plain text; see SOURCE-DRIFT.md.)_
 
 Hand-drawn green loop under the Pricing headline (viewBox 310×80): dashoffset 622 → 0 between scrollY
 ≈ 7600 and ≈ 7800 (short draw, scrub 0.5). Desktop only.

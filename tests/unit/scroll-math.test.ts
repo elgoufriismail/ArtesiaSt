@@ -9,10 +9,13 @@ const track = (name: string) => rec.elements.filter((e: { name: string }) => e.n
 const num = (s: string, re: RegExp) => { const m = s.match(re); return m ? Number(m[1]) : NaN; };
 const down = (t: [number, string][]) => { const out: [number, string][] = []; for (const r of t) { if (out.length && r[0] < out.at(-1)![0]) break; out.push(r); } return out; };
 
+// big-quote marker: layout top 9340.4 in the live original (re-recorded 2026-09-28; 9336 before its Pricing grew 4.9 px)
+const BIG_QUOTE_TOP = 9340.4;
+
 test('B11 fold: rotateX = -90·targetProgress(big-quote, 1) within 0.2°', () => {
   for (const [y, v] of down(track('Shape Container'))) {
     const meas = /rotateX/.test(v) ? num(v, /rotateX\((-?[\d.]+)deg/) : 0;
-    assert.ok(Math.abs(meas - -90 * targetProgress(9336, 900, y, 900, 1)) < 0.2, `y=${y}`);
+    assert.ok(Math.abs(meas - -90 * targetProgress(BIG_QUOTE_TOP, 900, y, 900, 1)) < 0.2, `y=${y}`);
   }
 });
 
@@ -24,7 +27,7 @@ test('B2 portrait fade: opacity = 1 - targetProgress(Hero, 0) within 0.005', () 
 
 test('B5 waves: sequenceValue([0,1,0]) within 0.005', () => {
   for (const [y, v] of down(track('Waves Container'))) {
-    const pred = sequenceValue([0, 1, 0], [{ docTop: 4592, height: 900, threshold: 1 }, { docTop: 9336, height: 900, threshold: 1 }], y, 900);
+    const pred = sequenceValue([0, 1, 0], [{ docTop: 4592, height: 900, threshold: 1 }, { docTop: BIG_QUOTE_TOP, height: 900, threshold: 1 }], y, 900);
     assert.ok(Math.abs(num(v, /opacity:([\d.e-]+)/) - pred) < 0.005, `y=${y}`);
   }
 });

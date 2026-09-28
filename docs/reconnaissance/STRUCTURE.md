@@ -92,7 +92,7 @@ anchor the switch links to), `toggle-on-animation` (y≈1846), `story-a` (1800 t
 | Social icon `framer-19gd0gr` | Desktop, hover (opacity) | ready, book, footer |
 | Pricing switch `framer-1uwbx76` / `wx4344` | Toggle Off (Monthly) / On (Yearly) | Pricing |
 | Pricing card `framer-15gt6mo` | Monthly / Yearly, hover (border) | Pricing |
-| Price `number-flow-react` (NumberFlow web component) | — | Pricing |
+| Price `number-flow-react` (NumberFlow web component) — snapshot 2026-09-22; live since 2026-09-28: two rich-text blocks + suffix `Container` (SOURCE-DRIFT.md) | — | Pricing |
 | Article card `framer-et0r4d` | Desktop (+ middle offset) | Journal |
 | Counter `framer-zbc97v` | Desktop / Tablet / Phone | Numbers |
 | FAQ list `framer-pmeiww` + item `framer-ltb46s` (Open) / `kvw35u` (Closed) | Open/Closed | FAQ |

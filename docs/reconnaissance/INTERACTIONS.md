@@ -38,6 +38,9 @@ no drag/swipe carousels, no tabs, no modals/lightboxes, no dropdown menus (other
 | **Menu pill (tablet/phone)** | "Menu" pill (green, dot), page scrollable | tap | white full-screen overlay: panel reveals top→down (~0–300 ms); links About / Services / Stories / Journal (uppercase, centred, ~84 px apart) + green "Book a session" pill fade in together (opacity 0 → 1 between ≈300 ms and ≈800 ms, mounted 20 px low and snapped); pill label **"Menu" → "Close"**; `html { overflow: hidden }` (scroll lock) |
 | Close pill | overlay open | tap | overlay collapses (≈400 ms), label back to "Menu", scroll unlocked |
 
+> Pricing switch: since 2026-09-28 the live original swaps the prices instantly (no NumberFlow roll, no FLIP); knob starts with the swap, colours 2 frames later — see SOURCE-DRIFT.md.
+
+
 ## 3. Forms
 
 Book-a-Session form (Framer native form): 3 text inputs (name*, email*, phone), select "Preferred Pronouns *",

@@ -80,7 +80,6 @@
 /* Non-preset styles measured on specific elements */
 .t-logo        { font-family: var(--f-serif); font-size: 26px; line-height: 1.4; letter-spacing: 0.07em; }
 .t-counter     { font-family: var(--f-sans); font-size: 72px; font-weight: 600; line-height: 1; letter-spacing: -0.04em; color: var(--c-green); }
-.t-price       { font-family: var(--f-sans); font-size: 48px; font-weight: 500; line-height: 1; letter-spacing: -0.04em; color: var(--c-green); }
 .t-statement   { font-family: var(--f-sans); font-size: 44px; font-weight: 500; line-height: 1.2; letter-spacing: -0.03em; color: var(--c-ink); }
 .t-accent      { color: var(--c-green); }
 

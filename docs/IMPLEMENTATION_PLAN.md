@@ -41,7 +41,7 @@ app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()
       │  ├─ <HowItWorks/>         "How It Works"    markers how-it-works, step-2/3-trigger;
       │  │                                            sticky RollingNumber, DrawnPath          B6 B7 B9 · #5 #6 #13
       │  ├─ <PathSection/>        "Ready to find your path?"  RatingWidget, SocialRow        B1 B9
-      │  ├─ <Pricing/>            "Pricing"         switch, 3 cards (NumberFlow prices), scribble  B14 · #8 #13
+      │  ├─ <Pricing/>            "Pricing"         switch, 3 cards (plain-text prices), scribble  B14 · #8 #13
       │  ├─ <TextSection index=1/> "Text Section"                                             B9
       │  ├─ <Quote/>              "Big Quote"       marker big-quote; ParallaxImage, arc, lines  B4 B11 · #7 #13
       │  ├─ <Story variant="b"/>  "Story B"         marker story-b
@@ -87,7 +87,7 @@ src/
     navigation/   navTheme
     menu/         mobileMenu
     faq/          accordion
-    pricing/      pricingSwitch · layoutFlip
+    pricing/      pricingSwitch
     svg/          drawPath
     sequences/    heroSequence · balanceSequence · quoteFold · storyDrift · wavesBackground
   hooks/          useGsap · useBreakpoint · useLenis · useScrollLock · useDisclosure
@@ -116,7 +116,7 @@ original layers, owns its markers, declares `data-nav-theme`, and wires animatio
 | Story (a/b) | 553 · 111 · 664 split; images 389×597 + 332×497 → stacked, image 2 hidden on phone | imageParallax 300/100, storyDrift (B12), reveal |
 | HowItWorks | display H2 + lead; steps with 450px spacers; sticky 540×900 number column → no number/spacers on phone | rollingNumber (B7), drawPath (B6), reveal, entrance (lead) |
 | PathSection | text left, rating/contact/socials right → stacked | entrance (rating), reveal |
-| Pricing | 3 cards (radius 16) → stacked; switch 56×32 | pricingSwitch + NumberFlow + layoutFlip (#8), drawPath (B14), reveal; card hover = CSS (spring linear()) |
+| Pricing | 3 cards (radius 16) → stacked; switch 56×32 | pricingSwitch + instant price swap (#8), drawPath (B14), reveal; card hover = CSS (spring linear()) |
 | TextSection | 664 · 221 · 443 → stacked (gap 38) | reveal |
 | Quote | 1080 / 614 / ~650px; black bg; arc container top edge | quoteFold (B11), imageParallax 500/300/0, drawPath ×2, reveal |
 | Journal | 3 cards (middle +100px) → 2+1 → 1 col; blob masks | reveal |
@@ -160,7 +160,7 @@ original layers, owns its markers, declares `data-nav-theme`, and wires animatio
 | parallax | `imageParallax`, `speedParallax` | #4 image parallax (B4), hero text parallax (B2) |
 | pinned | `rollingNumber` (+ CSS sticky) | #5 pinned How It Works, #6 odometer number (B7) |
 | sequences | `quoteFold` | #7 Big Quote 3D arc fold (B11) |
-| pricing | `pricingSwitch`, `layoutFlip` (+ @number-flow/react) | #8 NumberFlow digits + switch + price-row FLIP |
+| pricing | `pricingSwitch` | #8 switch; prices swap instantly (live original since 2026-09-28, see SOURCE-DRIFT.md) |
 | hover | `hoverVars` (+ CSS modules) | #9 service card hover expansion, pills, links |
 | navigation | `navTheme` | #10 nav colour transitions (B10) |
 | menu | `mobileMenu` | #11 mobile menu (B17) |
@@ -180,7 +180,7 @@ Implemented now (generic, used everywhere): core/*, `entrance`, `loadFade`, `rev
 |---|---|---|
 | Hover: pill, nav link, social, pricing card, inline links, service card | CSS `:hover` / `:focus-visible` | CSS transitions with `--hover-*` vars |
 | Balance switch click | anchor `#toggle-on-anchor` → Lenis `anchors:true` smooth scroll | state change comes from scroll (balanceSequence) |
-| Pricing Monthly/Yearly | `useDisclosure` in `Pricing` | `pricingSwitch` + NumberFlow (@number-flow/react, the original's library) + `layoutFlip`; prices = the original's values |
+| Pricing Monthly/Yearly | `useDisclosure` in `Pricing` | `pricingSwitch` + instant price swap (live original, see SOURCE-DRIFT.md); prices = the original's values |
 | FAQ items | per-item `useDisclosure` (independent, first item open) | `accordionToggle` (Flip height, icon 135°) |
 | Mobile menu | `useDisclosure` in `Navigation` + `useScrollLock` (html overflow hidden + lenis.stop) | `mobileMenuTimeline` |
 | Forms | native inputs (no submission backend in clone; `onSubmit` prevented) | CSS states (checkbox checked green) |
@@ -237,8 +237,9 @@ Accessibility baseline kept from the original's semantics: real links/buttons, l
 | **dev:** @playwright/test 1.56.1, pixelmatch 7.2.0, pngjs 7.0.0 | | verification harness (1.56.1 matches the preinstalled Chromium) |
 
 Deliberately **not** installed: Framer Motion (replaced by GSAP + springEase/Flip), @gsap/react (own `useGsap`),
-Tailwind/Sass (plain CSS), ESLint (not required by `next build`). Added in Step 9: @number-flow/react 0.5.12 (MIT) —
-the original's own price-roll library, pinned to its 0.5.x line; a hand-written approximation was dropped.
+Tailwind/Sass (plain CSS), ESLint (not required by `next build`). @number-flow/react 0.5.12 was added in Step 9 (the
+original's price-roll library at the time) and removed on 2026-09-28 when the live original dropped it
+(docs/reconnaissance/SOURCE-DRIFT.md).
 
 ## 9. Implementation order
 
@@ -407,6 +408,14 @@ gates for the sections touched.
 
 ### Step 9 measured behaviour (Pricing, B14 + #8 + B9)
 
+> **Superseded in part (2026-09-28, live-site drift — docs/reconnaissance/SOURCE-DRIFT.md):** the live original no
+> longer uses NumberFlow. Prices are two sans-H2 texts ("$" + amount, 48/44/38/34 px, green) plus the suffix in a
+> 4 px-padded Container (gap 2, row 57.6/52.8/45.6/40.8 px) and swap **instantly** on the switch; the price-roll,
+> layout-FLIP and NumberFlow notes below describe the 2026-09-22 snapshot only. Switch start phase re-measured:
+> knob with the swap, colours 2 frames later (`lagFrames` knob 2 / colours 3 / prices 1). Re-validated: geometry
+> ≤ 0.33 px in both states at all 8, line counts all match, swap 17–31 ms vs the original's 23–46 ms with nothing
+> animating on either side, switch channels within −7 … +12 ms (shape ≤ 0.0063) at 1440/1024/390.
+
 * Layout: #fafafa, padding-top 160/80/80; Container max 1600, padding 0 56/32/8, gap 80; Text (gap 32): Section
   Icon (64 mask + eyebrow, gap 24) and Headline (gap 24, max 800 desktop only; intro max 480). Plans component
   (gap 48): switch 296×32 (label · 56×32 track, 24 px knob at left 4/28, top 16 − 12 · "Yearly (20% OFF)") and
@@ -442,7 +451,8 @@ gates for the sections touched.
 * Fixed while validating (shared chrome): the closed mobile menu's centre box intercepted taps in the middle of
   the viewport on tablet/phone (it is laid out even when hidden) → `pointer-events: none` on the box, list only.
 * Tools: pricing-switch.mjs + pricing-switch-cmp.mjs (rAF recordings, per-channel phase/shape),
-  pricing-numberflow.mjs (WAAPI comparison), section-geometry.mjs `--click-o/--click-c` (settled switch states).
+  pricing-swap.mjs (instant swap timing, replaces the 2026-09-22 pricing-numberflow.mjs), pricing-live.mjs (live
+  recon), section-geometry.mjs `--click-o/--click-c` (settled switch states).
 
 ### Step 10 measured behaviour (Text Section ×2, B9)
 
@@ -492,10 +502,10 @@ gates for the sections touched.
 * `motion-map.json`: clone refs fixed for B4 big quote parallax and B14 (now length-normalised `dashFraction`, original
   scribble 622.5); the "B6 how-it-works line draw" entry is renamed "B6 big quote line draw" (its recon element is
   `Big Quote>path`).
-* Source drift found while re-validating (live original ≠ recon snapshot; clone unchanged): Pricing now renders prices
-  as plain rich text with an instant swap on the switch (no NumberFlow elements, no animation), each price row is
-  52.8 px (recon 48) inside a new `Price/Container`, and the scribble layer is gone from `Headline` → section
-  4.9 px taller, which shifts Big Quote by ~5 px (section-relative tools are unaffected). Not acted on — owner decision.
+* Source drift found while re-validating: the live Pricing no longer uses NumberFlow (instant plain-text swap, 52.8 px
+  price row → section 4.9 px taller, shifting Big Quote by ~5 px). The scribble is **not** gone (its wrapper was
+  never named — an earlier misreading). Resolved on the owner's decision: the clone follows the live original
+  (docs/reconnaissance/SOURCE-DRIFT.md); Big Quote re-checked afterwards (fold ≤ 0.099°, no regression).
 
 ## 10. Testing strategy
 
@@ -552,9 +562,8 @@ Confirm the final list, including the items the current list does not mention:
    one-page clone. Decide per link: keep as-is, point to in-page anchors of kept sections, or remove.
 5. ~~Waves background (B5)~~ — resolved: `Quote` exists (Step 11), so B5 runs the original's fade-in over How It
    Works and fade-out at the `big-quote` marker.
-6. **Pricing source drift** (found in Step 11): the live original no longer uses NumberFlow (instant price swap,
-   taller price row, scribble removed). Keep the validated NumberFlow version (recon snapshot) or follow the live
-   original?
+6. ~~Pricing source drift~~ — resolved: the target is the current live original; Pricing follows it (instant
+   price swap, new price row) — docs/reconnaissance/SOURCE-DRIFT.md.
 
 ### 11.2 Omit unused sections from the rendered page (after 11.1, non-destructive first)
 
@@ -601,8 +610,8 @@ All gates at the 8 reference viewports (1920×1080, 1440×900, 1280×800, 1024×
 4. **Interactions** (forward and reverse, both directions of every state change): Balance switch; Services card
    proximity + hover label (desktop) / touch labels; pill hovers; Philosophy word reveal (scroll both ways);
    PathSection e-mail link hover; Pricing switch (`pricing-switch.mjs` + `pricing-switch-cmp.mjs`, repeated runs
-   against the original's own noise floor), NumberFlow (`pricing-numberflow.mjs`: identical animations),
-   price-row FLIP, card hover; social icon hovers; footer inputs/links if kept.
+   against the original's own noise floor), price swap (`pricing-swap.mjs`: timing, nothing animates),
+   card hover; social icon hovers; footer inputs/links if kept.
 5. **Navigation and mobile menu**: desktop nav entrance, link hovers, theme switching at every kept section
    boundary (light/dark, B10) and the progressive blur; tablet/phone menu button → open/close animation (#11),
    item stagger, body scroll lock, Escape / link tap closes, focus handling, the menu CTA; regression check that
