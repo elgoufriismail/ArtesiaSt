@@ -251,13 +251,13 @@ gates for the sections touched.
 3. **BalanceSection** — sticky block, markers, Switch; balanceSequence (#3); nav theme boundaries (#10).
 4. **Services** (#4, #9) → **Philosophy** (B15) → **Story** A/B (#4, B12).
 5. **HowItWorks** — sticky column (#5), RollingNumber (#6), long line (#13).
-6. **PathSection**, **Pricing** (#8, scribble #13). ~~TextSection ×2~~ — on hold.
-7. ~~Quote~~, 8. ~~Journal, Numbers, Faq, Booking~~ — **on hold, not to be implemented unless re-added to the
-   scope** (their recon, config entries and stubs stay available).
+6. **PathSection**, **Pricing** (#8, scribble #13), **TextSection ×2** (re-added, Step 10).
+7. **Quote** (Big Quote) — re-added by the owner, built in Step 11. 8. ~~Journal, Numbers, Faq, Booking~~ — **on
+   hold, not to be implemented unless re-added to the scope** (their recon, config entries and stubs stay available).
 9. Stand-in copy pass against text budgets; line-art pass → folded into §11 (selected sections only).
 10. Full sweep → replaced by §11 (scope finalisation and release checklist).
 
-**Current phase (after Step 9): no new sections.** The remaining work is §11.
+**Current phase (after Step 11): no new sections unless the owner re-adds them.** The remaining work is §11.
 
 ### Step 1 measured corrections (Chrome + Hero)
 
@@ -459,6 +459,44 @@ gates for the sections touched.
 * Tools: section-geometry `--index=N`, lines.mjs `IDX=N`, section-sbs `IDX=N` (Nth same-named section; clone
   root `<name>#N`, children `<name>/…`); copyfit HTML candidates for paragraphs with inline links.
 
+### Step 11 measured behaviour (Big Quote, B11 + B6 + B4 + B5 + B9) — built on the owner's request
+
+* Layout: #000, flex column, content at the bottom (justify flex-end), gap 80, min-height 120vh (tablet/phone 80vh),
+  padding 160/120/80 vertical, overflow hidden. Layers: `big-quote` marker (absolute, top −40, 100vh) · photo
+  (`ParallaxImage`, P 500/300/0, noise 0.1; 1580 px tall at 1440) · two line containers 680×2000 at
+  `top: calc(50% − 1000px); left: calc(71.6667% − 340px)`, z 1, the second at opacity .2, desktop only · Text (max
+  1600, padding 0 56/32/8) → Headline (column, gap 32/28/24, padding 0 8): serif H2 (80/72/64/48, white, max 720) +
+  attribution (14 px, white 65 %) · Shape Container (absolute top 0, full width, aspect 3.41441, translateY(−50 %),
+  overflow hidden) → Shape (inset 0 −1 px) → own arc cut-out, viewBox 1516×443, fill **#FAFAFA**.
+* B11 fold: `quoteFold` = `scrollTargetTransform` over the marker (threshold 1): rotateX 0 → −90°, linear, no
+  perspective, origin centre, all breakpoints — from section top − vh − 40 to section top − 40; the −50 % is composed
+  by GSAP (`yPercent`). Reversible (pure function of scroll).
+* B6 lines: `drawPath` on each path (trigger = the path box, 'top 50%' → 'bottom 50%', scrub 0.5) — the 6000-unit
+  path boxes make the draw span 6000 px (1440: section top − 4910 → + 1090). Desktop only.
+* B4 photo: `speedParallax` via ParallaxImage (1440: y −500 → 0 from section rel −900 to +1100); 300 px on tablet,
+  none on phone. B5 waves: the stub guard is gone, so the fade-out over the `big-quote` marker is live (desktop).
+* B9 appears on the H2 and attribution wrappers, desktop only: same trigger edge (±3 px), same fade, both replay
+  when the element leaves the viewport.
+* Stand-in lines (`tools/standins/lines.mjs` quoteA/quoteB): own meanders with rounded loops. Only coarse figures are
+  measured from the original and matched: bbox, per-band x extent, start/end points, total length (12 728 / 12 843)
+  and the arclength at which each 400-unit y level is first reached (0–78 units off) → the drawn head reaches every
+  level at the same scroll. Inside a segment the curves differ by design (head |Δy| median 25–27 px, p90 ≈ 290,
+  max 469 inside loops).
+* Validation (clone vs original at identical section-relative scroll, settled, `tools/compare/bigquote-motion.mjs`
+  + `-cmp.mjs`, both directions, all 8 viewports, step vh/9 over −vh−300 … vh+400):
+  fold ≤ 0.139° (cos ≤ 0.0024, i.e. ≤ 1.4 px of scroll), line progress ≤ 0.0001, photo ≤ 0.2 px (tablet 0.06,
+  phone 0), waves ≤ 0.0016 (hidden on tablet/phone on both). 20 px steps over the fold at 1440/390: ≤ 0.113° / 0.057°.
+  Recon protocol (`motion.mjs`): B11 0.013°/0.009°/0.050° at 1440/1024/390, B4 0.12/0.14 px, B6 10.6 px of dash
+  (tol 60), **B5 waves now pass** (0.001). Geometry: named layers ≤ 0.02 px, H2/p/photo/line containers/path boxes
+  ≤ 0.11 px at all 8; line counts match at all 8.
+* `motion-map.json`: clone refs fixed for B4 big quote parallax and B14 (now length-normalised `dashFraction`, original
+  scribble 622.5); the "B6 how-it-works line draw" entry is renamed "B6 big quote line draw" (its recon element is
+  `Big Quote>path`).
+* Source drift found while re-validating (live original ≠ recon snapshot; clone unchanged): Pricing now renders prices
+  as plain rich text with an instant swap on the switch (no NumberFlow elements, no animation), each price row is
+  52.8 px (recon 48) inside a new `Price/Container`, and the scribble layer is gone from `Headline` → section
+  4.9 px taller, which shifts Big Quote by ~5 px (section-relative tools are unaffected). Not acted on — owner decision.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
@@ -495,10 +533,11 @@ the owner's final section list, removes what that list leaves unused, and verifi
 | How It Works | `HowItWorks` | implemented + validated (Step 7) |
 | Ready to find your path? | `PathSection` | implemented + validated (Step 8) |
 | Pricing | `Pricing` | implemented + validated (Step 9) |
-| Text Section 1 | `TextSection index={1}` | stub (rendered, empty) |
-| Big Quote | `Quote` | stub; hosts the `big-quote` marker |
+| Text Section 1 | `TextSection index={1}` | implemented + validated (Step 10) |
+| Big Quote | `Quote` | implemented + validated (Step 11) |
 | Story B | `Story variant="b"` | **implemented + validated (Step 6)** — not named in the current list, decision needed |
-| Journal · Text Section 2 · Numbers · FAQ · Book A Session | `Journal`, `TextSection index={2}`, `Numbers`, `Faq`, `Booking` | stubs (rendered, empty); `Numbers` hosts the `numbers` marker |
+| Text Section 2 | `TextSection index={2}` | implemented + validated (Step 10) |
+| Journal · Numbers · FAQ · Book A Session | `Journal`, `Numbers`, `Faq`, `Booking` | stubs (rendered, empty); `Numbers` hosts the `numbers` marker |
 | Footer | `Footer` | **implemented + validated (Step 1, B13)** — not named in the current list, decision needed |
 
 ### 11.1 Finalise the section list (owner decision — blocking)
@@ -511,10 +550,11 @@ Confirm the final list, including the items the current list does not mention:
 4. Navigation targets: the nav links (About, Services, Stories, Journal), the CTAs (`./book-a-session`,
    `./about`, `./services`, `./stories/*`) and the footer sitemap point to pages that do not exist in this
    one-page clone. Decide per link: keep as-is, point to in-page anchors of kept sections, or remove.
-5. Waves background (B5): it fades in over How It Works and fades out at the `big-quote` marker. While
-   `Quote` is omitted it stays hidden (stub guard). Decide: (a) omit B5, (b) keep the fade-in and choose a new
-   fade-out target in a kept section (needs a measured decision, not the original's behaviour), or (c) keep
-   hidden.
+5. ~~Waves background (B5)~~ — resolved: `Quote` exists (Step 11), so B5 runs the original's fade-in over How It
+   Works and fade-out at the `big-quote` marker.
+6. **Pricing source drift** (found in Step 11): the live original no longer uses NumberFlow (instant price swap,
+   taller price row, scribble removed). Keep the validated NumberFlow version (recon snapshot) or follow the live
+   original?
 
 ### 11.2 Omit unused sections from the rendered page (after 11.1, non-destructive first)
 
@@ -532,12 +572,12 @@ Remove only what the confirmed page cannot reach. Current candidates if the stub
 
 | Kind | Candidates | Notes |
 |---|---|---|
-| Section stubs | `TextSection`, `Quote`, `Journal`, `Numbers`, `Faq`, `Booking` (+ their CSS modules) | `Story` stays either way (Story A) |
+| Section stubs | `Journal`, `Numbers`, `Faq`, `Booking` (+ their CSS modules) | `Story`, `TextSection`, `Quote` are built |
 | UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches are section-local |
-| Animation modules used only by stubs | `counters/counters`, `faq/accordion`, `sequences/quoteFold` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
-| Config entries | `ANIM.B8` (counters), `B11` (quote fold), `faq`, any journal/booking entries; `B5` per 11.1 | remove together with their modules |
+| Animation modules used only by stubs | `counters/counters`, `faq/accordion` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
+| Config entries | `ANIM.B8` (counters), `faq`, any journal/booking entries | remove together with their modules |
 | Content | unused keys in `src/content/site.ts` (journal, numbers, faq, booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
-| Stand-in assets | `big-quote`, `journal-a/b/c` photos; `blob-a/b/c` masks; line-art paths only used by Quote | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
+| Stand-in assets | `journal-a/b/c` photos; `blob-a/b/c` masks | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
 
 **Keep regardless** (reusable infrastructure / reference): `docs/reconnaissance/**` and its reference data,
 `docs/ASSET_LEDGER.md` (regenerated), all of `tools/**` (recon, compare, standins, assets), `src/animations/core/**`,

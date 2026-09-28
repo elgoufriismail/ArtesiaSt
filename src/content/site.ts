@@ -166,6 +166,13 @@ export const TEXT_SECTIONS = [
   },
 ] as const;
 
+/** Big Quote. Stand-in quote (≈71 ch, serif) and attribution (≈47 ch), fitted to the original line counts. */
+export const BIG_QUOTE = {
+  quote: 'Healing is rarely sudden. It grows quietly, one honest talk at a\u00a0time.',
+  attribution: '— Calm Shore, notes on ten years of practice',
+  image: 'big-quote',
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

@@ -1,3 +1,4 @@
+import { gsap } from '../core/gsap';
 import { ANIM } from '../config';
 import { scrollTargetTransform } from '../scroll/scrollTarget';
 import { marker } from '../core/scroll';
@@ -11,5 +12,8 @@ export function quoteFold(shapeContainer: HTMLElement, cfg = ANIM.B11) {
   const target = marker(cfg.marker);
   if (!target) return null;
   shapeContainer.style.transformOrigin = cfg.transformOrigin;
+  // the container sits centred on the section's top edge (translateY(−50%)); keep that as a relative offset so GSAP
+  // composes translate → rotateX like the original's `translateY(-50%) rotateX(θ)` (no perspective)
+  gsap.set(shapeContainer, { yPercent: -50, y: 0 });
   return scrollTargetTransform(shapeContainer, target, cfg.threshold, { rotationX: 0 }, { rotationX: cfg.rotateXTo });
 }

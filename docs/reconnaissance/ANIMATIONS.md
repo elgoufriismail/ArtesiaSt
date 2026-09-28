@@ -125,6 +125,12 @@ Fixed full-viewport container with two very wide wavy green lines (opacity .4 / 
 
 ### B6. How It Works long line — `scroll-linked` (GSAP)
 
+> Correction (Step 11, measured): two paths (white, stroke 2, lengths 12 727.5 / 12 843.3), each in a 680×2000
+> container at `top: calc(50% − 1000px); left: calc(71.667% − 340px)` of Big Quote (second container opacity .2),
+> desktop only. Each path's box is 6000 units tall (y −4000 … 2000 of its viewBox), and the GSAP trigger is the path
+> itself ('top 50%' → 'bottom 50%', scrub 0.5, linear) → the draw spans 6000 px of scroll: from Big Quote top
+> − 4910 px to + 1090 px at 1440 (same box at all desktop widths). Drawn from the path start (top).
+
 > Correction (Step 7): the two paths live inside the **Big Quote** section wrapper (they only start drawing while
 > How It Works scrolls by). B7 correction: the number transition is 0.8 s cubic-bezier(.6,0,.4,1), not a spring —
 > see IMPLEMENTATION_PLAN.md Step 7.
@@ -183,6 +189,12 @@ Reverses exactly on the way up. **Desktop only**: the tablet/phone nav is an opa
 logo, green "Menu" pill) at all scroll positions — no swap.
 
 ### B11. Big Quote — 3D fold of the white arc — `scroll-linked` (**not a fade**)
+
+> Correction (Step 11, measured): the arc fill is **#FAFAFA** (the grey background of the section above), not white;
+> path box 1514×441 in viewBox 1516×443; container full width, `aspect-ratio 3.41441`, shape inset 0 −1 px. The fold
+> is exactly linear 0° → −90° over the `big-quote` marker (top −40, 100vh tall, threshold 1): from section top − vh
+> − 40 to section top − 40, at **every** breakpoint (the tablet/phone start values below come from the page
+> offsets). No perspective, origin 50% 50%. The waves layer (B5) fades 1 → 0 over the same range.
 
 * The section's top edge is covered by an absolutely positioned **"Shape Container"** holding a white SVG
   arc (1442×422, viewBox 1516×443: white fill above a convex curve). It is centred on the section's top

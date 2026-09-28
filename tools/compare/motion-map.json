@@ -103,7 +103,7 @@
     "name": "Big Quote>img",
     "nth": 0
    },
-   "clone": "Big Quote/img",
+   "clone": "Big Quote/Photo/Frame/img",
    "prop": "translateY",
    "tol": 2
   },
@@ -225,12 +225,12 @@
    ]
   },
   {
-   "id": "B6 how-it-works line draw",
+   "id": "B6 big quote line draw",
    "orig": {
     "name": "Big Quote>path",
     "nth": 0
    },
-   "clone": "How It Works/Line/path",
+   "clone": "Big Quote/Line 1",
    "prop": "dashoffset",
    "tol": 60,
    "viewports": [
@@ -243,12 +243,13 @@
     "name": "Headline>path",
     "nth": 0
    },
-   "clone": "Pricing/Headline/Scribble/path",
-   "prop": "dashoffset",
-   "tol": 30,
+   "clone": "Pricing/Container/Text/Headline/Scribble",
+   "prop": "dashFraction",
+   "tol": 0.05,
    "viewports": [
     "1440x900"
-   ]
+   ],
+   "origLength": 622.5
   },
   {
    "id": "B13 footer bg parallax",
