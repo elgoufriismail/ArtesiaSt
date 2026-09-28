@@ -257,7 +257,7 @@ Hand-drawn green loop under the Pricing headline (viewBox 310×80): dashoffset 6
 
 Submit buttons (Book form, footer Subscribe) contain a hidden "loading" ring (conic-gradient) that
 rotates continuously (360° per ≈1 s, linear) — visible only in the loading variant; running even when
-hidden. Not user-visible in normal use.
+hidden. Visible while the Book form is submitting (Circle A grows to a 31 px disc around it; Step 15).
 
 ### B17. Mobile/tablet menu — `click` (see INTERACTIONS.md)
 

@@ -7,6 +7,8 @@ export type EntranceOpts = {
   fromLoad?: boolean;
   /** Record the real start as a performance mark (timing tool). */
   markAs?: string;
+  /** Override the y travel (px); 0 = opacity-only entrance (Book A Session form column). */
+  distance?: number;
 };
 
 /**
@@ -18,7 +20,7 @@ export type EntranceOpts = {
 export function entrance(el: Element, delay: number, direction: 1 | -1 = 1, opts: EntranceOpts = {}, cfg = ANIM.B1.entrance) {
   if (opts.fromLoad) loadStart();
   const { markAs } = opts;
-  return gsap.fromTo(el, { opacity: 0.001, y: direction * cfg.distance }, {
+  return gsap.fromTo(el, { opacity: 0.001, y: direction * (opts.distance ?? cfg.distance) }, {
     opacity: 1, y: 0, duration: cfg.duration, ease: cfg.ease,
     delay: opts.fromLoad ? Math.max(0, delay - sinceLoad()) : delay,
     onStart: markAs ? function (this: gsap.core.Tween) { mark(markAs, performance.now(), this.time()); } : undefined,

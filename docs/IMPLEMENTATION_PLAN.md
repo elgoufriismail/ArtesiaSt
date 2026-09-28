@@ -49,7 +49,7 @@ app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()
       │  ├─ <TextSection index=2/> "Text Section#2"
       │  ├─ <Numbers/>            "Numbers"         marker numbers; 4 × Counter              B8
       │  ├─ <Faq/>                "FAQ"             6 × FaqItem (section-local)                 #12
-      │  └─ <Booking/>            "Book A Session"  sticky RatingWidget/SocialRow, BookingForm(FormField…)
+      │  └─ <Booking/>            "Book A Session"  sticky RatingWidget/SocialRow, BookingForm + SubmitButton (section-local)
       ├─ <Footer/>                "Footer Container" marker footer-menu; newsletter, sitemap  B13
       └─ <Navigation/>            fixed; desktop rows (light/dark) + Menu pill → <MobileMenu/>  B1 B10 B17 · #10 #11
 ```
@@ -122,7 +122,7 @@ original layers, owns its markers, declares `data-nav-theme`, and wires animatio
 | Journal | 3 cards (middle +100px) → 2 cards (no C) → 1 col of 2; blob masks + outline strokes; 2-line clamped excerpts | reveal (header desktop only, article texts all breakpoints) |
 | Numbers | 4 in a row → 2×2 → 1 col | counters (B8, desktop) |
 | Faq | left text / right list → reordered on phone (headline, intro, list, helper, pill) | accordionToggle (#12), reveal |
-| Booking | left sticky rating block / right form → reordered on phone (form before rating) | entrance ×5 (load-time, off-screen), reveal |
+| Booking | left intro + sticky rating/links block / right form → phone: intro, form, rating/links | entrance ×5 (B1, load-time, desktop), reveal ×3 (B9, all breakpoints), submit button variants (CSS spring) |
 | Footer | photo starts 320px above; 3 columns → stacked | scrollTargetTransform y 0→160 (B13, not phone), reveal |
 
 ## 4. Animation architecture
@@ -603,6 +603,48 @@ gates for the sections touched.
   flaky at 1440 (0.009–0.19 vs tol 0.15) identically on the Numbers commit — pre-existing, unrelated.
 * Tools: faq-accordion.mjs (click-script frame recorder, o/c).
 
+### Step 15 measured behaviour (Book A Session, B1 + B9 + form) — live original, 2026-09-28
+* Structure: white, padding 160/120/80, overflow clip → variant "Desktop"/"Tablet"/"Phone" (column, gap 56): "Title"
+  (eyebrow, padding 0 56/32/8 → "Page Title" padding 0 8) and "Sections" (max 1600, padding 0 56/32/8). Desktop/tablet:
+  left Section (flex 6 / 3, stretched to the form's height) → "Text Intro" (serif H2 ink + green span; intro max 480;
+  gap 24, phone 40) and the sticky "Container" (top 160, gap 80, overflow hidden, z 1) → "Raiting" (muted label +
+  the shared RatingWidget) and "Links" (contact line with a bold inline link, max 480, + socials) · spacer (flex 1)
+  · right Section (flex 5 / 4) → "Variant 1" (padding 0 8) → native form (gap 64): A (title + name / email / phone
+  + select), B (title + textarea, min 120, resize vertical), C (title + five checkboxes, gap 24), D (select), E
+  (newsletter checkbox + note max 480, gap 16), submit. Phone: one column — intro, form, Container (sticky has no room).
+  Group titles Inter 500, 140 %, −0.03em: 28 / 26 / 24 / 22 px.
+* Fields (Framer form CSS, read from the stylesheet and inline variables): transparent, no own border; the wrapper's
+  `::after` draws a 1 px bottom rule rgba(83,89,86,.16) (selects rgba(46,50,49,.16)) that turns #535956 (selects
+  #2e3231) on focus-within, 0.3 s cubic-bezier(.44,0,.56,1). Text 16 / 170 % #535956, placeholder #949e9b; select
+  shows #949e9b while its disabled placeholder option is selected (`:required:invalid`), 16 px chevron #535956 at
+  the right. Checkbox 20 px, radius 4, rgba(127,166,155,.2) → checked #7fa69b + white tick (opacity), focus 1 px
+  #7fa69b border, same 0.3 s curve; clicking the label text toggles it.
+* Validation: native `required` (name, email, both selects) — an empty submit sends nothing, focuses the first invalid
+  field and shows the browser message. No custom error UI.
+* Submit ("Button Book a Session Form", 192×40): Desktop (hover: label +28, Circle A right 16 → −16, Circle B −16 →
+  16), Touch on tablet/phone (no hover), Loading (Circle A → 31 px disc at right 5 holding the 12 px conic ring,
+  1 turn/s linear, always running), Success (label "Thank you"-style text only; persists, fields are not cleared),
+  Disabled/Error exist in the component but are not reached: on a failed request the form returns to the default
+  variant. Every variant change is one spring 0.6 s bounce 0 starting on the next frame (Loading one frame later).
+  Recorded with every non-GET request answered locally (nothing reached the original's backend). The clone has no
+  backend: `sendBooking` resolves after `ANIM.booking.stubLatency` (1.2 s), then Success; a rejection → default.
+* Motion: desktop B1 on-load entrances (1 s, (.2,0,.2,1)): eyebrow y −20 (0.4), H2 +20 (0.4), intro +20 (0.6), form
+  column opacity only (0.6), Container +20 (0.8) — none on tablet/phone. B9 appears at every breakpoint: rating label,
+  rating link, Links block.
+* Validation: named-layer geometry ≤ 1 px at all 8 viewports (1 px = the shared RatingWidget trust line; the only
+  larger value is the loading ring's rotating bounding box); 33 unnamed elements (texts, fields, labels, checkboxes,
+  button) ≤ 1 px; line counts identical; section height within 0.3 px (1696 / 1687.6 / 1749.3 / 1624.4 / 2202.4 /
+  2306.4 / 2333.6 / 2333.6). Button per-frame: hover in/out ≤ 0.92 px, Loading onset ≤ 1.6 px, Success shrink same
+  curve (its start depends on backend latency); field focus / blur, select and checkbox transitions frame-identical;
+  touch flow at 390 identical; sticky Container positions ≤ 0.8 px over the whole scroll; appear targets 3 / 3 /
+  3 with the same edge; entrance targets, directions and delays identical (start phase follows the shared load clock,
+  ± 100 ms between headless runs on both sites, off-screen at load).
+* Page: footer top within 0.8–1.9 px of the original at all 8 viewports, page height within 0–2 px, `footer-menu`
+  48 px above the footer top; motion-suite B13 passes in absolute page coordinates (0.24 px at 1440, 2.69 at 1024,
+  none on phone). The shared rating label stand-in was re-fitted to the original's width (152 vs 151 px; it was 164)
+  — also improves PathSection.
+* Tools: booking-submit.mjs, booking-button.mjs (both intercept every non-GET request).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
@@ -646,7 +688,7 @@ the owner's final section list, removes what that list leaves unused, and verifi
 | Journal | `Journal` | implemented + validated (Step 12) |
 | Numbers | `Numbers` | implemented + validated (Step 13) |
 | FAQ | `Faq` | implemented + validated (Step 14) |
-| Book A Session | `Booking` | stub (rendered, empty) |
+| Book A Session | `Booking` | implemented + validated (Step 15) |
 | Footer | `Footer` | **implemented + validated (Step 1, B13)** — not named in the current list, decision needed |
 
 ### 11.1 Finalise the section list (owner decision — blocking)
@@ -680,11 +722,11 @@ Remove only what the confirmed page cannot reach. Current candidates if the stub
 
 | Kind | Candidates | Notes |
 |---|---|---|
-| Section stubs | `Booking` (+ its CSS module) | `Story`, `TextSection`, `Quote`, `Journal`, `Numbers`, `Faq` are built |
-| UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches are section-local |
+| Section stubs | (none since Step 15) | every section of the page is built |
+| UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches, the FAQ item and the booking form fields are section-local |
 | Animation modules used only by stubs | (none since Step 14 — `faq/accordion` is used by `Faq`; `AccordionItem` UI stub stays unused) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
-| Config entries | any booking entries | remove together with their modules |
-| Content | unused keys in `src/content/site.ts` (booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
+| Config entries | (none: `faq` and `booking` are used) | — |
+| Content | (none: every key in `src/content/site.ts` is rendered) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
 | Stand-in assets | (none left: the Journal photos and masks are used since Step 12) | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
 
 **Keep regardless** (reusable infrastructure / reference): `docs/reconnaissance/**` and its reference data,

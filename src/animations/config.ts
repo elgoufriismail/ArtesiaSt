@@ -208,6 +208,12 @@ export const ANIM = {
   }, // #8
   serviceCard: { lift: 60, t: { spring: true, duration: 0.6, bounce: 0 } as Spring },                               // #9 (CSS)
   pill: { slide: 30, t: { spring: true, duration: 0.3, bounce: 0 } as Spring },                                    // CSS
+  /** Book A Session submit ("Button Book a Session Form"): every variant change — hover, Loading, Success — is one
+   *  spring 0.6 s bounce 0 (CSS), starting `lag` s (≈ one frame) after the state change like the original's layout
+ *  animation (`lagLoading` ≈ two frames for the Loading variant: the form's state update lands a frame after the
+ *  click); the loading ring turns 360° per `spin` s, linear, looping. `stubLatency` (s) stands in
+   *  for the form backend's response time (the clone has no backend; the original's Loading lasts as long as its POST). */
+  booking: { t: { spring: true, duration: 0.6, bounce: 0 } as Spring, lag: 0.016, lagLoading: 0.033, spin: 1, stubLatency: 1.2 },                   // CSS
 } as const;
 
 export type AnimConfig = typeof ANIM;

@@ -123,7 +123,7 @@ export const PATH_CTA = {
 
 /** Rating widget (PathSection + Booking): label, five avatar stand-ins + counter, trust line with star. */
 export const RATING = {
-  label: 'Loved by our community',
+  label: 'Chosen by 90+ people',
   counter: '5k+',
   trust: 'Clients rank us highly',
   score: '4.9 overall',
@@ -215,6 +215,24 @@ export const FAQ = {
     { open: false, q: 'Will what I tell you stay private?', a: ['Always. Everything you share stays between us, apart from the rare situations where the law requires us to act to keep someone safe.'] },
     { open: false, q: 'What if I am unsure what to talk about?', a: ['That is completely fine and really common. Many people arrive without a clear topic, and the first sessions are simply about noticing what feels heavy right now.', 'Over time the threads tend to become clearer. We follow whatever matters most to you at your own pace, and you are always free to pause, change direction or bring something new to a session.'] },
   ],
+} as const;
+
+/** Book A Session. Stand-in copy with the original's budgets (eyebrow 14, H2 34, intro 191, contact 97, group titles
+ *  18/16/41, five service labels, newsletter 44, note 136), fitted to its line counts at all 8 viewports. Field names are
+ *  the clone's own; the form has no backend (see ANIM.booking.stubLatency). */
+export const BOOKING = {
+  eyebrow: 'Plan your visit',
+  title: ['Care begins with one ', 'small\u00a0message.'] as const,
+  intro: 'Whether this is your first step, a return after some time away or simply a moment of curiosity, you are welcome here. Use the form and we will gladly suggest a time that feels right for\u00a0you.',
+  contact: { before: 'Rather talk it through first? ', link: 'Write us a note', after: ' or find us on social, we are glad to hear from you.', email: 'hello@calmshore.com' },
+  groups: { about: 'A little about\u00a0you.', help: 'What brings you\u00a0here?', support: 'Which kind of support feels right for\u00a0you?' },
+  fields: { name: 'Full name *', email: 'Email address *', phone: 'Phone (optional)', message: 'Share anything that could help us understand what you need' },
+  pronouns: { placeholder: 'How should we address you? *', options: ['She / her', 'He / him', 'They / them', 'I would rather not say'] },
+  services: ['One-to-one counselling', 'Personal coaching', 'Calm & balance sessions', 'Single orientation meeting', 'Still deciding, just looking around'],
+  source: { placeholder: 'How did you find us? *', options: ['Search engine', 'Recommendation', 'Referral from a professional', 'Somewhere else'] },
+  newsletter: 'Would you like our monthly letter by email?',
+  note: 'Our letter arrives once a month with gentle ideas, short reads and occasional news. Every issue has a simple way to stop receiving\u00a0it\u00a0again.',
+  submit: { idle: 'Request a visit', success: 'Request sent' },
 } as const;
 
 export const FOOTER = {

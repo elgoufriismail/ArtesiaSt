@@ -49,11 +49,11 @@ submit pill "Book a session". Footer: email input + white "Subscribe" pill.
 
 | State | Observation |
 |---|---|
-| Input idle | transparent, no border/radius/padding on the input itself; a thin light divider line is visible under each field in the screenshots (drawn by the surrounding layout, not the input); text #535956 Inter 16/27.2; placeholder #949e9b |
-| Input focus | **no visible change** measured (no ring, no border colour change) |
-| Checkbox | 20×20, radius 4, `appearance:none`, idle `rgba(127,166,155,.2)`; checked **solid #7fa69b** (computed `background-image: none` — whether a check glyph is drawn via a pseudo-element was not verified; see `form-1440x900-2-typed-checked.png`) |
+| Input idle | transparent, no border/radius/padding on the input itself; the 1 px divider is the wrapper's `::after` bottom border rgba(83,89,86,.16) (selects rgba(46,50,49,.16)); text #535956 Inter 16/27.2; placeholder #949e9b |
+| Input focus | corrected 2026-09-28: the divider darkens to #535956 (selects #2e3231) over 0.3 s cubic-bezier(.44,0,.56,1); no ring |
+| Checkbox | 20×20, radius 4, `appearance:none`, idle `rgba(127,166,155,.2)`; checked **solid #7fa69b** with a white tick (`::before` mask, opacity 0 → 1); focus adds a 1 px #7fa69b border; 0.3 s cubic-bezier(.44,0,.56,1) |
 | Select | native `<select>` styled like inputs with a chevron |
-| Submit | not exercised (would post to Framer's form backend). Button has a "loading" variant with a rotating conic ring (see ANIMATIONS §B16) |
+| Submit | measured 2026-09-28 with the request answered locally: native `required` validation; valid → Loading (Circle A grows to a 31 px disc with the rotating conic ring, ANIMATIONS §B16) → Success (label change, persists, fields kept); failure → back to default. Spring 0.6 s bounce 0. See IMPLEMENTATION_PLAN Step 15 |
 
 ## 4. Scroll interactions & sticky elements (see ANIMATIONS.md for curves)
 

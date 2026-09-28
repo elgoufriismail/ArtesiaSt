@@ -1,11 +1,249 @@
-/* Booking — original "Book A Session". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
+/* Booking — original "Book A Session" (live original, measured 2026-09-28; 1440×900 unless noted).
+   Root white, padding 160 0 (tablet 120, phone 80), overflow clip (keeps the sticky Container working).
    Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 160px 0;
+  overflow: clip;
+  background: var(--c-white);
+}
+.wrap { position: relative; width: 100%; }
+.variant { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 56px; width: 100%; }
+
+/* eyebrow row */
+.title { display: flex; justify-content: center; align-items: flex-start; width: 100%; max-width: 1600px; padding: 0 56px; }
+.pageTitle { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; flex: 1 0 0; min-width: 0; padding: 0 8px; }
+.eyebrow { margin: 0; width: 100%; }
+
+/* columns */
+.sections { display: flex; justify-content: center; align-items: flex-start; width: 100%; max-width: 1600px; padding: 0 56px; }
+.left { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 80px; flex: 6 0 0; min-width: 0; align-self: stretch; }
+.spacer { flex: 1 0 0; align-self: stretch; overflow: hidden; }
+.right { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 80px; flex: 5 0 0; min-width: 0; overflow: hidden; }
+.formBox { width: 100%; }
+
+.textIntro { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; width: 100%; padding: 0 8px; }
+.full { width: 100%; }
+.h2, .para { margin: 0; text-align: left; }
+.green { color: var(--c-green); }
+.introWrap { width: 100%; max-width: 480px; }
+
+/* sticky rating + links block */
+.container { position: sticky; top: 160px; z-index: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 80px; width: 100%; overflow: hidden; }
+.rating { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; padding: 0 8px; }
+.rating p { margin: 0; }
+.muted { color: var(--c-muted); white-space: nowrap; }
+.links { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; width: 100%; padding: 0 8px; }
+.contactWrap { width: 100%; max-width: 480px; }
+.links > :last-child { width: 100%; }
+
+/* ── form ── */
+.formVariant { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; padding: 0 8px; overflow: hidden; }
+.form { display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 64px; width: 100%; margin: 0; overflow: hidden; }
+.group { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 32px; width: 100%; }
+.groupD { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
+.groupE { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; width: 100%; }
+.groupTitle {
+  width: 100%;
+  margin: 0;
+  font-family: var(--f-sans);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  color: var(--c-ink);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+/* fields: transparent, no own border; the wrapper draws a 1 px bottom rule that darkens on focus
+   (Framer form CSS: ::after border, transition .3s cubic-bezier(.44,0,.56,1)) */
+.field {
+  --rule: rgba(83, 89, 86, 0.16);
+  --rule-focus: var(--c-body);
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+.field::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.3s cubic-bezier(0.44, 0, 0.56, 1), border-width 0.3s cubic-bezier(0.44, 0, 0.56, 1);
+}
+.field:focus-within::after { border-bottom-color: var(--rule-focus); }
+.input, .select, .textarea {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  font-family: var(--f-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: var(--c-body);
+  outline: none;
+}
+.input { flex: 1 1 0%; height: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.input::placeholder, .textarea::placeholder { color: var(--c-muted); opacity: 1; }
+
+.selectField { --rule: rgba(46, 50, 49, 0.16); --rule-focus: var(--c-ink); display: block; }
+.selectField::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  padding-left: 10px;
+  box-sizing: content-box;
+  pointer-events: none;
+  background-color: var(--c-body);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M3.5 6 8 10.5 12.5 6' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 10px center / 16px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M3.5 6 8 10.5 12.5 6' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 10px center / 16px no-repeat;
+}
+.select { display: inline-block; height: 100%; appearance: none; -webkit-appearance: none; cursor: default; }
+.select:required:invalid { color: var(--c-muted); }
+.select option { color: #000; }
+.select option:disabled { color: rgba(0, 0, 0, 0.4); }
+
+.areaField { height: auto; min-height: 120px; }
+.textarea { display: flex; min-height: inherit; height: auto; resize: vertical; white-space: break-spaces; overflow-y: auto; }
+/* small two-stroke resize grip (Framer form style) instead of the browser default */
+.textarea::-webkit-resizer { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath d='m1.5 8 7-7M9 5.5l-3 3' stroke='%23999' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat; }
+
+/* checkboxes: 20 px, radius 4, green 20 %; checked solid green with a white tick; focus: 1 px green border */
+.checkboxes { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; width: 100%; }
+.check { display: flex; justify-content: flex-start; align-items: center; gap: 10px; width: 100%; cursor: pointer; }
+.box {
+  position: relative;
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(127, 166, 155, 0.2);
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.44, 0, 0.56, 1), box-shadow 0.3s cubic-bezier(0.44, 0, 0.56, 1);
+}
+.box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--c-white);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M4 8 6.5 10.5 11.5 5.5' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M4 8 6.5 10.5 11.5 5.5' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  transition: opacity 0.3s cubic-bezier(0.44, 0, 0.56, 1);
+}
+.box::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 0 solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s cubic-bezier(0.44, 0, 0.56, 1), border-width 0.3s cubic-bezier(0.44, 0, 0.56, 1);
+}
+.box:checked { background: var(--c-green); }
+.box:checked::before { opacity: 1; }
+.box:focus { outline: none; }
+.box:focus::after { border: 1px solid var(--c-green); }
+.checkText { flex: 1 0 0; width: 1px; margin: 0; user-select: none; white-space: pre-wrap; overflow-wrap: break-word; }
+
+.noteWrap { width: 100%; max-width: 480px; }
+.note { margin: 0; color: var(--c-muted); }
+
+/* submit pill ("Button Book a Session Form"): one spring (ANIM.booking.t via --booking-btn-*) for every variant change,
+   starting one frame late like the original's layout animation (--booking-btn-lag) */
+.submitWrap { position: relative; width: 192px; height: 40px; }
+.submit {
+  --t: var(--booking-btn-dur, 0.6s) var(--booking-btn-ease, ease-out) var(--booking-btn-lag, 16ms);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 192px;
+  height: 40px;
+  margin: 0;
+  padding: 1px 48px 0 20px;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--c-green);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: padding var(--t);
+}
+.submitLabel { position: relative; flex: none; color: var(--c-white); white-space: pre; user-select: none; }
+.circleA, .circleB {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--c-white);
+  transform: translateY(-50%);
+  transition: top var(--t), right var(--t), left var(--t), width var(--t), height var(--t);
+}
+.circleA { right: 16px; overflow: hidden; }
+.circleB { left: -16px; }
+.ring, .core { position: absolute; top: 50%; left: 50%; border-radius: 99px; transform: translate(-50%, -50%); }
+.ring {
+  width: 12px;
+  height: 12px;
+  background: conic-gradient(from 0deg at 50% 50%, rgba(127, 166, 155, 0) 76deg, var(--c-green) 360deg);
+  animation: booking-spin var(--booking-spin, 1s) linear infinite;
+}
+.core { width: 8px; height: 8px; background: var(--c-white); }
+@keyframes booking-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+@media (hover: hover) {
+  .submit[data-state='idle']:not([data-touch]):hover { padding: 1px 20px 0 48px; }
+  .submit[data-state='idle']:not([data-touch]):hover .circleA { top: 49%; right: -16px; }
+  .submit[data-state='idle']:not([data-touch]):hover .circleB { top: 49%; left: 16px; }
+}
+.submit[data-state='loading'] { --t: var(--booking-btn-dur, 0.6s) var(--booking-btn-ease, ease-out) var(--booking-btn-lag-loading, 33ms); }
+.submit[data-state='loading'] .circleA { right: 5px; width: 31px; height: 31px; }
+.submit[data-state='loading'], .submit[data-state='success'], .submit[data-touch] { cursor: unset; }
+
+@media (min-width: 1600px) {
+  .groupTitle { font-size: 28px; }
 }
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
+  .root { padding: 120px 0; }
+  .title, .sections { padding: 0 32px; }
+  .left { flex: 3 0 0; }
+  .right { flex: 4 0 0; }
+  .groupTitle { font-size: 24px; }
 }
 
 @media (max-width: 809.98px) {
+  .root { padding: 80px 0; }
+  .title, .sections { padding: 0 8px; }
+  .textIntro { gap: 40px; }
+  .groupTitle { font-size: 22px; }
 }
