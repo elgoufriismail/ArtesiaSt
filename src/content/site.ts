@@ -190,6 +190,15 @@ export const JOURNAL = {
   ],
 } as const;
 
+/** Numbers. The counter values are the original's (start → end, like the Pricing prices); the two-line labels are
+ *  stand-in copy with explicit breaks, each widest line rendered within 1 px of the original label width. */
+export const NUMBERS = [
+  { start: 420, end: 450, suffix: '+', label: ['Hours of support', 'given so far'] },
+  { start: 50, end: 80, suffix: '+', label: ['Members', 'listened to'] },
+  { start: 0, end: 9, suffix: '+', label: ['Years of careful work', 'behind us'] },
+  { start: 0, end: 25, suffix: '+', label: ['Classes and', 'quiet routines'] },
+] as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,

@@ -254,8 +254,8 @@ gates for the sections touched.
 5. **HowItWorks** — sticky column (#5), RollingNumber (#6), long line (#13).
 6. **PathSection**, **Pricing** (#8, scribble #13), **TextSection ×2** (re-added, Step 10).
 7. **Quote** (Big Quote) — re-added by the owner, built in Step 11. 8. **Journal** — re-added, built in Step 12.
-   ~~Numbers, Faq, Booking~~ — **on hold, not to be implemented unless re-added to the scope** (their recon, config
-   entries and stubs stay available).
+   **Numbers** — built in Step 13. ~~Faq, Booking~~ — **on hold, not to be implemented unless re-added to the scope**
+   (their recon, config entries and stubs stay available).
 9. Stand-in copy pass against text budgets; line-art pass → folded into §11 (selected sections only).
 10. Full sweep → replaced by §11 (scope finalisation and release checklist).
 
@@ -534,6 +534,36 @@ gates for the sections touched.
   everything except B13 (footer — Numbers/FAQ/Booking are still stubs).
 * Tools: copyfit `RANGE=1` (natural wraps of line-clamped text).
 
+### Step 13 measured behaviour (Numbers, B8 + count-up) — live original, 2026-09-28
+
+* Layout: #fafafa, column, no top padding, padding-bottom 160/120/80 → wrapper (max 1600) → variant row whose layer
+  name follows the breakpoint: "Desktop" (row, padding 0 64, four columns flex 1 0 0) · "Tablet" (2×2 grid, row gap
+  64, column gap 0, padding 0 40) · "Phone" (column, gap 64, padding 0 16, counters and labels centred). Counter
+  Container: column, gap 16 → number (Inter 600 72/1, −0.04em, green) + two-line label (t-small, explicit break,
+  `white-space: pre`, so its width is the longest line).
+* Number = the original "Counter" component: an invisible in-flow copy sizes the box (start value, then the end value
+  once triggered — the box widens at the trigger), the visible copy is absolute on top. Values are the original's
+  (420→450, 50→80, 0→9, 0→25 with "+", like the Pricing prices); labels are stand-ins fitted to the label widths.
+* Motion (from the bundle + rAF recordings; the first recon's "0.3 s, replays" was wrong):
+  - count-up on every breakpoint: 1.2 s **linear**, toFixed(0), once, each counter's own visible text entering view
+    (on desktop that text is 40 px higher while the slide is pending → the count starts ≈ 40 px before the slide);
+    starts ≈ 2 frames after the in-view callback;
+  - slide on desktop only: number y −40 / label y +40 with opacity, 1 s cubic-bezier(.2,0,.2,1), delays 0/.2/.4/.6,
+    **once**, row top within ≈ 2 px below the fold, and also after a jump past the section.
+* The first recon's `numbers` marker does not exist live (removed). `footer-menu` sits 48 px above the footer top on
+  every breakpoint — the clone's marker was near the footer bottom (unused, but now placed like the original).
+* Validation: geometry ≤ 0.13 px (named layers, 8 viewports); number/label/sizer boxes ≤ 1 px before and after the
+  trigger (1 px = the font build's glyph advances on "450+"/"80+"/"25+" at weight 600, and label 2 at 71 vs 70);
+  slide o vs c at 1920/1440/1280: phase −10 … +10 ms, max |Δopacity| ≤ 0.097, plays once on both; count-up at
+  1440/1024/390: identical start/end values and value at 600 ms, end reached 1191–1239 vs 1212–1229 ms; trigger edge
+  identical (fires at ~1–2 px below the fold, not at 3); jump past: both play (the clone's first frames after an
+  instant jump are slower in headless rendering, so its first sampled frame is further along).
+* Footer: everything down to Numbers ends within 0.5–1.4 px of the original; the page is 2424 / 2376 / 3627 px
+  shorter at 1440 / 1024 / 390 = exactly FAQ + Booking, which are still stubs. Section-relative, the footer parallax
+  (B13) matches (0.08 px at 1440, 2.6 px at 1024, none on phone on both), so the motion-suite B13 failure is only that
+  absolute offset and will close with FAQ and Booking.
+* Tools: numbers-slide.mjs, numbers-count.mjs, numbers-edges.mjs, footer-parallax-rel.mjs.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
@@ -575,7 +605,8 @@ the owner's final section list, removes what that list leaves unused, and verifi
 | Story B | `Story variant="b"` | **implemented + validated (Step 6)** — not named in the current list, decision needed |
 | Text Section 2 | `TextSection index={2}` | implemented + validated (Step 10) |
 | Journal | `Journal` | implemented + validated (Step 12) |
-| Numbers · FAQ · Book A Session | `Numbers`, `Faq`, `Booking` | stubs (rendered, empty); `Numbers` hosts the `numbers` marker |
+| Numbers | `Numbers` | implemented + validated (Step 13) |
+| FAQ · Book A Session | `Faq`, `Booking` | stubs (rendered, empty) |
 | Footer | `Footer` | **implemented + validated (Step 1, B13)** — not named in the current list, decision needed |
 
 ### 11.1 Finalise the section list (owner decision — blocking)
@@ -609,10 +640,10 @@ Remove only what the confirmed page cannot reach. Current candidates if the stub
 
 | Kind | Candidates | Notes |
 |---|---|---|
-| Section stubs | `Numbers`, `Faq`, `Booking` (+ their CSS modules) | `Story`, `TextSection`, `Quote`, `Journal` are built |
+| Section stubs | `Faq`, `Booking` (+ their CSS modules) | `Story`, `TextSection`, `Quote`, `Journal`, `Numbers` are built |
 | UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches are section-local |
-| Animation modules used only by stubs | `counters/counters`, `faq/accordion` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
-| Config entries | `ANIM.B8` (counters), `faq`, any journal/booking entries | remove together with their modules |
+| Animation modules used only by stubs | `faq/accordion` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
+| Config entries | `faq`, any booking entries | remove together with their modules |
 | Content | unused keys in `src/content/site.ts` (journal, numbers, faq, booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
 | Stand-in assets | (none left: the Journal photos and masks are used since Step 12) | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
 

@@ -34,7 +34,7 @@ and the ≥1600 type tier; 430 vs 375 differ only by widths/wrapping.
 | **Text Section(s)** | 2 columns (664 / spacer / 443) | 2 columns | stacked, gap 38 |
 | **Big Quote** | 1080 px, photo parallax 500, arc 3D fold, quote 72 px | 614 px, parallax 300, fold | 650–746 px, no photo parallax, fold still present, quote 48 px |
 | **Journal** | 3 cards in one row, middle card lowered 100 px | **2 cards in one row (432 wide); card C is not rendered** (corrected 2026-09-28, live measurement) | **1 column of 2 cards** (A, B; C not rendered) |
-| **Numbers** | 4 counters in a row, slide-in animation | **2×2**, static | **1 column, centred**, static |
+| **Numbers** | 4 counters in a row, slide-in + count-up | **2×2** grid, count-up only | **1 column, centred**, count-up only |
 | **FAQ** | headline + intro top-left, helper + pill bottom-left, accordion right | same 2 columns (344 / 376) | **reordered**: headline → intro → accordion → helper text → pill |
 | **Book A Session** | left: title/intro + sticky rating & socials; right: form | same 2 columns | **reordered**: title → intro → form → rating & socials at the bottom (not sticky) |
 | **Footer** | 3 columns: newsletter (664) · spacer · sitemap (2 cols) ; bottom row: contact · credit/copyright | stacked newsletter then sitemap (1566 px tall) | stacked; image background full height (1874 px), no noise-offset overlap |
@@ -66,6 +66,7 @@ and the ≥1600 type tier; 430 vs 375 differ only by widths/wrapping.
 | Pricing scribble draw | ✅ | ❌ | ❌ |
 | Big Quote rotateX fold | ✅ | ✅ | ✅ |
 | Counters slide | ✅ | ❌ | ❌ |
+| Counters count-up (Step 13) | ✅ | ✅ | ✅ |
 | Generic in-view fades | ✅ | ✅ (fewer instances) | ✅ (fewer instances) |
 | Nav colour swap | ✅ | ❌ (always white bar) | ❌ |
 | Footer bg parallax | ✅ | ✅ | ❌ |

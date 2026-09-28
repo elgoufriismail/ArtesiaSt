@@ -45,3 +45,9 @@ viewports, line counts all match.
   `big-quote` marker 9336 → 9340.4 at 1440), which `tests/unit/scroll-math.test.ts` now uses.
 * Tools: `tools/compare/pricing-swap.mjs` (swap timing + "nothing animates" check, o vs c) replaces the NumberFlow
   comparison; `pricing-switch.mjs` samples the amount text and suffix container instead of NumberFlow hosts.
+
+## 2026-09-28 — Numbers: no `numbers` marker
+
+The first recon listed an 8×8 `numbers` scroll marker. The live page has none at any breakpoint (nothing in the clone
+used it), so the clone's Numbers no longer renders it. Everything else in Numbers matches the recon snapshot's layout;
+the counter animation was re-measured in detail (ANIMATIONS.md B8 correction).

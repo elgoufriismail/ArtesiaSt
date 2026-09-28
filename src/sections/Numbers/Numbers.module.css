@@ -1,11 +1,40 @@
-/* Numbers — original "Numbers". Values: docs/reconnaissance/BREAKPOINTS.md §4–5, VISUAL.md.
-   Breakpoints (literal, CSS cannot read TS): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
+/* Numbers — original "Numbers" (live original, measured 2026-09-28).
+   root #fafafa, column centred, padding-bottom 160 (tablet 120, phone 80), no top padding.
+   Breakpoints (literal): desktop >=1200 · tablet 810–1199.98 · phone <=809.98 */
 .root {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 160px;
+  background: var(--c-grey-bg);
 }
+.wrap { position: relative; width: 100%; max-width: 1600px; }
+
+/* variant row: "Desktop" (row) · "Tablet" (2×2 grid) · "Phone" (column) */
+.row { position: relative; display: flex; justify-content: center; align-items: center; gap: 0; width: 100%; max-width: 100%; padding: 0 64px; }
+.counter { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; flex: 1 0 0; min-width: 0; }
+
+/* number: invisible in-flow sizer + visible copy on top (the original component's layout) */
+.number { position: relative; flex: none; }
+.num { margin: 0; font-family: var(--f-sans); font-size: 72px; font-weight: 600; line-height: 1; letter-spacing: -0.04em; text-align: left; }
+.sizer { opacity: 0; color: #000; text-align: center; pointer-events: none; user-select: none; }
+.shown { position: absolute; inset: 0; color: var(--c-green); user-select: none; }
+
+.label { position: relative; z-index: 1; display: flex; flex-direction: column; flex: none; }
+.labelText { margin: 0; white-space: pre; text-align: left; }
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
+  .root { padding-bottom: 120px; }
+  .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px 0; padding: 0 40px; }
+  .counter { flex: none; }
 }
 
 @media (max-width: 809.98px) {
+  .root { padding-bottom: 80px; }
+  .row { flex-direction: column; gap: 64px 0; padding: 0 16px; }
+  .counter { flex: none; width: 100%; align-items: center; }
+  .labelText { text-align: center; }
 }

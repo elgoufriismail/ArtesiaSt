@@ -153,6 +153,15 @@ between scrollY ≈ 4500 and ≈ 10 200 (desktop), linear, scrub 0.5. Reversible
 
 ### B8. Counters (Numbers section) — `in-view`
 
+> Correction (Step 13, live original + its bundle, 2026-09-28): two effects. (1) **Slide, desktop only:** number
+> wrapper y −40 → 0 and label wrapper y +40 → 0 with opacity 0 → 1, tween **1 s cubic-bezier(.2,0,.2,1)**, delays
+> **0 / 0.2 / 0.4 / 0.6 s**, **plays once** (no replay), triggered when the untransformed counter row's top is within
+> ~2 px below the fold, or when the section has been scrolled past. (2) **Count-up, every breakpoint:** a "Counter"
+> code component counts start → end (420→450, 50→80, 0→9, 0→25) as a **1.2 s linear tween**, shown with toFixed(0),
+> once, triggered by its own visible text entering view (on desktop that text sits 40 px higher while the slide is
+> pending, so the count starts ≈ 40 px of scroll before the slide). An invisible in-flow copy sizes the box (start
+> value, then the end value once triggered). The text below describes the first, estimated reading.
+
 Each counter has two stacked copies of the number and the label: number slides **down from y −40 → 0**
 with opacity 0 → 1; label slides **up from y +40 → 0** with opacity 0 → 1 (they meet). Measured ≈0.3 s
 settle after entering view (tween, (.44,0,.56,1)-like). Replays on re-entry (animate-once false).

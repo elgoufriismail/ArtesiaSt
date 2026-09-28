@@ -53,7 +53,8 @@ Invisible 8×8 "marker" `<section>`s used as scroll targets (they carry the IDs 
 `hero`, `toggle-start-animation` (y≈1144), `dark-nav-1` (y≈1384), `toggle-on-anchor` (y≈1702, also the
 anchor the switch links to), `toggle-on-animation` (y≈1846), `story-a` (1800 tall), `how-it-works` (900 tall),
 `step-2-trigger` (y≈5757), `step-3-trigger` (y≈6431), `big-quote` (900 tall), `story-b`, `numbers`,
-`footer-menu` (y≈16009).
+`footer-menu` (y≈16009). _(Live 2026-09-28: there is no `numbers` marker any more; `footer-menu` sits exactly 48 px above
+the footer top at every breakpoint.)_
 
 ## 3. Layout system
 

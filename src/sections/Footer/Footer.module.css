@@ -14,6 +14,8 @@
   color: var(--c-white);
 }
 
+/* `footer-menu` marker: 48 px above the footer top at every breakpoint (live original, measured 2026-09-28) */
+.root .menuMarker { top: -48px; }
 .bg { position: absolute; top: -320px; left: 0; right: 0; bottom: 0; overflow: hidden; }
 .bgImg { position: absolute; inset: 0; width: 100%; height: 100%; }
 

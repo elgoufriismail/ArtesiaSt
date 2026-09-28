@@ -31,7 +31,7 @@ export function Footer() {
 
   return (
     <footer ref={root} className={styles.root} data-ref="Footer Container" data-nav-theme="light">
-      <Marker id="footer-menu" />
+      <Marker id="footer-menu" className={styles.menuMarker} />
       <div ref={bg} className={styles.bg} data-ref="Footer Container/Footer Background Image">
         <StandInImage slot="footer" className={styles.bgImg} />
         <NoiseOverlay tile="a" opacity={0.1} />

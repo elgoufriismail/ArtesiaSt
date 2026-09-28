@@ -131,7 +131,19 @@ export const ANIM = {
   },
 
   /* ── B8 counters ─────────────────────────────────────────────────── */
-  B8: { numberFromY: -40, labelFromY: 40, t: { duration: 0.8, ease: 'framer' } as Tween, enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean> },
+  /** Live original (bundle + rAF recordings, 2026-09-28): number wrapper y −40 → 0 and label wrapper y +40 → 0 with
+   *  opacity 0 → 1, tween 1 s cubic-bezier(.2,0,.2,1), delays 0 / .2 / .4 / .6 s per counter, plays ONCE, triggered
+   *  when the (untransformed) counter row touches the viewport; desktop only. The count-up runs on every breakpoint:
+   *  1.2 s linear tween start → end, shown as toFixed(0), triggered once by its own (visible) text entering view. */
+  B8: {
+    numberFromY: -40, labelFromY: 40, stagger: 0.2,
+    /** the slide fires with the row's top up to this many px below the fold (live: fires at 901.8, not 902.8 @900) */
+    edge: 2,
+    t: { duration: 1, ease: 'entrance' } as Tween,
+    /** count-up starts ≈ 2 frames after the in-view callback in the original (state → effect → animate) */
+    count: { duration: 1.2, ease: 'none', delay: 0.032 } as Tween,
+    enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean>,
+  },
 
   /* ── B9 generic in-view fade ─────────────────────────────────────── */
   B9: { t: { duration: 0.8, ease: 'framer' } as Tween, resetOnExit: true, threshold: 0 },
