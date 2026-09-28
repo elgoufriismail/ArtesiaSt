@@ -190,7 +190,10 @@ export const ANIM = {
   },
 
   /* ── Interactions ────────────────────────────────────────────────── */
-  faq: { t: { spring: true, duration: 0.55, bounce: 0 } as Spring, iconRotate: 135, exclusive: false },           // first-class #12
+  /** FAQ items (live original 2026-09-28, bundle + rAF): variant transition spring 0.8 s bounce 0 for height, answer
+   *  opacity and icon rotation (0 → −135°, counter-clockwise); values start one frame after the height; independent
+   *  items (several can be open); item 1 open initially. */
+  faq: { t: { spring: true, duration: 0.8, bounce: 0 } as Spring, iconRotate: -135, heightLagFrames: 1, valueLagFrames: 1, exclusive: false },   // first-class #12
   pricing: {
     /** switch (Framer toggle variants, measured Step 9): entering Yearly = spring 0.8 s, entering Monthly =
      *  spring 1.2 s, bounce 0 (knob left 4 → 28, track rgba(0,0,0,.2) → green, "Monthly" label ink → body) */

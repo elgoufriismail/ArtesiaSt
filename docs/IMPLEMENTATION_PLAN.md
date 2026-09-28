@@ -48,7 +48,7 @@ app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()
       │  ├─ <Journal/>            "Journal"         3 article cards (blob masks, outlines)   B9
       │  ├─ <TextSection index=2/> "Text Section#2"
       │  ├─ <Numbers/>            "Numbers"         marker numbers; 4 × Counter              B8
-      │  ├─ <Faq/>                "FAQ"             6 × AccordionItem                        #12
+      │  ├─ <Faq/>                "FAQ"             6 × FaqItem (section-local)                 #12
       │  └─ <Booking/>            "Book A Session"  sticky RatingWidget/SocialRow, BookingForm(FormField…)
       ├─ <Footer/>                "Footer Container" marker footer-menu; newsletter, sitemap  B13
       └─ <Navigation/>            fixed; desktop rows (light/dark) + Menu pill → <MobileMenu/>  B1 B10 B17 · #10 #11
@@ -181,7 +181,7 @@ Implemented now (generic, used everywhere): core/*, `entrance`, `loadFade`, `rev
 | Hover: pill, nav link, social, pricing card, inline links, service card | CSS `:hover` / `:focus-visible` | CSS transitions with `--hover-*` vars |
 | Balance switch click | anchor `#toggle-on-anchor` → Lenis `anchors:true` smooth scroll | state change comes from scroll (balanceSequence) |
 | Pricing Monthly/Yearly | `useDisclosure` in `Pricing` | `pricingSwitch` + instant price swap (live original, see SOURCE-DRIFT.md); prices = the original's values |
-| FAQ items | per-item `useDisclosure` (independent, first item open) | `accordionToggle` (Flip height, icon 135°) |
+| FAQ items | per-item `useState` in `FaqItem` (independent, first item open; card is `role=button`, Enter/Space) | `accordionAnimate` (spring height from the clicked height, answer opacity, icon −135°; Step 14) |
 | Mobile menu | `useDisclosure` in `Navigation` + `useScrollLock` (html overflow hidden + lenis.stop) | `mobileMenuTimeline` |
 | Forms | native inputs (no submission backend in clone; `onSubmit` prevented) | CSS states (checkbox checked green) |
 | Links to other pages | plain `<a href>` to original-like routes (out of scope) | — |
@@ -564,6 +564,45 @@ gates for the sections touched.
   absolute offset and will close with FAQ and Booking.
 * Tools: numbers-slide.mjs, numbers-count.mjs, numbers-edges.mjs, footer-parallax-rel.mjs.
 
+### Step 14 measured behaviour (FAQ, #12 accordion + B9) — live original, 2026-09-28
+* Structure: root #fafafa, padding-bottom 160/120/80, overflow hidden → variant "Desktop"/"Tablet"/"Phone" → Sections
+  (max 1600, padding 0 56/32/8). Desktop/tablet: left Section (flex 5 / 3) → Text (space-between, padding 0 8):
+  Headline (gap 24: two-line sans H2 with an explicit break, second line green; intro max 640) at the top, helper
+  (max 480) + pill (gap 32) at the bottom following the accordion's height; spacer (flex 1); right Section (flex 6 / 4)
+  → FAQ Accordion (padding 0 8) → list "Variant 1" (column, gap 8). Phone: one column, Text gap 48, centred —
+  headline, list, helper + pill.
+* Item = the original "Open"/"Closed" component: white, radius 16, padding 24, gap 12, overflow hidden. An invisible
+  in-flow Placeholder (question + the answer only when open + 24×31 icon box) sets the height; the Visible Text layer
+  (absolute top/left/right 24) always holds the full content, the answer at opacity 0 when closed. Questions t-body-lg
+  **weight 600**; answers t-small (item 6: two paragraphs, gap 16). Icon Phosphor PlusCircle regular, green.
+* State: item 1 open initially (CMS flag); items are independent (several can be open); every click toggles.
+* Motion (bundle + rAF recordings): one spring for everything, 0.8 s, bounce 0 (critically damped) — height, answer
+  opacity 0 ↔ 1, icon rotation 0 ↔ **−135°** (counter-clockwise). The original is a layout FLIP (layout jumps, the card
+  and list are projection-scaled back); visually the card height follows the spring and everything below it — siblings,
+  helper (phone), the next section, the document height — moves with the card bottom in the same frame; scroll position
+  is unchanged. Phase: the height starts 1–2 frames after the click, the values one frame (occasionally two) later.
+* Clone: `accordionAnimate` measures the new natural height, holds the clicked height (mid-flight on rapid toggles),
+  starts the height spring after `heightLagFrames` (1) ticker frames and the values after `valueLagFrames` (1) more,
+  sub-pixel (`autoRound: false`), then hands back to `auto`. Running tweens and pending starts are killed outright on
+  the next toggle — a props-filtered `killTweensOf` left a not-yet-rendered `fromTo` alive inside one long frame, which
+  re-applied its start height after the last tween (found by the rapid-toggle test at 1440; fixed).
+* Appear (B9): desktop 10 targets (H2, intro, 6 item cells, helper, pill); tablet/phone the 6 item cells only.
+* Validation: named-layer geometry ≤ 0.36 px at all 8 viewports (missing only the pill's unnamed dots); unnamed
+  elements (questions, answers, icons, texts) ≤ 0.19 px; all items open ≤ 0.31 px at all 8; line counts identical.
+  Spring fit (1024 / 390, regular frames): both sites RMS ≈ 0.007 against the 0.8 s spring for height, opacity and
+  rotation; start τ original 23–53 ms vs clone 17–44 ms (≈ ½ frame earlier on average, inside the original's own
+  1-vs-2-frame jitter); scenarios first/middle/last open, close, several open, open while another is open, rapid
+  (80 ms) toggles, touch taps at 390 — final states equal within 0.3 px. At 1440 headless frames take ≈ 130 ms: the
+  original sometimes delays its values by two such frames and drops the third of three clicks 80 ms apart (clicks piled
+  into one long frame; with ≥ 120 ms gaps or at 390 every click counts) — render-cost artefacts, not reproduced.
+  Appear: same targets and trigger edge, 95 % at 533 vs 550 ms.
+* Page geometry: the reference scroll baselines are of the original and don't change. Everything down to FAQ ends
+  within 0.5–1.4 px of the original; the page is now shorter by exactly the Booking height (1696 / 1688 / 1749 / 1624 /
+  2202 / 2306 / 2334 / 2334 px at the 8 viewports, ± 1 px). Motion-suite B13 still fails on that absolute offset only
+  (section-relative footer parallax unchanged: 0.08 px at 1440, 2.6 px at 1024, none on phone); B2 page-intro fade is
+  flaky at 1440 (0.009–0.19 vs tol 0.15) identically on the Numbers commit — pre-existing, unrelated.
+* Tools: faq-accordion.mjs (click-script frame recorder, o/c).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |
@@ -606,7 +645,8 @@ the owner's final section list, removes what that list leaves unused, and verifi
 | Text Section 2 | `TextSection index={2}` | implemented + validated (Step 10) |
 | Journal | `Journal` | implemented + validated (Step 12) |
 | Numbers | `Numbers` | implemented + validated (Step 13) |
-| FAQ · Book A Session | `Faq`, `Booking` | stubs (rendered, empty) |
+| FAQ | `Faq` | implemented + validated (Step 14) |
+| Book A Session | `Booking` | stub (rendered, empty) |
 | Footer | `Footer` | **implemented + validated (Step 1, B13)** — not named in the current list, decision needed |
 
 ### 11.1 Finalise the section list (owner decision — blocking)
@@ -640,11 +680,11 @@ Remove only what the confirmed page cannot reach. Current candidates if the stub
 
 | Kind | Candidates | Notes |
 |---|---|---|
-| Section stubs | `Faq`, `Booking` (+ their CSS modules) | `Story`, `TextSection`, `Quote`, `Journal`, `Numbers` are built |
+| Section stubs | `Booking` (+ its CSS module) | `Story`, `TextSection`, `Quote`, `Journal`, `Numbers`, `Faq` are built |
 | UI stubs (never implemented) | `SectionIcon`, `Eyebrow`, `AccordionItem`, `FormField`, `Switch` | `Switch` is only named in comments; the pricing / balance switches are section-local |
-| Animation modules used only by stubs | `faq/accordion` (+ `animations/index.ts` exports) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
-| Config entries | `faq`, any booking entries | remove together with their modules |
-| Content | unused keys in `src/content/site.ts` (journal, numbers, faq, booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
+| Animation modules used only by stubs | (none since Step 14 — `faq/accordion` is used by `Faq`; `AccordionItem` UI stub stays unused) | `scrollTarget`, `markerState`, `speedParallax`, `loadFade` are used by built sections — keep |
+| Config entries | any booking entries | remove together with their modules |
+| Content | unused keys in `src/content/site.ts` (booking copy, if present) | keep `SOCIALS`, `RATING`, `FOOTER` if the footer stays |
 | Stand-in assets | (none left: the Journal photos and masks are used since Step 12) | update `tools/assets/ledger.mjs` so the ledger lists only assets of kept sections |
 
 **Keep regardless** (reusable infrastructure / reference): `docs/reconnaissance/**` and its reference data,

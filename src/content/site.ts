@@ -199,6 +199,24 @@ export const NUMBERS = [
   { start: 0, end: 25, suffix: '+', label: ['Classes and', 'quiet routines'] },
 ] as const;
 
+/** FAQ. Stand-in copy with the original's budgets (H2 15 + 9 green on two lines, intro 87, helper 81, pill 15,
+ *  questions 41/41/48/35/35/40, answers 144/175/126/172/127/162+195), fitted to the natural line counts of every
+ *  question and answer paragraph at all 8 viewports. Item 1 starts open (the original CMS "Open" flag). */
+export const FAQ = {
+  title: ['Your worries, ', 'addressed.'] as const,
+  intro: 'Starting something new brings questions. Here are the ones we hear most, answered plainly.',
+  helper: 'Still unsure about anything? Send us a short note and we will get back to you gently.',
+  cta: { label: 'Inside The Studio', href: './about' } satisfies Cta,
+  items: [
+    { open: true, q: 'Is counselling right for someone like me?', a: ['Counselling is not only for moments of real crisis. It suits anyone who wants more clarity, steadier habits or simply space to think things through.'] },
+    { open: false, q: 'What happens in our very first session?', a: ['We start with a relaxed conversation about what brings you here, what you hope will change and how you like to work, so we can shape a plan that fits you from the start.'] },
+    { open: false, q: 'Can I choose between online and studio sessions?', a: ['Yes. You can meet us in our quiet studio or join from home by video call, and switch between the two whenever it suits you.'] },
+    { open: false, q: 'How often should we plan to meet?', a: ['Most of us start with weekly sessions and later move to every second week. We look at the rhythm together from time to time and adjust it to your energy, your week and your goals.'] },
+    { open: false, q: 'Will what I tell you stay private?', a: ['Always. Everything you share stays between us, apart from the rare situations where the law requires us to act to keep someone safe.'] },
+    { open: false, q: 'What if I am unsure what to talk about?', a: ['That is completely fine and really common. Many people arrive without a clear topic, and the first sessions are simply about noticing what feels heavy right now.', 'Over time the threads tend to become clearer. We follow whatever matters most to you at your own pace, and you are always free to pause, change direction or bring something new to a session.'] },
+  ],
+} as const;
+
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
   headline: ['Notes For', 'Quiet Days.'] as const,
