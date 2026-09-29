@@ -142,7 +142,7 @@
   overflow: hidden;
   appearance: none;
   -webkit-appearance: none;
-  background: rgba(127, 166, 155, 0.2);
+  background: var(--c-check-idle);
   cursor: pointer;
   transition: background 0.3s cubic-bezier(0.44, 0, 0.56, 1), box-shadow 0.3s cubic-bezier(0.44, 0, 0.56, 1);
 }

@@ -35,7 +35,7 @@
 .plans { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 48px; width: 100%; padding: 0 8px; overflow: hidden; }
 .switch {
   --track-off: rgba(0, 0, 0, 0.2);
-  --track-on: rgb(127, 166, 155);
+  --track-on: var(--c-accent);
   --label-active: rgb(46, 50, 49);
   --label-idle: rgb(83, 89, 86);
   display: flex;
@@ -77,12 +77,12 @@
   content: '';
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(128, 166, 155, 0);
+  border: 1px solid rgba(var(--c-accent-rgb), 0);
   border-radius: inherit;
   pointer-events: none;
   transition: border-color 0.6s var(--hover-ease, ease) 12ms;   /* leave: variant starts ≈ 12 ms after the pointer */
 }
-@media (hover: hover) { .card:hover::after { border-color: rgb(127, 166, 155); transition-delay: 24ms; } }   /* enter: ≈ 24 ms */
+@media (hover: hover) { .card:hover::after { border-color: var(--c-accent); transition-delay: 24ms; } }   /* enter: ≈ 24 ms */
 .cardTitle { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; width: 100%; overflow: hidden; }
 .cardTitle h3, .cardTitle p { margin: 0; }
 .planName { color: var(--c-ink); }

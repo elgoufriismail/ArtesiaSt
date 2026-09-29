@@ -87,7 +87,7 @@
    rest with 8 px offset → green underline at 5 px offset on hover, 0.4 s framer ease on all four properties. */
 .t-inline-link {
   color: var(--c-green);
-  text-decoration: underline 1px solid rgba(128, 166, 155, 0);
+  text-decoration: underline 1px solid rgba(var(--c-accent-rgb), 0);
   text-underline-offset: 8px;
   transition: color 0.4s var(--ease-framer), text-decoration-color 0.4s var(--ease-framer),
     text-decoration-thickness 0.4s var(--ease-framer), text-underline-offset 0.4s var(--ease-framer);

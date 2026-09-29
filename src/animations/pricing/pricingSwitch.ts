@@ -19,7 +19,7 @@ export function pricingSwitch(parts: PricingSwitchParts, cfg = ANIM.pricing) {
   const read = (el: HTMLElement, prop: 'backgroundColor' | 'color') => parseColor(getComputedStyle(el)[prop]);
   const styles = getComputedStyle(parts.track);
   const trackOff = parseColor(styles.getPropertyValue('--track-off').trim() || 'rgba(0,0,0,0.2)');
-  const trackOn = parseColor(styles.getPropertyValue('--track-on').trim() || 'rgb(127,166,155)');
+  const trackOn = parseColor(styles.getPropertyValue('--track-on').trim() || getComputedStyle(document.documentElement).getPropertyValue('--c-accent').trim());
   const labelOn = parseColor(styles.getPropertyValue('--label-active').trim() || 'rgb(46,50,49)');
   const labelOff = parseColor(styles.getPropertyValue('--label-idle').trim() || 'rgb(83,89,86)');
   const state = { p: 0 };                                   // 0 = Monthly, 1 = Yearly

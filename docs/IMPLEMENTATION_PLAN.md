@@ -685,6 +685,17 @@ documented, (4) headless variance → not compensated.
 * Motion suite: 15/15 · 10/10 · 4/4; B13 passes in absolute coordinates (0.24 px at 1440, 2.69 px at 1024).
 * Tools: nav-theme.mjs, interaction-smoke.mjs, responsive-qa.mjs; booking-button.mjs gained FORM=footer.
 
+### Client customisation 1 — brand colour (2026-09-29)
+* Brand accent `#FF0031` replaces the original's `#7fa69b`. One place: `src/styles/tokens.css` → `--c-accent` (hex) and
+  `--c-accent-rgb` ("255, 0, 49", for tints). `--c-green` is kept as the legacy alias of the accent (no usages
+  renamed); `--c-check-idle` = accent at 20 %.
+* Derived uses now read the tokens: link underline start (typography.css), How It Works strip text, Pricing switch
+  track / card hover border, Booking checkbox idle, SubmitPill ring, the Pricing switch JS fallback, and the Balance
+  switch colours (ANIM.B3.colors hold `var(--…)` tokens, resolved from :root at runtime in balanceSequence).
+* Neutrals (ink, body, muted, white, grey background, dark surfaces, star) unchanged; layout, type and animation
+  timing unchanged (geometry and motion suite as before). Tools that compare colours with the live original now
+  report the accent difference by design (balance-timing.mjs: track G channel).
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

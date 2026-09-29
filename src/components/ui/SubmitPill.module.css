@@ -39,7 +39,7 @@
 /* tones (original colours) */
 .green {
   --pill-bg: var(--c-green); --pill-label: var(--c-white); --pill-dot-a: var(--c-white); --pill-dot-b: var(--c-white);
-  --pill-ring: conic-gradient(from 0deg at 50% 50%, rgba(127, 166, 155, 0) 76deg, var(--c-green) 360deg); --pill-core: var(--c-white);
+  --pill-ring: conic-gradient(from 0deg at 50% 50%, rgba(var(--c-accent-rgb), 0) 76deg, var(--c-green) 360deg); --pill-core: var(--c-white);
 }
 .white {
   --pill-bg: var(--c-white); --pill-label: var(--c-ink); --pill-dot-a: var(--c-body); --pill-dot-b: var(--c-green);

@@ -123,7 +123,7 @@
 }
 .stripA .stripText { text-align: center; }
 .stripText span { font-size: 226.858px; letter-spacing: -0.04em; }
-.stripText .clear { color: rgba(128, 166, 155, 0); }
+.stripText .clear { color: rgba(var(--c-accent-rgb), 0); }
 
 @media (min-width: 810px) and (max-width: 1199.98px) {
   .root { padding-top: 120px; }

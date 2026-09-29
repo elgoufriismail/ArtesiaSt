@@ -50,9 +50,11 @@ export function balanceSequence(p: BalanceParts, cfg = ANIM.B3) {
   io.observe(p.appear);
 
   // ── switch + text state machine ──
+  // colours may be design tokens (`var(--c-accent)`): resolved from :root so the client palette in tokens.css applies
+  const resolve = (c: string) => { const m = c.match(/^var\((--[\w-]+)\)$/); return m ? getComputedStyle(document.documentElement).getPropertyValue(m[1]).trim() : c; };
   const colors = {
-    track: { el: p.base, prop: 'backgroundColor' as const, cur: parseColor(cfg.colors.track.start), tween: null as gsap.core.Tween | null },
-    label: { el: p.label, prop: 'color' as const, cur: parseColor(cfg.colors.label.start), tween: null as gsap.core.Tween | null },
+    track: { el: p.base, prop: 'backgroundColor' as const, cur: parseColor(resolve(cfg.colors.track.start)), tween: null as gsap.core.Tween | null },
+    label: { el: p.label, prop: 'color' as const, cur: parseColor(resolve(cfg.colors.label.start)), tween: null as gsap.core.Tween | null },
   };
   const paint = (c: (typeof colors)[keyof typeof colors]) => { c.el.style[c.prop] = toCss(c.cur); };
 
@@ -82,7 +84,7 @@ export function balanceSequence(p: BalanceParts, cfg = ANIM.B3) {
       gsap.to(p.label, { opacity: labelOpacity, ...vars, overwrite: 'auto' });
       for (const key of ['track', 'label'] as const) {
         const c = colors[key];
-        const from: Rgba = [...c.cur], to = parseColor(cfg.colors[key][next]);
+        const from: Rgba = [...c.cur], to = parseColor(resolve(cfg.colors[key][next]));
         const proxy = { p: 0 };
         c.tween?.kill();
         c.tween = gsap.to(proxy, { p: 1, ...vars, onUpdate: () => { c.cur = mixColor(from, to, proxy.p); paint(c); }, onComplete: () => { c.cur = to; paint(c); } });

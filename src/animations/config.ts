@@ -72,8 +72,9 @@ export const ANIM = {
       on: { label: { left: '0%', xPercent: 0, top: 7.2, opacity: 1 }, base: { left: 83, top: 0, width: 56, height: 32 }, knob: { left: 111, top: 4 } },
     },
     colors: {
-      track: { start: 'rgba(0, 0, 0, 0.2)', off: 'rgba(0, 0, 0, 0.2)', on: '#7fa69b' },
-      label: { start: '#ffffff', off: '#ffffff', on: '#535956' },
+      /** tokens are resolved at runtime (balanceSequence); on = brand accent */
+      track: { start: 'var(--c-track-off)', off: 'var(--c-track-off)', on: 'var(--c-accent)' },
+      label: { start: 'var(--c-white)', off: 'var(--c-white)', on: 'var(--c-body)' },
     },
     /** Headline pair swap (both directions): outgoing pair out, incoming H2 / P in after a delay. */
     text: {
