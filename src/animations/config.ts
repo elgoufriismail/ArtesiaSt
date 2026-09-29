@@ -152,10 +152,15 @@ export const ANIM = {
   B10: {
     t: { duration: 0.3, ease: 'framer' } as Tween,
     enabled: { desktop: true, tablet: false, phone: false } as PerBp<boolean>,
-    /** Viewport y (px) whose underlying [data-nav-theme] decides the theme. Recon: switches happen
-     *  when a boundary passes the top by ~66–116px (dark-nav-1 @1384 flips between scroll 1450 and 1500).
-     *  The original also shows scroll-direction hysteresis at later boundaries — calibrated in Step 7. */
-    line: -80,
+    /** Viewport y (px) at which a boundary takes over (re-measured 2026-09-29 on the live original with instant scroll
+     *  positions, 4 px steps, both directions — no hysteresis): section roots with [data-nav-theme] switch when their
+     *  top reaches the nav's centre line (y 40: Big Quote top / bottom at 1440 flip between 36 and 40 px); scroll
+     *  markers switch when their top reaches the viewport top (dark-nav-1 and footer-menu flip at 0). The first
+     *  calibration (line −80 for everything) switched 100–150 px of scroll late, and never at the footer at 1920. */
+    sectionLine: 40,
+    markerLine: 0,
+    /** Scroll markers that are theme boundaries without carrying [data-nav-theme] themselves. */
+    markers: [{ marker: 'footer-menu', theme: 'light' as const }],
   },
 
   /* ── B11 big quote 3D arc fold (first-class #7) ──────────────────── */
@@ -208,12 +213,13 @@ export const ANIM = {
   }, // #8
   serviceCard: { lift: 60, t: { spring: true, duration: 0.6, bounce: 0 } as Spring },                               // #9 (CSS)
   pill: { slide: 30, t: { spring: true, duration: 0.3, bounce: 0 } as Spring },                                    // CSS
-  /** Book A Session submit ("Button Book a Session Form"): every variant change — hover, Loading, Success — is one
+  /** Form submit pills (components/ui/SubmitPill: "Button Book a Session Form", "Button Subscription Form"): every
+   *  variant change — hover, Loading, Success — is one
    *  spring 0.6 s bounce 0 (CSS), starting `lag` s (≈ one frame) after the state change like the original's layout
- *  animation (`lagLoading` ≈ two frames for the Loading variant: the form's state update lands a frame after the
- *  click); the loading ring turns 360° per `spin` s, linear, looping. `stubLatency` (s) stands in
+ *  animation (`lagLoading`: the Book A Session form shows Loading a frame later than its hover (two frames), the
+ *  footer newsletter form one frame — measured per form); the loading ring turns 360° per `spin` s, linear, looping. `stubLatency` (s) stands in
    *  for the form backend's response time (the clone has no backend; the original's Loading lasts as long as its POST). */
-  booking: { t: { spring: true, duration: 0.6, bounce: 0 } as Spring, lag: 0.016, lagLoading: 0.033, spin: 1, stubLatency: 1.2 },                   // CSS
+  formButton: { t: { spring: true, duration: 0.6, bounce: 0 } as Spring, lag: 0.016, lagLoading: { booking: 0.033, footer: 0.016 }, spin: 1, stubLatency: 1.2 },                   // CSS
 } as const;
 
 export type AnimConfig = typeof ANIM;

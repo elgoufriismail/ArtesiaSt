@@ -49,8 +49,8 @@ app/layout.tsx  (server)          fonts, global CSS, <html style={hoverCssVars()
       │  ├─ <TextSection index=2/> "Text Section#2"
       │  ├─ <Numbers/>            "Numbers"         marker numbers; 4 × Counter              B8
       │  ├─ <Faq/>                "FAQ"             6 × FaqItem (section-local)                 #12
-      │  └─ <Booking/>            "Book A Session"  sticky RatingWidget/SocialRow, BookingForm + SubmitButton (section-local)
-      ├─ <Footer/>                "Footer Container" marker footer-menu; newsletter, sitemap  B13
+      │  └─ <Booking/>            "Book A Session"  sticky RatingWidget/SocialRow, BookingForm + SubmitPill (components/ui, green)
+      ├─ <Footer/>                "Footer Container" marker footer-menu; newsletter (SubmitPill, white), sitemap  B13
       └─ <Navigation/>            fixed; desktop rows (light/dark) + Menu pill → <MobileMenu/>  B1 B10 B17 · #10 #11
 ```
 
@@ -644,6 +644,46 @@ gates for the sections touched.
   none on phone). The shared rating label stand-in was re-fitted to the original's width (152 vs 151 px; it was 164)
   — also improves PathSection.
 * Tools: booking-submit.mjs, booking-button.mjs (both intercept every non-GET request).
+
+### Step 16 — final QA and polish (full page vs the live original, 2026-09-29)
+Production build (`next build` from a clean `.next`, `next start`), all 8 viewports. No new sections, no architectural
+changes; each finding classified as (1) clone mismatch → fixed, (2) live drift → documented, (3) tool artefact →
+documented, (4) headless variance → not compensated.
+* Full-page captures (capture.mjs, both sites) reviewed side by side at all 8 viewports; pixel diffs 0–6 % per frame
+  are stand-in copy/imagery (by design) and the original's promo badge. Full-page named-layer geometry: 294–337
+  matched layers per viewport, all within 2 px except the two known artefacts below.
+* Fixed (1):
+  - Balance switch: after a fast scroll pass the Off state could keep the On headline visible — a jump moving both
+    markers passed through a transient state whose deferred text swap was dropped, and the next swap compared against
+    that transient state. The swap now compares against the headline pair actually shown (balanceSequence `shown`).
+    Captures at 1440/1920 showed it at scrollY 900; balance-timing.mjs still passes (one rerun: rmse 0.0201–0.0205 vs
+    0.02 on 7 channels, then all pass — run-to-run noise).
+  - Nav theme (B10): re-measured on the live original (ANIMATIONS.md B10 note) — section boundaries at the nav's
+    centre line (y 40), markers at y 0; the `footer-menu` marker is now a boundary. Switch points match within one
+    4 px step at 1920/1440/1280, both directions (nav-theme.mjs); 1920 now turns White over the footer.
+  - Footer newsletter: the original's "Button Subscription Form" shows Loading → Success ("Thank you"; clone
+    "Subscribed") after native email validation; the clone's form did nothing. Booking's submit button became the
+    shared components/ui/SubmitPill (tones green/white, useSubmitState, ANIM.formButton — renamed from `booking`);
+    footer hover now uses the original's 0.6 s spring (was the 0.3 s nav pill); Loading starts one frame after the
+    click on the footer form, two on Booking (measured per form). Footer button per frame vs original: hover ≤ 1.4 px,
+    Loading ≤ 0.75 px; Booking unchanged (hover ≤ 1.1, Loading 0.5–0.9 px).
+* Documented, unchanged:
+  - (3) whole-page geometry pairs "Text Section/Sections/Section#2" of Text Section 1 with Text Section 2 (same child
+    paths); per-section check with --index=2 passes. Loading rings' bounding boxes rotate (1–5 px). How It Works digit
+    diff at 1440 = promo badge + stand-in background line. The `./book-a-session` link hit-test lands on a span of the
+    stacked second nav row — identical on the original.
+  - (4) CLS: clone 0.09–0.27 on desktop (original 0.07 at 1440): the hero H1 re-lays out at ≈ 270 ms while its words
+    are still at opacity 0 (the original does the same at ≈ 1.4 s), and the How It Works rolling digits animate layout
+    boxes during scroll — no visible jump; the validated animation is not rewritten for the metric. Phone ≤ 0.001.
+  - (4) B2 page-intro fade: flaky in headless runs on both builds (passed in the final suite run).
+* Interactions verified o vs c: nav link targets; tablet/phone menu (label, links, html overflow lock, no scroll while
+  open, unlock on close); Balance switch click (same jump, same state); service-card hover (all named layers and texts
+  ≤ 0.01 px per frame); How It Works digits; Pricing Monthly/Yearly (same values, instant, both ways); FAQ open /
+  multiple / rapid / touch; Booking focus, validation, Loading → Success, hover; footer form; touch at 390.
+* Responsive QA (responsive-qa.mjs): no horizontal overflow or escaping elements at any viewport; no intercepted
+  controls apart from the shared nav-row case; production pages load with no console/page errors at all 8.
+* Motion suite: 15/15 · 10/10 · 4/4; B13 passes in absolute coordinates (0.24 px at 1440, 2.69 px at 1024).
+* Tools: nav-theme.mjs, interaction-smoke.mjs, responsive-qa.mjs; booking-button.mjs gained FORM=footer.
 
 ## 10. Testing strategy
 

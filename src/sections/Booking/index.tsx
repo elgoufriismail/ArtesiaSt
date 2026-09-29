@@ -1,9 +1,10 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
+import { useRef } from 'react';
 import { useGsap } from '@/hooks/useGsap';
 import { useBreakpoint } from '@/hooks/useBreakpoint';
 import { RatingWidget } from '@/components/ui/RatingWidget';
+import { SubmitPill, useSubmitState } from '@/components/ui/SubmitPill';
 import { SocialRow } from '@/components/ui/SocialRow';
 import { reveal } from '@/animations/scroll/reveal';
 import { entrance } from '@/animations/load/entrance';
@@ -11,44 +12,10 @@ import { ANIM } from '@/animations/config';
 import { BOOKING as C, RATING } from '@/content/site';
 import styles from './Booking.module.css';
 
-type SubmitState = 'idle' | 'loading' | 'success';
-
-/** Stand-in for the form backend (the clone has none): resolves after ANIM.booking.stubLatency. */
-function sendBooking(_data: FormData): Promise<void> {
-  return new Promise((resolve) => { setTimeout(resolve, ANIM.booking.stubLatency * 1000); });
-}
-
-/**
- * The original "Button Book a Session Form" (192×40 pill): label + "Circle A" (4 px dot at right 16, holding the
- * loading ring "Loading 1" — a 12 px conic gradient turning continuously — and its 8 px white core "Loading 2") and
- * "Circle B" (parked at left −16). Variants: Desktop (hover: label +28, dots +32 → the dot jumps from right to left),
- * Touch (tablet/phone, no hover), Loading (Circle A grows to a 31 px disc at right 5 and shows the ring), Success
- * (label only). The original's form falls back to the default variant when the request fails.
- */
-function SubmitButton({ state, touch, dataRef }: { state: SubmitState; touch: boolean; dataRef: string }) {
-  const name = state === 'loading' ? 'Loading' : state === 'success' ? 'Success' : touch ? 'Touch' : 'Desktop';
-  return (
-    <button type="submit" className={styles.submit} data-state={state} data-touch={touch ? '' : undefined} data-ref={dataRef} data-variant={name} aria-busy={state === 'loading'}>
-      <span className={`t-eyebrow ${styles.submitLabel}`}>{state === 'success' ? C.submit.success : C.submit.idle}</span>
-      <span className={styles.circleA} data-ref={`${dataRef}/Circle A`} aria-hidden="true">
-        <span className={styles.ring} data-ref={`${dataRef}/Circle A/Loading 1`} />
-        <span className={styles.core} data-ref={`${dataRef}/Circle A/Loading 2`} />
-      </span>
-      <span className={styles.circleB} data-ref={`${dataRef}/Circle B`} aria-hidden="true" />
-    </button>
-  );
-}
-
 /** The original's native form: groups A–E (gap 64), 40 px fields with a 1 px bottom rule that darkens on focus, two
- *  selects with a chevron, a textarea, 20 px checkboxes, the note and the submit pill. Native `required` validation. */
+ *  selects with a chevron, a textarea, 20 px checkboxes, the note and the submit pill (components/ui/SubmitPill, green). Native `required` validation. */
 function BookingForm({ base, touch }: { base: string; touch: boolean }) {
-  const [state, setState] = useState<SubmitState>('idle');
-  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (state === 'loading') return;
-    setState('loading');
-    try { await sendBooking(new FormData(e.currentTarget)); setState('success'); } catch { setState('idle'); }
-  };
+  const { state, onSubmit } = useSubmitState();
   const V = `${base}/Variant 1`;
   return (
     <div className={styles.formVariant} data-ref={V}>
@@ -95,7 +62,7 @@ function BookingForm({ base, touch }: { base: string; touch: boolean }) {
           </label>
           <div className={styles.noteWrap}><p className={`t-small ${styles.note}`}>{C.note}</p></div>
         </div>
-        <div className={styles.submitWrap}><SubmitButton state={state} touch={touch} dataRef={`${V}/${touch ? 'Touch' : 'Desktop'}`} /></div>
+        <div className={styles.submitWrap}><SubmitPill state={state} touch={touch} tone="green" width={192} labels={C.submit} loadingLag={ANIM.formButton.lagLoading.booking} dataRef={`${V}/${touch ? 'Touch' : 'Desktop'}`} /></div>
       </form>
     </div>
   );

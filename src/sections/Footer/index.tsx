@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import { useBreakpoint } from '@/hooks/useBreakpoint';
 import { Leaf } from '@phosphor-icons/react';
 import { useGsap } from '@/hooks/useGsap';
 import { footerParallax } from '@/animations/parallax/footerParallax';
@@ -8,7 +9,7 @@ import { reveal } from '@/animations/scroll/reveal';
 import { ANIM } from '@/animations/config';
 import { Marker } from '@/components/ui/Marker';
 import { NavLink } from '@/components/ui/NavLink';
-import { PillButton } from '@/components/ui/PillButton';
+import { SubmitPill, useSubmitState } from '@/components/ui/SubmitPill';
 import { SocialRow } from '@/components/ui/SocialRow';
 import { StandInImage } from '@/components/media/StandInImage';
 import { NoiseOverlay } from '@/components/media/NoiseOverlay';
@@ -18,11 +19,15 @@ import styles from './Footer.module.css';
 /**
  * Footer — original "Footer Container" (STRUCTURE.md §2, BREAKPOINTS.md §4).
  * Dark stand-in photo + noise; background starts 320/160/0 px above the footer and sinks into place
- * (B13, footerParallax). Items fade in on view (B9). Nav theme under the footer: light.
+ * (B13, footerParallax). Items fade in on view (B9). Nav theme under the footer: light (switches at the footer-menu
+ * marker). Newsletter form: native email validation, then the white SubmitPill's Loading → Success ("Button
+ * Subscription Form", measured 2026-09-29).
  */
 export function Footer() {
   const root = useRef<HTMLElement>(null);
   const bg = useRef<HTMLDivElement>(null);
+  const bp = useBreakpoint();
+  const subscribe = useSubmitState();
 
   useGsap(root, (bp) => {
     if (bg.current) footerParallax(bg.current, ANIM.B13.offset[bp]);
@@ -53,12 +58,12 @@ export function Footer() {
               </div>
             </div>
             <div className={styles.subscription}>
-              <form className={styles.form} data-reveal onSubmit={(e) => e.preventDefault()}>
+              <form className={styles.form} data-reveal onSubmit={subscribe.onSubmit}>
                 <label className={styles.inputWrap}>
                   <span className="sr-only">Email</span>
                   <input className={styles.input} type="email" name="email" placeholder={FOOTER.emailPlaceholder} required />
                 </label>
-                <PillButton as="button" type="submit" label={FOOTER.subscribe} variant="white" className={styles.subscribe} />
+                <SubmitPill state={subscribe.state} touch={bp !== 'desktop'} tone="white" width={150} labels={FOOTER.subscribe} loadingLag={ANIM.formButton.lagLoading.footer} dataRef={`Footer Container/Sections A/Section/Container/Subscription Form/${bp === 'desktop' ? 'Desktop' : 'Touch'}`} />
               </form>
               <p className={`t-small ${styles.muted} ${styles.finePrint}`} data-reveal data-standin="text">
                 {FOOTER.finePrint.before}

@@ -57,6 +57,9 @@ export function balanceSequence(p: BalanceParts, cfg = ANIM.B3) {
   const paint = (c: (typeof colors)[keyof typeof colors]) => { c.el.style[c.prop] = toCss(c.cur); };
 
   let state: BalanceState | null = null;
+  // which headline pair is (being) shown — the swap decision compares against this, not against the previous state:
+  // a jump that moves both markers can pass through a transient state whose deferred variant part is dropped
+  let shown: 'before' | 'after' | null = null;
   const apply = (next: BalanceState, instant: boolean) => {
     const prev = state;
     if (next === prev) return;
@@ -85,7 +88,9 @@ export function balanceSequence(p: BalanceParts, cfg = ANIM.B3) {
         c.tween = gsap.to(proxy, { p: 1, ...vars, onUpdate: () => { c.cur = mixColor(from, to, proxy.p); paint(c); }, onComplete: () => { c.cur = to; paint(c); } });
       }
       // Before is shown in Start/Off, After in On
-      if (prev === null || (prev === 'on') !== (next === 'on')) {
+      const want = next === 'on' ? 'after' : 'before';
+      if (shown !== want) {
+        shown = want;
         const [outgoing, incoming] = next === 'on' ? [p.before, p.after] : [p.after, p.before];
         gsap.killTweensOf([...outgoing, ...incoming]);
         if (instant) { gsap.set(outgoing, { opacity: 0 }); gsap.set(incoming, { opacity: 1 }); }

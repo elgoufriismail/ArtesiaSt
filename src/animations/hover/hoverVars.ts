@@ -15,10 +15,9 @@ export function hoverCssVars(): Record<string, string> {
     '--hover-card-ease': springToCssLinear(ANIM.serviceCard.t.bounce, ANIM.serviceCard.t.duration),
     '--hover-card-dur': `${ANIM.serviceCard.t.duration}s`,
     '--hover-card-lift': `${ANIM.serviceCard.lift}px`,
-    '--booking-btn-ease': springToCssLinear(ANIM.booking.t.bounce, ANIM.booking.t.duration),
-    '--booking-btn-dur': `${ANIM.booking.t.duration}s`,
-    '--booking-btn-lag': `${ANIM.booking.lag * 1000}ms`,
-    '--booking-btn-lag-loading': `${ANIM.booking.lagLoading * 1000}ms`,
-    '--booking-spin': `${ANIM.booking.spin}s`,
+    '--form-btn-ease': springToCssLinear(ANIM.formButton.t.bounce, ANIM.formButton.t.duration),
+    '--form-btn-dur': `${ANIM.formButton.t.duration}s`,
+    '--form-btn-lag': `${ANIM.formButton.lag * 1000}ms`,
+    '--form-btn-spin': `${ANIM.formButton.spin}s`,
   };
 }

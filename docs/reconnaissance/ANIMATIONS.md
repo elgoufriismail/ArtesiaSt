@@ -194,6 +194,13 @@ the logo/dot colour animates (white ↔ green, measured through intermediate rgb
 | ≈10 550 → ≈16 050 | Dark | light sections |
 | ≈16 100 → end | White | over footer |
 
+> **Re-measured 2026-09-29 (final QA, live original, instant scroll positions, 4 px steps, both directions, no
+> hysteresis):** section boundaries (Big Quote top/bottom) take over when their top reaches viewport y ≈ 40 (the nav's
+> centre line); scroll markers (`dark-nav-1`, `footer-menu` — 48 px above the footer) when their top reaches y = 0.
+> At 1440 that is Dark at 1384, White at ≈9340, Dark at ≈10 420, White at ≈16 014. The clone's first calibration
+> (one line, −80 px) switched 100–150 px of scroll late and never turned White at the bottom at 1920 (footer exactly
+> one viewport tall); ANIM.B10 now holds sectionLine 40 / markerLine 0.
+
 Reverses exactly on the way up. **Desktop only**: the tablet/phone nav is an opaque white bar (green
 logo, green "Menu" pill) at all scroll positions — no swap.
 

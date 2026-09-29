@@ -175,59 +175,8 @@
 .noteWrap { width: 100%; max-width: 480px; }
 .note { margin: 0; color: var(--c-muted); }
 
-/* submit pill ("Button Book a Session Form"): one spring (ANIM.booking.t via --booking-btn-*) for every variant change,
-   starting one frame late like the original's layout animation (--booking-btn-lag) */
+/* submit pill: components/ui/SubmitPill (green, 192 wide) */
 .submitWrap { position: relative; width: 192px; height: 40px; }
-.submit {
-  --t: var(--booking-btn-dur, 0.6s) var(--booking-btn-ease, ease-out) var(--booking-btn-lag, 16ms);
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 192px;
-  height: 40px;
-  margin: 0;
-  padding: 1px 48px 0 20px;
-  border: 0;
-  border-radius: 999px;
-  overflow: hidden;
-  background: var(--c-green);
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: padding var(--t);
-}
-.submitLabel { position: relative; flex: none; color: var(--c-white); white-space: pre; user-select: none; }
-.circleA, .circleB {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  width: 4px;
-  height: 4px;
-  border-radius: 999px;
-  background: var(--c-white);
-  transform: translateY(-50%);
-  transition: top var(--t), right var(--t), left var(--t), width var(--t), height var(--t);
-}
-.circleA { right: 16px; overflow: hidden; }
-.circleB { left: -16px; }
-.ring, .core { position: absolute; top: 50%; left: 50%; border-radius: 99px; transform: translate(-50%, -50%); }
-.ring {
-  width: 12px;
-  height: 12px;
-  background: conic-gradient(from 0deg at 50% 50%, rgba(127, 166, 155, 0) 76deg, var(--c-green) 360deg);
-  animation: booking-spin var(--booking-spin, 1s) linear infinite;
-}
-.core { width: 8px; height: 8px; background: var(--c-white); }
-@keyframes booking-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
-
-@media (hover: hover) {
-  .submit[data-state='idle']:not([data-touch]):hover { padding: 1px 20px 0 48px; }
-  .submit[data-state='idle']:not([data-touch]):hover .circleA { top: 49%; right: -16px; }
-  .submit[data-state='idle']:not([data-touch]):hover .circleB { top: 49%; left: 16px; }
-}
-.submit[data-state='loading'] { --t: var(--booking-btn-dur, 0.6s) var(--booking-btn-ease, ease-out) var(--booking-btn-lag-loading, 33ms); }
-.submit[data-state='loading'] .circleA { right: 5px; width: 31px; height: 31px; }
-.submit[data-state='loading'], .submit[data-state='success'], .submit[data-touch] { cursor: unset; }
 
 @media (min-width: 1600px) {
   .groupTitle { font-size: 28px; }

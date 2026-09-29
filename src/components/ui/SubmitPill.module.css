@@ -1,0 +1,59 @@
+/* Form submit pills (Book A Session: green; footer Subscribe: white). One spring (ANIM.formButton via --form-btn-*)
+   for every variant change, starting one frame late like the original's layout animation (Loading: per form, --pill-lag-loading). */
+.pill {
+  --t: var(--form-btn-dur, 0.6s) var(--form-btn-ease, ease-out) var(--form-btn-lag, 16ms);
+  position: relative;
+  display: flex;
+  flex: none;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  margin: 0;
+  padding: 1px 48px 0 20px;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--pill-bg);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: padding var(--t);
+}
+.label { position: relative; flex: none; color: var(--pill-label); white-space: pre; user-select: none; transition: color var(--t); }
+.circleA, .circleB {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  transition: top var(--t), right var(--t), left var(--t), width var(--t), height var(--t), background-color var(--t);
+}
+.circleA { right: 16px; overflow: hidden; background: var(--pill-dot-a); }
+.circleB { left: -16px; background: var(--pill-dot-b); }
+.ring, .core { position: absolute; top: 50%; left: 50%; border-radius: 99px; transform: translate(-50%, -50%); }
+.ring { width: 12px; height: 12px; background: var(--pill-ring); animation: form-btn-spin var(--form-btn-spin, 1s) linear infinite; }
+.core { width: 8px; height: 8px; background: var(--pill-core); transition: background-color var(--t); }
+@keyframes form-btn-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+/* tones (original colours) */
+.green {
+  --pill-bg: var(--c-green); --pill-label: var(--c-white); --pill-dot-a: var(--c-white); --pill-dot-b: var(--c-white);
+  --pill-ring: conic-gradient(from 0deg at 50% 50%, rgba(127, 166, 155, 0) 76deg, var(--c-green) 360deg); --pill-core: var(--c-white);
+}
+.white {
+  --pill-bg: var(--c-white); --pill-label: var(--c-ink); --pill-dot-a: var(--c-body); --pill-dot-b: var(--c-green);
+  --pill-ring: conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 76deg, #fff 360deg); --pill-core: var(--c-body);
+}
+.white[data-state='loading'] { --pill-label: var(--c-green); --pill-dot-a: var(--c-green); --pill-core: var(--c-green); }
+.white[data-state='success'] { --pill-label: var(--c-green); --pill-core: var(--c-green); }
+
+@media (hover: hover) {
+  .pill[data-state='idle']:not([data-touch]):hover { padding: 1px 20px 0 48px; }
+  .pill[data-state='idle']:not([data-touch]):hover .circleA { top: 49%; right: -16px; }
+  .pill[data-state='idle']:not([data-touch]):hover .circleB { top: 49%; left: 16px; }
+  .white[data-state='idle']:not([data-touch]):hover { --pill-label: var(--c-green); }
+}
+.pill[data-state='loading'] { --t: var(--form-btn-dur, 0.6s) var(--form-btn-ease, ease-out) var(--pill-lag-loading, 16ms); }
+.pill[data-state='loading'] .circleA { right: 5px; width: 31px; height: 31px; }
+.pill[data-state='loading'], .pill[data-state='success'], .pill[data-touch] { cursor: unset; }

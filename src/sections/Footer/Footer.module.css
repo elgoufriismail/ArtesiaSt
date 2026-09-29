@@ -57,7 +57,6 @@
   font: 400 16px/27.2px var(--f-sans);
 }
 .input::placeholder { color: var(--c-white-65); }
-.subscribe { height: 40px; width: 150px; }
 .finePrint { max-width: 320px; }
 .inlineLink { color: var(--c-white); text-decoration: underline; font-weight: 600; }
 

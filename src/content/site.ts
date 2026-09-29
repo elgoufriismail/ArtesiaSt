@@ -219,7 +219,7 @@ export const FAQ = {
 
 /** Book A Session. Stand-in copy with the original's budgets (eyebrow 14, H2 34, intro 191, contact 97, group titles
  *  18/16/41, five service labels, newsletter 44, note 136), fitted to its line counts at all 8 viewports. Field names are
- *  the clone's own; the form has no backend (see ANIM.booking.stubLatency). */
+ *  the clone's own; the form has no backend (see ANIM.formButton.stubLatency). */
 export const BOOKING = {
   eyebrow: 'Plan your visit',
   title: ['Care begins with one ', 'small\u00a0message.'] as const,
@@ -241,7 +241,7 @@ export const FOOTER = {
   // budget: 138 chars · 20 words · 3 lines @480
   body: 'Every few weeks we send short reflections, simple exercises and gentle reminders to help you rest, reset and look after your mind and body.',
   emailPlaceholder: 'Your Email',
-  subscribe: 'Subscribe',
+  subscribe: { idle: 'Subscribe', success: 'Subscribed' },
   // budget: 80 chars · 14 words · 2 lines @320 (link inside)
   finePrint: { before: 'By subscribing you accept our ', link: 'Privacy Policy.', after: ' We never share your details.' },
   sitemapLabel: 'Sitemap',
