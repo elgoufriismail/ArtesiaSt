@@ -696,6 +696,18 @@ documented, (4) headless variance → not compensated.
   timing unchanged (geometry and motion suite as before). Tools that compare colours with the live original now
   report the accent difference by design (balance-timing.mjs: track G channel).
 
+### Client customisation 2 — brand-aligned stand-in imagery (2026-09-30)
+
+* `tools/standins/generate.py` palettes for hero-backdrop, hero-portrait, footer, service-1, service-4, story-b-1,
+  story-b-2, big-quote and journal-a/b/c moved from green/teal to the #FF0031 family (primary, crimson, burgundy,
+  muted pink, off-white, charcoal). Field positions/radii (composition, light/dark balance), pixel sizes and CSS
+  object-position are unchanged; the grain and the NoiseOverlay are unchanged.
+* The generator takes optional slot names (`python3 tools/standins/generate.py hero-backdrop footer`) and then
+  rewrites only those photos and their manifest entries.
+* Footer base colour: `--c-footer-bg` (#171416, was hardcoded #1e2e34) in tokens.css.
+* Not recoloured (outside that list): service-2 (dark blue), service-3 (blue-grey, reads teal), story-a-1/2 (blue),
+  avatars; `--c-star` stays green.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

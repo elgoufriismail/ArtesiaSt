@@ -12,9 +12,11 @@ Outputs:
   public/masks/avatar-ring.svg    circular cut-out mask for overlapping avatars
   public/standins/manifest.json   slot -> file, size, original asset id (for traceability)
 
-Usage: python3 tools/standins/generate.py   (deterministic; seeded)
+Usage: python3 tools/standins/generate.py [slot ...]
+  With slot names, only those photos are rewritten (textures/masks untouched, manifest entries merged);
+  the photo grain is not seeded, so a full run changes every photo's grain bytes.
 """
-import json, math, os, random
+import json, math, os, random, sys
 from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -23,25 +25,27 @@ PUB = os.path.join(ROOT, 'public')
 # slot: (original asset id, width, height, [(x, y, radius_rel, rgb), ...] soft light fields, base rgb, focal note)
 # Coordinates are relative (0..1). Base/fields describe the intended tonal key of each slot
 # (e.g. "dark teal, light from upper right") — authored by hand from the design, not sampled.
+# Client palette (2026-09-30): the teal/green slots keep their field layout (positions, radii, light/dark
+# balance) but take brand tones — #FF0031 primary, crimson, burgundy, muted pink, off-white, charcoal.
 SLOTS = {
-  'hero-backdrop':   ('A6yz8YhmbQkg8ACTADACAMNk7s', 2048, 2048, (122, 160, 146), [(.30,.25,.55,(186,214,196)), (.70,.75,.60,(214,200,140)), (.55,.45,.35,(150,190,180))], 'soft green/yellow haze, no subject'),
-  # abstract tonal study: pale warm focal mass centre-right, warm yellow glow lower-left, cool teal
+  'hero-backdrop':   ('A6yz8YhmbQkg8ACTADACAMNk7s', 2048, 2048, (214, 96, 112), [(.30,.25,.55,(246,206,210)), (.70,.75,.60,(244,214,204)), (.55,.45,.35,(255,40,72))], 'soft rose/blush haze with a brand-red core, no subject'),
+  # abstract tonal study: pale warm focal mass centre-right, brand-red glow lower-left, pale pink
   # upper-left, deep shadow on the right edge — keeps the original frame's light/dark balance
-  'hero-portrait':   ('vJzjZEQ7XEcIpUiaWAlM8HVcE', 3600, 3200, (96, 128, 124), [(.22,.14,.30,(150,196,196)), (.50,.26,.13,(214,186,166)), (.56,.50,.20,(206,196,170)), (.62,.84,.24,(214,206,176)), (.14,.84,.26,(222,200,120)), (.86,.42,.20,(48,72,76)), (.96,.90,.22,(40,58,60))], 'pale focal mass centre-right, warm glow lower-left, dark right edge; crop anchored top (50% 0%)'),
-  'service-1':       ('VW2dIv9jFcnOEMXK68HcTW0X9g', 2048, 2048, (40, 70, 72), [(.55,.60,.35,(120,150,140)), (.30,.20,.40,(70,110,112))], 'deep teal water tone'),
+  'hero-portrait':   ('vJzjZEQ7XEcIpUiaWAlM8HVcE', 3600, 3200, (168, 82, 96), [(.22,.14,.30,(232,184,192)), (.50,.26,.13,(240,222,218)), (.56,.50,.20,(236,212,210)), (.62,.84,.24,(244,230,226)), (.14,.84,.26,(255,52,84)), (.86,.42,.20,(74,16,30)), (.96,.90,.22,(34,12,20))], 'pale focal mass centre-right, brand-red glow lower-left, burgundy right edge; crop anchored top (50% 0%)'),
+  'service-1':       ('VW2dIv9jFcnOEMXK68HcTW0X9g', 2048, 2048, (64, 18, 30), [(.55,.60,.35,(170,70,86)), (.30,.20,.40,(110,30,46))], 'deep burgundy, dusty crimson light'),
   'service-2':       ('X1KAS3BPHbN4rR5FN8CCVsSUhM', 2048, 2048, (36, 42, 58), [(.50,.55,.25,(214,140,70)), (.40,.30,.45,(60,70,96))], 'dark blue with warm centre glow'),
   'service-3':       ('lZn0EEipDdK6TqFQ685W86d6r9M', 2048, 2048, (70, 90, 96), [(.50,.50,.22,(170,190,196)), (.20,.80,.40,(40,60,66))], 'blue-grey, bright centre'),
-  'service-4':       ('Ux4Is85LWxm9dXetoVhxJWLGhLI', 2048, 2048, (54, 88, 80), [(.60,.40,.45,(120,160,146)), (.25,.75,.40,(34,60,56))], 'green foliage tone'),
+  'service-4':       ('Ux4Is85LWxm9dXetoVhxJWLGhLI', 2048, 2048, (96, 34, 46), [(.60,.40,.45,(200,120,132)), (.25,.75,.40,(40,16,22))], 'crimson with muted-pink light'),
   'story-a-1':       ('Xgg8qSDKhoEnATJuF3xxVuO0bw', 2048, 2048, (150, 176, 190), [(.50,.35,.30,(230,200,190)), (.50,.80,.40,(200,206,214))], 'pale blue, light subject centre'),
   'story-a-2':       ('lLxmvlvWIZ4P7PBI7azU4zec', 2048, 2048, (120, 150, 176), [(.45,.35,.28,(240,190,150)), (.55,.75,.35,(170,190,210))], 'blue with warm upper subject'),
-  'story-b-1':       ('PSjitKcEoMQOEmVvStpNCNRXmSk', 2048, 2048, (40, 60, 58), [(.50,.40,.30,(120,110,100)), (.80,.20,.35,(90,130,120))], 'dark green, subject centre'),
-  'story-b-2':       ('yzTuL74LYLey46xO4X9rihvGRs4', 2048, 2048, (150, 170, 160), [(.45,.40,.30,(60,64,62)), (.70,.70,.35,(210,200,160))], 'light green-grey, dark subject'),
-  'big-quote':       ('i3wLiFEx85bL9zj8Y2GBkjDc5z4', 2048, 2048, (22, 40, 46), [(.55,.62,.30,(170,120,90)), (.80,.30,.40,(40,70,76))], 'very dark teal, warm lower-centre highlight'),
-  'journal-a':       ('D6H1lHKBDuxkhpUVf8PPyt7Jivg', 2048, 2048, (150, 186, 160), [(.45,.50,.30,(230,190,110)), (.70,.30,.40,(190,210,180))], 'mint with warm centre'),
-  'journal-b':       ('LksF7zMOHE97HJPqXDmb7LSvWE', 2048, 2048, (24, 44, 52), [(.50,.55,.25,(150,140,120)), (.30,.30,.40,(40,70,80))], 'dark teal'),
-  'journal-c':       ('ZMX4xonC6WvSRyRzHHgOkTDzw4', 2048, 2048, (170, 196, 196), [(.50,.55,.35,(90,80,70)), (.20,.20,.40,(214,226,226))], 'pale blue-green, dark centre'),
-  # abstract: near-black blue-slate with a soft lit band across the middle, darker top and bottom
-  'footer':          ('TF67zgMSYINSD7dymhKX4rhrTM', 2048, 2048, (20, 28, 36), [(.50,.46,.22,(112,128,136)), (.30,.60,.20,(70,86,96)), (.72,.58,.18,(82,98,108)), (.50,.95,.30,(14,20,26)), (.10,.10,.30,(28,40,50))], 'near-black slate, soft lit band across the middle'),
+  'story-b-1':       ('PSjitKcEoMQOEmVvStpNCNRXmSk', 2048, 2048, (42, 24, 28), [(.50,.40,.30,(130,104,106)), (.80,.20,.35,(150,44,62))], 'charcoal-burgundy, subject centre'),
+  'story-b-2':       ('yzTuL74LYLey46xO4X9rihvGRs4', 2048, 2048, (214, 196, 198), [(.45,.40,.30,(58,50,52)), (.70,.70,.35,(244,226,222))], 'light rose-grey, dark subject'),
+  'big-quote':       ('i3wLiFEx85bL9zj8Y2GBkjDc5z4', 2048, 2048, (26, 14, 18), [(.55,.62,.30,(200,40,64)), (.80,.30,.40,(60,18,30))], 'near-black, crimson lower-centre highlight'),
+  'journal-a':       ('D6H1lHKBDuxkhpUVf8PPyt7Jivg', 2048, 2048, (226, 168, 176), [(.45,.50,.30,(255,56,86)), (.70,.30,.40,(240,214,214))], 'muted pink with brand-red centre'),
+  'journal-b':       ('LksF7zMOHE97HJPqXDmb7LSvWE', 2048, 2048, (28, 18, 22), [(.50,.55,.25,(160,120,120)), (.30,.30,.40,(88,20,36))], 'charcoal with burgundy'),
+  'journal-c':       ('ZMX4xonC6WvSRyRzHHgOkTDzw4', 2048, 2048, (230, 214, 214), [(.50,.55,.35,(70,26,36)), (.20,.20,.40,(246,240,238))], 'pale blush-grey, burgundy centre'),
+  # abstract: near-black charcoal with a soft lit band across the middle, darker top and bottom
+  'footer':          ('TF67zgMSYINSD7dymhKX4rhrTM', 2048, 2048, (22, 18, 20), [(.50,.46,.22,(104,50,60)), (.30,.60,.20,(62,30,38)), (.72,.58,.18,(80,36,46)), (.50,.95,.30,(14,12,13)), (.10,.10,.30,(30,22,26))], 'near-black charcoal, soft burgundy band across the middle'),
   'avatar-1':        ('POpTLGuLzTuWYxuEYrRGJD678', 280, 280, (60, 80, 110), [(.50,.45,.30,(210,170,140))], 'avatar'),
   'avatar-2':        ('aLd0GlWVHywVWuurCk8JtAWSPw', 512, 512, (200, 150, 60), [(.50,.45,.30,(120,90,70))], 'avatar'),
   'avatar-3':        ('PH9MBoozXCDuSg7Zw0ksQExNo', 512, 512, (170, 90, 60), [(.50,.45,.30,(230,190,160))], 'avatar'),
@@ -122,13 +126,23 @@ def main():
     os.makedirs(os.path.join(PUB, 'textures'), exist_ok=True)
     os.makedirs(os.path.join(PUB, 'masks'), exist_ok=True)
     rng = random.Random(1234)
-    manifest = {}
+    only = sys.argv[1:]
+    unknown = [a for a in only if a not in SLOTS]
+    if unknown:
+        sys.exit(f'unknown slot(s): {unknown}')
+    mpath = os.path.join(PUB, 'standins', 'manifest.json')
+    manifest = json.load(open(mpath)) if only and os.path.exists(mpath) else {}
     for slot, (orig, w, h, base, fields, note) in SLOTS.items():
+        if only and slot not in only:
+            continue
         img = add_grain(field_image(w, h, base, fields, rng), rng)
         out = os.path.join(PUB, 'standins', f'{slot}.jpg')
         img.save(out, quality=82, optimize=True, progressive=True)
         manifest[slot] = {'file': f'/standins/{slot}.jpg', 'width': w, 'height': h, 'replacesOriginal': orig, 'note': note}
         print(f'{slot:16} {w}x{h}  {os.path.getsize(out)//1024} KB')
+    if only:
+        json.dump(manifest, open(mpath, 'w'), indent=1)
+        return
 
     noise_tile(256, 1).save(os.path.join(PUB, 'textures', 'noise-a.png'))
     noise_tile(240, 2).save(os.path.join(PUB, 'textures', 'noise-b.png'))

@@ -10,7 +10,7 @@
   min-height: 100vh;
   padding: 200px 0 64px;
   overflow: hidden;
-  background: #1e2e34;
+  background: var(--c-footer-bg);
   color: var(--c-white);
 }
 

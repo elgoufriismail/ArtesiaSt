@@ -17,6 +17,7 @@
   --c-white-65: #ffffffa6;   /* secondary text on dark */
   --c-grey-bg: #fafafa;      /* light section background */
   --c-black: #000000;
+  --c-footer-bg: #171416; /* footer base behind its photo (seen while it loads); was #1e2e34 */
   --c-track-off: rgba(0, 0, 0, 0.2);
   --c-check-idle: rgba(var(--c-accent-rgb), 0.2);
   --c-star: rgb(0, 182, 122);

@@ -4,21 +4,21 @@
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "A6yz8YhmbQkg8ACTADACAMNk7s",
-  "note": "soft green/yellow haze, no subject"
+  "note": "soft rose/blush haze with a brand-red core, no subject"
  },
  "hero-portrait": {
   "file": "/standins/hero-portrait.jpg",
   "width": 3600,
   "height": 3200,
   "replacesOriginal": "vJzjZEQ7XEcIpUiaWAlM8HVcE",
-  "note": "pale focal mass centre-right, warm glow lower-left, dark right edge; crop anchored top (50% 0%)"
+  "note": "pale focal mass centre-right, brand-red glow lower-left, burgundy right edge; crop anchored top (50% 0%)"
  },
  "service-1": {
   "file": "/standins/service-1.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "VW2dIv9jFcnOEMXK68HcTW0X9g",
-  "note": "deep teal water tone"
+  "note": "deep burgundy, dusty crimson light"
  },
  "service-2": {
   "file": "/standins/service-2.jpg",
@@ -39,7 +39,7 @@
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "Ux4Is85LWxm9dXetoVhxJWLGhLI",
-  "note": "green foliage tone"
+  "note": "crimson with muted-pink light"
  },
  "story-a-1": {
   "file": "/standins/story-a-1.jpg",
@@ -60,49 +60,49 @@
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "PSjitKcEoMQOEmVvStpNCNRXmSk",
-  "note": "dark green, subject centre"
+  "note": "charcoal-burgundy, subject centre"
  },
  "story-b-2": {
   "file": "/standins/story-b-2.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "yzTuL74LYLey46xO4X9rihvGRs4",
-  "note": "light green-grey, dark subject"
+  "note": "light rose-grey, dark subject"
  },
  "big-quote": {
   "file": "/standins/big-quote.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "i3wLiFEx85bL9zj8Y2GBkjDc5z4",
-  "note": "very dark teal, warm lower-centre highlight"
+  "note": "near-black, crimson lower-centre highlight"
  },
  "journal-a": {
   "file": "/standins/journal-a.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "D6H1lHKBDuxkhpUVf8PPyt7Jivg",
-  "note": "mint with warm centre"
+  "note": "muted pink with brand-red centre"
  },
  "journal-b": {
   "file": "/standins/journal-b.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "LksF7zMOHE97HJPqXDmb7LSvWE",
-  "note": "dark teal"
+  "note": "charcoal with burgundy"
  },
  "journal-c": {
   "file": "/standins/journal-c.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "ZMX4xonC6WvSRyRzHHgOkTDzw4",
-  "note": "pale blue-green, dark centre"
+  "note": "pale blush-grey, burgundy centre"
  },
  "footer": {
   "file": "/standins/footer.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "TF67zgMSYINSD7dymhKX4rhrTM",
-  "note": "near-black slate, soft lit band across the middle"
+  "note": "near-black charcoal, soft burgundy band across the middle"
  },
  "avatar-1": {
   "file": "/standins/avatar-1.jpg",
