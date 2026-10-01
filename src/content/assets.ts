@@ -7,7 +7,7 @@ const s = (slot: string, width: number, height: number, position = '50% 50%') =>
 
 export const STANDINS = {
   'hero-backdrop': s('hero-backdrop', 2048, 2048, '49.5% 28.4%'),
-  'hero-portrait': s('hero-portrait', 3600, 3200, '50% 0%'),
+  'hero-portrait': s('hero-portrait', 1330, 1182, '50% 0%'), // client photo (star character), 9:8 like the original
   'service-1': s('service-1', 2048, 2048),
   'service-2': s('service-2', 2048, 2048),
   'service-3': s('service-3', 2048, 2048),

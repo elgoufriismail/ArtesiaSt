@@ -8,10 +8,10 @@
  },
  "hero-portrait": {
   "file": "/standins/hero-portrait.jpg",
-  "width": 3600,
-  "height": 3200,
+  "width": 1330,
+  "height": 1182,
   "replacesOriginal": "vJzjZEQ7XEcIpUiaWAlM8HVcE",
-  "note": "pale focal mass centre-right, brand-red glow lower-left, burgundy right edge; crop anchored top (50% 0%)"
+  "note": "CLIENT PHOTO (star character on light grey), 1330x1182 sRGB; crop anchored top (50% 0%)"
  },
  "service-1": {
   "file": "/standins/service-1.jpg",
