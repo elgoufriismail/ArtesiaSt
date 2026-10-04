@@ -7,7 +7,7 @@
  */
 import type { Cta } from './types';
 
-export const BRAND = { name: 'Calm Shore', wordmark: 'calm—shore' } as const;
+export const BRAND = { name: 'Calm Shore', wordmark: 'ARTESIA' } as const;
 
 export const NAV = {
   links: [
@@ -23,7 +23,7 @@ export const NAV = {
 
 export const HERO = {
   // budget: 31 chars · 6 words · 3 lines (1200–1599 / tablet / phone), 2 lines ≥1600
-  headline: 'A Steady Place To Find Yourself.',
+  headline: 'Artesia Studio.',
   // budget: 216 chars · 34 words · 5 lines @427px (first line indented 20% + 16px)
   intro:
     'We guide people through hard seasons of life with steady, practical care. Our counselling and coaching sessions help you understand yourself more clearly, build healthier habits and move toward change on your own terms.',

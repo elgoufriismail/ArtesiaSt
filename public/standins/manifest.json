@@ -8,10 +8,10 @@
  },
  "hero-portrait": {
   "file": "/standins/hero-portrait.jpg",
-  "width": 1330,
-  "height": 1182,
+  "width": 2880,
+  "height": 2560,
   "replacesOriginal": "vJzjZEQ7XEcIpUiaWAlM8HVcE",
-  "note": "CLIENT PHOTO (star character on light grey), 1330x1182 sRGB; crop anchored top (50% 0%)"
+  "note": "CLIENT PHOTO (star character) recomposed to 2880x2560: smaller, centred horizontally, whole body + shadow inside the area every viewport shows under the top-anchored cover crop; studio backdrop extended"
  },
  "service-1": {
   "file": "/standins/service-1.jpg",
