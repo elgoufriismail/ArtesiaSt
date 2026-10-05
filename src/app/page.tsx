@@ -7,19 +7,17 @@ import { Services } from '@/sections/Services';
 import { Philosophy } from '@/sections/Philosophy';
 import { Story } from '@/sections/Story';
 import { HowItWorks } from '@/sections/HowItWorks';
-import { PathSection } from '@/sections/PathSection';
-import { Pricing } from '@/sections/Pricing';
 import { TextSection } from '@/sections/TextSection';
 import { Quote } from '@/sections/Quote';
 import { Journal } from '@/sections/Journal';
-import { Numbers } from '@/sections/Numbers';
 import { Faq } from '@/sections/Faq';
 import { Booking } from '@/sections/Booking';
 import { Footer } from '@/sections/Footer';
 import styles from './page.module.css';
 
 /**
- * Homepage — section order is exactly the original's (docs/reconnaissance/STRUCTURE.md §2).
+ * Homepage — section order is the original's (docs/reconnaissance/STRUCTURE.md §2), minus the sections the client
+ * removed (2026-10-05): PathSection, Pricing, Story B, Numbers. Their components stay in src/sections for reuse.
  * Server component: composes client sections; fixed layers first, then Main Container, then footer.
  */
 export default function Home() {
@@ -34,14 +32,10 @@ export default function Home() {
         <Philosophy />
         <Story variant="a" />
         <HowItWorks />
-        <PathSection />
-        <Pricing />
         <TextSection index={1} />
         <Quote />
-        <Story variant="b" />
         <Journal />
         <TextSection index={2} />
-        <Numbers />
         <Faq />
         <Booking />
       </main>
