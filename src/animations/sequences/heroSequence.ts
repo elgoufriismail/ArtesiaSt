@@ -15,7 +15,7 @@ import type { Breakpoint } from '@/lib/breakpoints';
  *          paragraph y −20 → 0 and CTA y +20 → 0 with opacity (1 s 'entrance', +0.4 s, desktop).
  *  scroll: portrait opacity = 1 − targetProgress(Hero, threshold 0) — reveals the green backdrop;
  *          intro text container y = 0.3 × scrollY (desktop, Framer speed 70);
- *          lines drawn by GSAP ScrollTrigger scrub (top 50% → bottom 50%, scrub 0.5);
+ *          lines drawn by GSAP ScrollTrigger scrub (top top → bottom 50%, scrub 0.5: nothing drawn at scrollY 0);
  *          lines fade out (1.2 s 'strong', back 0.8 s) when `toggle-start-animation` crosses 50 % vh;
  *          whole Page Intro fades out (spring 1.2 s, back 0.8 s) when `toggle-on-animation` crosses 50 % vh.
  */
@@ -39,7 +39,8 @@ export function heroSequence(p: HeroParts, bp: Breakpoint, cfg = ANIM) {
   loadFade(p.backdrop, 1, cfg.B1.backdrop.t);
   if (desktop && p.lines) {
     p.lineWraps.forEach((w, i) => { const l = cfg.B1.heroLines[i]; if (l) loadFade(w, l.to.opacity, l.t); });
-    p.paths.forEach((path) => drawPath(path, cfg.draw));
+    // trigger = the lines container (top exactly at scrollY 0); path-1's own box pokes ~3 px above it
+    p.paths.forEach((path) => drawPath(path, { ...cfg.draw, start: cfg.B2.linesDrawStart }, p.lines!));
   }
   if (cfg.B1.heroTextEntranceEnabled[bp]) {
     if (p.paragraph) entrance(p.paragraph, cfg.B1.entranceDelays.heroParagraph, -1, { fromLoad: true });

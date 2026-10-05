@@ -41,6 +41,8 @@ export const ANIM = {
   B2: {
     portraitFade: { threshold: 0, from: 1, to: 0 },               // onScrollTarget(Hero, 0)
     textParallaxFactor: { desktop: 0.3, tablet: 0, phone: 0 } as PerBp<number>, // speed 70
+    // client change: the hero lines start drawing at scrollY 0 (nothing drawn on load) instead of the shared 'top 50%'
+    linesDrawStart: 'top top',
     // fading out = Framer "exit" (0.8 s), fading back in = "animate" (1.2 s) — verified frame-by-frame
     linesFadeOut: { marker: 'toggle-start-animation', line: 0.5, edge: 'bottom' as const, startFrames: 2, t: { duration: 0.8, ease: 'strong' } as Tween, back: { duration: 1.2, ease: 'strong' } as Tween },
     introFadeOut: { marker: 'toggle-on-animation', line: 0.5, edge: 'bottom' as const, startFrames: 1, t: { spring: true, duration: 1.2, bounce: 0 } as Spring, back: { spring: true, duration: 0.8, bounce: 0 } as Spring },

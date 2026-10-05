@@ -6,7 +6,7 @@ import { ANIM } from '../config';
  * pricing scribble): stroke-dashoffset L → 0, scrubbed by GSAP ScrollTrigger exactly like the
  * original's code component (start 'top 50%', end 'bottom 50%', scrub 0.5, ease none).
  */
-export function drawPath(path: SVGPathElement, cfg = ANIM.draw, trigger: Element = path) {
+export function drawPath(path: SVGPathElement, cfg: { start: string; end: string; scrub: number; ease: string } = ANIM.draw, trigger: Element = path) {
   const len = path.getTotalLength();
   gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
   return gsap.to(path, {
