@@ -28,7 +28,7 @@ PUB = os.path.join(ROOT, 'public')
 # Client palette (2026-09-30): the teal/green slots keep their field layout (positions, radii, light/dark
 # balance) but take brand tones — #FF0031 primary, crimson, burgundy, muted pink, off-white, charcoal.
 SLOTS = {
-  'hero-backdrop':   ('A6yz8YhmbQkg8ACTADACAMNk7s', 2048, 2048, (214, 96, 112), [(.30,.25,.55,(246,206,210)), (.70,.75,.60,(244,214,204)), (.55,.45,.35,(255,40,72))], 'soft rose/blush haze with a brand-red core, no subject'),
+  'hero-backdrop':   ('A6yz8YhmbQkg8ACTADACAMNk7s', 2048, 2048, (122, 62, 76), [(.30,.25,.55,(206,176,184)), (.70,.75,.60,(214,190,188)), (.55,.45,.35,(75,23,36))], 'mauve/rose haze with a deep #4B1724 burgundy core, no subject'),
   # abstract tonal study: pale warm focal mass centre-right, brand-red glow lower-left, pale pink
   # upper-left, deep shadow on the right edge — keeps the original frame's light/dark balance
   'hero-portrait':   ('vJzjZEQ7XEcIpUiaWAlM8HVcE', 3600, 3200, (168, 82, 96), [(.22,.14,.30,(232,184,192)), (.50,.26,.13,(240,222,218)), (.56,.50,.20,(236,212,210)), (.62,.84,.24,(244,230,226)), (.14,.84,.26,(255,52,84)), (.86,.42,.20,(74,16,30)), (.96,.90,.22,(34,12,20))], 'pale focal mass centre-right, brand-red glow lower-left, burgundy right edge; crop anchored top (50% 0%)'),
