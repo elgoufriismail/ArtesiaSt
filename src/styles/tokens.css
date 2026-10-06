@@ -6,8 +6,8 @@
 :root {
   /* colour — CLIENT BRAND: change the accent here (hex + the same colour as an "r, g, b" triplet for tints);
      every accent use, tint, transition start and JS-driven switch colour derives from these two values */
-  --c-accent: #ff0031;
-  --c-accent-rgb: 255, 0, 49;
+  --c-accent: #4b1724;
+  --c-accent-rgb: 75, 23, 36;
 
   --c-ink: #2e3231;          /* headings, dark text */
   --c-body: #535956;         /* paragraphs */
