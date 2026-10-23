@@ -15,7 +15,7 @@ export interface SiteContent {
   balance: { label: string; before: { headline: Segmented; body: string }; after: { headline: Segmented; body: string } };
   services: { cards: { title: string; body: string; image: StandInSlot; href: string }[]; readMore: string };
   philosophy: { eyebrow: string; statement: string; cta: Cta };
-  stories: Record<'a' | 'b', { eyebrow: string; title: string; body: string; cta: Cta; images: [StandInSlot, StandInSlot] }>;
+  stories: Record<'a' | 'b', { eyebrow: string; title: string; body: string; cta: Cta; gallery: { slot: StandInSlot; caption: string }[] }>;
   howItWorks: { headline: Segmented; lead: string; steps: { title: string; body: string }[] };
   path: { headline: Segmented; body: string; cta: Cta; contact: string };
   pricing: { eyebrow: string; headline: string; body: string; plans: { name: string; blurb: string; monthly: number; features: string[] }[] };

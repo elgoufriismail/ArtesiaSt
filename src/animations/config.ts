@@ -92,6 +92,7 @@ export const ANIM = {
     storyLarge: { desktop: 300, tablet: 300, phone: 0 } as PerBp<number>,
     storySmall: { desktop: 100, tablet: 100, phone: 0 } as PerBp<number>,
     quote: { desktop: 500, tablet: 300, phone: 0 } as PerBp<number>,
+    gallery: { desktop: 80, tablet: 60, phone: 0 } as PerBp<number>, // Story gallery photos (client change)
     noiseOpacity: { default: 0.15, quote: 0.1 },
   },
 
@@ -171,6 +172,31 @@ export const ANIM = {
 
   /* ── B12 story frame drift ───────────────────────────────────────── */
   B12: { threshold: 1, image1Y: -16, image2Y: 120 },
+
+  /* ── Story gallery (client change 2026-10-23: Story A shows 6 photos, Option A) ─────────────────── */
+  /** Reveal (once per photo, when 10 % of it is in view): the frame unmasks upwards while the photo settles
+   *  from a slight zoom; the caption follows. Photos entering together are staggered.
+   *  Hover (fine pointers only): photo zooms + leans toward the cursor, the frame tightens into an inset mat
+   *  (CSS), a "View" badge follows the cursor, the other photos dim (CSS). */
+  storyGallery: {
+    reveal: {
+      rootMargin: '0px 0px -10% 0px',
+      stagger: 0.12,
+      frame: { duration: 1.3, ease: 'reveal' } as Tween,
+      zoomFrom: 1.12,
+      zoom: { duration: 1.6, ease: 'reveal' } as Tween,
+      caption: { delay: 0.35, y: 12, duration: 0.9, ease: 'reveal' } as Tween & { delay: number; y: number },
+    },
+    hover: {
+      scale: 1.07,
+      lean: 12,                                            // px toward the cursor at the frame edge
+      enter: { duration: 1.1, ease: 'reveal' } as Tween,
+      leave: { duration: 0.9, ease: 'reveal' } as Tween,
+      follow: { duration: 0.6, ease: 'power3.out' },       // badge + lean smoothing
+      badgeIn: { duration: 0.5, ease: 'reveal' } as Tween,
+      badgeOut: { duration: 0.35, ease: 'power2.out' },
+    },
+  },
 
   /* ── B13 footer background ───────────────────────────────────────── */
   /** Footer background sits `offset` px above the footer and travels 0 → offset as it scrolls in

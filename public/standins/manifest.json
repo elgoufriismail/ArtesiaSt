@@ -46,14 +46,14 @@
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "Xgg8qSDKhoEnATJuF3xxVuO0bw",
-  "note": "pale blue, light subject centre"
+  "note": "deep burgundy, pale light upper centre"
  },
  "story-a-2": {
   "file": "/standins/story-a-2.jpg",
   "width": 2048,
   "height": 2048,
   "replacesOriginal": "lLxmvlvWIZ4P7PBI7azU4zec",
-  "note": "blue with warm upper subject"
+  "note": "light mauve, bright upper right"
  },
  "story-b-1": {
   "file": "/standins/story-b-1.jpg",
@@ -138,5 +138,33 @@
   "height": 512,
   "replacesOriginal": "ES6IJ8JiS4iNVkDK38fQhwjZDr4",
   "note": "avatar"
+ },
+ "story-a-3": {
+  "file": "/standins/story-a-3.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "new-gallery-slot-3",
+  "note": "burgundy with a rose glow centre"
+ },
+ "story-a-4": {
+  "file": "/standins/story-a-4.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "new-gallery-slot-4",
+  "note": "near-white blush, soft shadow lower right"
+ },
+ "story-a-5": {
+  "file": "/standins/story-a-5.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "new-gallery-slot-5",
+  "note": "near-black burgundy, rose core"
+ },
+ "story-a-6": {
+  "file": "/standins/story-a-6.jpg",
+  "width": 2048,
+  "height": 2048,
+  "replacesOriginal": "new-gallery-slot-6",
+  "note": "rose-beige, light upper left"
  }
 }

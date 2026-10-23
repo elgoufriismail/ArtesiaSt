@@ -708,6 +708,17 @@ documented, (4) headless variance → not compensated.
 * Not recoloured (outside that list): service-2 (dark blue), service-3 (blue-grey, reads teal), story-a-1/2 (blue),
   avatars; `--c-star` stays green.
 
+### Client customisation 3 — Story A gallery, Option A (2026-10-23)
+
+* Story A's two overlapping frames (and the B12 frame drift) are replaced by a sticky text column and a
+  two-column gallery of six photos (`STORIES.a.gallery`, stand-ins story-a-1…6 in the #4B1724 family; shapes
+  2:3 · 4:5 · 1:1 set by the CSS, numbered captions). Right column offset 180 / 120 / 64 px.
+* Motion lives in `src/animations/story/storyGallery.ts`, values in `ANIM.storyGallery`: reveal once per photo
+  (frame unmasks upwards, photo settles from 112 %, caption fades up; staggered); hover on fine pointers only
+  (zoom 107 % + lean toward the cursor, inset mat, "View" cursor badge, other photos dim). Inner parallax uses
+  `ANIM.B4.gallery` (80 / 60 / 0). Reduced motion: no reveal. New ease `reveal` (0.22, 1, 0.36, 1).
+* `storyDrift`, `ANIM.B12` and the B4 `storyLarge` / `storySmall` values are no longer used.
+
 ## 10. Testing strategy
 
 | Layer | Tool | Criterion |

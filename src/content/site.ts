@@ -78,14 +78,25 @@ export const STORIES = {
     title: 'Learning to rest without guilt.',
     body: 'Years of long hours and constant worry left Daniel exhausted and distant from the people he loved. Session by session, he learned to slow down, set boundaries, and make room for rest and\u00a0joy.',
     href: './stories/learning-to-rest',
-    images: ['story-a-1', 'story-a-2'],
+    // gallery (client change 2026-10-23): alternates left / right column; captions are stand-in copy
+    gallery: [
+      { slot: 'story-a-1', caption: 'First session' },
+      { slot: 'story-a-2', caption: 'The studio' },
+      { slot: 'story-a-3', caption: 'Slowing down' },
+      { slot: 'story-a-4', caption: 'Weekly rhythm' },
+      { slot: 'story-a-5', caption: 'Boundaries' },
+      { slot: 'story-a-6', caption: 'Rest and joy' },
+    ],
   },
   b: {
     eyebrow: 'Real stories. Real progress.',
     title: 'Rebuilding her confidence after a difficult year.',
     body: 'After a sudden job loss, Priya expected to bounce back quickly. Instead, she felt unsettled — withdrawing from friends, routines, and the hobbies that once grounded her. She came to therapy not because she was broken, but to trust her own choices again and feel steady in her\u00a0life.',
     href: './stories/rebuilding-confidence',
-    images: ['story-b-1', 'story-b-2'],
+    gallery: [
+      { slot: 'story-b-1', caption: 'A new start' },
+      { slot: 'story-b-2', caption: 'Steady again' },
+    ],
   },
   cta: '\u00a0Read full story',
 } as const;

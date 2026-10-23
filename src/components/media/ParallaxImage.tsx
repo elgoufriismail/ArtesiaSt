@@ -8,7 +8,7 @@ import { StandInImage } from './StandInImage';
 import type { StandInSlot } from '@/content/assets';
 import styles from './ParallaxImage.module.css';
 
-type Intensity = 'services' | 'storyLarge' | 'storySmall' | 'quote';
+type Intensity = 'services' | 'storyLarge' | 'storySmall' | 'quote' | 'gallery';
 
 /**
  * ParallaxImage: the original's image-parallax code component (B4, first-class #4). A frame
