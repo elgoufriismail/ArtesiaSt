@@ -34,7 +34,7 @@ export const HERO = {
  *  (docs/architecture/text-budgets.json: H2 60/68 chars, P 70/88 chars; line counts per breakpoint
  *  verified with tools/recon/text-fit.mjs). "Balance" is a generic UI label. */
 export const BALANCE = {
-  label: 'Balance',
+  label: 'Creative',
   before: {
     title: 'If only feeling steady were as easy as turning on a light.',
     body: ['It may be nearer than it seems.', 'Each small choice brings it into view.'],

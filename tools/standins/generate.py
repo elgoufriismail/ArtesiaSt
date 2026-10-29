@@ -58,6 +58,9 @@ SLOTS = {
   'avatar-5':        ('ES6IJ8JiS4iNVkDK38fQhwjZDr4', 512, 512, (220, 170, 60), [(.50,.45,.30,(230,200,180))], 'avatar'),
 }
 
+# slots whose files now hold real client images: a full run skips them (naming a slot still regenerates it)
+CLIENT_FILES = {'hero-portrait', 'service-1', 'service-2', 'service-3', 'service-4'}
+
 WORK = 512  # render fields at low res then upscale (smooth, fast); grain added at full res
 
 
@@ -140,6 +143,8 @@ def main():
     for slot, (orig, w, h, base, fields, note) in SLOTS.items():
         if only and slot not in only:
             continue
+        if not only and slot in CLIENT_FILES:
+            continue  # real client images live in these files; regenerate one only by naming it
         img = add_grain(field_image(w, h, base, fields, rng), rng)
         out = os.path.join(PUB, 'standins', f'{slot}.jpg')
         img.save(out, quality=82, optimize=True, progressive=True)

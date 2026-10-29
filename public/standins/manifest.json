@@ -15,31 +15,31 @@
  },
  "service-1": {
   "file": "/standins/service-1.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 710,
+  "height": 1106,
   "replacesOriginal": "VW2dIv9jFcnOEMXK68HcTW0X9g",
-  "note": "deep burgundy, dusty crimson light"
+  "note": "CLIENT IMAGE: Fitness Park project still (710x1106, sRGB)"
  },
  "service-2": {
   "file": "/standins/service-2.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 710,
+  "height": 1106,
   "replacesOriginal": "X1KAS3BPHbN4rR5FN8CCVsSUhM",
-  "note": "dark blue with warm centre glow"
+  "note": "CLIENT IMAGE: Peugeot project still (710x1106, sRGB)"
  },
  "service-3": {
   "file": "/standins/service-3.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 710,
+  "height": 1106,
   "replacesOriginal": "lZn0EEipDdK6TqFQ685W86d6r9M",
-  "note": "blue-grey, bright centre"
+  "note": "CLIENT IMAGE: Red Bull project still (710x1106, sRGB)"
  },
  "service-4": {
   "file": "/standins/service-4.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 710,
+  "height": 1106,
   "replacesOriginal": "Ux4Is85LWxm9dXetoVhxJWLGhLI",
-  "note": "crimson with muted-pink light"
+  "note": "CLIENT IMAGE: Samsung project still (710x1106, sRGB)"
  },
  "story-a-1": {
   "file": "/standins/story-a-1.jpg",

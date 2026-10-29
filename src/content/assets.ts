@@ -8,10 +8,10 @@ const s = (slot: string, width: number, height: number, position = '50% 50%') =>
 export const STANDINS = {
   'hero-backdrop': s('hero-backdrop', 2048, 2048, '49.5% 28.4%'),
   'hero-portrait': s('hero-portrait', 2880, 2560, '50% 0%'), // client photo (star character) recomposed for the top-anchored cover crop
-  'service-1': s('service-1', 2048, 2048),
-  'service-2': s('service-2', 2048, 2048),
-  'service-3': s('service-3', 2048, 2048),
-  'service-4': s('service-4', 2048, 2048),
+  'service-1': s('service-1', 710, 1106), // client project image (Fitness Park)
+  'service-2': s('service-2', 710, 1106), // client project image (Peugeot)
+  'service-3': s('service-3', 710, 1106), // client project image (Red Bull)
+  'service-4': s('service-4', 710, 1106), // client project image (Samsung)
   'story-a-1': s('story-a-1', 2048, 2048),
   'story-a-2': s('story-a-2', 2048, 2048),
   'story-a-3': s('story-a-3', 2048, 2048),
