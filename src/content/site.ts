@@ -7,27 +7,27 @@
  */
 import type { Cta } from './types';
 
-export const BRAND = { name: 'Calm Shore', wordmark: 'ARTESIA' } as const;
+export const BRAND = { name: 'Calm Shore', wordmark: 'artesia—studio' } as const;
 
 export const NAV = {
   links: [
-    { label: 'About', href: './about' },
+    { label: 'Studio', href: './about' },
     { label: 'Services', href: './services' },
-    { label: 'Stories', href: './stories' },
+    { label: 'Works', href: './stories' },
     { label: 'Journal', href: './journal' },
   ] satisfies Cta[],
-  cta: { label: 'Book a session', href: './book-a-session' } satisfies Cta,
+  cta: { label: 'Start a project', href: './book-a-session' } satisfies Cta,
   menuLabel: 'Menu',
   closeLabel: 'Close',
 } as const;
 
 export const HERO = {
   // budget: 31 chars · 6 words · 3 lines (1200–1599 / tablet / phone), 2 lines ≥1600
-  headline: 'Artesia Studio.',
+  headline: 'Where Ideas Become Cinema.',
   // budget: 216 chars · 34 words · 5 lines @427px (first line indented 20% + 16px)
   intro:
-    'We guide people through hard seasons of life with steady, practical care. Our counselling and coaching sessions help you understand yourself more clearly, build healthier habits and move toward change on your own terms.',
-  cta: { label: 'Begin your journey', href: './book-a-session' } satisfies Cta,
+    'Artesia Studio is a creative house for filmmaking, 3D and bold visual ideas. We work with brands, artists and visionaries to turn concepts into cinematic stories, from the first spark of an idea to the final frame, on projects of every scale.',
+  cta: { label: 'Explore our work', href: './book-a-session' } satisfies Cta,
 } as const;
 
 /** BalanceSection ("Toggle"). Stand-in copy written to the original's budgets
