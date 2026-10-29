@@ -40,8 +40,8 @@ export const BALANCE = {
     body: ['It may be nearer than it seems.', 'Each small choice brings it into view.'],
   },
   after: {
-    title: ['No single button changes everything,', 'yet every small step still counts.'],
-    body: 'Every story is its own. Here are some of the ways we support people in taking their next step.',
+    title: ['Every brand has a story,', 'we make it cinematic.'],
+    body: 'From global brands to bold ideas, here are four projects that show how we bring products to life on screen.',
   },
 } as const;
 

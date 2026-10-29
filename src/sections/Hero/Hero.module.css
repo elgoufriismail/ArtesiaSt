@@ -82,6 +82,12 @@
 .container { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 8px; width: 100%; }
 .h1 { color: var(--c-white); width: 100%; text-wrap: balance; }  /* original: text-wrap balance (per text layer) */
 .h1 :global([data-word]) { will-change: transform, opacity, filter; }
+/* client change: the headline always sets on two lines — fluid size, capped at the t-display size of each
+   breakpoint, shrinking only where "Become Cinema." would not fit the column (fit measured 320–1920) */
+.colTitle .h1 { font-size: min(152px, 8.7vw); }
+@media (min-width: 1200px) and (max-width: 1599.98px) { .colTitle .h1 { font-size: min(136px, 8.4vw); } }
+@media (min-width: 810px) and (max-width: 1199.98px) { .colTitle .h1 { font-size: min(88px, 7.1vw); } }
+@media (max-width: 809.98px) { .colTitle .h1 { font-size: min(64px, 14.2vw); max-width: 6.6em; } } /* 6.6em: wide phones keep 2 lines */
 
 .introContainer { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 32px; padding: 0 8px; width: 100%; }
 .paragraph { color: var(--c-white); text-indent: calc(20% + 16px); }
