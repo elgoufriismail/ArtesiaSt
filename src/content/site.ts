@@ -106,19 +106,19 @@ export const STORIES = {
  *  (lead ≈199, steps ≈240 / 262 / 222) fitted to its line counts at all 8 viewports. */
 export const HOW_IT_WORKS = {
   title: ['How ', 'It Works'] as const,
-  lead: 'Healing begins quietly. We listen closely, learn what brought you here and what support should feel like, then map a path at your own pace — one that respects your story, your limits, and your\u00a0life.',
+  lead: 'Every great project starts with a conversation. We listen to your idea, shape it into a clear creative vision, then bring it to life through filmmaking, 3D and post\u2011production — frame by frame, until it looks exactly like you dreamed.',
   steps: [
     {
-      title: 'Say Hello',
-      body: 'Send a short note or book a free first call. We ask a few gentle questions about what is on your mind, what you hope to change, and what has helped before, so the very first session can start from understanding instead of from forms and\u00a0paperwork.',
+      title: 'Share Your Vision',
+      body: 'Tell us your idea, big or small. In a free first call we explore your goals, your audience and the feeling you want to create, so every project starts from a clear creative direction and a plan that fits your budget.',
     },
     {
-      title: 'Gentle Direction',
-      body: 'Together we shape a plan that suits your week, your energy, and your goals. Some clients want weekly sessions, others prefer a slower rhythm with small exercises in between. Nothing is fixed, and the plan grows with you as you notice what truly helps.',
+      title: 'We Shape the Story',
+      body: 'Our team turns your idea into a concept: script, storyboard, moodboard and 3D previews. You see the vision before anything is shot, and we refine it together until every detail feels right.',
     },
     {
-      title: 'Find a Balance',
-      body: 'Slowly, techniques become dependable habits. You recognise tension sooner, respond gently, and recover faster whenever life feels heavy. Sessions become occasional check-ins, and your abilities keep working\u00a0afterwards.',
+      title: 'We Bring It to Life',
+      body: 'From filming and 3D production to editing, color grading and sound design, we craft the final piece and deliver it ready for cinema, social media and every screen you need.',
     },
   ],
 } as const;
