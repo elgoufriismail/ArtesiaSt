@@ -65,8 +65,8 @@ export const SERVICES = {
 export const PHILOSOPHY = {
   label: 'Our Philosophy',
   statement:
-    'At Calm\u00a0Shore, we never push change — we let it emerge with patience. Through thoughtful conversation, simple tools, and a gentle pace, we nurture growth that\u00a0endures.',
-  cta: { label: 'About Our Craft', href: './about' } satisfies Cta,
+    'At Artesia\u00a0Studio, we don\u2019t follow trends — we create worlds. Through bold ideas, cinematic craft and fearless imagination, we turn your vision into\u00a0cinema.',
+  cta: { label: 'Discover our studio', href: './about' } satisfies Cta,
 } as const;
 
 /** Stories A and B (same original component). Stand-in copy fitted to the original line counts; paragraphs

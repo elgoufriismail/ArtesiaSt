@@ -10,8 +10,9 @@
   width: 64px;
   height: 64px;
   background-color: var(--c-green);
-  -webkit-mask: url('/icons/philosophy-standin.svg') 50% 50% / auto no-repeat;
-  mask: url('/icons/philosophy-standin.svg') 50% 50% / auto no-repeat;
+  /* client icon (clapperboard): alpha mask PNG, drawn at the stand-in's ~46 px footprint */
+  -webkit-mask: url('/icons/philosophy.png') 50% 50% / 46px 46px no-repeat;
+  mask: url('/icons/philosophy.png') 50% 50% / 46px 46px no-repeat;
 }
 .label { margin: 0; text-align: center; white-space: pre; }
 
