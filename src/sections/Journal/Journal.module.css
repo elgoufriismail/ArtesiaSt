@@ -22,8 +22,9 @@
   width: 64px;
   height: 64px;
   background: var(--c-green);
-  -webkit-mask: url('/icons/journal-standin.svg') 50% 50% / auto no-repeat;
-  mask: url('/icons/journal-standin.svg') 50% 50% / auto no-repeat;
+  /* client icon (video camera): alpha mask PNG, wide, so drawn 50 px across */
+  -webkit-mask: url('/icons/journal.png') 50% 50% / 50px 50px no-repeat;
+  mask: url('/icons/journal.png') 50% 50% / 50px 50px no-repeat;
 }
 .headline { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px; width: 100%; }
 .full { width: 100%; }
@@ -68,6 +69,7 @@
 .container { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; width: 100%; overflow: hidden; }
 .titleWrap { width: 100%; max-width: 340px; }
 .titleLink { color: inherit; text-decoration: none; }
+.role { display: block; } /* team card: role on its own line under the name */
 /* two-line clamp with an ellipsis (the original's excerpt container) */
 .excerptWrap { width: 100%; max-width: 340px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
 

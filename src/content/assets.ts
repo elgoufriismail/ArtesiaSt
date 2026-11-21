@@ -21,9 +21,9 @@ export const STANDINS = {
   'story-b-1': s('story-b-1', 2048, 2048),
   'story-b-2': s('story-b-2', 2048, 2048),
   'big-quote': s('big-quote', 2048, 2048),
-  'journal-a': s('journal-a', 2048, 2048),
-  'journal-b': s('journal-b', 2048, 2048),
-  'journal-c': s('journal-c', 2048, 2048),
+  'journal-a': s('journal-a', 1493, 2000, '50% 12%'), // client portrait (Lina Berrada); crop kept high for the face
+  'journal-b': s('journal-b', 1493, 2000, '50% 12%'), // client portrait (Taha Rachidy); crop kept high for the face
+  'journal-c': s('journal-c', 1493, 2000, '50% 12%'), // client portrait (Simo Rofka); crop kept high for the face
   footer: s('footer', 2048, 2048),
   'avatar-1': s('avatar-1', 280, 280),
   'avatar-2': s('avatar-2', 512, 512),

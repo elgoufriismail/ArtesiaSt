@@ -78,24 +78,24 @@
  },
  "journal-a": {
   "file": "/standins/journal-a.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 1493,
+  "height": 2000,
   "replacesOriginal": "D6H1lHKBDuxkhpUVf8PPyt7Jivg",
-  "note": "muted pink with brand-red centre"
+  "note": "CLIENT PORTRAIT: Lina Berrada (1493x2000, sRGB); object-position 50% 12%"
  },
  "journal-b": {
   "file": "/standins/journal-b.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 1493,
+  "height": 2000,
   "replacesOriginal": "LksF7zMOHE97HJPqXDmb7LSvWE",
-  "note": "charcoal with burgundy"
+  "note": "CLIENT PORTRAIT: Taha Rachidy (1493x2000, sRGB); object-position 50% 12%"
  },
  "journal-c": {
   "file": "/standins/journal-c.jpg",
-  "width": 2048,
-  "height": 2048,
+  "width": 1493,
+  "height": 2000,
   "replacesOriginal": "ZMX4xonC6WvSRyRzHHgOkTDzw4",
-  "note": "pale blush-grey, burgundy centre"
+  "note": "CLIENT PORTRAIT: Simo Rofka (1493x2000, sRGB); object-position 50% 12%"
  },
  "footer": {
   "file": "/standins/footer.jpg",

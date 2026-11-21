@@ -76,7 +76,7 @@ export function Journal() {
                   </a>
                   <div className={styles.text} data-appear="all" data-ref={`${art}/Text`}>
                     <div className={styles.container} data-ref={`${art}/Text/Container`}>
-                      <div className={styles.titleWrap}><h3 className={`t-article-title ${styles.center}`}><a className={styles.titleLink} href={a.href}>{a.title}</a></h3></div>
+                      <div className={styles.titleWrap}><h3 className={`t-article-title ${styles.center}`}><a className={styles.titleLink} href={a.href}>{a.title}{'role' in a && <span className={styles.role}>{a.role}</span>}</a></h3></div>
                       <div className={styles.excerptWrap}><p className={`t-small ${styles.center}`}>{a.excerpt}</p></div>
                     </div>
                     <div><PillButton label={c.readMore} href={a.href} dataRef={`${art}/Text/${pill}`} /></div>

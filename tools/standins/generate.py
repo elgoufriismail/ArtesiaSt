@@ -59,7 +59,7 @@ SLOTS = {
 }
 
 # slots whose files now hold real client images: a full run skips them (naming a slot still regenerates it)
-CLIENT_FILES = {'hero-portrait', 'service-1', 'service-2', 'service-3', 'service-4'}
+CLIENT_FILES = {'hero-portrait', 'service-1', 'service-2', 'service-3', 'service-4', 'journal-a', 'journal-b', 'journal-c'}
 
 WORK = 512  # render fields at low res then upscale (smooth, fast); grain added at full res
 

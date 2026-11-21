@@ -189,15 +189,16 @@ export const BIG_QUOTE = {
  *  fitted to its line counts. Card C only exists on desktop. Pill labels chosen to render
  *  within 0.4 px of the original label widths (pill geometry); no original text reused (clash-checked). */
 export const JOURNAL = {
-  label: 'Deep Reading',
-  title: ['Thoughtful Perspectives on', 'Calmer Living'] as const,
-  intro: 'Short essays and gentle, practical ideas on rest, relationships and change, to help you feel steadier.',
+  // client change: the Journal cards now introduce the team (name + role, short bio, profile link)
+  label: 'Behind the scenes',
+  title: ['Stories From Inside the', 'Creative Process'] as const,
+  intro: 'Behind\u2011the\u2011scenes breakdowns, creative tips and ideas on filmmaking, 3D and visual storytelling, straight from our\u00a0studio.',
   cta: { label: 'Browse Journal', href: './journal' } satisfies Cta,
-  readMore: 'Open note',
+  readMore: 'View profile',
   articles: [
-    { key: 'A', slot: 'journal-a', mask: 'blobA', stroke: 'journalStrokeA', title: 'Finding Calm in Crowded Weeks', excerpt: 'A few small habits that turn busy days into calmer ones, without needing a whole new routine.', href: './journal/finding-calm-in-crowded-weeks' },
-    { key: 'B', slot: 'journal-b', mask: 'blobB', stroke: 'journalStrokeB', title: 'When Everything Feels Loud', excerpt: 'Simple ways to settle a crowded mind when noise, news and worry arrive all at once.', href: './journal/when-everything-feels-loud' },
-    { key: 'C', slot: 'journal-c', mask: 'blobC', stroke: 'journalStrokeC', title: 'How to Start Again After Loss', excerpt: 'Loss changes the ordinary shape of a day. The empty chair, the message you almost send, the plans that quietly fall away. Starting again rarely means moving on; it means learning to carry what happened while making space for new routines, new people and new reasons to rest and hope.', href: './journal/how-to-start-again-after-loss' },
+    { key: 'A', slot: 'journal-a', mask: 'blobA', stroke: 'journalStrokeA', title: 'Lina Berrada', role: 'Studio Manager', excerpt: 'Keeps every production on track and every client in the loop, from brief to\u00a0delivery.', href: './journal/finding-calm-in-crowded-weeks' },
+    { key: 'B', slot: 'journal-b', mask: 'blobB', stroke: 'journalStrokeB', title: 'Taha Rachidy', role: 'Founder & Creative Director', excerpt: 'The mind behind Artesia Studio, turning bold ideas into cinematic stories and 3D\u00a0worlds.', href: './journal/when-everything-feels-loud' },
+    { key: 'C', slot: 'journal-c', mask: 'blobC', stroke: 'journalStrokeC', title: 'Simo Rofka', role: 'DOP & Filmmaker', excerpt: 'Behind the camera on every shoot, shaping the light, the lens and the story of each\u00a0frame.', href: './journal/how-to-start-again-after-loss' },
   ],
 } as const;
 
