@@ -11,13 +11,12 @@ import { TextSection } from '@/sections/TextSection';
 import { Quote } from '@/sections/Quote';
 import { Journal } from '@/sections/Journal';
 import { Faq } from '@/sections/Faq';
-import { Booking } from '@/sections/Booking';
 import { Footer } from '@/sections/Footer';
 import styles from './page.module.css';
 
 /**
  * Homepage — section order is the original's (docs/reconnaissance/STRUCTURE.md §2), minus the sections the client
- * removed (2026-10-05): PathSection, Pricing, Story B, Numbers; (2026-11-21) Text Section 2. Their components
+ * removed (2026-10-05): PathSection, Pricing, Story B, Numbers; (2026-11-21) Text Section 2, Book A Session. Their components
  * stay in src/sections for reuse.
  * Server component: composes client sections; fixed layers first, then Main Container, then footer.
  */
@@ -37,7 +36,6 @@ export default function Home() {
         <Quote />
         <Journal />
         <Faq />
-        <Booking />
       </main>
       <Footer />
       <Navigation />
