@@ -179,8 +179,8 @@ export const TEXT_SECTIONS = [
 
 /** Big Quote. Stand-in quote (≈71 ch, serif) and attribution (≈47 ch), fitted to the original line counts. */
 export const BIG_QUOTE = {
-  quote: 'Healing is rarely sudden. It grows quietly, one honest talk at a\u00a0time.',
-  attribution: '— Calm Shore, notes on ten years of practice',
+  quote: 'Every vision begins as a dream. We are here to undream it, one frame at a\u00a0time.',
+  attribution: '— Taha Rachidy, Founder of Artesia\u00a0Studio',
   image: 'big-quote',
 } as const;
 
