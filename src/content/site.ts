@@ -164,11 +164,11 @@ export const PRICING = {
  *  original line counts at all 8 viewports. */
 export const TEXT_SECTIONS = [
   {
-    title: ['Each session is shaped around your story, your rhythm and ', 'the goals that\u00a0matter.'],
+    title: ['Every project is shaped around your brand, your vision and ', 'the story you\u00a0tell.'],
     body: {
-      before: 'We blend proven methods with a calm, personal\u00a0approach. Sessions happen in our quiet studio or online, and you can switch whenever it\u00a0suits\u00a0you. Curious how we\u00a0work? Meet ',
+      before: 'We blend cinematic filmmaking, 3D and creative direction with a personal\u00a0touch. We shoot on location, in studio or fully in\u00a03D. Curious how we\u00a0work? Meet ',
       link: { label: 'our\u00a0studio', href: './about' },
-      after: ' and the people who make it a\u00a0safe\u00a0place.',
+      after: ' and the creative minds behind every\u00a0frame.',
     },
   },
   {
