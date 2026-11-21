@@ -17,7 +17,8 @@ import styles from './page.module.css';
 
 /**
  * Homepage — section order is the original's (docs/reconnaissance/STRUCTURE.md §2), minus the sections the client
- * removed (2026-10-05): PathSection, Pricing, Story B, Numbers. Their components stay in src/sections for reuse.
+ * removed (2026-10-05): PathSection, Pricing, Story B, Numbers; (2026-11-21) Text Section 2. Their components
+ * stay in src/sections for reuse.
  * Server component: composes client sections; fixed layers first, then Main Container, then footer.
  */
 export default function Home() {
@@ -35,7 +36,6 @@ export default function Home() {
         <TextSection index={1} />
         <Quote />
         <Journal />
-        <TextSection index={2} />
         <Faq />
         <Booking />
       </main>
