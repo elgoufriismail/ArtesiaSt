@@ -68,7 +68,15 @@
 .contactBlock { display: flex; flex-direction: column; justify-content: space-between; height: 132px; }
 .creditBlock { display: flex; flex-direction: column; gap: 56px; }
 .credit { display: flex; align-items: center; gap: 8px; }
-.creditIcon { flex: none; color: var(--c-white); }
+/* client icon (clapperboard, same mask as Our Philosophy), white, in the leaf's 40 px box */
+.creditIcon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--c-white);
+  -webkit-mask: url('/icons/philosophy.png') 50% 50% / 34px 34px no-repeat;
+  mask: url('/icons/philosophy.png') 50% 50% / 34px 34px no-repeat;
+}
 
 /* tablet */
 @media (max-width: 1199.98px) {

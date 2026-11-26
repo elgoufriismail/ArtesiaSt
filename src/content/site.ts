@@ -250,37 +250,37 @@ export const BOOKING = {
 
 export const FOOTER = {
   // budget: 19 chars · 2 lines with explicit break
-  headline: ['Notes For', 'Quiet Days.'] as const,
+  headline: ['Undream', 'Your Vision.'] as const,
   // budget: 138 chars · 20 words · 3 lines @480
-  body: 'Every few weeks we send short reflections, simple exercises and gentle reminders to help you rest, reset and look after your mind and body.',
+  body: 'Get our latest projects, behind\u2011the\u2011scenes stories and creative ideas straight to your inbox, a few times a\u00a0month.',
   emailPlaceholder: 'Your Email',
   subscribe: { idle: 'Subscribe', success: 'Subscribed' },
   // budget: 80 chars · 14 words · 2 lines @320 (link inside)
-  finePrint: { before: 'By subscribing you accept our ', link: 'Privacy Policy.', after: ' We never share your details.' },
+  // client change: the line under the form is now a contact line (was the privacy notice)
+  finePrint: { before: 'Contact us: ', link: 't.rachidy@artesiast.com', href: 'mailto:t.rachidy@artesiast.com', after: '' },
   sitemapLabel: 'Sitemap',
   sitemap: [
     [
       { label: 'Main Page', href: './' },
       { label: 'About', href: './about' },
       { label: 'Services', href: './services' },
-      { label: 'Stories', href: './stories' },
-      { label: 'Client Story', href: './stories' },
+      { label: 'Works', href: './stories' },
+      { label: 'Our team', href: './stories' },
       { label: 'Journal', href: './journal' },
     ],
     [
       { label: 'Article', href: './journal' },
-      { label: 'Book a Session', href: './book-a-session' },
+      { label: 'Start a Project', href: './book-a-session' },
       { label: 'Privacy Policy', href: './legal/privacy-policy' },
       { label: 'Terms of Use', href: './legal/terms-of-use' },
-      { label: '404', href: './404' },
     ],
   ] satisfies Cta[][],
   // budget: 31 chars
-  contact: { label: 'Contact us:', email: 'hello@calmshore.com' },
+  contact: { label: 'Contact us:', email: 't.rachidy@artesiast.com' },
   // budget: 44 chars · 2 lines (explicit break)
-  credit: ['Site template', 'handcrafted by Calm Shore Studio'] as const,
+  credit: ['Designed and directed by', 'Taha Rachidy, Founder of Artesia\u00a0Studio.'] as const,
   // budget: 46 chars
-  copyright: 'Copyright 2026 Calm Shore. All rights reserved.',
+  copyright: 'Copyright 2026 Artesia Studio. All rights reserved.',
 } as const;
 
 export const SOCIALS = [

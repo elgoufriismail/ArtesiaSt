@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { useBreakpoint } from '@/hooks/useBreakpoint';
-import { Leaf } from '@phosphor-icons/react';
 import { useGsap } from '@/hooks/useGsap';
 import { footerParallax } from '@/animations/parallax/footerParallax';
 import { reveal } from '@/animations/scroll/reveal';
@@ -67,7 +66,7 @@ export function Footer() {
               </form>
               <p className={`t-small ${styles.muted} ${styles.finePrint}`} data-reveal data-standin="text">
                 {FOOTER.finePrint.before}
-                <a href="./legal/privacy-policy" className={styles.inlineLink}>{FOOTER.finePrint.link}</a>
+                <a href={FOOTER.finePrint.href} className={styles.inlineLink}>{FOOTER.finePrint.link}</a>
                 {FOOTER.finePrint.after}
               </p>
             </div>
@@ -105,7 +104,7 @@ export function Footer() {
         <section className={styles.colSide}>
           <div className={styles.creditBlock} data-reveal>
             <div className={styles.credit}>
-              <Leaf size={40} weight="fill" className={styles.creditIcon} aria-hidden="true" />
+              <span className={styles.creditIcon} aria-hidden="true" />
               <p className={`t-small ${styles.muted}`} data-standin="text">
                 <span className={styles.white}>{FOOTER.credit[0]}</span>
                 <br />
