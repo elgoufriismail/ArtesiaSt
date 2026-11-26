@@ -41,14 +41,8 @@ export function Services() {
             const card = `${C}/Card ${c.key} Container`, link = `${card}/${variant}`;
             return (
               <div key={c.key} className={styles.slot} data-card="" data-ref={card}>
-                <a className={styles.card} href={SERVICES.href} data-card-box="" data-ref={link}>
+                <a className={styles.card} href={SERVICES.href} aria-label={`${c.name} project`} data-card-box="" data-ref={link}>
                   <ParallaxImage slot={c.slot} intensity="services" className={styles.image} dataRef={`${link}/Image`} />
-                  <h3 className={`t-card-title ${styles.title}`}>
-                    {c.title.length > 1 ? <>{c.title[0]}<br />{c.title[1]}</> : c.title[0]}
-                  </h3>
-                  <div className={styles.desc} data-ref={`${link}/Container`}>
-                    <p className={`t-small ${styles.body}`}>{c.body}</p>
-                  </div>
                   <div className={styles.readMore} data-ref={`${link}/Read More`}>
                     <span className={styles.dot} data-ref={`${link}/Read More/Circle A`} />
                     <span className={`t-eyebrow ${styles.label}`} data-card-label="">{SERVICES.readMore}</span>

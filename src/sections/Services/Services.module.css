@@ -11,9 +11,6 @@
 /* desktop: 560² parallax square centred in the card (fixed while the card box resizes) */
 .image { position: absolute; left: 50%; top: 50%; width: 560px; height: 560px; transform: translate(-50%, -50%); }
 
-.title { position: absolute; top: 24px; left: 24px; right: 24px; margin: 0; color: var(--c-white); text-wrap: balance; white-space: pre-wrap; }
-.desc { position: absolute; left: 24px; right: 24px; top: calc(50% - 120px); height: 240px; }
-.body { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; color: var(--c-white); }
 .readMore { position: absolute; left: 24px; bottom: 24px; display: flex; align-items: center; gap: 16px; padding-top: 1px; overflow: hidden; }
 .dot { flex: none; width: 4px; height: 4px; border-radius: 999px; background: var(--c-white); }
 .label { color: var(--c-white); white-space: nowrap; opacity: 0; }
@@ -31,5 +28,4 @@
 @media (max-width: 1199.98px) {
   .slot, .card { height: 400px; }
   .image { left: 0; top: 0; width: 100%; height: 100%; transform: none; }
-  .desc { top: auto; bottom: 80px; height: 177px; }
 }

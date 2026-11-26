@@ -49,13 +49,14 @@ export const BALANCE = {
  *  (card titles: A wraps naturally with text-wrap balance; B/C/D are two words with an explicit break).
  *  Visual order A, B, D, C, as in the original layer names. "read more" is a generic UI label. */
 export const SERVICES = {
+  // client change: cards show the project images only (no title / description); `name` labels each link for screen readers
   readMore: 'read more',
   href: './services',
   cards: [
-    { key: 'A', slot: 'service-1', title: ['Anxiety & Burnout Support'], body: 'Calm, practical tools to ease pressure, restore energy, and feel grounded again.' },
-    { key: 'B', slot: 'service-2', title: ['Couples', 'Counselling'], body: 'Private sessions to talk things through, ease conflict, and understand each other.' },
-    { key: 'D', slot: 'service-3', title: ['Guided', 'Check-in'], body: 'A brief, focused meeting to explore your needs and choose a next step.' },
-    { key: 'C', slot: 'service-4', title: ['Career', 'Guidance'], body: 'Practical sessions to clarify goals, find direction, and grow confident.' },
+    { key: 'A', slot: 'service-1', name: 'Fitness Park' },
+    { key: 'B', slot: 'service-2', name: 'Peugeot' },
+    { key: 'D', slot: 'service-3', name: 'Red Bull' },
+    { key: 'C', slot: 'service-4', name: 'Samsung' },
   ],
 } as const;
 
